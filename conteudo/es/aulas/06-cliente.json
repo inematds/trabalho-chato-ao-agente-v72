@@ -1,0 +1,265 @@
+{
+  "slug": "cliente",
+  "num": 6,
+  "menu": "Cliente",
+  "titulo": "Cliente nuevo: la lista de verificación que se detiene si algo falla",
+  "titulo_curto": "Cliente nuevo",
+  "minutos": 15,
+  "lead": "Conseguiste un cliente: ahora hay que actualizar sus datos, crear la carpeta, armar el cronograma, preparar el primer cobro y escribir el mensaje de bienvenida. Son los mismos cinco pasos cada vez, y olvidar uno sale caro. El agente recorre la lista de verificación en orden, no crea nada dos veces y se detiene en el paso que falla.",
+  "objetivo": "escribir la lista de verificación para un cliente nuevo, que el agente recorre en orden y donde se detiene si un paso falla, sin duplicar nada.",
+  "competencias": [
+    "escribir-lista-de-verificación-del-proceso",
+    "detenerse ante un error y retomar",
+    "evitar duplicados"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Convertir tu rutina en una lista de verificación"
+    },
+    {
+      "icone": "fila",
+      "t": "Avanzar paso a paso, marcando lo que está hecho"
+    },
+    {
+      "icone": "x",
+      "t": "Detenerse en el paso que falla y decir por qué"
+    },
+    {
+      "icone": "seta",
+      "t": "Retomar sin rehacer lo que ya está hecho"
+    }
+  ],
+  "hero_alt": "Portapapeles con una lista de verificación de cinco elementos, tres marcados, sobre una mesa de reuniones; al fondo, desenfocado, un apretón de manos.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Los cinco pasos, en orden",
+      "sub": "Haz clic en cada paso. El último siempre es un borrador.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Registro",
+          "sub": "cerrado",
+          "detalhe": "En la hoja de cálculo o en el sistema de clientes: estado «cerrado» y fecha de inicio. Los datos del cliente vienen de la propuesta firmada o de la conversación que pegues.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "estado + fecha"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Carpeta",
+          "sub": "de modelo",
+          "detalhe": "Una carpeta con el nombre del cliente, copiada de tu carpeta modelo. Si ya existe una con ese nombre, el agente no crea otra: se detiene y te avisa.",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "ya existe → se detiene"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Cronograma",
+          "sub": "de modelo",
+          "detalhe": "El cronograma o la lista de etapas copiada de tu modelo, con el nombre del cliente y las fechas a partir del inicio.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "fechas a partir del inicio"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Cobro",
+          "sub": "borrador",
+          "forte": true,
+          "detalhe": "El primer cobro preparado como borrador, con el monto de la propuesta. Tú lo emites y lo envías.",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "tú lo emites"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Bienvenida",
+          "sub": "borrador",
+          "detalhe": "El correo de bienvenida con tu modelo y los enlaces a la carpeta y al cronograma. Borrador: tú lo lees y lo envías.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "tú los envías"
+            }
+          ]
+        }
+      ],
+      "volta": "¿Falló un paso? Se detiene, dice cuál y por qué; en la próxima ejecución continúa desde ahí",
+      "legenda": "Orden fijo, un paso a la vez, sin duplicados. El dinero y los mensajes al cliente quedan como borrador."
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "Mira cómo funciona la lista de verificación",
+      "sub": "Avanza, interrumpe a la mitad y vuelve a avanzar. Fíjate en el paso donde se detiene.",
+      "tarefas": [
+        "Registro: Panadería Trigo Bueno como cerrado",
+        "Carpeta Panadería Trigo Bueno a partir del modelo",
+        "Cronograma de 8 semanas a partir del 10/11",
+        "Primer cobro como borrador",
+        "Correo de bienvenida como borrador"
+      ],
+      "falha": 1,
+      "rot": {
+        "entrada": "por hacer",
+        "rodando": "en curso",
+        "feito": "hecho",
+        "falhou": "se detuvo",
+        "rodar": "Avanzar en la lista de verificación",
+        "parar": "Interrumpir",
+        "zerar": "Volver a empezar"
+      },
+      "msg": {
+        "inicio": "5 pasos «por hacer». Haz clic en «Avanzar en la lista de verificación».",
+        "rodando": "Un paso a la vez, en orden: de «por hacer» a «en curso» y luego a «hecho» o «se detuvo».",
+        "parou": "Se interrumpió a la mitad. El paso que estaba en curso volvió a «por hacer». Avanza de nuevo para ver cómo se retoma.",
+        "retoma": "Al retomar: no se repitió lo que ya estaba hecho. No hay registros ni carpetas duplicados.",
+        "fim": "Lista de verificación completa: todo está «hecho».",
+        "fimfalha": "Fin de la ronda. Un paso se detuvo con el motivo («ya existe una carpeta con ese nombre»): el agente no creó otra y te avisó."
+      },
+      "legenda": "Simulación ilustrativa en el navegador: no se crea nada de verdad. El fallo es intencional, para mostrar el «detente y avisa»."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La ficha del checklist",
+      "sub": "Cambia los pasos por los tuyos. Mantén el orden y las reglas.",
+      "blocos": [
+        {
+          "rot": "Ficha · agente para clientes nuevos",
+          "icone": "arquivo",
+          "conteudo": "Rol: Eres mi agente para clientes nuevos.\nSobre mí: [a qué se dedica la empresa]; modelo de carpeta: [nombre]; modelo de cronograma: [nombre]; modelo de correo de bienvenida: [texto o nombre].\nCuándo: cuando diga «cliente nuevo: [nombre]» y pegue la propuesta o los datos.\nPasos: 1) registro: estado «cerrado» y fecha de inicio; 2) carpeta con el nombre del cliente a partir del modelo; 3) cronograma a partir del modelo, con fechas desde el inicio; 4) primer cobro como borrador, con el valor de la propuesta; 5) correo de bienvenida como borrador, con los enlaces de la carpeta y del cronograma.\nReglas: sigue los pasos en orden y marca cada uno como hecho; si ya existe un cliente, una carpeta o un cobro con ese nombre, no crees otro: detente y dime qué paso era y qué viste; si falla un paso, detente ahí; el cobro y el correo solo como borrador, yo los emito y envío; nunca pidas una contraseña; si falta un dato, detente y pregunta.\nEntrega: la lista de los 5 pasos con hecho / se detuvo y el motivo, los enlaces o nombres creados, el valor del cobro y «correo en borrador».\nPrimera tarea: repite el checklist con tus palabras y espera a que diga «cliente nuevo»."
+        },
+        {
+          "rot": "En el chat · el pedido",
+          "icone": "chat",
+          "conteudo": "cliente nuevo: Padaria Trigo Bom\n\nDatos de la propuesta: contacto Marta Reis (marta@exemplo.com), cocina industrial planificada, inicio el 10/11, valor total 18.000,00 en 3 cuotas, la primera al firmar.\nEn el chat no creas la carpeta ni el registro: devuélveme el texto listo de cada paso (nombre de la carpeta, cronograma en tabla, borrador del cobro, borrador del correo) y yo hago los clics, marcando cada uno como hecho."
+        },
+        {
+          "rot": "Terminal (opcional) · carpetas reales en tu computadora",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/clientes\n# a ficha está no AGENTS.md; o modelo está em clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente nuevo: Padaria Trigo Bom — siga o AGENTS.md\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Chat × terminal",
+            "html": "<p><b>En el chat</b>, el agente prepara el texto de cada paso y tú haces los clics: es el checklist con la parte aburrida (escribir, calcular fechas, preparar el correo) resuelta. <b>En la terminal</b>, con <code>-s workspace-write</code>, Codex puede copiar la carpeta modelo dentro de la carpeta donde estás; fuera de ella, no. El registro en un sistema en línea y el cobro siguen a tu cargo.</p>"
+          },
+          {
+            "rot": "Cómo revisar",
+            "html": "<ol><li>Los cinco pasos aparecen en orden, cada uno con hecho o se detuvo.</li><li>El cobro es de 6.000,00 (la primera de 3 cuotas de 18.000,00) y está como borrador.</li><li>Si envías el mismo pedido de nuevo en la misma conversación, la segunda ronda se detiene enseguida en el primer paso porque el cliente ya existe.</li></ol>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Checklist sin orden</b>: el correo se envía antes de que exista la carpeta y el enlace no funciona.</li><li><b>«Si falla, inténtalo de otra manera»</b>: el agente improvisa y crea la carpeta «Padaria Trigo Bom (2)». Si falla, se detiene.</li><li><b>Poner el cobro como «emitir»</b>: dinero y clientes implican como mínimo un riesgo medio; siempre en borrador.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu checklist",
+      "sub": "Escribe el ritual que ya haces hoy.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · El ritual en papel",
+          "min": "10 min",
+          "texto": "Enumera en orden lo que haces hoy cuando cierras con un cliente. Redúcelo a los 5 pasos que más se repiten.",
+          "pronto": "la lista tiene de 4 a 6 pasos numerados y cada uno indica en qué herramienta se realiza."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La ficha",
+          "min": "15 min",
+          "texto": "Adapta la ficha con tus pasos y modelos y colócala en un Proyecto (o en una carpeta, en la terminal).",
+          "pronto": "el agente repite el checklist con sus propias palabras, en el orden correcto, y espera «cliente nuevo»."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Ensayo con un cliente ficticio",
+          "min": "10 min",
+          "texto": "Haz la prueba con Padaria Trigo Bom. Después envía el mismo pedido otra vez.",
+          "pronto": "la primera ronda entrega los 5 pasos y el cobro de 6.000,00 como borrador; la segunda se detiene y avisa que el cliente ya existe."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "En el paso 2, ya existe una carpeta «Padaria Trigo Bom». ¿Qué hace el agente?",
+          "opcoes": [
+            "Crea «Padaria Trigo Bom (2)» para no perder tiempo.",
+            "Borra la anterior y crea una nueva.",
+            "Omite la carpeta y sigue con el cronograma.",
+            "Se detiene en el paso 2 y dice qué vio."
+          ],
+          "certa": 3,
+          "explica": "Una carpeta existente puede indicar un cliente duplicado o un error tuyo. El agente no decide: se detiene y avisa. Crear otra duplica; borrar implica un riesgo alto; omitirla deja el correo con un enlace que no lleva a nada.",
+          "ref": "simfila"
+        },
+        {
+          "p": "Interrumpiste el checklist en el paso 3 y volviste a ejecutarlo. Lo correcto es:",
+          "opcoes": [
+            "Empezar de nuevo desde el paso 1 y repetir todo, por seguridad.",
+            "Continuar desde el paso 3, sin repetir el registro ni la carpeta.",
+            "Pasar al correo de bienvenida.",
+            "Crear otro cliente para empezar de cero."
+          ],
+          "certa": 1,
+          "explica": "Los pasos hechos quedan marcados; al retomar, se continúa desde donde se detuvo. Volver a empezar desde el principio lleva a duplicar el registro.",
+          "ref": "simfila"
+        },
+        {
+          "p": "En el recorrido por el chat, ¿quién crea la carpeta en tu Drive?",
+          "opcoes": [
+            "Tú: el agente prepara el nombre, el cronograma y los borradores, y tú haces los clics.",
+            "El agente, siempre que le digas la contraseña de Drive.",
+            "El agente, por su cuenta, porque está en un Proyecto.",
+            "Nadie: en el chat ese paso desaparece."
+          ],
+          "certa": 0,
+          "explica": "El chat escribe, no hace clic en tu Drive. Resuelve la parte aburrida (escribir y calcular), y tú lo ejecutas marcando cada paso como hecho. Nunca compartas una contraseña.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La lección en tres frases",
+      "itens": [
+        {
+          "t": "Orden fijo",
+          "texto": "Los mismos pasos, siempre en el mismo orden, cada uno marcado como hecho."
+        },
+        {
+          "t": "Falló, se detiene",
+          "texto": "Ya existe o hubo un error: el agente se detiene, dice qué paso y qué vio, y no improvisa."
+        },
+        {
+          "t": "Retoma sin repetir",
+          "texto": "En la siguiente ronda continúa desde donde se quedó. Nada duplicado."
+        }
+      ]
+    }
+  ]
+}

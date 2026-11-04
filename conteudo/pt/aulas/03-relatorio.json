@@ -5,7 +5,7 @@
   "titulo": "O relatório da semana sem abrir o painel",
   "titulo_curto": "Relatório da semana",
   "minutos": 18,
-  "lead": "Toda segunda alguém abre o painel do site, olha o gráfico, copia números e escreve um resumo. É o primeiro trabalho chato ideal: só leitura, repete toda semana e o resultado é um texto que você confere em dois minutos. Você exporta, o agente lê e escreve.",
+  "lead": "Toda segunda alguém olha o painel, copia números e escreve um resumo. É o trabalho chato ideal: só leitura, toda semana, conferido em dois minutos. Tem site? O painel é o Search Console, a ferramenta gratuita do Google que mostra como as pessoas acham o seu site. Não tem? Use a ficha dos números da semana. Você exporta, o agente lê e escreve.",
   "objetivo": "transformar a exportação do Search Console (ou dos números da sua semana) num relatório de até 250 palavras com números conferidos.",
   "competencias": [
     "exportar-dados-do-painel",
@@ -189,7 +189,7 @@
           },
           {
             "rot": "Erros comuns",
-            "html": "<ul><li><b>Anexar a planilha inteira de 1.000 linhas</b> no chat: o modelo pode ler só parte. Mande as abas e as linhas que importam.</li><li><b>Pedir \"análise de SEO completa\"</b>: isso é trabalho para o modelo topo e para você (aula 7). O relatório semanal é rotina.</li><li><b>Não conferir</b> nas primeiras semanas: é ali que você descobre que a ficha precisa de uma regra a mais.</li></ul>"
+            "html": "<ul><li><b>Anexar a planilha inteira de 1.000 linhas</b> no chat: o modelo pode ler só parte. Mande as abas e as linhas que importam.</li><li><b>Pedir \"análise completa do site para aparecer melhor no Google\" (o chamado SEO)</b>: isso é trabalho para o modelo topo e para você (aula 7). O relatório semanal é rotina.</li><li><b>Não conferir</b> nas primeiras semanas: é ali que você descobre que a ficha precisa de uma regra a mais.</li></ul>"
           }
         ]
       }

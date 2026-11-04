@@ -1,0 +1,363 @@
+{
+  "slug": "ficha",
+  "num": 2,
+  "menu": "Sheet",
+  "titulo": "The agent sheet on one page",
+  "titulo_curto": "The agent sheet",
+  "minutos": 15,
+  "lead": "An agent without instructions does what it thinks you want. The sheet is the page that says who it is, what you have, when to work, the steps in order, what never to do, and how to deliver. You write it once and use it every week.",
+  "objetivo": "write the sheet for your first agent with its role, context, steps, rules, and first task, and put it in a chat Project.",
+  "competencias": [
+    "write-agent-sheet",
+    "set-safety-rules",
+    "set-up-chat-project"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "The seven parts of the sheet"
+    },
+    {
+      "icone": "escudo",
+      "t": "The four rules that protect you"
+    },
+    {
+      "icone": "pasta",
+      "t": "Where the sheet lives: Project, Gem, or folder"
+    },
+    {
+      "icone": "play",
+      "t": "The first task that tests the sheet"
+    }
+  ],
+  "hero_alt": "A hand places a printed sheet with short paragraphs and a numbered list inside a kraft paper folder.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The parts of the sheet",
+      "sub": "Click each part. Together, they fit on one page.",
+      "nos": [
+        {
+          "icone": "robo",
+          "titulo": "Role",
+          "sub": "who it is",
+          "detalhe": "One sentence: \"You are my website's weekly report agent.\" The role tells the model what kind of work to do and what tone to use.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "About me: business, tools"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "When",
+          "sub": "trigger",
+          "detalhe": "When the work happens: \"every Monday morning\" or \"when I say 'check contacts.'\" In chat, you call it; in the terminal, you can schedule it for later.",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "trigger phrase"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "Steps",
+          "sub": "in order",
+          "detalhe": "Numbered steps, just as you would do them: what to read, what to compare, what to write. Vague steps lead to vague work.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "1, 2, 3…"
+            }
+          ]
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Rules",
+          "sub": "what never to do",
+          "forte": true,
+          "detalhe": "The four safety rules: read only, draft only, you handle the login, and money goes through you. One more: copy numbers exactly; if you can't find one, write \"couldn't find\" and stop.",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "draft, never send"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Delivery",
+          "sub": "format",
+          "detalhe": "How the result arrives: a table, a text of up to 250 words, a list with “draft ready.” A fixed format makes it quick for you to review.",
+          "itens": [
+            {
+              "icone": "play",
+              "t": "First task: run it once now"
+            }
+          ]
+        }
+      ],
+      "legenda": "Role and About me say who; When and Steps say what; Rules say what not to do; Delivery and First task say how you review it."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The four rules that go in every sheet",
+      "sub": "Copy all four, every time. Click each one.",
+      "passos": [
+        {
+          "titulo": "Read only",
+          "sub": "don't change anything",
+          "texto": [
+            "The agent reads dashboards, spreadsheets, and emails. It doesn't change settings, delete anything, or add anything without your instruction.",
+            "If something needs to change, it describes the change and waits."
+          ],
+          "exemplo": {
+            "rot": "In the sheet",
+            "texto": "Read only. Never change settings, delete, or send anything."
+          }
+        },
+        {
+          "titulo": "Draft only",
+          "sub": "you send",
+          "texto": [
+            "Email, customer replies, payment reminders: everything is saved as a draft. You press Send.",
+            "This is your gate: the moment you read it before it goes out."
+          ],
+          "exemplo": {
+            "rot": "In the sheet",
+            "texto": "Save everything as a draft. I'll send it."
+          }
+        },
+        {
+          "titulo": "Login is yours",
+          "sub": "never the password",
+          "texto": [
+            "The password doesn't go in the chat or the sheet. In chat, you export the file and paste it in; with an agent that uses the browser, it stops at the login screen and asks you to sign in.",
+            "If a login screen appears, it stops and lets you know."
+          ],
+          "exemplo": {
+            "rot": "In the sheet",
+            "texto": "Never ask for or enter a password. Login screen: stop and call me."
+          }
+        },
+        {
+          "titulo": "Money",
+          "sub": "goes through you",
+          "texto": [
+            "Paying, approving, scheduling a payment, or issuing an invoice is always your job. The agent puts the list together; you review and carry it out.",
+            "If a number doesn't match or is illegible, it flags it and skips it. It doesn't guess."
+          ],
+          "exemplo": {
+            "rot": "In the sheet",
+            "texto": "Copy the numbers exactly. If they don't match or can't be read, flag and skip them."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The sheet template and a filled-in example",
+      "sub": "Replace what's inside [brackets] with your own details. One line per field.",
+      "blocos": [
+        {
+          "rot": "Sheet template (copy and fill in)",
+          "icone": "arquivo",
+          "conteudo": "Role: You are my [type of work] agent.\nAbout me: [what the business does, in one line]; tools: [spreadsheet, email, dashboard]; tone: [direct, polite, no jargon].\nWhen: [every Monday morning / when I say \"word\"].\nSteps: 1) [what to read]; 2) [what to compare it with]; 3) [what to write]; 4) [where to deliver it].\nRules: read only, never change or delete anything; save everything as a draft, I'll send it; never ask for a password, login screen = stop and call me; copy numbers exactly, if you can't find it write \"couldn't find\"; if you get stuck or aren't sure, stop and ask.\nDelivery: [table / text up to N words / list with \"draft ready\"].\nFirst task: [run it once now with the data I paste and show me the result]."
+        },
+        {
+          "rot": "Filled-in example (store website report)",
+          "icone": "check",
+          "conteudo": "Role: You are my weekly website report agent.\nAbout me: custom furniture store in Curitiba; tools: Search Console and Google Sheets; tone: direct, no jargon.\nWhen: every Monday morning, when I paste the exported spreadsheets and say \"report\".\nSteps: 1) read this week's and last week's queries and pages; 2) find the 5 with the biggest increase and the 5 with the biggest drop in clicks; 3) say whether the total went up or down and by how much; 4) suggest 3 simple actions for the week.\nRules: read only, never change or delete anything; save everything as a draft, I'll send it; never ask for a password, login screen = stop and call me; copy numbers exactly, if you can't find it write \"couldn't find\"; if you get stuck or aren't sure, stop and ask.\nDelivery: text up to 250 words, with this week's and last week's numbers side by side.\nFirst task: run it now with the spreadsheets I'm going to paste and show me the report."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Where to put it in chat",
+            "html": "<ul><li><b>ChatGPT:</b> create a Project, open the project instructions, and paste the sheet. Every conversation in the project starts with it.</li><li><b>Claude:</b> create a Project and paste the sheet into the project instructions.</li><li><b>Gemini:</b> create a Gem and paste the sheet into the instructions.</li><li>No project? Paste the sheet as the first message in a new conversation each time.</li></ul>"
+          },
+          {
+            "rot": "Terminal (optional)",
+            "html": "<p>In the <code>meus-agentes</code> folder, create a subfolder for each agent (for example <code>relatorio-site</code>) and save the sheet as <code>AGENTS.md</code>, the instruction file Codex reads when it starts. In Claude Code, save the same text as <code>CLAUDE.md</code>. Then just open the terminal in the folder and run <code>codex</code> or <code>claude</code>.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Vague steps</b> (\"analyze the website\"): the agent makes up what to analyze. Say what to read and what to compare.</li><li><b>No delivery format</b>: each week comes in a different format, and you can't review it quickly.</li><li><b>Forgetting \"stop and ask\"</b>: without this rule, the model fills the gap with a guess.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Review your sheet",
+      "sub": "The page checks that all seven fields are filled in and that the Rules include \"draft,\" \"stop,\" and \"exactly.\" This is a check of the format: you decide whether the steps make sense by running the first task.",
+      "arquivo": "ficha-agente.txt",
+      "rot": "Paste your sheet here (one field per line):",
+      "modelo": "Role: ...\nAbout me: ...\nWhen: ...\nSteps: ...\nRules: ...\nDelivery: ...\nFirst task: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "campos": [
+            "Role",
+            "About me",
+            "When",
+            "Steps",
+            "Rules",
+            "Delivery",
+            "First task"
+          ],
+          "min": 12
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "the word draft in Rules",
+              "campo": "Rules",
+              "termos": [
+                "rascunho / rascunhos / draft / drafts / borrador / borradores"
+              ]
+            },
+            {
+              "rot": "in Rules, what to do if you get stuck (stop and ask)",
+              "campo": "Rules",
+              "termos": [
+                "pare / pare e pergunte / parar / pergunte / stop / ask me / detente / pregunta / pregúntame"
+              ]
+            },
+            {
+              "rot": "In the Rules, copy numbers exactly",
+              "campo": "Rules",
+              "termos": [
+                "exatamente / exato / exatos / exactly / exact / exactamente / exacto / exactos"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: sheet with {n} fields and the safety rules",
+      "exemplo": "Role: You are my weekly website report agent.\nAbout me: custom furniture store in Curitiba; tools: Search Console and Google Sheets; tone: direct.\nWhen: every Monday morning, when I paste the spreadsheets and say \"report\".\nSteps: 1) read this week's and last week's queries; 2) find the 5 that rose the most and the 5 that fell the most; 3) say whether the total went up or down; 4) suggest 3 actions.\nRules: read only, never change or delete anything; save everything as a draft, I will send it; never ask for a password; copy numbers exactly, if you can't find something write \"couldn't find\"; if you get stuck, stop and ask.\nDelivery: text up to 250 words with the numbers side by side.\nFirst task: run it now with the spreadsheets I'll paste.",
+      "exemplo_errado": "Role: assistant\nWhen: whenever needed\nSteps: analyze the website and tell me what to do to sell more.\nRules: be quick and thorough.\nDelivery: whatever you think is best."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your first agent sheet",
+      "sub": "Use the \"start now\" task from lesson 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Fill out the sheet",
+          "min": "20 min",
+          "texto": "Copy the template and fill it out for your first task. Write the steps in the order you would do them yourself today.",
+          "pronto": "the checker above responds OK with 7 fields."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Add it to the Project",
+          "min": "10 min",
+          "texto": "Create a Project in ChatGPT or Claude (or a Gem) with the agent's name and paste the sheet into the instructions. In the terminal, save it as AGENTS.md (Codex) or CLAUDE.md (Claude Code) in its own folder.",
+          "pronto": "a new conversation inside the Project answers \"what is your role?\" by repeating the Role from the sheet."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Test a rule",
+          "min": "5 min",
+          "texto": "Inside the Project, deliberately ask: \"send this directly to the client\" or \"what is my password?\".",
+          "pronto": "the agent refuses and reminds you of the rule (draft / login is yours). If it doesn't refuse, reinforce the rule in the sheet and test again."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which of these Steps lines is best?",
+          "opcoes": [
+            "Analyze my website and tell me what to improve.",
+            "Write a complete and polished report.",
+            "Use your experience to find opportunities.",
+            "Read this week's and last week's queries and list the 5 with the biggest drop in clicks."
+          ],
+          "certa": 3,
+          "explica": "A good step says what to read, what to compare, and what to deliver. The others leave the agent to decide on its own what “improve” or “polished” means, and each week you get something different.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "The agent needs to access a dashboard that requires a login. What does the sheet tell it to do?",
+          "opcoes": [
+            "Stop at the login screen and contact you; the password never goes in the conversation.",
+            "Ask for the password just once and save it in the sheet so it won't need to ask again.",
+            "Try signing in with the company email.",
+            "Skip the dashboard and estimate the numbers."
+          ],
+          "certa": 0,
+          "explica": "The login is yours. A password written in the sheet or conversation is stored where it shouldn't be. And estimating numbers is prohibited: if it can't find something, it writes \"couldn't find\".",
+          "ref": "passos"
+        },
+        {
+          "p": "What is the \"First task\" at the end of the sheet for?",
+          "opcoes": [
+            "So the agent remembers what it did last week.",
+            "To run it once right away so you can check that the sheet works before trusting it.",
+            "To schedule the task on the calendar.",
+            "To tell clients, in the very first interaction, that an agent is handling customer service."
+          ],
+          "certa": 1,
+          "explica": "The first task is the sheet's test: run it now, check it, and correct the sheet if needed. Chat doesn't keep a schedule on its own; scheduling comes later.",
+          "ref": "codigo"
+        },
+        {
+          "p": "In chat, where does the sheet go so it applies to every conversation with that agent?",
+          "opcoes": [
+            "In a file on your computer that chat finds and reads on its own when needed.",
+            "In the history of any other conversation.",
+            "In the instructions for a Project (ChatGPT or Claude) or a Gem.",
+            "In the conversation name field."
+          ],
+          "certa": 2,
+          "explica": "Project or Gem instructions apply to every conversation created inside them. Chat doesn't read files on your computer by itself; in the terminal, AGENTS.md or CLAUDE.md in the folder does that job.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "One page",
+          "texto": "Role, about me, when, steps, rules, delivery, and first task. One line each."
+        },
+        {
+          "t": "Four rules",
+          "texto": "Read only, draft only, login is yours, money goes through you. And exact numbers or \"couldn't find\"."
+        },
+        {
+          "t": "Lives in a Project",
+          "texto": "In chat, in the Project or Gem instructions; in the terminal, in the folder’s AGENTS.md or CLAUDE.md."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "What Projects are in Claude (official help, in English)",
+          "href": "https://support.claude.com/en/articles/9517075-what-are-projects",
+          "icone": "pasta"
+        },
+        {
+          "t": "Course: From prompt to role (the role sheet in detail)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/en/",
+          "icone": "caneta"
+        }
+      ]
+    }
+  ]
+}

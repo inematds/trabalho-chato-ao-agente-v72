@@ -53,7 +53,7 @@
           "icone": "lupa",
           "titulo": "Pergunta",
           "sub": "é rotina?",
-          "detalhe": "Três perguntas: é um plano grande ou um sistema novo? Já falhou duas vezes no leve? Pode custar caro (jurídico, dinheiro, cliente grande)? Um \"sim\" manda para o topo. Três \"não\", fica no leve.",
+          "detalhe": "Três perguntas: é um plano grande ou um sistema novo? Já falhou duas vezes no leve? É uma decisão que pode custar caro (pagar, negociar, contrato, cliente grande)? Um \"sim\" manda para o topo. Três \"não\", fica no leve. Ler e somar notas não é decisão: é rotina, fica no leve.",
           "itens": [
             {
               "icone": "alvo",
@@ -78,7 +78,7 @@
           "icone": "cerebro",
           "titulo": "Topo",
           "sub": "difícil",
-          "detalhe": "Planejar um sistema novo, um problema que o leve errou duas vezes, decisão com dinheiro ou contrato, proposta para cliente grande. Mesmo aqui, rascunho e portão continuam valendo.",
+          "detalhe": "Planejar um sistema novo, um problema que o leve errou duas vezes, decidir algo com dinheiro ou contrato (pagar, negociar, aceitar condição), proposta para cliente grande. Mesmo aqui, rascunho e portão continuam valendo.",
           "itens": [
             {
               "icone": "escudo",
@@ -110,7 +110,7 @@
           "titulo": "No chat",
           "sub": "o seletor",
           "texto": [
-            "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto. Em geral há um rápido para o dia a dia e um que \"pensa\" ou raciocina mais.",
+            "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto. A descrição de cada item diz qual é o rápido, para o dia a dia, e qual raciocina mais ou é o mais capaz: o primeiro é o seu leve, o segundo o seu topo. No Claude, o Sonnet é o do dia a dia e o Opus o mais capaz.",
             "Num Projeto, escolha o modelo no começo da conversa. Para subir, abra uma conversa nova no mesmo Projeto com o modelo topo."
           ]
         },
@@ -148,7 +148,7 @@
         {
           "rot": "Regra de roteamento (cole nas instruções)",
           "icone": "arquivo",
-          "conteudo": "Regra de modelo:\nUse o modelo LEVE para a rotina:\n- ler painéis, planilhas e mensagens; copiar dados de um lugar para outro\n- relatórios, resumos e tabelas da semana\n- rascunhos de e-mail e respostas curtas\n- correções pequenas num texto, planilha ou página\n\nPasse para o modelo TOPO quando:\n- for um plano grande ou um sistema novo\n- o leve já errou a mesma tarefa duas vezes\n- envolver contrato, decisão de dinheiro ou cliente grande\n\nQuando passar, me diga em uma linha: \"Mando este para o topo porque ...\".\nNa dúvida, comece no leve e me avise se travar.\nRascunho e portão valem para os dois."
+          "conteudo": "Regra de modelo:\nUse o modelo LEVE para a rotina:\n- ler painéis, planilhas e mensagens; copiar dados de um lugar para outro\n- relatórios, resumos e tabelas da semana\n- rascunhos de e-mail e respostas curtas\n- correções pequenas num texto, planilha ou página\n\nPasse para o modelo TOPO quando:\n- for um plano grande ou um sistema novo\n- o leve já errou a mesma tarefa duas vezes\n- for DECIDIR algo com dinheiro ou contrato (pagar, negociar, aceitar condição) ou proposta para cliente grande\n(ler e somar notas ou boletos é rotina: fica no leve)\n\nQuando passar, me diga em uma linha: \"Mando este para o topo porque ...\".\nNa dúvida, comece no leve e me avise se travar.\nRascunho e portão valem para os dois."
         },
         {
           "rot": "Pedido · classificar as minhas tarefas",
@@ -223,13 +223,13 @@
           "titulo": "E2 · Classifique as suas tarefas",
           "min": "10 min",
           "texto": "Use o pedido \"classificar as minhas tarefas\" com a lista da aula 1. Confira no conferidor.",
-          "pronto": "o conferidor responde OK e cada tarefa com dinheiro ou contrato está como topo ou como \"não delegar\"."
+          "pronto": "o conferidor responde OK e cada tarefa que DECIDE dinheiro ou contrato está como topo ou como \"não delegar\"; ler e somar notas pode ficar no leve."
         },
         {
           "id": "e3",
           "titulo": "E3 · Ache o seu leve e o seu topo",
           "min": "5 min",
-          "texto": "Abra o seletor de modelos da ferramenta que você usa (ou /model no terminal) e anote o nome do leve e do topo do seu plano.",
+          "texto": "Abra o seletor de modelos da ferramenta que você usa (ou /model no terminal), leia a descrição de cada item e anote o nome do leve (o rápido, do dia a dia) e do topo (o que raciocina mais).",
           "pronto": "você tem os dois nomes anotados e rodou o relatório da semana no leve."
         }
       ]
@@ -276,16 +276,16 @@
           "ref": "passos"
         },
         {
-          "p": "No Codex, qual opção do comando escolhe o modelo?",
+          "p": "No chat, como você manda uma tarefa difícil para o topo?",
           "opcoes": [
-            "-o",
-            "-s",
-            "-m",
-            "--skip-git-repo-check"
+            "Escreve \"use o topo\" no meio da conversa, sem trocar nada.",
+            "Abre uma conversa nova no mesmo Projeto e escolhe o modelo topo.",
+            "Cria outro Projeto, sem a ficha, só para essa tarefa.",
+            "Contrata um plano de API à parte para o modelo topo."
           ],
-          "certa": 2,
-          "explica": "<code>-m</code> escolhe o modelo. <code>-o</code> grava a última resposta num arquivo, <code>-s</code> define o que o agente pode mexer (read-only, workspace-write) e <code>--skip-git-repo-check</code> deixa rodar fora de um repositório Git.",
-          "ref": "codigo"
+          "certa": 1,
+          "explica": "O modelo se escolhe no seletor. Uma conversa nova no mesmo Projeto mantém a ficha e as regras, agora com o modelo que raciocina mais. Pedir \"use o topo\" sem trocar não muda o modelo, e API paga não é necessária.",
+          "ref": "passos"
         }
       ]
     },
@@ -299,7 +299,7 @@
         },
         {
           "t": "Topo no difícil",
-          "texto": "Plano grande, duas falhas no leve, dinheiro ou contrato."
+          "texto": "Plano grande, duas falhas no leve, decisão com dinheiro ou contrato."
         },
         {
           "t": "Sobe avisando",

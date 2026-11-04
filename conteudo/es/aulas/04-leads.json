@@ -1,0 +1,258 @@
+{
+  "slug": "leads",
+  "num": 4,
+  "menu": "Contactos",
+  "titulo": "Un contacto nuevo se convierte en borrador, nunca se envía",
+  "titulo_curto": "Contactos nuevos",
+  "minutos": 16,
+  "lead": "Un contacto que llega el viernes y solo recibe una respuesta el martes pierde interés. Leer cada mensaje, anotarlo en la hoja de cálculo y escribir la respuesta es aburrido, pero la respuesta va dirigida al cliente: por eso el agente deja todo listo como borrador y se detiene. Quien lee y presiona enviar eres tú.",
+  "objetivo": "crear el agente que registra cada contacto nuevo en la hoja de cálculo y deja la respuesta como borrador para que la apruebes.",
+  "competencias": [
+    "clasificar-contactos-con-agente",
+    "usar-punto-de-control-de-aprobacion",
+    "evitar-duplicados-y-spam"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Registrar contactos sin duplicarlos"
+    },
+    {
+      "icone": "caneta",
+      "t": "Recibir la respuesta lista como borrador"
+    },
+    {
+      "icone": "portao",
+      "t": "Aprobar o corregir antes de enviar"
+    },
+    {
+      "icone": "x",
+      "t": "Separar el spam con el motivo"
+    }
+  ],
+  "hero_alt": "Una mujer dueña de un pequeño estudio lee mensajes en el celular con atención, con el dedo detenido sobre la pantalla antes de responder.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "El recorrido de un nuevo contacto",
+      "sub": "Haz clic en cada etapa. El punto de control es donde entras tú.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Llega",
+          "sub": "correo electrónico, sitio web",
+          "detalhe": "Mensajes del formulario del sitio web, del correo electrónico o de WhatsApp. En el chat, copia los mensajes nuevos y pégalos en el Proyecto del agente, con la palabra \"contactos\".",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "nombre, correo electrónico, pedido"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "Registra",
+          "sub": "hoja de cálculo",
+          "detalhe": "Para cada contacto: nombre, correo electrónico, empresa, qué pidió, fecha y estado \"nuevo\". Si el nombre ya está en la hoja de cálculo, actualiza la fila en vez de crear otra. El spam va a una lista separada, con el motivo.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "sin duplicar"
+            }
+          ]
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Borrador",
+          "sub": "hasta 120 palabras",
+          "detalhe": "Una respuesta breve y personal: agradece mencionando su nombre, responde el pedido en una o dos frases y ofrece el enlace a tu agenda. Nada de precios, plazos o descuentos que no hayas escrito en la ficha.",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "guardado, no enviado"
+            }
+          ]
+        },
+        {
+          "icone": "portao",
+          "titulo": "Punto de control",
+          "sub": "tú lees",
+          "forte": true,
+          "detalhe": "El agente se detiene aquí. Lees cada borrador: lo apruebas, corriges o descartas. Este es el único punto en que algo puede salir con tu nombre.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "aprobar o corregir"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Envía",
+          "sub": "tú",
+          "detalhe": "Copias el borrador aprobado y lo envías por correo electrónico o WhatsApp. El agente nunca envía.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "tu nombre, tu decisión"
+            }
+          ]
+        }
+      ],
+      "legenda": "El agente hace el trabajo aburrido (leer, anotar, escribir); lo que se comunica con el cliente pasa por el punto de control."
+    },
+    {
+      "tipo": "simportao",
+      "titulo": "Simula el punto de control",
+      "sub": "Ejecuta el agente, lee el borrador que se detuvo en el punto de control y decide.",
+      "arquivo": "Rascunho para Ana Souza",
+      "fases": [
+        "Borradores",
+        "Punto de control",
+        "Envío",
+        "Hoja de cálculo"
+      ],
+      "rascunho": "¡Hola, Ana! Gracias por contactarnos. Entregamos tu cocina a medida en 10 días y, si contratas esta semana, obtienes un 20% de descuento. ¿Quieres agendar una visita? [tu enlace a la agenda]",
+      "corrigido": "¡Hola, Ana! Gracias por contactarnos. El plazo de la cocina depende del proyecto y te explico todo en una conversación de 15 minutos. ¿Quieres agendar? [tu enlace a la agenda]",
+      "rot": {
+        "rodar": "Ejecutar el agente",
+        "aprovar": "Aprobar el borrador",
+        "reprovar": "Rechazar con corrección",
+        "sempor": "Ejecutar sin punto de control",
+        "zerar": "Volver a empezar"
+      },
+      "msg": {
+        "inicio": "Pegaste tres contactos nuevos en el Proyecto. Haz clic en \"Ejecutar el agente\".",
+        "portao": "El agente registró los contactos, escribió los borradores y SE DETUVO en el punto de control. Lee el borrador de abajo antes de decidir.",
+        "reprovado": "Lo rechazaste con la corrección \"sin plazo ni descuento que no haya prometido\". El agente lo reescribió y se detuvo de nuevo en el punto de control.",
+        "aprovado_ruim": "Aprobado sin leer bien: la clienta recibió un plazo y un descuento que nunca ofreciste. Para eso servía el punto de control.",
+        "aprovado_bom": "Aprobado después de la corrección: enviaste la respuesta correcta y el contacto quedó registrado en la hoja de cálculo.",
+        "sem_portao": "Sin punto de control, el agente envió el mensaje por su cuenta. La promesa de 10 días y 20% le llegó a la clienta antes de que la vieras."
+      },
+      "legenda": "Simulación ilustrativa en el navegador: no se envía nada. El error en el borrador es intencional."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La ficha del agente de contactos y un ensayo",
+      "sub": "Reemplaza lo que está entre [corchetes]. Los contactos de ejemplo son inventados.",
+      "blocos": [
+        {
+          "rot": "Ficha · agente de nuevos contactos",
+          "icone": "arquivo",
+          "conteudo": "Rol: Eres mi agente de nuevos contactos.\nSobre mí: [qué vendo, en una línea]; hoja de contactos con las columnas nombre, correo electrónico, empresa, pedido, fecha, situación; mi enlace para agendar: [tu enlace]; tono: [amable, breve, sin jerga].\nCuándo: cuando pegue los mensajes nuevos y diga \"contactos\".\nPasos: 1) lee cada mensaje y extrae el nombre, el correo electrónico, la empresa y lo que pidió la persona; 2) prepara las filas de la hoja con la fecha de hoy y la situación \"nuevo\"; 3) si el nombre o el correo electrónico ya está en la hoja que pegué, marca \"actualizar\" en vez de crear otra fila; 4) escribe un borrador de respuesta de hasta 120 palabras para cada persona: dale las gracias por su nombre, responde el pedido en una o dos frases y ofrece el enlace para agendar.\nReglas: guarda todo como borrador, yo lo envío; nunca prometas precios, plazos ni descuentos que no estén en esta ficha; los mensajes que parezcan spam van a la lista \"ignorados\" con el motivo; copia los nombres y correos electrónicos exactamente; si tienes dudas, detente y pregunta.\nEntrega: 1) las filas nuevas de la hoja; 2) los borradores, uno por contacto; 3) la lista \"ignorados\".\nPrimera tarea: ejecútalo ahora con los mensajes que voy a pegar."
+        },
+        {
+          "rot": "Ensayo · tres mensajes y la hoja actual",
+          "icone": "chat",
+          "conteudo": "contactos\n\nHoja actual:\nRoberto Lima | roberto@exemplo.com | Lima Advocacia | clóset | 28/10 | nuevo\n\nMensajes nuevos:\n1) Ana Souza (ana@exemplo.com), Ana Decor: \"¿Cuál es el plazo de entrega de una cocina a medida?\"\n2) Roberto Lima (roberto@exemplo.com): \"Te escribí la semana pasada. ¿Todavía quieren hacer el presupuesto del clóset?\"\n3) promo@exemplo.com: \"¡¡GANA 10 MIL SEGUIDORES HOY!!! Haz clic aquí\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Qué debe salir",
+            "html": "<ul><li><b>Ana Souza</b>: fila nueva, situación \"nuevo\", borrador sin inventar plazos.</li><li><b>Roberto Lima</b>: marcado como \"actualizar\", no como una segunda fila.</li><li><b>promo@exemplo.com</b>: en la lista \"ignorados\", con el motivo.</li><li>Dos borradores, ninguno enviado.</li></ul>"
+          },
+          {
+            "rot": "Terminal (opcional)",
+            "html": "<p>En la carpeta <code>meus-agentes/contatos</code>, con la ficha en el <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), guarda los mensajes en <code>novos.txt</code> y la hoja en <code>contatos.csv</code>. Pide: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o rascunhos.md \"contactos: sigue el AGENTS.md\"</code>. El modo <code>read-only</code> no permite que el agente cambie la hoja: solo escribe la respuesta, que tú revisas.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Dejar que el agente \"responda solo los casos fáciles\"</b>: lo fácil de hoy puede ser la promesa equivocada de mañana.</li><li><b>No pegar la hoja actual</b>: sin ella, el agente no puede saber que Roberto ya está.</li><li><b>Borrar el spam sin revisarlo</b>: la lista de ignorados con el motivo te permite detectar a un cliente marcado por error.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el agente de contactos",
+      "sub": "Primero, un ensayo; después, con mensajes reales.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Crea el Proyecto",
+          "min": "10 min",
+          "texto": "Crea el Proyecto \"Nuevos contactos\" (o el Gem) con la ficha completa: qué vendes, las columnas de tu hoja y tu enlace para agendar.",
+          "pronto": "la ficha pasa el verificador de la clase 2 (7 campos y las reglas de seguridad)."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · El ensayo",
+          "min": "10 min",
+          "texto": "Pega el ensayo con los tres mensajes. Revisa cada elemento de la entrega.",
+          "pronto": "hay una fila nueva para Ana, \"actualizar\" para Roberto, el spam en \"ignorados\" con el motivo y ningún borrador con un plazo o descuento."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Una semana real",
+          "min": "15 min",
+          "texto": "Úsalo con contactos reales durante una semana. Lee cada borrador antes de enviarlo y anota cuántos corregiste.",
+          "pronto": "tienes el número de borradores aprobados sin cambios y el de los que corregiste. Cada corrección duplicada se convirtió en una regla de la ficha."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El borrador dice \"entregamos en 10 días con un 20% de descuento\", pero nunca ofreciste eso. ¿Qué haces en el punto de control?",
+          "opcoes": [
+            "Aprobar: al cliente le gustan los descuentos.",
+            "Reprobar con la corrección y agregar a la ficha la regla de no prometer precios, plazos ni descuentos.",
+            "Enviar y corregir después por teléfono.",
+            "Borrar el contacto de la hoja."
+          ],
+          "certa": 1,
+          "explica": "El punto de control existe para eso: detectar la promesa equivocada antes de que salga. Y la corrección que se repite se convierte en una regla de la ficha para que no vuelva a aparecer la semana siguiente.",
+          "ref": "simportao"
+        },
+        {
+          "p": "El mismo cliente volvió a escribir. ¿Cómo sabe el agente que no debe crear otra fila?",
+          "opcoes": [
+            "Recuerda por sí solo todas las conversaciones anteriores con ese cliente, en cualquier Proyecto o conversación que hayas abierto.",
+            "Le pregunta al cliente si ya había escrito antes.",
+            "No tiene forma de saberlo; duplicar es inevitable.",
+            "Pegas la hoja actual junto con el mensaje y la ficha indica que debe marcar \"actualizar\" cuando el nombre o el correo electrónico ya exista."
+          ],
+          "certa": 3,
+          "explica": "En el chat, el agente solo sabe lo que está en la conversación y en la ficha. Si pegas la hoja actual, compara y marca \"actualizar\". Sin ella, duplica.",
+          "ref": "codigo"
+        },
+        {
+          "p": "¿Cuál de estas tareas NO hace el agente de contactos?",
+          "opcoes": [
+            "Separar el spam e indicar el motivo.",
+            "Escribir la respuesta a cada contacto como borrador.",
+            "Enviar la respuesta aprobada desde tu correo electrónico.",
+            "Preparar las filas nuevas de la hoja."
+          ],
+          "certa": 2,
+          "explica": "Enviar te corresponde a ti. El agente lee, anota, escribe el borrador y se detiene en el punto de control. Por eso la tarea tiene un riesgo medio, no alto.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La lección en tres frases",
+      "itens": [
+        {
+          "t": "El trabajo aburrido es del agente",
+          "texto": "Leer, anotar en la hoja sin duplicar y escribir la respuesta."
+        },
+        {
+          "t": "El punto de control es tuyo",
+          "texto": "Todo lo que se comunica con el cliente sale como borrador y pasa por ti."
+        },
+        {
+          "t": "La corrección se convierte en regla",
+          "texto": "El error que corregiste dos veces se agrega a la ficha y no vuelve a aparecer."
+        }
+      ]
+    }
+  ]
+}

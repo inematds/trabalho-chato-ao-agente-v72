@@ -1,0 +1,327 @@
+{
+  "slug": "roteamento",
+  "num": 7,
+  "menu": "Modelos",
+  "titulo": "Modelo ligero para la rutina, superior para lo difícil",
+  "titulo_curto": "Ligero o superior",
+  "minutos": 15,
+  "lead": "No llamas a tu socio con más experiencia para copiar una hoja de cálculo. Con los modelos pasa lo mismo: el ligero es rápido y consume menos del límite de tu suscripción, y se encarga de la rutina; el superior piensa más despacio y se reserva para el plan grande, el problema difícil y lo que puede salir caro. La regla de enrutamiento lo define una sola vez.",
+  "objetivo": "escribir la regla que decide qué modelo hace cada tarea y clasificar tus tareas como ligeras o superiores.",
+  "competencias": [
+    "elegir-modelo-por-tarea",
+    "escribir-regla-de-enrutamiento",
+    "escalar-con-justificacion"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "Quién es el ligero y quién es el superior en tus herramientas"
+    },
+    {
+      "icone": "lista",
+      "t": "Qué va con cada uno"
+    },
+    {
+      "icone": "seta",
+      "t": "Cuándo subir al superior y avisar por qué"
+    },
+    {
+      "icone": "terminal",
+      "t": "Elegir el modelo en el chat y en la terminal"
+    }
+  ],
+  "hero_alt": "Dos mesas, una al lado de la otra: a la izquierda, un robot humanoide de cuerpo blanco mate hace tareas sencillas con papeles; a la derecha, una persona analiza un documento importante con una lupa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La regla en una figura",
+      "sub": "Haz clic en cada parte.",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Tarea",
+          "sub": "llega",
+          "detalhe": "Cualquier tarea de tus fichas: informes, contactos, notas, cliente nuevo. O una pregunta suelta.",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "de la ficha o suelta"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Pregunta",
+          "sub": "¿es rutinaria?",
+          "detalhe": "Tres preguntas: ¿es un plan grande o un sistema nuevo? ¿Ya falló dos veces con el ligero? ¿Puede salir caro (legal, dinero, cliente grande)? Un «sí» la envía al superior. Si las tres son «no», se queda con el ligero.",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "3 preguntas"
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Ligero",
+          "sub": "rutina",
+          "forte": true,
+          "detalhe": "Leer, resumir, copiar entre hojas de cálculo, informe de la semana, borrador de correo, pequeña corrección en un texto o una página. Es la mayor parte del trabajo aburrido.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "rápido, consume menos"
+            }
+          ]
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Superior",
+          "sub": "difícil",
+          "detalhe": "Planear un sistema nuevo, un problema que el ligero haya fallado dos veces, una decisión sobre dinero o un contrato, una propuesta para un cliente grande. Incluso aquí, el borrador y el punto de control siguen vigentes.",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "piensa más, consume más"
+            }
+          ]
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Avisa",
+          "sub": "en una línea",
+          "detalhe": "Cuando escala, el agente dice: «Envío esto al superior porque…». Ves la decisión y corriges la regla si está escalando demasiado o muy poco.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "«porque…»"
+            }
+          ]
+        }
+      ],
+      "legenda": "Si tienes dudas, empieza con el ligero y avisa si se bloquea. Escalar es fácil; lo caro es usar el superior para todo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Quién es quién en tus herramientas",
+      "sub": "Los nombres cambian con el tiempo. Consulta tu lista de modelos.",
+      "passos": [
+        {
+          "titulo": "En el chat",
+          "sub": "el selector",
+          "texto": [
+            "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto. Por lo general, hay uno rápido para el día a día y otro que «piensa» o razona más.",
+            "En un Proyecto, elige el modelo al comienzo de la conversación. Para subir al superior, abre una conversación nueva en el mismo Proyecto con ese modelo."
+          ]
+        },
+        {
+          "titulo": "En Codex",
+          "sub": "/model y -m",
+          "texto": [
+            "En Codex, <code>/model</code> muestra la lista de tu plan. En la lista del 04/11/2026: <code>gpt-6-luna</code> (rápido y económico, para tareas más sencillas), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (el de uso general) y <code>gpt-6-astra</code> (para el trabajo más exigente).",
+            "En el comando, el modelo va en <code>-m</code>."
+          ]
+        },
+        {
+          "titulo": "En Claude Code",
+          "sub": "/model y --model",
+          "texto": [
+            "En Claude Code, <code>/model</code> cambia el modelo de la sesión y <code>--model</code> lo elige al iniciar: <code>sonnet</code> para lo habitual, <code>opus</code> para lo difícil.",
+            "Los alias siempre apuntan a la versión más nueva de cada familia."
+          ]
+        },
+        {
+          "titulo": "Por qué importa",
+          "sub": "el límite",
+          "texto": [
+            "Con la suscripción, el modelo superior suele consumir más de tu límite de uso y tardar más en responder.",
+            "Dejar lo habitual en el modelo ligero mantiene el límite disponible para cuando de verdad necesitas el superior."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "La regla para pegar",
+      "sub": "En el chat, en las instrucciones del Proyecto; en la terminal, al final de AGENTS.md o CLAUDE.md.",
+      "blocos": [
+        {
+          "rot": "Regla de enrutamiento (pégala en las instrucciones)",
+          "icone": "arquivo",
+          "conteudo": "Regla de modelo:\nUsa el modelo LIGERO para lo habitual:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correo y respuestas breves\n- pequeñas correcciones en un texto, hoja de cálculo o página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya haya cometido el mismo error dos veces\n- implique un contrato, una decisión de dinero o un cliente importante\n\nCuando pases, dime en una línea: \"Paso esto al superior porque ...\".\nSi tienes dudas, empieza con el ligero y avísame si se atasca.\nEl borrador y el punto de control sirven para ambos."
+        },
+        {
+          "rot": "Pedido · clasifica mis tareas",
+          "icone": "chat",
+          "conteudo": "Usa la regla de modelo anterior. Aquí está mi lista de tareas (clase 1).\nDevuelve una línea por tarea, con este formato:\nN | tarea | ligero o superior | motivo en pocas palabras"
+        },
+        {
+          "rot": "Terminal (opcional) · el mismo pedido en dos niveles",
+          "icone": "terminal",
+          "conteudo": "# rutina en el modelo ligero\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"relatório: siga o AGENTS.md\"\nclaude -p --model sonnet \"relatório: siga o CLAUDE.md\" > relatorio.md\n\n# difícil en el modelo superior\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"monte o plano do novo processo de orçamentos\"\nclaude -p --model opus \"monte o plano do novo processo de orçamentos\" > plano.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Ejemplo de clasificación",
+            "html": "<pre>1 | Informe semanal del sitio | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Recibos y cuentas por pagar | ligero | leer y sumar; superior si no puede leer el PDF\n4 | Lista de verificación para un cliente nuevo | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo</pre>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Superior para todo \"por si acaso\"</b>: la rutina se vuelve lenta y el límite se acaba el miércoles.</li><li><b>Ligero para el contrato</b>: ahorro equivocado. Una decisión costosa va al superior y a ti.</li><li><b>Subir sin avisar</b>: sin la línea \"porque…\", no sabes si la regla está funcionando.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tu clasificación",
+      "sub": "Pega la lista que devolvió el agente (o la tuya). La página comprueba que cada línea tenga un solo nivel, ligero o superior. Si el nivel es correcto, lo decides tú con las tres preguntas.",
+      "arquivo": "modelos.txt",
+      "rot": "Pega aquí tu lista clasificada (una línea numerada por tarea):",
+      "modelo": "1 | tarea | ligero | motivo",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "nivel (ligero o superior)",
+              "um_so": true,
+              "termos": [
+                "leve / light / ligero / liviano",
+                "topo / top / tope / superior"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tareas con el nivel definido",
+      "exemplo": "1 | Informe semanal del sitio | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Recibos y cuentas por pagar | ligero | leer y sumar\n4 | Lista de verificación para un cliente nuevo | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo",
+      "exemplo_errado": "1 | Informe semanal del sitio | ligero\n2 | Contactos nuevos | depende\n3 | Recibos y cuentas por pagar | ligero o superior\n4 | Cliente nuevo | superior | el ligero también sirve"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la regla en tu Proyecto",
+      "sub": "Una regla, cinco tareas, una prueba.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Pega la regla",
+          "min": "5 min",
+          "texto": "Pega la regla de enrutamiento en las instrucciones de los Proyectos de tus agentes (o al final de AGENTS.md / CLAUDE.md).",
+          "pronto": "Al preguntar \"¿qué modelo usarías para el informe de la semana?\", el agente responde ligero y explica el motivo."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Clasifica tus tareas",
+          "min": "10 min",
+          "texto": "Usa el pedido \"clasifica mis tareas\" con la lista de la clase 1. Revísala en el verificador.",
+          "pronto": "El verificador responde OK y cada tarea relacionada con dinero o contratos está como superior o como \"no delegar\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Encuentra tu modelo ligero y tu modelo superior",
+          "min": "5 min",
+          "texto": "Abre el selector de modelos de la herramienta que usas (o /model en la terminal) y anota el nombre del modelo ligero y del superior de tu plan.",
+          "pronto": "Tienes anotados los dos nombres y ejecutaste el informe de la semana con el ligero."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estas tareas va al modelo superior?",
+          "opcoes": [
+            "Resumir los contactos nuevos de la semana en una tabla sencilla.",
+            "Copiar los recibos a la hoja de cálculo de cuentas.",
+            "Escribir el borrador de bienvenida para el cliente.",
+            "Diseñar desde cero el proceso de cotizaciones de la empresa."
+          ],
+          "certa": 3,
+          "explica": "Un proceso nuevo es un plan grande: superior. Las otras tres son tareas rutinarias de leer, copiar y escribir borradores, el terreno del modelo ligero.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "El modelo ligero se equivocó dos veces en el mismo cálculo del informe. Según la regla:",
+          "opcoes": [
+            "Intentar cinco veces más con el modelo ligero.",
+            "Pasar esta tarea al modelo superior y avisar «porque el modelo ligero se equivocó dos veces».",
+            "Dejar de usar agentes para los informes.",
+            "Cambiar todas las tareas de todos los agentes al modelo superior, por si acaso."
+          ],
+          "certa": 1,
+          "explica": "Dos fallas en la misma tarea son uno de los motivos para subir de nivel. Sube solo esa tarea, con la frase «porque…», y las demás siguen con el modelo ligero.",
+          "ref": "codigo"
+        },
+        {
+          "p": "¿Por qué no usar el modelo superior para todo, si es mejor?",
+          "opcoes": [
+            "Porque el modelo superior no sabe hacer tareas simples.",
+            "Porque el modelo superior no acepta la ficha en las instrucciones.",
+            "Porque suele consumir más del límite de tu suscripción y tardar más, sin aportar nada en las tareas rutinarias.",
+            "Porque el modelo superior solo funciona en la terminal."
+          ],
+          "certa": 2,
+          "explica": "El modelo superior hace la tarea simple, pero tarda más y consume más de tu límite. Para las tareas rutinarias, el modelo ligero entrega el mismo resultado; el modelo superior queda libre para lo que sí lo necesita.",
+          "ref": "passos"
+        },
+        {
+          "p": "En Codex, ¿qué opción del comando elige el modelo?",
+          "opcoes": [
+            "-o",
+            "-s",
+            "-m",
+            "--skip-git-repo-check"
+          ],
+          "certa": 2,
+          "explica": "<code>-m</code> elige el modelo. <code>-o</code> guarda la última respuesta en un archivo, <code>-s</code> define lo que el agente puede modificar (read-only, workspace-write) y <code>--skip-git-repo-check</code> permite ejecutar fuera de un repositorio Git.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La lección en tres frases",
+      "itens": [
+        {
+          "t": "Modelo ligero para las tareas rutinarias",
+          "texto": "Leer, resumir, copiar y preparar borradores: rápido y consumiendo menos de tu límite."
+        },
+        {
+          "t": "Modelo superior para lo difícil",
+          "texto": "Un plan grande, dos fallas con el modelo ligero, dinero o un contrato."
+        },
+        {
+          "t": "Sube de nivel y avisa",
+          "texto": "«Paso este al modelo superior porque…»: así compruebas si la regla funciona."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Curso: Claude como gestor de agentes (costo y varias sesiones)",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/es/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Codex CLI (documentación oficial, en inglés)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

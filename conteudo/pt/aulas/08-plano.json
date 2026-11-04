@@ -47,13 +47,13 @@
           "passo": "Ache a tarefa (aula 1), escreva a ficha (aula 2) e rode. Confira todos os resultados desta semana, sem exceção."
         },
         {
-          "aula": "relatorio",
-          "icone": "lupa",
+          "aula": "leads",
+          "icone": "portao",
           "quando": "Semana 2",
-          "titulo": "Confiança",
-          "sub": "amostra",
-          "saida": "Tarefa 1 na rotina, conferida por amostra.",
-          "passo": "Se as três primeiras rodadas bateram, passe a conferir por amostra (dois números). Ponha o lembrete no calendário e acrescente a tarefa 2."
+          "titulo": "Tarefa 2",
+          "sub": "com portão",
+          "saida": "Tarefa 1 na rotina e contatos com portão.",
+          "passo": "A tarefa 1 continua conferida inteira (numa tarefa semanal, as três primeiras rodadas são três semanas). Ponha o lembrete no calendário e acrescente a tarefa 2: contatos (aula 4), que roda várias vezes por semana."
         },
         {
           "aula": "roteamento",
@@ -61,22 +61,22 @@
           "quando": "Semana 3",
           "titulo": "Roteamento",
           "sub": "leve e topo",
-          "saida": "Regra de modelo e tarefas 3 e 4.",
-          "passo": "Cole a regra de roteamento nos Projetos e entregue as tarefas 3 e 4: contatos e notas (aulas 4 e 5), sempre com o portão."
+          "saida": "Regra de modelo e tarefa 3.",
+          "passo": "Cole a regra de roteamento nos Projetos e entregue a tarefa 3: notas e boletos (aula 5). A tarefa 1 completa as três rodadas e passa para a amostra."
         },
         {
           "aula": "cliente",
           "icone": "camadas",
           "quando": "Semana 4",
           "titulo": "Equipe",
-          "sub": "4 a 5 agentes",
+          "sub": "4 agentes",
           "saida": "Pequena equipe e revisão semanal.",
-          "passo": "Checklist de cliente novo (aula 6). Uma vez por semana, leia o diário, ajuste uma ficha e decida qual tarefa entra a seguir."
+          "passo": "Tarefa 4: checklist de cliente novo (aula 6). Uma vez por semana, leia o diário, ajuste uma ficha e decida qual tarefa entra a seguir."
         }
       ],
       "resultado": {
         "titulo": "Ao fim dos 30 dias",
-        "texto": "Quatro ou cinco tarefas chatas fora da sua mão, cada uma com ficha, portão e diário.",
+        "texto": "Quatro tarefas chatas fora da sua mão, cada uma com ficha, portão e diário.",
         "total": "4 semanas"
       },
       "legenda": "Errou? Aquela tarefa volta a ser conferida inteira até três rodadas seguidas baterem."
@@ -90,7 +90,7 @@
           "titulo": "Tudo",
           "sub": "3 primeiras rodadas",
           "texto": [
-            "Nas três primeiras rodadas de cada agente, confira o resultado inteiro: cada número, cada rascunho.",
+            "Nas três primeiras rodadas de cada agente, confira o resultado inteiro: cada número, cada rascunho. Numa tarefa semanal são três semanas; numa diária, três dias.",
             "Cada coisa que você corrigir vira uma regra na ficha."
           ]
         },

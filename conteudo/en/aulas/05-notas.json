@@ -1,0 +1,270 @@
+{
+  "slug": "notas",
+  "num": 5,
+  "menu": "Notes",
+  "titulo": "Invoice and bill: you handle the money",
+  "titulo_curto": "Invoices and bills",
+  "minutos": 16,
+  "lead": "Opening each vendor invoice, copying the number, due date, and amount into the accounts payable spreadsheet is one of the most tedious tasks of the week. The agent can read and add them up, flag duplicate invoices, and find totals that don't match. What it never does is pay: the list comes out as a draft, and the bank is yours.",
+  "objetivo": "have the agent read invoices and bills and put together the accounts payable list, flagging duplicate invoices and totals that don't match.",
+  "competencias": [
+    "extract-data-from-invoices",
+    "check-sums-with-agent",
+    "keep-payment-with-owner"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "Pull the data from each invoice or bill"
+    },
+    {
+      "icone": "grafico",
+      "t": "Check whether the line items add up to the total"
+    },
+    {
+      "icone": "fila",
+      "t": "Catch an invoice that arrived twice"
+    },
+    {
+      "icone": "cadeado",
+      "t": "Always leave payment to you"
+    }
+  ],
+  "hero_alt": "A hand belonging to someone around 55 checks an amount on a paper invoice, beside bills, a calculator, and a laptop.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From a pile of invoices to an accounts list",
+      "sub": "Click each step.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Read",
+          "sub": "each invoice",
+          "detalhe": "For each invoice or bill, the agent pulls out: vendor, document number, date, due date, line item amounts, and total. In the chat, you attach the PDFs or paste the text; a photo works too if it's clear.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "vendor, number, due date, total"
+            }
+          ]
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Add up",
+          "sub": "items = total?",
+          "detalhe": "It adds up the line items and compares them with the printed total. If they don't match, or if a number is unreadable, the invoice is marked \"doesn't match\" and left off the list. It won't change the amount on its own.",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "doesn't match → left off"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Duplicate?",
+          "sub": "same number",
+          "detalhe": "Has the same invoice number from the same vendor already appeared? It's a duplicate: the vendor resent it, or it's already in the spreadsheet. Flag it and skip it.",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "same vendor + number"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "List",
+          "sub": "draft",
+          "forte": true,
+          "detalhe": "The accounts payable table, sorted by due date, with the week's total. It's a draft: you review it before copying it to the official spreadsheet.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "due date order"
+            }
+          ]
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Pay",
+          "sub": "only you",
+          "detalhe": "You handle payments, approvals, and scheduling in the bank. The agent never gets your bank password or access to your financial system.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "the bank is yours"
+            }
+          ]
+        }
+      ],
+      "legenda": "You always review money going out. The agent only takes care of typing and adding things up."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The sheet and four sample invoices",
+      "sub": "The invoices are made up. Two have a problem on purpose.",
+      "blocos": [
+        {
+          "rot": "Sheet · invoice and bill agent",
+          "icone": "arquivo",
+          "conteudo": "Role: You are my accounts payable agent.\nAbout me: [what the company does]; frequent vendors and categories: [Lumberyard = raw materials; Accounting = services].\nWhen: when I attach or paste the week's invoices and bills and say \"invoices\".\nSteps: 1) for each document, pull out the vendor, number, date, due date, line items, and total; 2) add up the line items and compare them with the printed total; 3) check whether the same vendor and number have already appeared; 4) make a table with: vendor, number, due date, total, category, status; 5) add up the week's total using only invoices with no issues.\nRules: copy the numbers exactly; if the sum doesn't match or a number is unreadable, mark it \"doesn't match\" and leave it out of the total; for a duplicate invoice, mark it \"duplicate\" and leave it out of the total; never pay, approve, or schedule a payment; never ask for a bank password; everything is a draft for me to review; if you're unsure, stop and ask.\nDelivery: the table in due date order and, below it, the week's total and a list of anything left out, with the reason.\nFirst task: run this now with the invoices I'll paste."
+        },
+        {
+          "rot": "Practice · four documents",
+          "icone": "lista",
+          "conteudo": "invoices\n\nDocument 1 · Invoice 4471 · Madeireira Pinho Forte · issued 27/10 · due 10/11\n  MDF panels: 1.100,00 · shipping: 150,00 · TOTAL: 1.250,00\n\nDocument 2 · Invoice 5120 · Ferragens Silva · issued 28/10 · due 12/11\n  hinges: 480,00 · handles: 320,00 · TOTAL: 900,00\n\nDocument 3 · Invoice 4471 · Madeireira Pinho Forte · issued 27/10 · due 10/11\n  MDF panels: 1.100,00 · shipping: 150,00 · TOTAL: 1.250,00\n\nDocument 4 · Bill 311 · Contabilidade Rocha · due 15/11\n  November accounting fees · TOTAL: 650,00"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What the output should include",
+            "html": "<ul><li>Invoice 4471 (Madeireira): 1.250,00, due 10/11, ok.</li><li>Bill 311 (Contabilidade): 650,00, due 15/11, ok.</li><li>Invoice 5120 (Ferragens): <b>doesn't match</b>. The items add up to 800,00, but the total says 900,00. Left out of the total.</li><li>Document 3: invoice 4471 is a <b>duplicate</b>. Left out of the total.</li><li>Week's total: <b>1.900,00</b>.</li></ul><p>These calculations were done by hand using the example. You'll need to resolve invoice 5120 with the vendor; the agent doesn't decide which amount is correct.</p>"
+          },
+          {
+            "rot": "Terminal (optional)",
+            "html": "<p>In the <code>meus-agentes/notas</code> folder, with the agent sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), put the week’s PDFs in a <code>semana</code> subfolder and run <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>. If a PDF is a scanned image and the light model can’t read it, it should say \"não consegui ler\" (that’s the rule), and you send it to the top model or type it out.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Letting the agent \"fix\" the total</b>: it can't know whether the line item or the total is wrong. You resolve it with the vendor.</li><li><b>Sending only the total, without the line items</b>: without the line items, it has nothing to add up.</li><li><b>Giving it bank access \"just to read the statement\"</b>: that's outside this course's scope. Export the statement if you need to.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check the agent's table",
+      "sub": "Run the agent with the four sample invoices and paste the table it returned here. The page looks for the duplicate invoice, the one that doesn't match, and the correct total for the week.",
+      "arquivo": "contas.txt",
+      "rot": "Paste the table and total returned by the agent here:",
+      "modelo": "Vendor | Number | Due date | Total | Status",
+      "regras": [
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "invoice 5120",
+              "termos": [
+                "5120"
+              ]
+            },
+            {
+              "rot": "the word duplicate (or repeated) for the invoice that came in twice",
+              "termos": [
+                "repetida / repetido / duplicada / duplicado / duplicate / duplicated / repeated"
+              ]
+            },
+            {
+              "rot": "the mark that says it doesn't match",
+              "termos": [
+                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn't add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
+              ]
+            },
+            {
+              "rot": "the correct weekly total (1,900.00)",
+              "termos": [
+                "1.900 / 1900 / 1,900"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: duplicate, mismatch, and weekly total are correct",
+      "exemplo": "Pinho Forte Lumber | 4471 | 10/11 | 1,250.00 | raw materials | ok\nRocha Accounting | 311 | 11/15 | 650.00 | services | ok\nWeekly total: 1,900.00\nExcluded from the total:\n- Silva Hardware 5120: doesn't match (items add up to 800.00, printed total is 900.00)\n- Pinho Forte Lumber 4471 (document 3): duplicate",
+      "exemplo_errado": "Pinho Forte Lumber | 4471 | 10/11 | 1,250.00\nSilva Hardware | 5120 | 12/11 | 900.00\nPinho Forte Lumber | 4471 | 10/11 | 1,250.00\nRocha Accounting | 311 | 11/15 | 650.00\nWeekly total: 4,050.00"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the week's bills",
+      "sub": "Try it with the example, then with your own invoices.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The practice run",
+          "min": "10 min",
+          "texto": "Create the \"Accounts payable\" Project with the agent sheet, paste in the four sample invoices, and say \"invoices.\" Paste the response into the checker.",
+          "pronto": "the checker replies OK: 5120 marked as doesn't match, 4471 as duplicate, and total of 1,900.00."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Your invoices",
+          "min": "20 min",
+          "texto": "Attach real invoices and bills from one week. Before copying them into your spreadsheet, check two totals on paper.",
+          "pronto": "both totals checked against the table, and the agent has not paid any invoice."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The category list",
+          "min": "5 min",
+          "texto": "Add your five most frequent vendors to the agent sheet, along with each one's category.",
+          "pronto": "in the next round, invoices from those vendors have the right category without you having to ask."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "On invoice 5120, the items add up to 800.00, but the printed total says 900.00. What should the agent do?",
+          "opcoes": [
+            "Use 800.00, the correct sum.",
+            "Use 900.00, the printed amount.",
+            "Mark it as \"doesn't match,\" leave it out of the total, and tell you.",
+            "Ask the vendor for a 100.00 discount to make up the difference."
+          ],
+          "certa": 2,
+          "explica": "The agent doesn't know where the error is: in an item or in the total. You handle it with the vendor. Its job is to find the difference and keep it out of the calculation.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "With the four sample invoices, what is the total to pay this week?",
+          "opcoes": [
+            "4,050.00 (everything added together)",
+            "2.800,00",
+            "1.900,00",
+            "3.150,00"
+          ],
+          "certa": 2,
+          "explica": "Only the invoices with no issues count: 1,250.00 (4471) + 650.00 (bill 311) = 1,900.00. 5120 doesn't match, and document 3 is a duplicate of 4471. 4,050.00 is the sum of everything, without checking.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Why should the invoice agent never get your bank password, not even \"just to read\"?",
+          "opcoes": [
+            "Because the light model doesn't know how to use a bank.",
+            "Because the rule \"money goes through you\" means only you can pay and approve; you can read the statement by exporting it.",
+            "Because the bank blocks all AI access.",
+            "Because the password can only go in AGENTS.md."
+          ],
+          "certa": 1,
+          "explica": "Bank read access opens the door to everything else. An exported statement lets the agent read it without risk. The password doesn't go in the agent sheet, AGENTS.md, or the chat.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Read and add up",
+          "texto": "The agent pulls the details from each invoice and checks whether the items add up to the total."
+        },
+        {
+          "t": "Flag it, don't fix it",
+          "texto": "Duplicates and items marked \"doesn't match\" stay out of the total, with the reason noted. You handle the issue."
+        },
+        {
+          "t": "Your bank is yours",
+          "texto": "The list comes out as a draft. You handle paying, approving, and scheduling."
+        }
+      ]
+    }
+  ]
+}

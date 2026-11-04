@@ -1,0 +1,334 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plan",
+  "titulo": "From your first agent to a small team in 30 days",
+  "titulo_curto": "30-day plan",
+  "minutos": 14,
+  "lead": "The most common mistake is setting up five agents on the first weekend and stopping the review by Tuesday. The approach that works starts slowly: one task, review everything, build trust, and only then add the next. In four weeks, you'll have a small team working while you review a sample of its work.",
+  "objetivo": "build a four-week plan with full review at the beginning, sampling later, and one new task each week.",
+  "competencias": [
+    "plan-agent-adoption",
+    "review-by-sampling",
+    "record-proof-it-works"
+  ],
+  "aprende": [
+    {
+      "icone": "calendario",
+      "t": "The four weeks, one at a time"
+    },
+    {
+      "icone": "lupa",
+      "t": "When to review everything and when to sample"
+    },
+    {
+      "icone": "arquivo",
+      "t": "The log that proves it worked"
+    },
+    {
+      "icone": "baixar",
+      "t": "Your plan with dates for the calendar"
+    }
+  ],
+  "hero_alt": "A four-week wall calendar with a few days marked, beside a desk with an open notebook in the morning light.",
+  "secoes": [
+    {
+      "tipo": "mapa",
+      "titulo": "The four weeks",
+      "sub": "Click an exercise to see what \"done when\" means. Each week builds on what the previous one established.",
+      "degraus": [
+        {
+          "aula": "ficha",
+          "icone": "arquivo",
+          "quando": "Week 1",
+          "titulo": "One task",
+          "sub": "list and sheet",
+          "saida": "First agent with a sheet and rules.",
+          "passo": "Find the task (lesson 1), write the sheet (lesson 2), and run it. Check every result this week, no exceptions."
+        },
+        {
+          "aula": "relatorio",
+          "icone": "lupa",
+          "quando": "Week 2",
+          "titulo": "Confidence",
+          "sub": "sample",
+          "saida": "Task 1 is part of your routine, checked by sample.",
+          "passo": "If the first three runs match, switch to sample checks (two numbers). Add a reminder to your calendar and add task 2."
+        },
+        {
+          "aula": "roteamento",
+          "icone": "chip",
+          "quando": "Week 3",
+          "titulo": "Routing",
+          "sub": "light and top",
+          "saida": "Model rule and tasks 3 and 4.",
+          "passo": "Paste the routing rule into Projects and hand off tasks 3 and 4: contacts and notes (lessons 4 and 5), always with the gate."
+        },
+        {
+          "aula": "cliente",
+          "icone": "camadas",
+          "quando": "Week 4",
+          "titulo": "Team",
+          "sub": "4 to 5 agents",
+          "saida": "Small team and weekly review.",
+          "passo": "New client checklist (lesson 6). Once a week, read the log, adjust one sheet, and decide which task to add next."
+        }
+      ],
+      "resultado": {
+        "titulo": "At the end of 30 days",
+        "texto": "Four or five boring tasks off your hands, each with a sheet, gate, and log.",
+        "total": "4 weeks"
+      },
+      "legenda": "An error? That task goes back to being checked in full until three consecutive runs match."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Check everything, then sample",
+      "sub": "The proof it worked is the log, not your impression. Click each phase.",
+      "passos": [
+        {
+          "titulo": "Everything",
+          "sub": "First 3 runs",
+          "texto": [
+            "For each agent’s first three runs, check the entire result: every number, every draft.",
+            "Every correction you make becomes a rule on the sheet."
+          ]
+        },
+        {
+          "titulo": "Sample",
+          "sub": "later",
+          "texto": [
+            "Three consecutive runs with no corrections? Switch to sample checks: two numbers from the report, one out of every three drafts, two notes from the table.",
+            "The gate never goes away: you keep reading anything that talks to a client or handles money."
+          ]
+        },
+        {
+          "titulo": "Back",
+          "sub": "if there’s an error",
+          "texto": [
+            "Found an error in the sample? That task goes back to \"check everything\" until three consecutive runs match again.",
+            "The error becomes a rule on the sheet before the next run."
+          ]
+        },
+        {
+          "titulo": "Log",
+          "sub": "one line",
+          "texto": [
+            "One line per run: date, agent, what you checked, whether it matched, and what changed on the sheet.",
+            "In a month, the log shows how much time you saved and where the agent makes mistakes."
+          ],
+          "exemplo": {
+            "rot": "Log entry",
+            "texto": "11/11 | report | checked 2 numbers | matched | no changes"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The check log",
+      "sub": "A note, a spreadsheet, or a diario.txt file. One line per run.",
+      "blocos": [
+        {
+          "rot": "Check log (template)",
+          "icone": "arquivo",
+          "conteudo": "date | agent | model | what I checked | matched? | change to the sheet | minutes saved\n11/11 | website report | light | everything (run 1) | yes | delivery now includes the total per page | 50\n12/11 | contacts | light | all 3 drafts | 1 corrected | rule: don't mention a deadline | 30\n18/11 | website report | light | 2 numbers (sample) | yes | none | 55"
+        },
+        {
+          "rot": "Friday review (paste into the chat with the check log)",
+          "icone": "chat",
+          "conteudo": "Here’s my check log for the week.\nTell me, in no more than 8 lines:\n1. How many minutes the agents saved in total (add up the last column).\n2. Which agent needed the most corrections and what rule I should add to their sheet.\n3. Which agent is ready to move to spot checks (three rounds in a row with no corrections).\nDon’t make up numbers: use only what’s in the log."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Schedule",
+            "html": "<p>In chat, you’re in charge of the schedule: the plan below creates an <code>.ics</code> file with reminders for your calendar (\"Monday 9 a.m.: report\"). Getting the agent to run on its own at the scheduled time takes a terminal step, which the course <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/en/\" target=\"_blank\" rel=\"noopener\">From chat to agent</a> shows you. Start with the reminder: calling the agent at the right time already takes the boring work off your hands.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Five agents in the first week</b>: you can’t check everything, and the first mistake slips through.</li><li><b>Stop checking because \"it’s always worked\"</b>: spot checks mean checking less, not stopping.</li><li><b>No log</b>: after a month, you won’t know whether the agent saves time or just shifts the work around.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Choose a start date and how much time you have each week. The plan comes as an .md file and an .ics file for your calendar.",
+      "curso": "Hand the boring work to an agent",
+      "horas_padrao": 2,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · Find the task",
+          "aula": "achar"
+        },
+        {
+          "titulo": "Lesson 2 · The agent sheet",
+          "aula": "ficha"
+        },
+        {
+          "titulo": "Lesson 3 · Weekly report",
+          "aula": "relatorio"
+        },
+        {
+          "titulo": "Lesson 4 · New contacts",
+          "aula": "leads"
+        },
+        {
+          "titulo": "Lesson 5 · Notes and bills",
+          "aula": "notas"
+        },
+        {
+          "titulo": "Lesson 6 · New client",
+          "aula": "cliente"
+        },
+        {
+          "titulo": "Lesson 7 · Light or top",
+          "aula": "roteamento"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Hand the boring work to an agent",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Estimated finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and the rule I added to the sheet",
+        "h": "hours per week",
+        "exs": "exercises",
+        "ex1": "exercise"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your plan and the log",
+      "sub": "Finish the course with the plan on your calendar.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The plan on your calendar",
+          "min": "5 min",
+          "texto": "Generate the plan above with your start date and import the .ics file into your calendar.",
+          "pronto": "the reminders for all four weeks appear in your calendar."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Start the log",
+          "min": "5 min",
+          "texto": "Create the check log and write the first entry for your first agent’s first round.",
+          "pronto": "the log has at least one entry with a date, agent, what you checked, and whether it matched."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · The first Friday review",
+          "min": "10 min",
+          "texto": "On Friday of week 1, paste the log into the chat with the review prompt.",
+          "pronto": "you have the total minutes saved that week and a new rule in an agent sheet."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Final test",
+      "sub": "Four questions about the whole course.",
+      "perguntas": [
+        {
+          "p": "When can an agent move from \"check everything\" to \"spot checks\"?",
+          "opcoes": [
+            "After three rounds in a row with no corrections.",
+            "Right in the first week, if the text is well written.",
+            "When you’re short on time.",
+            "Never: always check everything."
+          ],
+          "certa": 0,
+          "explica": "Three rounds in a row with no corrections show that the sheet is solid. Well written text doesn’t prove the numbers are right, and checking everything forever takes away the benefit of the agent.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "You found a wrong number during a spot check. What now?",
+          "opcoes": [
+            "Ignore it: it was just one.",
+            "Switch all agents to the top model.",
+            "Fix the number by hand right away and keep checking only a sample, as before.",
+            "Check that task in full again, and add the error as a rule to the sheet."
+          ],
+          "certa": 3,
+          "explica": "An error in the sample means there’s a gap in the sheet. Go back to checking everything until you get three clean rounds in a row, then add a new rule to close the gap.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Which rules apply to every agent in the course?",
+          "opcoes": [
+            "Read-only, drafts only, you handle the login, and you approve all spending.",
+            "Always use the top model, always with database access.",
+            "Send simple things on its own and ask before doing anything else.",
+            "Password in AGENTS.md and automatic sending every Monday."
+          ],
+          "certa": 0,
+          "explica": "The four rules on the sheet protect you in every task: the agent reads and prepares; you log in, approve, send, and pay.",
+          "ref": "mapa",
+          "cert": true
+        },
+        {
+          "p": "What is the “minutes saved” column in the log for?",
+          "opcoes": [
+            "To charge the agent for the time spent.",
+            "So the model knows when to stop.",
+            "To show, at the end of the month, how much time the agents actually gave back to you.",
+            "To choose the light model."
+          ],
+          "certa": 2,
+          "explica": "Without a number, your impression can be misleading. The total minutes saved shows whether it’s worth assigning the next task or adjusting the ones you already have.",
+          "ref": "codigo",
+          "cert": true
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The course in three sentences",
+      "itens": [
+        {
+          "t": "One at a time",
+          "texto": "One boring task, one sheet, check everything. Start the next only when you trust it."
+        },
+        {
+          "t": "The agent prepares",
+          "texto": "Read-only, drafts only, you handle the login, and you approve all spending. Use a light model for routine work and a top model for difficult tasks."
+        },
+        {
+          "t": "The log proves it",
+          "texto": "Check everything, then check samples and keep notes. In 30 days, you’ll know how much time you’ve saved."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Keep going here",
+      "links": [
+        {
+          "t": "Course: From chat to agent (terminal, queues, and scheduling)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Course: Claude as an agent manager",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/en/",
+          "icone": "robo"
+        },
+        {
+          "t": "Free courses on INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

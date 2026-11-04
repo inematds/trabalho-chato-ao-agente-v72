@@ -53,7 +53,7 @@
           "icone": "lista",
           "titulo": "Registra",
           "sub": "planilha",
-          "detalhe": "Para cada contato: nome, e-mail, empresa, o que pediu, data e situação \"novo\". Se o nome já está na planilha, ele atualiza a linha em vez de criar outra. Spam vai para uma lista separada, com o motivo.",
+          "detalhe": "Para cada contato: nome, e-mail, empresa, o que pediu, data e situação \"novo\". Você copia as linhas que ele devolve e cola na sua planilha. Se o nome já está lá, ele marca \"atualizar\" em vez de criar outra linha. Spam vai para uma lista separada, com o motivo.",
           "itens": [
             {
               "icone": "check",
@@ -139,7 +139,7 @@
         {
           "rot": "Ficha · agente de contatos novos",
           "icone": "arquivo",
-          "conteudo": "Papel: Você é o meu agente de contatos novos.\nSobre mim: [o que eu vendo, em uma linha]; planilha de contatos com as colunas nome, e-mail, empresa, pedido, data, situação; meu link de agenda: [seu link]; tom: [simpático, curto, sem jargão].\nQuando: quando eu colar as mensagens novas e disser \"contatos\".\nPassos: 1) leia cada mensagem e tire nome, e-mail, empresa e o que a pessoa pediu; 2) monte as linhas da planilha com a data de hoje e a situação \"novo\"; 3) se o nome ou o e-mail já estiver na planilha que eu colei, marque \"atualizar\" em vez de criar outra linha; 4) escreva um rascunho de resposta de até 120 palavras para cada um: agradeça pelo nome, responda o pedido em uma ou duas frases e ofereça o link de agenda.\nRegras: salve tudo como rascunho, eu envio; nunca prometa preço, prazo ou desconto que não estejam nesta ficha; mensagem com cara de spam vai para a lista \"ignorados\" com o motivo; copie nomes e e-mails exatamente; se ficar em dúvida, pare e pergunte.\nEntrega: 1) as linhas novas da planilha; 2) os rascunhos, um por contato; 3) a lista \"ignorados\".\nPrimeira tarefa: rode agora com as mensagens que vou colar."
+          "conteudo": "Papel: Você é o meu agente de contatos novos.\nSobre mim: [o que eu vendo, em uma linha]; planilha de contatos com as colunas nome, e-mail, empresa, pedido, data, situação; meu link de agenda: [seu link do Google Agenda, Calendly ou WhatsApp; sem link, apague esta parte]; tom: [simpático, curto, sem jargão].\nQuando: quando eu colar as mensagens novas e disser \"contatos\".\nPassos: 1) leia cada mensagem e tire nome, e-mail, empresa e o que a pessoa pediu; 2) monte as linhas da planilha com a data de hoje e a situação \"novo\"; 3) se o nome ou o e-mail já estiver na planilha que eu colei, marque \"atualizar\" em vez de criar outra linha; 4) escreva um rascunho de resposta de até 120 palavras para cada um: agradeça pelo nome, responda o pedido em uma ou duas frases e ofereça o link de agenda.\nRegras: salve tudo como rascunho, eu envio; nunca prometa preço, prazo ou desconto que não estejam nesta ficha; mensagem com cara de spam vai para a lista \"ignorados\" com o motivo; copie nomes e e-mails exatamente; se ficar em dúvida, pare e pergunte.\nEntrega: 1) as linhas novas da planilha; 2) os rascunhos, um por contato; 3) a lista \"ignorados\".\nPrimeira tarefa: rode agora com as mensagens que vou colar."
         },
         {
           "rot": "Ensaio · três mensagens e a planilha atual",

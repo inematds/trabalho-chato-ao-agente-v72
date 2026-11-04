@@ -1,0 +1,334 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plan",
+  "titulo": "Del primer agente al pequeño equipo en 30 días",
+  "titulo_curto": "Plan de 30 días",
+  "minutos": 14,
+  "lead": "El error más común es armar cinco agentes el primer fin de semana y dejar de revisarlos el martes. El camino que funciona empieza despacio: una tarea, revisión de todo, confianza y solo entonces la siguiente. En cuatro semanas tendrás un pequeño equipo que trabaja mientras tú revisas una muestra.",
+  "objetivo": "armar el plan de cuatro semanas, con revisión completa al principio, por muestreo después y una tarea nueva cada semana.",
+  "competencias": [
+    "planificar-adopcion-de-agentes",
+    "revisar-por-muestreo",
+    "registrar-prueba-de-funcionamiento"
+  ],
+  "aprende": [
+    {
+      "icone": "calendario",
+      "t": "Las cuatro semanas, una a la vez"
+    },
+    {
+      "icone": "lupa",
+      "t": "Cuándo revisar todo y cuándo hacerlo por muestreo"
+    },
+    {
+      "icone": "arquivo",
+      "t": "El registro que demuestra que funcionó"
+    },
+    {
+      "icone": "baixar",
+      "t": "Tu plan con fechas para el calendario"
+    }
+  ],
+  "hero_alt": "Calendario de pared con cuatro semanas y algunos días marcados, junto a un escritorio con un cuaderno abierto, a la luz de la mañana.",
+  "secoes": [
+    {
+      "tipo": "mapa",
+      "titulo": "Las cuatro semanas",
+      "sub": "Haz clic en un ejercicio para ver el «listo cuando». Cada semana se apoya en lo que dejó firme la anterior.",
+      "degraus": [
+        {
+          "aula": "ficha",
+          "icone": "arquivo",
+          "quando": "Semana 1",
+          "titulo": "Una tarea",
+          "sub": "lista y ficha",
+          "saida": "Primer agente con ficha y reglas.",
+          "passo": "Encuentra la tarea (lección 1), escribe la ficha (lección 2) y ponlo en marcha. Revisa todos los resultados de esta semana, sin excepción."
+        },
+        {
+          "aula": "relatorio",
+          "icone": "lupa",
+          "quando": "Semana 2",
+          "titulo": "Confianza",
+          "sub": "muestra",
+          "saida": "Tarea 1 en la rutina, revisada por muestra.",
+          "passo": "Si las tres primeras rondas salieron bien, empieza a revisar por muestra (dos números). Pon el recordatorio en el calendario y agrega la tarea 2."
+        },
+        {
+          "aula": "roteamento",
+          "icone": "chip",
+          "quando": "Semana 3",
+          "titulo": "Enrutamiento",
+          "sub": "ligero y superior",
+          "saida": "Regla de modelo y tareas 3 y 4.",
+          "passo": "Pega la regla de enrutamiento en los Proyectos y entrega las tareas 3 y 4: contactos y notas (lecciones 4 y 5), siempre con el punto de control."
+        },
+        {
+          "aula": "cliente",
+          "icone": "camadas",
+          "quando": "Semana 4",
+          "titulo": "Equipo",
+          "sub": "4 a 5 agentes",
+          "saida": "Equipo pequeño y revisión semanal.",
+          "passo": "Lista de verificación para un cliente nuevo (lección 6). Una vez por semana, lee el registro, ajusta una ficha y decide qué tarea sigue."
+        }
+      ],
+      "resultado": {
+        "titulo": "Al final de los 30 días",
+        "texto": "Cuatro o cinco tareas aburridas fuera de tus manos, cada una con ficha, punto de control y registro.",
+        "total": "4 semanas"
+      },
+      "legenda": "¿Se equivocó? Esa tarea vuelve a revisarse por completo hasta que tres rondas seguidas salgan bien."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Revisar todo y después por muestra",
+      "sub": "La prueba de que funcionó es el registro, no la impresión. Haz clic en cada fase.",
+      "passos": [
+        {
+          "titulo": "Todo",
+          "sub": "3 primeras rondas",
+          "texto": [
+            "En las tres primeras rondas de cada agente, revisa el resultado completo: cada número, cada borrador.",
+            "Cada cosa que corrijas se convierte en una regla en la ficha."
+          ]
+        },
+        {
+          "titulo": "Muestra",
+          "sub": "después",
+          "texto": [
+            "¿Tres rondas seguidas sin correcciones? Pasa a la muestra: dos números del informe, un borrador de cada tres, dos notas de la tabla.",
+            "El punto de control nunca desaparece: tú sigues leyendo lo que habla con clientes o mueve dinero."
+          ]
+        },
+        {
+          "titulo": "Vuelve",
+          "sub": "si se equivoca",
+          "texto": [
+            "¿Encontraste un error en la muestra? Esa tarea vuelve a «revisar todo» hasta que otras tres rondas seguidas salgan bien.",
+            "El error se convierte en una regla de la ficha antes de la siguiente ronda."
+          ]
+        },
+        {
+          "titulo": "Registro",
+          "sub": "una línea",
+          "texto": [
+            "Una línea por ronda: fecha, agente, qué revisaste, si salió bien y qué cambió en la ficha.",
+            "En un mes, el registro muestra cuánto tiempo ganaste y dónde se equivoca el agente."
+          ],
+          "exemplo": {
+            "rot": "Línea del registro",
+            "texto": "11/11 | informe | revisé 2 números | salió bien | ningún cambio"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El registro de control",
+      "sub": "Una nota, una hoja de cálculo o un archivo diario.txt. Una línea por ronda.",
+      "blocos": [
+        {
+          "rot": "Registro de control (modelo)",
+          "icone": "arquivo",
+          "conteudo": "fecha | agente | modelo | qué revisé | ¿salió bien? | cambio en la ficha | minutos ahorrados\n11/11 | informe del sitio | ligero | todo (ronda 1) | sí | la entrega agregó el total por página | 50\n12/11 | contactos | ligero | los 3 borradores | 1 corregido | regla: no mencionar plazos | 30\n18/11 | informe del sitio | ligero | 2 números (muestra) | sí | ninguno | 55"
+        },
+        {
+          "rot": "Revisión del viernes (pégala en el chat con el registro)",
+          "icone": "chat",
+          "conteudo": "Este es mi registro de control de la semana.\nDime, en un máximo de 8 líneas:\n1. Cuántos minutos ahorraron los agentes en total (suma la última columna).\n2. Qué agente tuvo más correcciones y qué regla debería agregar a su ficha.\n3. Qué agente ya puede pasar a revisión por muestra (tres rondas seguidas sin correcciones).\nNo inventes cifras: usa solo lo que aparece en el registro."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Programar",
+            "html": "<p>En el chat, tú decides el horario: el plan de abajo genera un archivo <code>.ics</code> con los recordatorios para tu calendario (\"lunes 9h: informe\"). Hacer que el agente se ejecute solo a la hora programada requiere un paso en la terminal, que muestra el curso <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/es/\" target=\"_blank\" rel=\"noopener\">Del chat al agente</a>. Empieza con el recordatorio: el agente que llamas en el momento justo ya te quita el trabajo aburrido.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Cinco agentes en la primera semana</b>: no puedes revisar todo y el primer error pasa.</li><li><b>Dejar de revisar porque \"siempre salió bien\"</b>: revisar una muestra es revisar menos, no dejar de hacerlo.</li><li><b>Sin registro</b>: después de un mes no sabrás decir si el agente ahorra tiempo o solo cambia el trabajo de lugar.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan se genera en .md y en .ics para el calendario.",
+      "curso": "Entrega el trabajo aburrido a un agente",
+      "horas_padrao": 2,
+      "degraus": [
+        {
+          "titulo": "Lección 1 · Encontrar la tarea",
+          "aula": "achar"
+        },
+        {
+          "titulo": "Lección 2 · La ficha del agente",
+          "aula": "ficha"
+        },
+        {
+          "titulo": "Lección 3 · Informe de la semana",
+          "aula": "relatorio"
+        },
+        {
+          "titulo": "Lección 4 · Contactos nuevos",
+          "aula": "leads"
+        },
+        {
+          "titulo": "Lección 5 · Notas y facturas",
+          "aula": "notas"
+        },
+        {
+          "titulo": "Lección 6 · Cliente nuevo",
+          "aula": "cliente"
+        },
+        {
+          "titulo": "Lección 7 · Ligero o superior",
+          "aula": "roteamento"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — Entrega el trabajo aburrido a un agente",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Fecha prevista de finalización",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué se atascó y la regla que agregué a la ficha",
+        "h": "h por semana",
+        "exs": "ejercicios",
+        "ex1": "ejercicio"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu plan y el registro",
+      "sub": "Cierra el curso con el plan en el calendario.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · El plan en el calendario",
+          "min": "5 min",
+          "texto": "Genera el plan de arriba con tu fecha de inicio e importa el .ics en tu calendario.",
+          "pronto": "los recordatorios de las cuatro semanas aparecen en tu calendario."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Empieza el registro",
+          "min": "5 min",
+          "texto": "Crea el registro de control y escribe la línea de la primera ronda de tu primer agente.",
+          "pronto": "el registro tiene al menos una línea con fecha, agente, qué revisaste y si cuadró."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · La revisión del primer viernes",
+          "min": "10 min",
+          "texto": "El viernes de la semana 1, pega el registro en el chat con la solicitud de revisión.",
+          "pronto": "tienes el total de minutos ahorrados de la semana y una regla nueva en una ficha."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba final",
+      "sub": "Cuatro preguntas sobre todo el curso.",
+      "perguntas": [
+        {
+          "p": "¿Cuándo puede un agente pasar de \"revisar todo\" a \"revisar por muestra\"?",
+          "opcoes": [
+            "Después de tres rondas seguidas sin correcciones.",
+            "Justo en la primera semana, si el texto está bien escrito.",
+            "Cuando no tengas tiempo.",
+            "Nunca: siempre hay que revisarlo todo."
+          ],
+          "certa": 0,
+          "explica": "Tres rondas seguidas sin correcciones muestran que la ficha está firme. Un texto bien escrito no demuestra que las cifras sean correctas, y revisarlo todo para siempre elimina el beneficio del agente.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "En la muestra encontraste una cifra incorrecta. ¿Y ahora?",
+          "opcoes": [
+            "Ignorarla: solo fue una.",
+            "Cambiar todos los agentes al modelo superior.",
+            "Corregir el número a mano en el momento y seguir revisando solo por muestra, como antes.",
+            "Esa tarea vuelve a revisarse por completo y el error se convierte en una regla de la ficha."
+          ],
+          "certa": 3,
+          "explica": "Un error en la muestra indica que hay un hueco en la ficha. Vuelve a revisarlo todo hasta que coincida en tres rondas seguidas, y la nueva regla cierra el hueco.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Qué reglas se aplican a todos los agentes del curso?",
+          "opcoes": [
+            "Solo lectura, solo borradores, tú inicias sesión y el dinero pasa por ti.",
+            "Siempre el modelo superior, siempre con acceso al banco.",
+            "Enviar por su cuenta lo que sea sencillo y preguntarte antes de actuar en lo demás.",
+            "Contraseña en AGENTS.md y envío automático los lunes."
+          ],
+          "certa": 0,
+          "explica": "Las cuatro reglas de la ficha te protegen en cualquier tarea: el agente lee y prepara; tú inicias sesión, apruebas, envías y pagas.",
+          "ref": "mapa",
+          "cert": true
+        },
+        {
+          "p": "¿Para qué sirve la columna «minutos ahorrados» del registro?",
+          "opcoes": [
+            "Para cobrarle al agente el tiempo que tardó.",
+            "Para que el modelo sepa cuándo parar.",
+            "Para demostrar, al final del mes, cuánto tiempo te devolvieron realmente los agentes.",
+            "Para elegir el modelo ligero."
+          ],
+          "certa": 2,
+          "explica": "Sin números, la sensación engaña. La suma de los minutos ahorrados muestra si vale la pena asignar la siguiente tarea o ajustar las que ya existen.",
+          "ref": "codigo",
+          "cert": true
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "El curso en tres frases",
+      "itens": [
+        {
+          "t": "Una a la vez",
+          "texto": "Una tarea aburrida, una ficha, revisión completa. La siguiente, solo cuando tengas confianza."
+        },
+        {
+          "t": "El agente prepara",
+          "texto": "Solo lee, solo borradores, tú inicias sesión, el dinero pasa por ti. Ligero en la rutina, superior para lo difícil."
+        },
+        {
+          "t": "El registro lo demuestra",
+          "texto": "Revisar todo, después por muestra y dejarlo anotado. En 30 días sabrás cuánto ganaste."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continúa por aquí",
+      "links": [
+        {
+          "t": "Curso: Del chat al agente (terminal, colas y programación)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Curso: Claude como gestor de agentes",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/es/",
+          "icone": "robo"
+        },
+        {
+          "t": "Cursos abiertos en INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

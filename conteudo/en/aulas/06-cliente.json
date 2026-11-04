@@ -1,0 +1,265 @@
+{
+  "slug": "cliente",
+  "num": 6,
+  "menu": "Client",
+  "titulo": "New client: the checklist that stops when something fails",
+  "titulo_curto": "New client",
+  "minutos": 15,
+  "lead": "You signed a new client. Now you need to update the contact record, create a folder, set up the schedule, prepare the first invoice, and write a welcome message. It's the same five steps every time, and forgetting one can be costly. The agent goes through the checklist in order, doesn't create anything twice, and stops at the step that fails.",
+  "objetivo": "write the new client checklist for the agent to follow in order, stopping at a failed step without creating duplicates.",
+  "competencias": [
+    "write-process-checklist",
+    "stop-on-error-and-resume",
+    "avoid-duplicates"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Turn your routine into a checklist"
+    },
+    {
+      "icone": "fila",
+      "t": "Run it step by step, marking each one done"
+    },
+    {
+      "icone": "x",
+      "t": "Stop at the step that fails and say why"
+    },
+    {
+      "icone": "seta",
+      "t": "Resume without redoing what’s already done"
+    }
+  ],
+  "hero_alt": "A clipboard with a five-item checklist, three items checked, on a meeting table; a handshake is blurred in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The five steps, in order",
+      "sub": "Click each step. The last one is always a draft.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Client setup",
+          "sub": "closed",
+          "detalhe": "In the spreadsheet or client system: status set to “closed” and start date. Client details come from the signed proposal or the conversation you paste in.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "status + date"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Folder",
+          "sub": "from the template",
+          "detalhe": "A folder named after the client, copied from your template folder. If one with that name already exists, the agent won’t create another. It stops and lets you know.",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "already exists → stops"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Schedule",
+          "sub": "from the template",
+          "detalhe": "The schedule or task list copied from your template, with the client’s name and dates starting from the start date.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "dates from the start date"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Billing",
+          "sub": "draft",
+          "forte": true,
+          "detalhe": "The first invoice prepared as a draft, with the amount from the proposal. You issue and send it.",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "you issue it"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Welcome",
+          "sub": "draft",
+          "detalhe": "The welcome email from your template, with links to the folder and schedule. It’s a draft: you read and send it.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "you send"
+            }
+          ]
+        }
+      ],
+      "volta": "If a step fails, it stops and tells you which one and why. Next time, it continues from there.",
+      "legenda": "Fixed order, one step at a time, no duplicates. Payments and messages to clients are drafts."
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "See the checklist in action",
+      "sub": "Run it, interrupt it halfway, then run it again. Notice which step stops.",
+      "tarefas": [
+        "Client setup: Padaria Trigo Bom marked as closed",
+        "Padaria Trigo Bom folder copied from the template",
+        "8-week schedule starting on 10/11",
+        "First invoice as a draft",
+        "Welcome email as a draft"
+      ],
+      "falha": 1,
+      "rot": {
+        "entrada": "to do",
+        "rodando": "in progress",
+        "feito": "done",
+        "falhou": "stopped",
+        "rodar": "Run the checklist",
+        "parar": "Interrupt",
+        "zerar": "Start over"
+      },
+      "msg": {
+        "inicio": "5 steps marked “to do.” Click “Run the checklist.”",
+        "rodando": "One step at a time, in order: from “to do” to “in progress,” then “done” or “stopped.”",
+        "parou": "Interrupted halfway. The step in progress went back to “to do.” Run it again to see it resume.",
+        "retoma": "Resumed: steps already marked done weren’t repeated. No duplicate client setup or folders.",
+        "fim": "Checklist complete: everything is marked “done”.",
+        "fimfalha": "Round complete. One step stopped with the reason (\"a folder with that name already exists\"): the agent didn't create another one and let you know."
+      },
+      "legenda": "Illustrative browser simulation: nothing is actually created. The failure is intentional, to show “stop and let you know.”"
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The checklist sheet",
+      "sub": "Replace the steps with yours. Keep the order and rules.",
+      "blocos": [
+        {
+          "rot": "Sheet · new client agent",
+          "icone": "arquivo",
+          "conteudo": "Role: You are my new client agent.\nAbout me: [what the business does]; folder template: [name]; timeline template: [name]; welcome email template: [text or name].\nWhen: when I say \"new client: [name]\" and paste the proposal or details.\nSteps: 1) client record: status \"closed\" and start date; 2) folder with the client's name from the template; 3) timeline from the template, with dates starting from the start date; 4) first invoice as a draft, with the proposal amount; 5) welcome email as a draft, with the folder and timeline links.\nRules: do the steps in order and mark each one as done; if a client, folder, or invoice with that name already exists, don't create another one: stop and tell me which step and what you found; if a step fails, stop there; invoice and email are drafts only, I issue and send them; never ask for a password; if any information is missing, stop and ask.\nDelivery: the list of the 5 steps marked done / stopped and the reason, the links or names created, the invoice amount, and \"email in draft\".\nFirst task: repeat the checklist in your own words and wait for me to say \"new client\"."
+        },
+        {
+          "rot": "In chat · the request",
+          "icone": "chat",
+          "conteudo": "new client: Padaria Trigo Bom\n\nProposal details: contact Marta Reis (marta@exemplo.com), planned commercial kitchen, start date 10/11, total amount 18.000,00 in 3 installments, first due at signing.\nIn chat, you don't create the folder or client record: give me the ready-to-use text for each step (folder name, timeline in a table, invoice draft, email draft) and I'll do the clicks, marking each one done."
+        },
+        {
+          "rot": "Terminal (optional) · real folders on your computer",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/clientes\n# the sheet is in AGENTS.md; the template is in clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"new client: Padaria Trigo Bom — follow AGENTS.md\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Chat × terminal",
+            "html": "<p><b>In chat</b>, the agent prepares the text for each step and you do the clicks: it's the checklist with the boring parts (writing, calculating dates, putting the email together) taken care of. <b>In the terminal</b>, with <code>-s workspace-write</code>, Codex can copy the template folder inside the folder you're in; it can't copy outside it. You still handle the client record in an online system and the invoice.</p>"
+          },
+          {
+            "rot": "How to check your work",
+            "html": "<ol><li>All five steps appear in order, each marked done or stopped.</li><li>The invoice is 6.000,00 (the first of 3 installments of 18.000,00) and is a draft.</li><li>If you send the same request again in the same conversation, the second round stops right away at the first step because the client already exists.</li></ol>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Checklist with no set order</b>: the email goes out before the folder exists, so the link is broken.</li><li><b>\"If it fails, try another way\"</b>: the agent improvises and creates the folder \"Padaria Trigo Bom (2)\". If something fails, stop.</li><li><b>Set the invoice to \"issue\"</b>: money and a client mean at least medium risk; always use a draft.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your checklist",
+      "sub": "Write down the routine you already follow today.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The routine on paper",
+          "min": "10 min",
+          "texto": "List what you do today when you sign a client, in order. Trim it to the 5 steps you repeat most often.",
+          "pronto": "the list has 4 to 6 numbered steps, and each one says which tool it's done in."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The sheet",
+          "min": "15 min",
+          "texto": "Adapt the sheet with your steps and templates, and put it in a Project (or a folder in the terminal).",
+          "pronto": "the agent repeats the checklist in its own words, in the right order, and waits for \"new client\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Practice with a fictional client",
+          "min": "10 min",
+          "texto": "Run it with Padaria Trigo Bom. Then send the same request again.",
+          "pronto": "the first round delivers the 5 steps and the 6.000,00 invoice as a draft; the second stops and lets you know the client already exists."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "At step 2, a \"Padaria Trigo Bom\" folder already exists. What does the agent do?",
+          "opcoes": [
+            "Create \"Padaria Trigo Bom (2)\" to save time.",
+            "Delete the old one and create a new one.",
+            "Skip the folder and continue to the timeline.",
+            "Stop at step 2 and say what it found."
+          ],
+          "certa": 3,
+          "explica": "An existing folder could mean a repeat client or a mistake on your part. The agent doesn't decide: it stops and lets you know. Creating another one makes a duplicate; deleting it is high risk; skipping it leaves the email with a link to nothing.",
+          "ref": "simfila"
+        },
+        {
+          "p": "You stopped the checklist at step 3 and ran it again. The right thing to do is:",
+          "opcoes": [
+            "Start again at step 1 and redo everything, just to be safe.",
+            "Continue from step 3 without repeating the client record and folder.",
+            "Skip to the welcome email.",
+            "Create another client to start fresh."
+          ],
+          "certa": 1,
+          "explica": "Completed steps stay marked; when you resume, you continue where you left off. Starting over means creating the client record twice.",
+          "ref": "simfila"
+        },
+        {
+          "p": "In the chat workflow, who creates the folder in your Drive?",
+          "opcoes": [
+            "You: the agent prepares the name, timeline, and drafts, and you do the clicks.",
+            "The agent, as long as you give it your Drive password.",
+            "The agent, on its own, because it's in a Project.",
+            "Nobody: that step disappears in chat."
+          ],
+          "certa": 0,
+          "explica": "Chat can write, but it can't click in your Drive. It takes care of the boring parts (writing and calculating), and you do the steps, marking them done. Never share your password.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Fixed order",
+          "texto": "The same steps, always in the same order, each marked done."
+        },
+        {
+          "t": "Failed, stop",
+          "texto": "Already exists or something went wrong: the agent stops, says which step it reached and what it saw, and doesn't improvise."
+        },
+        {
+          "t": "Resume without redoing work",
+          "texto": "On the next run, pick up where you left off. No duplicates."
+        }
+      ]
+    }
+  ]
+}

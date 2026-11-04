@@ -1,0 +1,258 @@
+{
+  "slug": "leads",
+  "num": 4,
+  "menu": "Contacts",
+  "titulo": "New contact becomes a draft, never a sent message",
+  "titulo_curto": "New contacts",
+  "minutos": 16,
+  "lead": "A contact who reaches out on Friday and only gets a reply on Tuesday may lose interest. Reading each message, noting it in the spreadsheet, and writing a reply is boring work, but the reply speaks to the customer: that’s why the agent prepares everything as a draft and stops. You read it and press send.",
+  "objetivo": "build the agent that records each new contact in the spreadsheet and leaves a reply as a draft for you to approve.",
+  "competencias": [
+    "triage-contacts-with-agent",
+    "use-approval-gate",
+    "avoid-duplicates-and-spam"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Record contacts without duplicates"
+    },
+    {
+      "icone": "caneta",
+      "t": "Receive the ready-to-send reply as a draft"
+    },
+    {
+      "icone": "portao",
+      "t": "Approve or correct before it goes out"
+    },
+    {
+      "icone": "x",
+      "t": "Separate spam and give the reason"
+    }
+  ],
+  "hero_alt": "A woman who owns a small studio reads messages on her phone, her finger paused above the screen before replying.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A new contact’s journey",
+      "sub": "Click each step. The gate is where you step in.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Arrives",
+          "sub": "email, website",
+          "detalhe": "Messages from your website form, email, or WhatsApp. In the chat, copy the new messages and paste them into the agent’s Project with the word \"contacts\".",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "name, email, request"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "Records",
+          "sub": "spreadsheet",
+          "detalhe": "For each contact: name, email, company, what they asked for, date, and status \"new\". If the name is already in the spreadsheet, it updates the row instead of creating another one. Spam goes on a separate list with the reason.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "no duplicates"
+            }
+          ]
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Draft",
+          "sub": "up to 120 words",
+          "detalhe": "A short, personal reply: thank them by name, answer their request in one or two sentences, and offer your scheduling link. No price, timeline, or discount you didn’t write on the sheet.",
+          "itens": [
+            {
+              "icone": "arquivo",
+              "t": "saved, not sent"
+            }
+          ]
+        },
+        {
+          "icone": "portao",
+          "titulo": "Gate",
+          "sub": "you read",
+          "forte": true,
+          "detalhe": "The agent stops here. You read each draft: approve, correct, or discard it. This is the only point where anything can go out under your name.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "approve or correct"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Sends",
+          "sub": "you",
+          "detalhe": "You copy the approved draft and send it by email or WhatsApp. The agent never sends anything.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "your name, your decision"
+            }
+          ]
+        }
+      ],
+      "legenda": "The agent handles the boring work (reading, taking notes, writing); anything sent to a customer goes through the gate."
+    },
+    {
+      "tipo": "simportao",
+      "titulo": "Try the gate",
+      "sub": "Run the agent, read the draft that stopped at the gate, and decide.",
+      "arquivo": "Rascunho para Ana Souza",
+      "fases": [
+        "Drafts",
+        "Gate",
+        "Send",
+        "Spreadsheet"
+      ],
+      "rascunho": "Hi, Ana! Thanks for reaching out. We’ll deliver your custom kitchen in 10 days, and if you book this week, you’ll get 20% off. Would you like to schedule a visit? [your scheduling link]",
+      "corrigido": "Hi, Ana! Thanks for reaching out. The kitchen timeline depends on the project, and I can explain everything in a 15-minute conversation. Would you like to schedule one? [your scheduling link]",
+      "rot": {
+        "rodar": "Run the agent",
+        "aprovar": "Approve the draft",
+        "reprovar": "Reject with a correction",
+        "sempor": "Run without the gate",
+        "zerar": "Start over"
+      },
+      "msg": {
+        "inicio": "Three new contacts pasted into the Project. Click \"Run the agent\".",
+        "portao": "The agent recorded the contacts, wrote the drafts, and STOPPED at the gate. Read the draft below before you decide.",
+        "reprovado": "You rejected it with the correction \"no timeline or discount I didn’t promise\". The agent rewrote it and stopped at the gate again.",
+        "aprovado_ruim": "Approved without reading carefully: the customer received a timeline and a discount you never offered. This is where the gate mattered.",
+        "aprovado_bom": "Approved after the correction: you sent the right reply, and the spreadsheet has the contact recorded.",
+        "sem_portao": "Without the gate, the agent sent it on its own. The 10-day promise and 20% discount reached the customer before you saw them."
+      },
+      "legenda": "Illustrative browser simulation: nothing is sent. The mistake in the draft is intentional."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The contact agent’s sheet and a practice run",
+      "sub": "Replace what’s inside [brackets]. The sample contacts are made up.",
+      "blocos": [
+        {
+          "rot": "Sheet · new contacts agent",
+          "icone": "arquivo",
+          "conteudo": "Role: You are my new contacts agent.\nAbout me: [what I sell, in one line]; contact spreadsheet with the columns name, email, company, request, date, status; my booking link: [your link]; tone: [friendly, brief, no jargon].\nWhen: when I paste new messages and say \"contacts\".\nSteps: 1) read each message and get the name, email, company, and what the person asked for; 2) prepare spreadsheet rows with today's date and the status \"new\"; 3) if the name or email is already in the spreadsheet I pasted, mark it \"update\" instead of creating another row; 4) write a reply draft of up to 120 words for each person: thank them by name, answer their request in one or two sentences, and offer the booking link.\nRules: save everything as a draft; I send it; never promise a price, timeline, or discount that isn't in this sheet; send messages that look like spam to the \"ignored\" list with the reason; copy names and emails exactly; if you're unsure, stop and ask.\nDelivery: 1) new spreadsheet rows; 2) drafts, one per contact; 3) the \"ignored\" list.\nFirst task: run this now with the messages I'll paste."
+        },
+        {
+          "rot": "Practice run · three messages and the current spreadsheet",
+          "icone": "chat",
+          "conteudo": "contacts\n\nCurrent spreadsheet:\nRoberto Lima | roberto@exemplo.com | Lima Advocacia | closet | 28/10 | new\n\nNew messages:\n1) Ana Souza (ana@exemplo.com), Ana Decor: \"What is the delivery timeline for a custom kitchen?\"\n2) Roberto Lima (roberto@exemplo.com): \"I messaged you last week. Do you still want to put together a quote for the closet?\"\n3) promo@exemplo.com: \"GET 10,000 FOLLOWERS TODAY!!! Click here\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What the output should include",
+            "html": "<ul><li><b>Ana Souza</b>: a new row, status \"new\", and a draft that doesn't make up a timeline.</li><li><b>Roberto Lima</b>: marked \"update,\" not a second row.</li><li><b>promo@exemplo.com</b>: on the \"ignored\" list, with the reason.</li><li>Two drafts, neither sent.</li></ul>"
+          },
+          {
+            "rot": "Terminal (optional)",
+            "html": "<p>In the <code>meus-agentes/contatos</code> folder, with the sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), save the messages in <code>novos.txt</code> and the spreadsheet in <code>contatos.csv</code>. Ask: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o rascunhos.md \"contacts: follow the AGENTS.md\"</code>. The <code>read-only</code> mode won't let the agent change the spreadsheet: it only writes the reply, which you review.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Letting the agent \"reply on its own to only the easy ones\"</b>: today's easy one can be tomorrow's wrong promise.</li><li><b>Not pasting the current spreadsheet</b>: without it, the agent can't know Roberto is already there.</li><li><b>Deleting spam without checking</b>: the ignored list with the reason lets you catch a customer who was flagged by mistake.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the contacts agent",
+      "sub": "Practice run first, then try it with real messages.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Set up the Project",
+          "min": "10 min",
+          "texto": "Create the \"New contacts\" Project (or Gem) with the sheet filled out: what you sell, your spreadsheet columns, and your booking link.",
+          "pronto": "the sheet passes the lesson 2 checker (7 fields and the safety rules)."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The practice run",
+          "min": "10 min",
+          "texto": "Paste the practice run with the three messages. Check the output item by item.",
+          "pronto": "there's a new row for Ana, \"update\" for Roberto, the spam is in \"ignored\" with a reason, and no draft includes a made-up timeline or discount."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · One real week",
+          "min": "15 min",
+          "texto": "Use it with real contacts for one week. Read each draft before sending, and note how many you had to edit.",
+          "pronto": "you have a count of drafts approved without changes and drafts you edited. Turn each repeated correction into a rule in the sheet."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The draft says, \"We'll deliver in 10 days with a 20% discount,\" but you never offered that. What should you do at the gate?",
+          "opcoes": [
+            "Approve it: the customer likes discounts.",
+            "Reject it with a correction, and add a rule to the sheet against promising a price, timeline, or discount.",
+            "Send it and correct it later by phone.",
+            "Delete the contact from the spreadsheet."
+          ],
+          "certa": 1,
+          "explica": "That's what the gate is for: catch the wrong promise before it goes out. And when you make the same correction again, it becomes a rule in the sheet so the issue doesn't come back next week.",
+          "ref": "simportao"
+        },
+        {
+          "p": "The same customer wrote again. How does the agent know not to create another row?",
+          "opcoes": [
+            "It remembers all past conversations with that customer on its own, in any Project or conversation you've ever opened.",
+            "It asks the customer if they've messaged before.",
+            "It can't know; duplicates are inevitable.",
+            "You paste the current spreadsheet along with the messages, and the sheet says to mark \"update\" when the name or email is already there."
+          ],
+          "certa": 3,
+          "explica": "In chat, the agent only knows what's in the conversation and the sheet. When you paste the current spreadsheet, it compares the entries and marks \"update.\" Without it, it creates duplicates.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Which task does the contacts agent NOT do?",
+          "opcoes": [
+            "Set spam aside with a reason.",
+            "Write a reply draft for each contact.",
+            "Send the approved reply from your email.",
+            "Prepare new spreadsheet rows."
+          ],
+          "certa": 2,
+          "explica": "You send the reply. The agent reads, records, writes the draft, and stops at the gate. That's what makes this a medium-risk task, not a high-risk one.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "The boring work is for the agent",
+          "texto": "Read, record in the spreadsheet without duplicating, and write the reply."
+        },
+        {
+          "t": "You control the gate",
+          "texto": "Everything that goes to a customer stays a draft until you review it."
+        },
+        {
+          "t": "A correction becomes a rule",
+          "texto": "If you correct the same mistake twice, add it to the sheet so it doesn't happen again."
+        }
+      ]
+    }
+  ]
+}

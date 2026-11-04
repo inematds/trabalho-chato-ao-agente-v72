@@ -1,0 +1,327 @@
+{
+  "slug": "roteamento",
+  "num": 7,
+  "menu": "Models",
+  "titulo": "Light model for routine work, top model for the hard stuff",
+  "titulo_curto": "Light or top",
+  "minutos": 15,
+  "lead": "You don't call your most experienced business partner to copy a spreadsheet. Models work the same way: the light model is fast and uses less of your plan, and it handles routine work; the top model thinks more slowly and is for the big plan, the hard problem, and anything that could cost a lot. The routing rule spells this out once.",
+  "objetivo": "write the rule that decides which model handles each task and classify your tasks as light or top.",
+  "competencias": [
+    "choose-model-by-task",
+    "write-routing-rule",
+    "escalate-with-reason"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "Which model is light and which is top in your tools"
+    },
+    {
+      "icone": "lista",
+      "t": "What goes to each one"
+    },
+    {
+      "icone": "seta",
+      "t": "When to move up to the top model, and explain why"
+    },
+    {
+      "icone": "terminal",
+      "t": "Choose the model in chat and in the terminal"
+    }
+  ],
+  "hero_alt": "Two desks side by side: on the left, a matte white humanoid robot handles simple tasks with papers; on the right, a person examines an important document with a magnifying glass.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The rule in one picture",
+      "sub": "Click each part.",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Task",
+          "sub": "arrives",
+          "detalhe": "Any task from your sheets: a report, contacts, notes, a new client. Or a one-off question.",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "from a sheet or one-off"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Question",
+          "sub": "is it routine?",
+          "detalhe": "Three questions: Is it a big plan or a new system? Has the light model failed twice already? Could it cost a lot (legal issues, money, a major client)? One “yes” sends it to the top model. Three “no” answers keep it with the light model.",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "3 questions"
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Light",
+          "sub": "routine",
+          "forte": true,
+          "detalhe": "Read, summarize, copy between spreadsheets, prepare the weekly report, draft an email, make a small correction to text or a page. This is most of the boring work.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "fast, uses less"
+            }
+          ]
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Top",
+          "sub": "hard",
+          "detalhe": "Plan a new system, solve a problem the light model got wrong twice, make a decision involving money or a contract, prepare a proposal for a major client. Even here, the draft and gate still apply.",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "thinks more, uses more"
+            }
+          ]
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Explain",
+          "sub": "in one line",
+          "detalhe": "When moving up, the agent says: “I’m sending this to the top model because…” You can see the decision and adjust the rule if it moves things up too often or not often enough.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "“because…”"
+            }
+          ]
+        }
+      ],
+      "legenda": "When in doubt, start with the light model and have it say so if it gets stuck. Moving up is easy; using the top model for everything is what gets expensive."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Which model is which in your tools",
+      "sub": "Names change over time. Check your model list.",
+      "passos": [
+        {
+          "titulo": "In chat",
+          "sub": "the selector",
+          "texto": [
+            "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box. There’s usually a fast model for everyday tasks and one that “thinks” or reasons more.",
+            "In a Project, choose the model at the start of the conversation. To move up, open a new conversation in the same Project with the top model."
+          ]
+        },
+        {
+          "titulo": "In Codex",
+          "sub": "/model and -m",
+          "texto": [
+            "In Codex, <code>/model</code> shows the list available on your plan. In the 11/04/2026 list: <code>gpt-6-luna</code> (fast and economical, for easier tasks), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (the general-purpose one), and <code>gpt-6-astra</code> (for the most demanding work).",
+            "In the command, the model goes after <code>-m</code>."
+          ]
+        },
+        {
+          "titulo": "In Claude Code",
+          "sub": "/model and --model",
+          "texto": [
+            "In Claude Code, <code>/model</code> switches the session model, and <code>--model</code> selects one when you launch it: <code>sonnet</code> for routine work, <code>opus</code> for difficult tasks.",
+            "The aliases always point to the latest version in each family."
+          ]
+        },
+        {
+          "titulo": "Why it matters",
+          "sub": "the limit",
+          "texto": [
+            "With a subscription, the top model usually uses more of your usage limit and takes longer to respond.",
+            "Routine work on the light model keeps your limit free for when you really need the top model."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The rule to paste",
+      "sub": "In chat, add it to the Project instructions; in the terminal, add it to the end of AGENTS.md or CLAUDE.md.",
+      "blocos": [
+        {
+          "rot": "Routing rule (paste into the instructions)",
+          "icone": "arquivo",
+          "conteudo": "Model rule:\nUse the LIGHT model for routine work:\n- read dashboards, spreadsheets, and messages; copy data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to text, a spreadsheet, or a page\n\nSwitch to the TOP model when:\n- it’s a big plan or a new system\n- the light model has made the same mistake twice\n- it involves a contract, a money decision, or a major client\n\nWhen you switch, tell me in one line: \"I’m sending this to the top model because ...\".\nIf you’re unsure, start with the light model and let me know if you get stuck.\nDraft and gate apply to both."
+        },
+        {
+          "rot": "Request · classify my tasks",
+          "icone": "chat",
+          "conteudo": "Use the model rule above. Here’s my task list (lesson 1).\nReturn one line per task, in this format:\nN | task | light or top | reason in a few words"
+        },
+        {
+          "rot": "Terminal (optional) · the same request at two levels",
+          "icone": "terminal",
+          "conteudo": "# routine work on the light model\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"report: follow AGENTS.md\"\nclaude -p --model sonnet \"report: follow CLAUDE.md\" > relatorio.md\n\n# difficult work on the top model\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"build a plan for the new estimating process\"\nclaude -p --model opus \"build a plan for the new estimating process\" > plano.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Classification example",
+            "html": "<pre>1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills to pay | light | read and add; top if the PDF can’t be read\n4 | New client checklist | light | fixed steps\n5 | Design the new estimating process | top | new system</pre>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Top model for everything \"just in case\"</b>: routine work gets slow and your limit runs out by Wednesday.</li><li><b>Light model for the contract</b>: false economy. Expensive decisions go to the top model, and to you.</li><li><b>Switching without telling you</b>: without the \"because…\" line, you can’t tell whether the rule is working.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your classification",
+      "sub": "Paste the list the agent returned (or your own). The page checks that each line has just one level, light or top. You decide whether the level is right by asking the three questions.",
+      "arquivo": "modelos.txt",
+      "rot": "Paste your classified list here (one numbered line per task):",
+      "modelo": "1 | task | light | reason",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "level (light or top)",
+              "um_so": true,
+              "termos": [
+                "leve / light / ligero / liviano",
+                "topo / top / tope / superior"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tasks with a level assigned",
+      "exemplo": "1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills to pay | light | read and add\n4 | New client checklist | light | fixed steps\n5 | Design the new estimating process | top | new system",
+      "exemplo_errado": "1 | Weekly website report | light\n2 | New contacts | depends\n3 | Invoices and bills to pay | light or top\n4 | New client | top | light works too"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the rule in your Project",
+      "sub": "One rule, five tasks, one test.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Paste the rule",
+          "min": "5 min",
+          "texto": "Paste the routing rule into the instructions for your agents’ Projects (or at the end of AGENTS.md / CLAUDE.md).",
+          "pronto": "when you ask \"which model would you use for the weekly report?\", the agent answers light and gives the reason."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Classify your tasks",
+          "min": "10 min",
+          "texto": "Use the \"classify my tasks\" request with the list from lesson 1. Check it with the checker.",
+          "pronto": "the checker responds OK, and every task involving money or a contract is marked top or \"do not delegate\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Find your light and top models",
+          "min": "5 min",
+          "texto": "Open the model selector in the tool you use (or /model in the terminal) and note the names of the light and top models on your plan.",
+          "pronto": "you have both names written down and ran the weekly report on the light model."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which of these tasks should go to the top model?",
+          "opcoes": [
+            "Summarize this week’s new contacts in a simple table.",
+            "Copy the invoices into the bills spreadsheet.",
+            "Write the client's welcome draft.",
+            "Design the company's quoting process from scratch."
+          ],
+          "certa": 3,
+          "explica": "A new process is a big plan: top model. The other three are routine reading, copying, and drafting—the light model's territory.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "The light model made the same calculation error twice in the report. According to the rule:",
+          "opcoes": [
+            "Try five more times with the light model.",
+            "Move this task to the top model and say \"because the light model made two errors.\"",
+            "Give up on using an agent for reports.",
+            "Switch every task for every agent to the top model, just to be safe."
+          ],
+          "certa": 1,
+          "explica": "Two failures on the same task are one of the triggers to move it up. Move only that task, with the line \"because…\", and leave the others with the light model.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Why not use the top model for everything, since it's better?",
+          "opcoes": [
+            "Because the top model can't do simple tasks.",
+            "Because the top model doesn't accept the sheet in its instructions.",
+            "Because it usually uses more of your subscription limit and takes longer, with no benefit for routine work.",
+            "Because the top model only works in the terminal."
+          ],
+          "certa": 2,
+          "explica": "The top model can do simple tasks, but it takes longer and uses more of your limit. For routine work, the light model delivers the same result; the top model stays free for tasks that need it.",
+          "ref": "passos"
+        },
+        {
+          "p": "In Codex, which command option selects the model?",
+          "opcoes": [
+            "-o",
+            "-s",
+            "-m",
+            "--skip-git-repo-check"
+          ],
+          "certa": 2,
+          "explica": "<code>-m</code> selects the model. <code>-o</code> saves the last response to a file, <code>-s</code> sets what the agent can change (read-only, workspace-write), and <code>--skip-git-repo-check</code> lets it run outside a Git repository.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "Light model for routine work",
+          "texto": "Read, summarize, copy, and draft: quickly, using less of your limit."
+        },
+        {
+          "t": "Top model for difficult tasks",
+          "texto": "Big plans, two failures with the light model, money, or contracts."
+        },
+        {
+          "t": "Move it up and say why",
+          "texto": "\"I'm sending this to the top model because…\": this is how you check whether the rule works."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Course: Claude as an agent manager (cost and multiple sessions)",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/en/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Codex CLI (official documentation, in English)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

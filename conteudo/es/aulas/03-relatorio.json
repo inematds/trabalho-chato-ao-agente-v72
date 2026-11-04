@@ -1,0 +1,362 @@
+{
+  "slug": "relatorio",
+  "num": 3,
+  "menu": "Informe",
+  "titulo": "El informe de la semana sin abrir el panel",
+  "titulo_curto": "Informe de la semana",
+  "minutos": 18,
+  "lead": "Cada lunes alguien abre el panel del sitio, mira el gráfico, copia números y escribe un resumen. Es el primer trabajo aburrido ideal: solo lectura, se repite cada semana y el resultado es un texto que puedes revisar en dos minutos. Tú exportas, el agente lee y escribe.",
+  "objetivo": "convertir la exportación de Search Console (o los números de tu semana) en un informe de hasta 250 palabras con cifras verificadas.",
+  "competencias": [
+    "exportar-datos-del-panel",
+    "generar-informe-con-agente",
+    "verificar-numeros-por-muestra"
+  ],
+  "aprende": [
+    {
+      "icone": "baixar",
+      "t": "Exportar los datos de Search Console"
+    },
+    {
+      "icone": "grafico",
+      "t": "Comparar esta semana con la anterior"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Recibir un informe con formato fijo"
+    },
+    {
+      "icone": "lupa",
+      "t": "Verificar dos números antes de confiar"
+    }
+  ],
+  "hero_alt": "Un hombre lee una hoja impresa breve junto a un pequeño gráfico y una laptop que muestra un gráfico de líneas desenfocado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del panel al informe",
+      "sub": "Haz clic en cada paso. Tú haces el primero y el último.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Exportar",
+          "sub": "tú",
+          "detalhe": "En Search Console, abre el informe de rendimiento, elige el período (últimos 7 días, comparados con el período anterior) y haz clic en Exportar. Descargas una hoja de cálculo con las pestañas de consultas y páginas. El inicio de sesión y los clics los haces tú.",
+          "itens": [
+            {
+              "icone": "baixar",
+              "t": "Exportar → hoja de cálculo"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Pegar",
+          "sub": "en el Proyecto",
+          "detalhe": "Abre el Proyecto del agente (la ficha de la lección 2 ya está en las instrucciones), adjunta la hoja de cálculo o pega las filas y di la palabra clave, como \"informe\".",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "\"informe\""
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Leer",
+          "sub": "el agente",
+          "detalhe": "El agente sigue los pasos de la ficha: suma los clics, compara las dos semanas y encuentra lo que más subió y lo que más bajó. Sin contraseñas ni clics en el panel.",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "sube / baja / total"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Informe",
+          "sub": "hasta 250 palabras",
+          "forte": true,
+          "detalhe": "Una línea con el total, las mayores subidas y bajadas con los números lado a lado y tres acciones para la semana. Formato fijo: cada lunes sabes dónde mirar.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "3 acciones de la semana"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Revisar",
+          "sub": "tú",
+          "detalhe": "Toma dos números del informe y búscalos en la hoja de cálculo. Si coinciden, confía en el resto. Si no coinciden, corrige la ficha. Durante las tres primeras semanas, revísalos siempre; después, por muestra.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "2 números en la hoja de cálculo"
+            }
+          ]
+        }
+      ],
+      "volta": "Un número que no cuadra se convierte en una regla nueva en la ficha",
+      "legenda": "El mismo proceso sirve para cualquier panel que exporta una hoja de cálculo: ventas, agenda, atención al cliente."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "La exportación, paso a paso",
+      "sub": "En Search Console, con tu inicio de sesión. Haz clic en cada paso.",
+      "passos": [
+        {
+          "titulo": "Rendimiento",
+          "sub": "el informe",
+          "texto": [
+            "Inicia sesión en Search Console con tu cuenta, elige el sitio y abre el informe de rendimiento (resultados de búsqueda).",
+            "Muestra clics, impresiones, CTR (clics divididos por impresiones) y posición promedio."
+          ]
+        },
+        {
+          "titulo": "Período",
+          "sub": "7 días × 7 días",
+          "texto": [
+            "En el filtro de fechas, elige comparar los últimos 7 días con el período anterior.",
+            "Así, la tabla ya muestra las dos semanas lado a lado y el agente no tiene que adivinar las fechas."
+          ]
+        },
+        {
+          "titulo": "Exportar",
+          "sub": "hoja de cálculo",
+          "texto": [
+            "Haz clic en Exportar y elige Google Sheets, Excel o CSV.",
+            "El archivo incluye una pestaña por dimensión (consultas, páginas, países…). Para el informe bastan consultas y páginas. Los nombres de las pestañas cambian según el idioma de tu cuenta."
+          ],
+          "exemplo": {
+            "rot": "Atención",
+            "texto": "Los valores que el panel muestra como ~ o - se convierten en cero en la hoja de cálculo exportada."
+          }
+        },
+        {
+          "titulo": "Entregar",
+          "sub": "al agente",
+          "texto": [
+            "En el chat, adjunta el archivo dentro del Proyecto y escribe \"informe\". Si el archivo es grande, pega solo las primeras 50 filas de cada pestaña.",
+            "En la terminal, guarda el archivo en la carpeta del agente y ejecuta el comando del bloque de abajo."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los datos de ejemplo y las instrucciones",
+      "sub": "¿No tienes Search Console? Usa los datos de ejemplo: son inventados, pero tienen el formato de una exportación real.",
+      "blocos": [
+        {
+          "rot": "Datos de ejemplo (pégalos en el Proyecto después de la ficha)",
+          "icone": "grafico",
+          "conteudo": "Consulta | Clics esta semana | Clics semana anterior\narmário planejado curitiba | 48 | 30\ncozinha planejada preço | 22 | 41\nmóveis planejados curitiba | 64 | 60\nguarda-roupa sob medida | 17 | 9\npainel de tv planejado | 12 | 15\nhome office planejado | 9 | 4\ncloset pequeno planejado | 6 | 13\nloja de móveis batel | 21 | 21"
+        },
+        {
+          "rot": "En el chat · la instrucción del lunes",
+          "icone": "chat",
+          "conteudo": "informe\n\nUsa la ficha de este Proyecto. Los datos están arriba (o en el archivo adjunto).\nAntes del texto, muéstrame el total de clics de esta semana y de la anterior para que lo revise."
+        },
+        {
+          "rot": "Variación · ficha de las cifras de la semana (ventas, contactos, visitas)",
+          "icone": "arquivo",
+          "conteudo": "Rol: Eres mi agente de las cifras de la semana.\nSobre mí: [a qué se dedica la empresa]; pego las cifras de cada herramienta todos los viernes.\nCuándo: cuando pegue las cifras y diga \"cifras\".\nPasos: 1) arma una tabla: cifra, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee; copia las cifras exactamente; si falta una cifra, escribe \"no lo encontré\", nunca la estimes; guarda como borrador, yo lo envío al equipo; si te trabas, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: hazlo ahora con las cifras que voy a pegar."
+        },
+        {
+          "rot": "Terminal (opcional) · Codex con el modelo ligero",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# la ficha está en AGENTS.md; la hoja de cálculo exportada está en esta carpeta\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"informe: sigue AGENTS.md con la hoja de cálculo de esta carpeta\""
+        },
+        {
+          "rot": "Terminal (opcional) · Claude Code con el modelo ligero",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# la ficha está en CLAUDE.md; la hoja de cálculo exportada está en esta carpeta\nclaude -p --model sonnet \"informe: sigue CLAUDE.md con la hoja de cálculo de esta carpeta\" > relatorio.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Qué debe incluir el informe",
+            "html": "<ul><li>Total de clics: <b>199</b> esta semana frente a <b>193</b> la anterior (aumento de 6).</li><li>Mayor aumento: \"armário planejado curitiba\", de 30 a 48.</li><li>Mayor caída: \"cozinha planejada preço\", de 41 a 22.</li><li>Tres acciones sencillas, una por línea.</li></ul><p>Son los cálculos hechos a mano con los datos de ejemplo. El texto del agente cambia; las cifras no pueden cambiar.</p>"
+          },
+          {
+            "rot": "Por qué solo lectura",
+            "html": "<p>El agente no necesita entrar a Search Console: recibe la hoja de cálculo. Así, no hay contraseñas en la conversación, no se modifica nada en el panel y el único error posible es un texto incorrecto, que detectas al revisarlo.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Adjuntar al chat la hoja de cálculo completa de 1.000 filas</b>: el modelo puede leer solo una parte. Envía las pestañas y las filas que importan.</li><li><b>Pedir un \"análisis SEO completo\"</b>: eso requiere el modelo superior y tu participación (lección 7). El informe semanal es una rutina.</li><li><b>No revisar</b> durante las primeras semanas: así descubres que hace falta agregar otra regla a la ficha.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa el informe del agente",
+      "sub": "Ejecuta el agente con los datos de ejemplo y pega aquí el informe que escribió. La página busca las cifras correctas: el total de las dos semanas y la mayor caída. Si falta alguna, el agente hizo mal el cálculo o pasó por alto lo importante.",
+      "arquivo": "relatorio.txt",
+      "rot": "Pega aquí el informe que escribió el agente:",
+      "modelo": "Total de clics: ...",
+      "regras": [
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "el total de esta semana (199)",
+              "termos": [
+                "199"
+              ]
+            },
+            {
+              "rot": "el total de la semana anterior (193)",
+              "termos": [
+                "193"
+              ]
+            },
+            {
+              "rot": "la mayor caída con las dos cifras (41 y 22)",
+              "termos": [
+                "41"
+              ]
+            },
+            {
+              "rot": "la cifra actual de clics de la mayor caída (22)",
+              "termos": [
+                "22"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: las cifras correctas están en el informe",
+      "exemplo": "Semana con un ligero aumento: 199 clics frente a 193 la semana anterior (+6, cerca del 3%).\nMayores aumentos: armário planejado curitiba (30 → 48), guarda-roupa sob medida (9 → 17), home office planejado (4 → 9).\nMayores caídas: cozinha planejada preço (41 → 22), closet pequeno planejado (13 → 6), painel de tv planejado (15 → 12).\nAcciones: 1) revisar la página de cocinas; 2) mostrar precios de clósets; 3) reforzar la página de armarios.",
+      "exemplo_errado": "Buena semana: cerca de 200 clics, un poco más que antes.\nMayores aumentos: armário planejado curitiba.\nMayores caídas: algunas consultas sobre cocinas bajaron.\nAcciones: seguir publicando."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el primer informe",
+      "sub": "Primero con los datos de ejemplo; después con los tuyos.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Prueba con el ejemplo",
+          "min": "10 min",
+          "texto": "En el Proyecto del agente (ficha de la lección 2), pega los datos de ejemplo y la instrucción del lunes. Pega el informe en el verificador.",
+          "pronto": "el verificador responde OK: el informe incluye 199, 193 y la caída de 41 a 22."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Con tus datos",
+          "min": "15 min",
+          "texto": "Exporta tu semana de Search Console (o reúne los números de tu semana) y usa la misma solicitud. ¿No tienes sitio web? Usa la ficha de los números de la semana.",
+          "pronto": "encontraste en la hoja de cálculo dos números mencionados en el informe, y ambos coincidían."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Una regla más",
+          "min": "5 min",
+          "texto": "Lee el informe y anota algo que quisieras diferente (el orden, el tamaño, un número más). Agrega una línea a la ficha.",
+          "pronto": "la ficha tiene una regla nueva y el siguiente informe ya sale con el cambio."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "En el proceso por chat, ¿quién entra a Search Console?",
+          "opcoes": [
+            "El agente, con la contraseña que está en la ficha.",
+            "Tú: entras, exportas la hoja de cálculo y se la entregas al agente.",
+            "Nadie: el chat ya recibe los datos por su cuenta.",
+            "El agente, con el usuario y la contraseña que escribiste una vez en la conversación."
+          ],
+          "certa": 1,
+          "explica": "En el chat, el agente no abre tu panel. Tú entras con tu usuario, exportas y le entregas la hoja de cálculo; él la lee y redacta. La contraseña nunca va en la ficha ni en la conversación.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Con los datos de ejemplo, ¿cuál es el total de clics de esta semana?",
+          "opcoes": [
+            "193",
+            "199",
+            "211",
+            "64 (la fila más alta)"
+          ],
+          "certa": 1,
+          "explica": "48 + 22 + 64 + 17 + 12 + 9 + 6 + 21 = 199. La semana anterior suma 193. 64 es solo la fila más alta, no el total.",
+          "ref": "codigo"
+        },
+        {
+          "p": "El informe quedó bien redactado, pero no tienes tiempo para revisarlo. Durante las primeras semanas, lo mínimo es:",
+          "opcoes": [
+            "Confiar, porque el texto es claro.",
+            "Pedirle al propio agente que revise el informe que él mismo redactó.",
+            "Buscar dos números del informe en la hoja de cálculo y comprobar si coinciden.",
+            "Esperar un mes y revisarlo todo de una vez."
+          ],
+          "certa": 2,
+          "explica": "Revisar una muestra toma dos minutos y muestra si la ficha funciona. Un texto claro no demuestra que los cálculos sean correctos, y si el agente se revisa a sí mismo puede repetir el mismo error.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Un número de tu semana no aparece en la hoja de cálculo que pegaste. ¿Qué indica la ficha que debe escribir el agente?",
+          "opcoes": [
+            "Una estimación parecida a la de la semana anterior.",
+            "Cero.",
+            "El promedio de las últimas semanas.",
+            "«No lo encontré», sin estimar."
+          ],
+          "certa": 3,
+          "explica": "Una estimación que parece un número real es el error más caro: tomas decisiones basándote en ella. «No lo encontré» muestra el vacío y tú lo completas.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La lección en tres frases",
+      "itens": [
+        {
+          "t": "Tú exportas",
+          "texto": "El usuario y los clics en el panel son tuyos. El agente recibe la hoja de cálculo y solo la lee."
+        },
+        {
+          "t": "Formato fijo",
+          "texto": "Total, mayores subidas y bajadas con los números uno al lado del otro, tres acciones. Todos los lunes, igual."
+        },
+        {
+          "t": "Dos números",
+          "texto": "Revisa dos números en la hoja de cálculo. Si coinciden, confía; si no, la ficha recibe una regla."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Informe de rendimiento de Search Console (ayuda oficial)",
+          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "icone": "grafico"
+        },
+        {
+          "t": "Codex CLI (documentación oficial, en inglés)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        },
+        {
+          "t": "Claude Code (documentación oficial, en inglés)",
+          "href": "https://docs.claude.com/en/docs/claude-code/overview",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

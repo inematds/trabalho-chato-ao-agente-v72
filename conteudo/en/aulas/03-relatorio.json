@@ -1,0 +1,362 @@
+{
+  "slug": "relatorio",
+  "num": 3,
+  "menu": "Report",
+  "titulo": "The weekly report without opening the dashboard",
+  "titulo_curto": "Weekly report",
+  "minutos": 18,
+  "lead": "Every Monday, someone opens the site dashboard, looks at the chart, copies numbers, and writes a summary. It’s the ideal first boring task: read-only, repeated every week, and the result is a text you can check in two minutes. You export the data, the agent reads it and writes.",
+  "objetivo": "turn the Search Console export (or your weekly numbers) into a report of up to 250 words with checked numbers.",
+  "competencias": [
+    "export-dashboard-data",
+    "generate-report-with-agent",
+    "spot-check-numbers"
+  ],
+  "aprende": [
+    {
+      "icone": "baixar",
+      "t": "Export the Search Console data"
+    },
+    {
+      "icone": "grafico",
+      "t": "Compare this week with last week"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Get a report in a fixed format"
+    },
+    {
+      "icone": "lupa",
+      "t": "Check two numbers before trusting it"
+    }
+  ],
+  "hero_alt": "A man reads a short printed sheet with a small chart beside a laptop showing a blurred line chart.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From dashboard to report",
+      "sub": "Click each step. You do the first and last.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Export",
+          "sub": "you",
+          "detalhe": "In Search Console, open the Performance report, choose the period (last 7 days, compared with the previous period), and click Export. You’ll download a spreadsheet with tabs for queries and pages. The login and clicks are yours.",
+          "itens": [
+            {
+              "icone": "baixar",
+              "t": "Export → spreadsheet"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Paste",
+          "sub": "into the Project",
+          "detalhe": "Open the agent’s Project (the sheet from lesson 2 is already in the instructions), attach the spreadsheet or paste the rows, and say the trigger word, such as \"report\".",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "\"report\""
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Read",
+          "sub": "the agent",
+          "detalhe": "The agent follows the steps in the sheet: adds up the clicks, compares the two weeks, and finds what rose the most and what fell the most. No passwords, no clicking around the dashboard.",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "up / down / total"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Report",
+          "sub": "up to 250 words",
+          "forte": true,
+          "detalhe": "One line with the total, the biggest increases and drops with the numbers side by side, and three actions for the week. Fixed format: every Monday, you know where to look.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "3 actions for the week"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Check",
+          "sub": "you",
+          "detalhe": "Take two numbers from the report and look them up in the spreadsheet. If they match, trust the rest. If they don’t, correct the sheet. For the first three weeks, always check; after that, spot-check.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "2 numbers in the spreadsheet"
+            }
+          ]
+        }
+      ],
+      "volta": "A number that doesn't match becomes a new rule in the sheet",
+      "legenda": "The same process works for any dashboard that exports a spreadsheet: sales, scheduling, customer service."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The export, step by step",
+      "sub": "In Search Console, using your login. Click each step.",
+      "passos": [
+        {
+          "titulo": "Performance",
+          "sub": "the report",
+          "texto": [
+            "Sign in to Search Console with your account, choose the site, and open the Performance report (search results).",
+            "It shows clicks, impressions, CTR (clicks divided by impressions), and average position."
+          ]
+        },
+        {
+          "titulo": "Period",
+          "sub": "7 days × 7 days",
+          "texto": [
+            "In the date filter, choose to compare the last 7 days with the previous period.",
+            "That way, the table shows both weeks side by side, and the agent doesn’t have to guess the dates."
+          ]
+        },
+        {
+          "titulo": "Export",
+          "sub": "spreadsheet",
+          "texto": [
+            "Click Export and choose Google Sheets, Excel, or CSV.",
+            "The file has one tab for each dimension (queries, pages, countries…). For the report, you only need queries and pages. Tab names change with your account language."
+          ],
+          "exemplo": {
+            "rot": "Watch out",
+            "texto": "Values the dashboard shows as ~ or - become zero in the exported spreadsheet."
+          }
+        },
+        {
+          "titulo": "Hand it",
+          "sub": "to the agent",
+          "texto": [
+            "In chat, attach the file to the Project and say \"report\". If the file is large, paste only the first 50 rows from each tab.",
+            "In the terminal, save the file in the agent’s folder and run the command in the block below."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Sample data and prompts",
+      "sub": "No Search Console? Use the sample data: it’s made up, but formatted like a real export.",
+      "blocos": [
+        {
+          "rot": "Sample data (paste into the Project after the sheet)",
+          "icone": "grafico",
+          "conteudo": "Query | Clicks this week | Clicks previous week\ncustom cabinets curitiba | 48 | 30\ncustom kitchen price | 22 | 41\ncustom furniture curitiba | 64 | 60\ncustom wardrobe | 17 | 9\ncustom tv panel | 12 | 15\ncustom home office | 9 | 4\nsmall custom closet | 6 | 13\nbatel furniture store | 21 | 21"
+        },
+        {
+          "rot": "In chat · Monday’s prompt",
+          "icone": "chat",
+          "conteudo": "report\n\nUse the sheet in this Project. The data is above (or in the attached file).\nBefore writing the report, show me the total clicks for this week and last week so I can check them."
+        },
+        {
+          "rot": "Variation · agent sheet for weekly numbers (sales, contacts, visits)",
+          "icone": "arquivo",
+          "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table with: metric, this week, previous week, change in %; 2) write 3 short bullets: the best news, the biggest concern, a question for the team.\nRules: read only; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; save as a draft, I’ll send it to the team; if you get stuck, stop and ask.\nDelivery: the table and 3 bullets, nothing else.\nFirst task: run this now with the numbers I’m about to paste."
+        },
+        {
+          "rot": "Terminal (optional) · Codex with the light model",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# the sheet is in AGENTS.md; the exported spreadsheet is in this folder\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"report: follow AGENTS.md with the spreadsheet in this folder\""
+        },
+        {
+          "rot": "Terminal (optional) · Claude Code with the light model",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# the sheet is in CLAUDE.md; the exported spreadsheet is in this folder\nclaude -p --model sonnet \"report: follow CLAUDE.md with the spreadsheet in this folder\" > relatorio.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "What the report should include",
+            "html": "<ul><li>Total clicks: <b>199</b> this week versus <b>193</b> last week (up by 6).</li><li>Biggest increase: \"custom cabinets curitiba\", from 30 to 48.</li><li>Biggest drop: \"custom kitchen price\", from 41 to 22.</li><li>Three simple actions, one per line.</li></ul><p>These are the totals calculated by hand from the sample data. The agent’s wording may vary; the numbers must not.</p>"
+          },
+          {
+            "rot": "Why read only",
+            "html": "<p>The agent doesn’t need to access Search Console: it gets the spreadsheet. That means no password in the conversation, nothing changes in the dashboard, and the only possible mistake is incorrect wording, which you’ll catch when you check it.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Attach the entire 1,000-row spreadsheet</b> in chat: the model may read only part of it. Send the tabs and rows that matter.</li><li><b>Ask for a \"complete SEO analysis\"</b>: that’s work for the top model and for you (lesson 7). The weekly report is routine.</li><li><b>Skip the check</b> in the first few weeks: that’s when you’ll discover the sheet needs one more rule.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check the agent’s report",
+      "sub": "Run the agent with the sample data and paste its report here. The page looks for the right numbers: the total for both weeks and the biggest drop. If any are missing, the agent got the math wrong or skipped what matters.",
+      "arquivo": "relatorio.txt",
+      "rot": "Paste the agent’s report here:",
+      "modelo": "Total clicks: ...",
+      "regras": [
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "this week’s total (199)",
+              "termos": [
+                "199"
+              ]
+            },
+            {
+              "rot": "last week’s total (193)",
+              "termos": [
+                "193"
+              ]
+            },
+            {
+              "rot": "the biggest drop with both numbers (41 and 22)",
+              "termos": [
+                "41"
+              ]
+            },
+            {
+              "rot": "the current click count for the biggest drop (22)",
+              "termos": [
+                "22"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: the right numbers are in the report",
+      "exemplo": "A slightly up week: 199 clicks versus 193 last week (+6, about 3%).\nBiggest increases: custom cabinets curitiba (30 → 48), custom wardrobe (9 → 17), custom home office (4 → 9).\nBiggest drops: custom kitchen price (41 → 22), small custom closet (13 → 6), custom tv panel (15 → 12).\nActions: 1) review the kitchen pages; 2) show closet prices; 3) strengthen the cabinets page.",
+      "exemplo_errado": "Good week: about 200 clicks, a little more than before.\nBiggest increases: custom cabinets curitiba.\nBiggest drops: some kitchen queries fell.\nActions: keep posting."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your first report",
+      "sub": "Start with the sample data, then use your own.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Practice with the sample",
+          "min": "10 min",
+          "texto": "In the agent’s Project (the sheet from lesson 2), paste the sample data and Monday’s prompt. Paste the report into the checker.",
+          "pronto": "the checker responds OK: the report includes 199, 193, and the drop from 41 to 22."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · With your own data",
+          "min": "15 min",
+          "texto": "Export your week from Search Console (or gather your week's numbers) and run the same prompt. No website? Use the weekly numbers sheet.",
+          "pronto": "you found two numbers from the report in the spreadsheet, and both matched."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · One more rule",
+          "min": "5 min",
+          "texto": "Read the report and note one thing you’d like to change (order, length, one more number). Add a line to the sheet.",
+          "pronto": "the sheet has a new rule, and the next report already reflects the change."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "On the chat path, who logs in to Search Console?",
+          "opcoes": [
+            "The agent, using the password in the sheet.",
+            "You: log in, export the spreadsheet, and give it to the agent.",
+            "No one: the chat gets the data on its own.",
+            "The agent, using the login and password you typed once in the conversation."
+          ],
+          "certa": 1,
+          "explica": "In chat, the agent can’t open your dashboard. You log in, export the spreadsheet, and give it to the agent; it reads and writes. Never put a password in the sheet or the conversation.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Using the sample data, what’s the total number of clicks this week?",
+          "opcoes": [
+            "193",
+            "199",
+            "211",
+            "64 (the largest row)"
+          ],
+          "certa": 1,
+          "explica": "48 + 22 + 64 + 17 + 12 + 9 + 6 + 21 = 199. The previous week adds up to 193. 64 is just the largest row, not the total.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The report is well written, but you don’t have time to check it. In the first few weeks, the minimum is:",
+          "opcoes": [
+            "Trust it because the text is clear.",
+            "Ask the agent to check the report it wrote itself.",
+            "Find two numbers from the report in the spreadsheet and see if they match.",
+            "Wait a month and check everything at once."
+          ],
+          "certa": 2,
+          "explica": "A spot check takes two minutes and shows whether the sheet works. Clear writing doesn’t prove the math is right, and having the agent check its own work repeats the same mistake.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "One of your weekly numbers doesn’t appear in the spreadsheet you pasted. What does the sheet tell the agent to write?",
+          "opcoes": [
+            "An estimate similar to last week’s.",
+            "Zero.",
+            "The average of the last few weeks.",
+            "“Couldn't find,” without estimating."
+          ],
+          "certa": 3,
+          "explica": "An estimate that looks like a real number is the most costly mistake: you make decisions based on it. “Couldn't find” shows the gap, and you fill it in.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "You export",
+          "texto": "The login and dashboard clicks are yours. The agent receives the spreadsheet and only reads it."
+        },
+        {
+          "t": "Fixed format",
+          "texto": "Total, biggest increases and drops with the numbers side by side, three actions. The same every Monday."
+        },
+        {
+          "t": "Two numbers",
+          "texto": "Check two numbers in the spreadsheet. If they match, trust it; if they don’t, add a rule to the sheet."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Search Console Performance Report (official help)",
+          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "icone": "grafico"
+        },
+        {
+          "t": "Codex CLI (official documentation, in English)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        },
+        {
+          "t": "Claude Code (official documentation, in English)",
+          "href": "https://docs.claude.com/en/docs/claude-code/overview",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

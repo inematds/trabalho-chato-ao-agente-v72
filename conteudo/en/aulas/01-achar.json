@@ -1,0 +1,349 @@
+{
+  "slug": "achar",
+  "num": 1,
+  "menu": "Find",
+  "titulo": "Find the right boring task",
+  "titulo_curto": "Find the task",
+  "minutos": 15,
+  "lead": "You don’t need to automate your whole business. You need one task: the one that takes time every week, feels tedious, and won’t cause damage if it goes wrong. In this lesson, AI interviews you about your week and makes a list; you choose the first task.",
+  "objetivo": "make a list of your repetitive tasks and choose the first one for the agent: lots of time, lots of boredom, low risk.",
+  "competencias": [
+    "map-repetitive-tasks",
+    "assess-delegation-risk",
+    "prioritize-automation"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "List what you repeat every week"
+    },
+    {
+      "icone": "relogio",
+      "t": "Rate the time, boredom, and risk"
+    },
+    {
+      "icone": "escudo",
+      "t": "Set aside anything that affects money or clients"
+    },
+    {
+      "icone": "alvo",
+      "t": "Choose the agent’s first task"
+    }
+  ],
+  "hero_alt": "Man around 45, sitting at a table at night, checking items on a paper task list; a laptop and a mug beside him.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From a packed week to the first task",
+      "sub": "Click each step to see what happens.",
+      "nos": [
+        {
+          "icone": "calendario",
+          "titulo": "Week",
+          "sub": "what you repeat",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "5 AI questions"
+            }
+          ],
+          "detalhe": "AI asks one question at a time: what do you do on the computer that feels tedious, which websites do you visit every week, what do you copy from one place to another, which numbers do you pull together, and what do you put together when a new client comes in."
+        },
+        {
+          "icone": "lista",
+          "titulo": "List",
+          "sub": "one per line",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "minutes per week"
+            },
+            {
+              "icone": "x",
+              "t": "boredom from 1 to 5"
+            }
+          ],
+          "detalhe": "Each task becomes a line with the apps it uses, how many minutes per week it takes, and how boring it is. Make an honest estimate: the exact number doesn't matter, but the order does."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Risk",
+          "sub": "low, medium, high",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "money or a customer = medium at minimum"
+            }
+          ],
+          "detalhe": "Risk is the damage if the agent makes a mistake. Reading and summarizing is low risk. Anything that affects money or involves talking to a customer starts at medium, even if it seems simple.",
+          "forte": true
+        },
+        {
+          "icone": "alvo",
+          "titulo": "First",
+          "sub": "start now",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "lots of time + lots of boredom + low risk"
+            }
+          ],
+          "detalhe": "The agent's first task is the one at the top of the list: the one that combines the most minutes and the most boredom with low risk. The others can wait until later, one at a time."
+        }
+      ],
+      "legenda": "One task at a time. Add the second only when you trust the first (lesson 8)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to rate tasks without getting stuck",
+      "sub": "Click each criterion.",
+      "passos": [
+        {
+          "titulo": "Minutes",
+          "sub": "per week",
+          "texto": [
+            "Add up the time: 15 minutes a day, five days a week, is 75 minutes per week.",
+            "A 5-minute task once a month is rarely worth the work of setting up an agent."
+          ],
+          "exemplo": {
+            "rot": "Example",
+            "texto": "Copying orders from WhatsApp into a spreadsheet: 20 min a day, 100 min a week."
+          }
+        },
+        {
+          "titulo": "Boredom",
+          "sub": "from 1 to 5",
+          "texto": [
+            "5 is a task you put off. 1 is one you even enjoy doing.",
+            "A boring task is one you do in a rush, and rushing leads to mistakes: delegating can also improve quality."
+          ]
+        },
+        {
+          "titulo": "Risk",
+          "sub": "the damage a mistake could cause",
+          "texto": [
+            "<b>Low:</b> the agent only reads and writes a draft for you. <b>Medium:</b> it changes a record or company spreadsheet, or prepares a message for a customer. <b>High:</b> it pays, sends, deletes, or signs.",
+            "High-risk tasks stay in your hands throughout this course. The agent prepares; you carry it out."
+          ]
+        },
+        {
+          "titulo": "Decision",
+          "sub": "now, later, don't",
+          "texto": [
+            "<b>Start now:</b> one task, the best one on the list. <b>Later:</b> the good tasks that can wait their turn. <b>Do not delegate:</b> anything high-risk or that depends on your judgment.",
+            "If you're unsure between two tasks, choose the one with lower risk."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The prompt that interviews you",
+      "sub": "Copy and paste this into a new ChatGPT or Claude conversation. Take your time answering the questions.",
+      "blocos": [
+        {
+          "rot": "In chat · find the boring task",
+          "icone": "chat",
+          "conteudo": "Help me find the computer work I should hand off to an AI agent first.\n\nAsk these questions ONE AT A TIME and wait for my answer:\n1. What is a normal week like for me? What do I do on the computer that is boring or repetitive?\n2. Which websites, systems, or apps do I use every week?\n3. What do I copy from one place and paste into another?\n4. Which numbers or reports do I put together every week?\n5. When a new customer comes in, what do I need to enter or prepare, and in which tools?\n\nThen make a list with ONE LINE PER TASK, in this format:\nN | task | apps | X min | boredom N | risk low/medium/high | start now / later / do not delegate\n\nRules:\n- Any task that affects money or involves talking to a customer is at least medium risk.\n- Paying, sending, deleting, or signing is high risk and must be marked \"do not delegate\".\n- Only ONE line can say \"start now\": the one that combines the most minutes and the most boredom with low risk.\n- Order the tasks from the best first task to the worst.\n\nAt the end, write: \"Your first task is ___\" and a paragraph describing the work. I'll use it for the agent sheet."
+        },
+        {
+          "rot": "Example of a finished list (a custom furniture store)",
+          "icone": "lista",
+          "conteudo": "1 | Weekly website report for my business partner | Search Console, spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy quotes from email into the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices into accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for a new customer | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "How to check your work",
+            "html": "<ol><li>The list has at least 5 lines, one per task.</li><li>Every line has minutes, boredom, risk, and a decision.</li><li>Only one line says <b>start now</b>, and its risk is low.</li><li>Paying, sending, or deleting is marked <b>do not delegate</b>.</li></ol>"
+          },
+          {
+            "rot": "Terminal (optional)",
+            "html": "<p>In Claude Code or Codex, use the same prompt: open a terminal in a new folder (for example, <code>meus-agentes</code>), run <code>claude</code> or <code>codex</code>, paste the prompt, and at the end ask it to save the list in <code>tarefas.md</code>. Starting with lesson 2, that folder will hold your agent sheets.</p>"
+          },
+          {
+            "rot": "Common mistakes",
+            "html": "<ul><li><b>Choosing the hardest task</b> to \"test the AI\": the first task needs to go well, not impress.</li><li><b>Choosing the rarest task</b>: it takes months to trust an agent with a monthly task.</li><li><b>Marking a message to a customer as low risk</b>: once a wrong message is sent, you can't take it back.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Check your list",
+      "sub": "Test first with the example that passes and the one with an error. Then paste your list. The page checks the format (a number, minutes, risk, and decision on each line); you decide whether the order makes sense.",
+      "arquivo": "tarefas.txt",
+      "rot": "Paste your list here (one numbered task per line):",
+      "modelo": "1 | task | apps | 60 min | boredom 5 | low risk | start now",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "minutes",
+              "termos": [
+                "min / minutos / minuto / minutes / minute / mins"
+              ]
+            },
+            {
+              "rot": "risk",
+              "um_so": true,
+              "termos": [
+                "risco baixo / low risk / riesgo bajo",
+                "risco médio / medium risk / riesgo medio",
+                "risco alto / high risk / riesgo alto"
+              ]
+            },
+            {
+              "rot": "decision",
+              "um_so": true,
+              "termos": [
+                "começar já / start now / empezar ya",
+                "depois / later / después",
+                "não delegar / do not delegate / no delegar"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "one task marked start now",
+              "termos": [
+                "começar já / start now / empezar ya"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tasks with minutes, risk, and decision",
+      "exemplo": "1 | Weekly website report for my business partner | Search Console, spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy quotes from email into the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices into accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for a new customer | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate",
+      "exemplo_errado": "1 | Website report | 60 min | boredom 5 | start now\n2 | Estimates | 90 min | medium risk | later\n3 | Notes | medium risk | high risk | later\n4 | Pay suppliers | 30 min | high risk | do not delegate"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your list and your first task",
+      "sub": "Follow the steps in order. Move on only when \"done when\" is true.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · The interview",
+          "min": "15 min",
+          "texto": "Paste the request \"find the boring task\" into a new ChatGPT or Claude conversation and answer the five questions based on your actual past week.",
+          "pronto": "the AI returned a list with at least 5 lines in the format N | task | ... | decision."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Check and adjust",
+          "min": "10 min",
+          "texto": "Paste the list into the checker above. Fix anything missing by hand or by asking the AI. Check that paying, sending, or deleting is marked \"do not delegate\".",
+          "pronto": "the checker responds OK and only one line says \"start now\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Save the list",
+          "min": "5 min",
+          "texto": "Save the list and the final paragraph in a tarefas.txt file (or a note). You’ll use it again in lessons 2 and 8.",
+          "pronto": "the file exists, and the first task paragraph says what goes in, what comes out, and how often."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Which of these is the best first task for an agent?",
+          "opcoes": [
+            "Reply to customer complaints on WhatsApp on its own, without you reviewing them.",
+            "Summarize the website numbers every Monday in a report for you to read.",
+            "Pay supplier bills on time.",
+            "Plan next year’s sales strategy."
+          ],
+          "certa": 1,
+          "explica": "Summarizing the numbers for you to read is low risk, happens every week, and is boring. Replying to customers and paying bills are medium or high risk; the year’s strategy is rare and depends on your judgment.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "An task prepares a payment reminder for a customer but doesn’t send it. What’s the risk?",
+          "opcoes": [
+            "Low, because nothing is sent.",
+            "High, because it involves money.",
+            "At least medium: it involves money and a customer, even as a draft.",
+            "It depends only on how many minutes of your work time it takes each week."
+          ],
+          "certa": 2,
+          "explica": "Money or customer-related tasks start at medium risk, even as a draft, because an incorrect text approved in a hurry goes out with your name on it. Risk is high when the agent pays, sends, or deletes.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why does only one task get \"start now\"?",
+          "opcoes": [
+            "Because chat only allows one agent sheet per account, and the second one erases the first from memory.",
+            "Because you need to check everything the agent does at first, and you can only manage that with one task.",
+            "Because the other tasks can never be delegated.",
+            "Because the light model can only do one task per week."
+          ],
+          "certa": 1,
+          "explica": "At first, you check every result. That fits into your week with one task; with five, you stop checking and mistakes get through. The others wait their turn, as the plan in lesson 8 shows.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "The task \"copy orders to the spreadsheet\" takes 20 minutes a day, five days a week. How many minutes per week go on the list?",
+          "opcoes": [
+            "20 min, the time it takes for one day",
+            "60 min",
+            "100 min",
+            "140 min"
+          ],
+          "certa": 2,
+          "explica": "20 minutes times 5 days is 100 minutes a week. A common mistake is to write down just one day's time and underestimate the task.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "The lesson in three sentences",
+      "itens": [
+        {
+          "t": "One task",
+          "texto": "Don't automate everything: choose the task that adds up to the most time and boredom, with low risk."
+        },
+        {
+          "t": "Risk first",
+          "texto": "Money or a client starts at medium risk; you handle payments, sending, deleting, and signing."
+        },
+        {
+          "t": "The list comes back",
+          "texto": "The other tasks wait their turn. You'll pick one each week once you trust the previous one."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Course: From prompt to role (how to write the work for AI)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/en/",
+          "icone": "caneta"
+        },
+        {
+          "t": "Course: From chat to agent (the steps up to the terminal)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

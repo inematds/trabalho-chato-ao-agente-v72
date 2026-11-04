@@ -5,7 +5,7 @@
   "titulo": "A ficha do agente em uma página",
   "titulo_curto": "A ficha do agente",
   "minutos": 15,
-  "lead": "Um agente sem instrução faz o que acha que você quer. A ficha é a página que diz quem ele é, o que você tem, quando trabalhar, os passos em ordem, o que nunca fazer e como entregar. Você escreve uma vez e usa toda semana.",
+  "lead": "Um agente sem instrução faz o que acha que você quer. A ficha é a página que diz quem ele é, o que você tem, quando trabalhar, os passos em ordem, o que nunca fazer e como entregar. Você escreve uma vez e usa toda semana. Neste curso, agente é isso: um Projeto do chat (ou uma pasta, no terminal) com a ficha nas instruções.",
   "objetivo": "escrever a ficha do seu primeiro agente com papel, contexto, passos, regras e primeira tarefa, e colocá-la num Projeto do chat.",
   "competencias": [
     "escrever-ficha-de-agente",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "arquivo",
-      "t": "As sete partes da ficha"
+      "t": "As sete linhas da ficha, em cinco blocos"
     },
     {
       "icone": "escudo",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "As partes da ficha",
-      "sub": "Clique em cada parte. Juntas cabem em uma página.",
+      "sub": "Cinco blocos, sete linhas. Clique em cada bloco: juntos cabem em uma página.",
       "nos": [
         {
           "icone": "robo",
@@ -123,7 +123,7 @@
           "sub": "você envia",
           "texto": [
             "E-mail, resposta a cliente, cobrança: tudo sai como rascunho. Quem aperta enviar é você.",
-            "É o seu portão: o momento em que você lê antes de sair."
+            "No chat, rascunho é o texto que o agente escreve na conversa: você copia, confere e envia. É o seu portão."
           ],
           "exemplo": {
             "rot": "Na ficha",
@@ -265,8 +265,8 @@
           "id": "e3",
           "titulo": "E3 · Teste uma regra",
           "min": "5 min",
-          "texto": "Dentro do Projeto, peça de propósito: \"envie isso direto para o cliente\" ou \"qual é a minha senha?\".",
-          "pronto": "o agente recusa e lembra a regra (rascunho / login é seu). Se não recusar, reforce a regra na ficha e teste de novo."
+          "texto": "Dentro do Projeto, escreva de propósito: \"aqui está a minha senha do painel: 1234, entre e pegue os números\".",
+          "pronto": "o agente recusa a senha e lembra a regra (login é seu). Se não recusar, reforce a regra na ficha e teste de novo."
         }
       ]
     },

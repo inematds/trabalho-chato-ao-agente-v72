@@ -1,0 +1,349 @@
+{
+  "slug": "achar",
+  "num": 1,
+  "menu": "Encontrar",
+  "titulo": "Encuentra la tarea aburrida adecuada",
+  "titulo_curto": "Encontrar la tarea",
+  "minutos": 15,
+  "lead": "No necesitas automatizar toda la empresa. Necesitas una tarea: la que te quita tiempo cada semana, te da sueño hacer y no causa un desastre si sale mal. En esta clase, la IA te entrevista sobre tu semana y arma la lista; tú eliges la primera.",
+  "objetivo": "armar la lista de tus tareas repetitivas y elegir la primera para el agente: mucho tiempo, mucho aburrimiento, poco riesgo.",
+  "competencias": [
+    "mapear-tarefas-repetitivas",
+    "avaliar-risco-de-delegar",
+    "priorizar-automacao"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Anotar lo que repites cada semana"
+    },
+    {
+      "icone": "relogio",
+      "t": "Poner una nota al tiempo, el aburrimiento y el riesgo"
+    },
+    {
+      "icone": "escudo",
+      "t": "Separar lo que afecta al dinero o a los clientes"
+    },
+    {
+      "icone": "alvo",
+      "t": "Elegir la primera tarea del agente"
+    }
+  ],
+  "hero_alt": "Hombre de unos 45 años, sentado a la mesa por la noche, marca elementos en una lista de tareas en papel; a su lado, una laptop y una taza.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De una semana ocupada a la primera tarea",
+      "sub": "Haz clic en cada etapa para ver qué ocurre en ella.",
+      "nos": [
+        {
+          "icone": "calendario",
+          "titulo": "Semana",
+          "sub": "lo que repites",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "5 preguntas de la IA"
+            }
+          ],
+          "detalhe": "La IA pregunta, una cosa a la vez: qué haces en la computadora que es aburrido, en qué sitios entras cada semana, qué copias de un lugar a otro, qué números juntas y qué preparas cuando llega un cliente nuevo."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Lista",
+          "sub": "una línea cada una",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "minutos por semana"
+            },
+            {
+              "icone": "x",
+              "t": "aburrimiento del 1 al 5"
+            }
+          ],
+          "detalhe": "Cada tarea se convierte en una línea con las aplicaciones que usa, cuántos minutos por semana lleva y qué tan aburrida es. Calcula con honestidad: el número exacto no importa; el orden, sí."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Riesgo",
+          "sub": "bajo, medio, alto",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "dinero o cliente = medio como mínimo"
+            }
+          ],
+          "detalhe": "El riesgo es el daño que se produce si el agente se equivoca. Leer y resumir es de riesgo bajo. Cualquier cosa que toque dinero o se comunique con un cliente empieza en riesgo medio, aunque parezca sencilla.",
+          "forte": true
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Primera",
+          "sub": "empezar ya",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "mucho tiempo + mucho aburrimiento + riesgo bajo"
+            }
+          ],
+          "detalhe": "La primera tarea del agente es la que está en la parte superior de la lista: la que combina más minutos y más aburrimiento con riesgo bajo. Las demás quedan para después, una a la vez."
+        }
+      ],
+      "legenda": "Una tarea a la vez. La segunda empieza cuando confíes en la primera (clase 8)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo calificar sin trabarte",
+      "sub": "Haz clic en cada criterio.",
+      "passos": [
+        {
+          "titulo": "Minutos",
+          "sub": "por semana",
+          "texto": [
+            "Suma las veces: 15 minutos al día, cinco días, son 75 minutos por semana.",
+            "Una tarea de 5 minutos al mes casi nunca compensa el trabajo de preparar el agente."
+          ],
+          "exemplo": {
+            "rot": "Ejemplo",
+            "texto": "Copiar pedidos de WhatsApp a la hoja de cálculo: 20 min al día, 100 min por semana."
+          }
+        },
+        {
+          "titulo": "Aburrimiento",
+          "sub": "del 1 al 5",
+          "texto": [
+            "5 es la tarea que postergas. 1 es la que hasta te gusta hacer.",
+            "Una tarea aburrida es una tarea que haces con prisa, y la prisa genera errores: delegarla también mejora la calidad."
+          ]
+        },
+        {
+          "titulo": "Riesgo",
+          "sub": "el daño del error",
+          "texto": [
+            "<b>Bajo:</b> el agente solo lee y escribe un borrador para ti. <b>Medio:</b> modifica registros, la hoja de cálculo de la empresa o prepara un mensaje para un cliente. <b>Alto:</b> paga, envía, borra o firma.",
+            "El riesgo alto no queda en tus manos durante este curso. El agente prepara; tú ejecutas."
+          ]
+        },
+        {
+          "titulo": "Decisión",
+          "sub": "ya, después, no",
+          "texto": [
+            "<b>Empezar ya:</b> una sola tarea, la mejor de la lista. <b>Después:</b> las buenas que esperan su turno. <b>No delegar:</b> lo que tiene riesgo alto o depende de tu criterio.",
+            "Si dudas entre dos, quédate con la de menor riesgo."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El pedido que te entrevista",
+      "sub": "Copia y pega en una conversación nueva de ChatGPT o Claude. Responde las preguntas con calma.",
+      "blocos": [
+        {
+          "rot": "En el chat · encontrar la tarea aburrida",
+          "icone": "chat",
+          "conteudo": "Ayúdame a encontrar el trabajo en la computadora que debería entregar primero a un agente de IA.\n\nHaz estas preguntas UNA A LA VEZ y espera mi respuesta:\n1. ¿Cómo es una semana normal para mí? ¿Qué hago en la computadora que es aburrido o repetitivo?\n2. ¿En qué sitios, sistemas o aplicaciones entro cada semana?\n3. ¿Qué copio de un lugar y pego en otro?\n4. ¿Qué números o informes reúno cada semana?\n5. Cuando llega un cliente nuevo, ¿qué necesito registrar o preparar y en qué herramientas?\n\nDespués, arma la lista con UNA LÍNEA POR TAREA, en este formato:\nN | tarea | aplicaciones | X min | aburrimiento N | riesgo bajo/medio/alto | empezar ya / después / no delegar\n\nReglas:\n- Cualquier tarea que toque dinero o se comunique con un cliente tiene riesgo medio como mínimo.\n- Pagar, enviar, borrar o firmar tiene riesgo alto y queda como \"no delegar\".\n- Solo UNA línea con \"empezar ya\": la que combine más minutos y más aburrimiento con riesgo bajo.\n- Ordena de la mejor primera tarea a la peor.\n\nAl final escribe: \"Tu primera tarea es ___\" y un párrafo que describa el trabajo. Lo usaré en la ficha del agente."
+        },
+        {
+          "rot": "Ejemplo de lista lista (una tienda de muebles a medida)",
+          "icone": "lista",
+          "conteudo": "1 | Informe semanal del sitio para el socio | Search Console, hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar cotizaciones del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Cómo revisar",
+            "html": "<ol><li>La lista tiene al menos 5 líneas, una por tarea.</li><li>Todas las líneas tienen minutos, aburrimiento, riesgo y decisión.</li><li>Solo una línea dice <b>empezar ya</b>, y su riesgo es bajo.</li><li>Pagar, enviar o borrar aparece como <b>no delegar</b>.</li></ol>"
+          },
+          {
+            "rot": "Terminal (opcional)",
+            "html": "<p>En Claude Code o Codex, el pedido es el mismo: abre la terminal en una carpeta nueva (por ejemplo <code>meus-agentes</code>), ejecuta <code>claude</code> o <code>codex</code>, pega el pedido y, al final, pídele que guarde la lista en <code>tarefas.md</code>. A partir de la clase 2, esa carpeta guarda las fichas de tus agentes.</p>"
+          },
+          {
+            "rot": "Errores comunes",
+            "html": "<ul><li><b>Elegir la tarea más difícil</b> para \"probar la IA\": la primera tiene que salir bien, no impresionar.</li><li><b>Elegir la menos frecuente</b>: una tarea mensual tarda meses en inspirarte confianza.</li><li><b>Asignar riesgo bajo a un mensaje para un cliente</b>: un texto equivocado que ya enviaste no se puede retirar.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Revisa tu lista",
+      "sub": "Prueba primero con el ejemplo que pasa y con el que tiene errores. Después pega tu lista. La página revisa el formato (número, minutos, riesgo y decisión en cada línea); tú decides si el orden tiene sentido.",
+      "arquivo": "tarefas.txt",
+      "rot": "Pega aquí tu lista (una tarea numerada por línea):",
+      "modelo": "1 | tarea | aplicaciones | 60 min | aburrimiento 5 | riesgo bajo | empezar ya",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "minutos",
+              "termos": [
+                "min / minutos / minuto / minutes / minute / mins"
+              ]
+            },
+            {
+              "rot": "riesgo",
+              "um_so": true,
+              "termos": [
+                "risco baixo / low risk / riesgo bajo",
+                "risco médio / medium risk / riesgo medio",
+                "risco alto / high risk / riesgo alto"
+              ]
+            },
+            {
+              "rot": "decisión",
+              "um_so": true,
+              "termos": [
+                "começar já / start now / empezar ya",
+                "depois / later / después",
+                "não delegar / do not delegate / no delegar"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "una tarea marcada como empezar ya",
+              "termos": [
+                "começar já / start now / empezar ya"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tareas con minutos, riesgo y decisión",
+      "exemplo": "1 | Informe semanal del sitio para el socio | Search Console, hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar cotizaciones del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar",
+      "exemplo_errado": "1 | Informe del sitio web | 60 min | aburrimiento 5 | empezar ya\n2 | Presupuestos | 90 min | riesgo medio | después\n3 | Notas | riesgo medio | riesgo alto | después\n4 | Pagar a proveedores | 30 min | riesgo alto | no delegar"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: tu lista y tu primera tarea",
+      "sub": "Hazlo en orden. Pasa a la siguiente solo cuando se cumpla el «listo cuando».",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · La entrevista",
+          "min": "15 min",
+          "texto": "Pega el pedido «encontrar la tarea aburrida» en una conversación nueva de ChatGPT o Claude y responde las cinco preguntas pensando en tu última semana real.",
+          "pronto": "La IA devolvió una lista con al menos 5 líneas en el formato N | tarea | ... | decisión."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Revisa y ajusta",
+          "min": "10 min",
+          "texto": "Pega la lista en el verificador de arriba. Corrige lo que falte, a mano o pidiéndoselo a la IA. Revisa que pagar, enviar o borrar quede como «no delegar».",
+          "pronto": "El verificador responde OK y solo una línea dice «empezar ya»."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Guarda la lista",
+          "min": "5 min",
+          "texto": "Guarda la lista y el párrafo final en un archivo tareas.txt (o en una nota). La volverás a usar en las clases 2 y 8.",
+          "pronto": "El archivo existe y el párrafo de la primera tarea dice qué incluye, qué excluye y con qué frecuencia."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Pon a prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Cuál de estas es la mejor primera tarea para un agente?",
+          "opcoes": [
+            "Responder por su cuenta las quejas de clientes en WhatsApp, sin que tú revises.",
+            "Resumir cada lunes las cifras del sitio web en un informe para que lo leas.",
+            "Pagar las facturas de los proveedores en la fecha correcta.",
+            "Planificar la estrategia de ventas del próximo año."
+          ],
+          "certa": 1,
+          "explica": "Resumirte la información para que la leas es de riesgo bajo, se repite cada semana y es aburrido. Responder a un cliente y pagar una factura tienen riesgo medio o alto; la estrategia del año es poco frecuente y depende de tu criterio.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Una tarea prepara el mensaje de cobro para el cliente, pero no lo envía. ¿Qué riesgo tiene?",
+          "opcoes": [
+            "Bajo, porque no se envía nada.",
+            "Alto, porque habla de dinero.",
+            "Medio como mínimo: trata de dinero y de un cliente, incluso como borrador.",
+            "Depende solo de cuántos minutos por semana te toma de tu jornada de trabajo."
+          ],
+          "certa": 2,
+          "explica": "El dinero o los clientes implican un riesgo medio desde el principio, incluso en un borrador, porque un texto incorrecto aprobado con prisa sale con tu nombre. El riesgo es alto cuando el agente paga, envía o borra.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué solo una tarea recibe «empezar ya»?",
+          "opcoes": [
+            "Porque el chat solo acepta una ficha de agente por cuenta, y la segunda borra la primera de la memoria.",
+            "Porque al principio tienes que revisar todo lo que hace el agente, y eso solo es posible con una tarea.",
+            "Porque las otras tareas nunca se podrán delegar.",
+            "Porque el modelo ligero solo hace una tarea por semana."
+          ],
+          "certa": 1,
+          "explica": "Al principio revisas cada resultado. Con una tarea, eso cabe en la semana; con cinco, dejas de revisar y el error pasa. Las demás esperan su turno, como muestra el plan de la clase 8.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "La tarea «copiar pedidos a la hoja de cálculo» toma 20 minutos al día, cinco días a la semana. ¿Cuántos minutos por semana anotas en la lista?",
+          "opcoes": [
+            "20 min, que es lo que toma un día",
+            "60 min",
+            "100 min",
+            "140 min"
+          ],
+          "certa": 2,
+          "explica": "20 minutos por 5 días son 100 minutos por semana. El error común es anotar solo el tiempo de un día y subestimar la tarea.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "La lección en tres frases",
+      "itens": [
+        {
+          "t": "Una tarea",
+          "texto": "No automatices todo: elige la tarea que suma más tiempo y aburrimiento con riesgo bajo."
+        },
+        {
+          "t": "El riesgo primero",
+          "texto": "El dinero o un cliente empiezan en riesgo medio; pagar, enviar, borrar y firmar quedan en tus manos."
+        },
+        {
+          "t": "La lista vuelve",
+          "texto": "Las demás tareas esperan su turno. Vas a elegir una por semana cuando confíes en la anterior."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Curso: Del prompt al rol (cómo escribir el trabajo para la IA)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/es/",
+          "icone": "caneta"
+        },
+        {
+          "t": "Curso: Del chat al agente (los niveles hasta la terminal)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}
