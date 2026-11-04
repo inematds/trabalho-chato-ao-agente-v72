@@ -1,0 +1,187 @@
+{
+  "id": "trabalho-chato-ao-agente-v72",
+  "lang": "pt-BR",
+  "url": "https://inematds.github.io/trabalho-chato-ao-agente-v72/",
+  "nome": "Entregue o trabalho chato a um agente",
+  "sub": "Uma tarefa por vez, só rascunho, você aprova",
+  "volta": {
+    "t": "INEMA.CLUB",
+    "href": "https://inema.club/"
+  },
+  "lado_card": {
+    "rot": "Ideia central",
+    "t": "O agente faz o rascunho, você aprova",
+    "texto": "Só leitura, só rascunho, login é seu e dinheiro passa por você. Com essas quatro regras dá para delegar sem medo.",
+    "link": "Escrever a ficha do agente",
+    "href": "https://inematds.github.io/trabalho-chato-ao-agente-v72/aulas/ficha/"
+  },
+  "rodape": "INEMA.CLUB · conteúdo aberto e gratuito · formato INEMA Learning v7.2 · <a href=\"https://inema.club/\">inema.club</a> · <a href=\"https://www.inema.club/aprender-inteligencia-artificial/\">Guia: como aprender inteligência artificial</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "Curso · 8 aulas · no chat ou no terminal",
+    "titulo": "Entregue o trabalho chato a um agente",
+    "lead": "Relatório da semana, contato novo, nota fiscal, cliente novo: tarefas que tomam horas e não pedem genialidade. Em oito aulas curtas você acha a primeira tarefa a delegar, escreve a ficha do agente, decide qual modelo faz o quê e confere o resultado antes de qualquer coisa sair.",
+    "cta": "Começar pela aula 1",
+    "cta2": {
+      "t": "Ir direto à ficha do agente",
+      "href": "aulas/ficha/"
+    },
+    "capa_alt": "Mesa escura à noite com um notebook, papéis organizados e uma xícara; ao lado, o título do curso em letras brancas.",
+    "numeros": [
+      {
+        "v": "1",
+        "t": "tarefa por vez"
+      },
+      {
+        "v": "4",
+        "t": "regras de segurança"
+      },
+      {
+        "v": "2",
+        "t": "níveis de modelo"
+      },
+      {
+        "v": "8",
+        "t": "aulas com prática"
+      }
+    ],
+    "aulas_titulo": "As aulas",
+    "aulas_sub": "Da lista de tarefas chatas à pequena equipe de agentes em 30 dias. Cada aula tem diagrama, modelo para copiar, prática com \"pronto quando\" e teste comentado.",
+    "blocos": [
+      {
+        "t": "Para quem é",
+        "itens": [
+          "Dono de pequena empresa ou profissional autônomo que perde horas com relatório, planilha e e-mail repetido.",
+          "Quem já usa ChatGPT ou Claude no chat e quer passar de perguntas soltas para tarefas inteiras.",
+          "Quem não programa: toda prática tem o caminho no chat. O terminal (Claude Code ou Codex) é opcional."
+        ]
+      },
+      {
+        "t": "O que você sai fazendo",
+        "itens": [
+          "Escolhendo a primeira tarefa a delegar pelo tempo, pela chatice e pelo risco.",
+          "Escrevendo a ficha do agente em uma página, com as regras de segurança.",
+          "Gerando o relatório da semana, a lista de contatos e as contas a pagar como rascunho.",
+          "Decidindo qual modelo faz a rotina e qual fica para o difícil.",
+          "Seguindo um plano de 30 dias com conferência no começo e amostragem depois."
+        ]
+      },
+      {
+        "t": "Onde fazer",
+        "itens": [
+          "No chat: um Projeto do ChatGPT ou do Claude (ou um Gem do Gemini) com a ficha nas instruções.",
+          "No terminal (opcional): Claude Code ou Codex, numa pasta com os arquivos que você exportou.",
+          "Tudo pela assinatura que você já tem. Nenhuma chave de API, nada a pagar à parte."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Pular para o conteúdo",
+    "aulas": "Aulas",
+    "concluido": "concluído",
+    "aula": "Aula",
+    "nesta_aula": "Nesta aula, você vai aprender:",
+    "objetivo": "Objetivo:",
+    "proxima_aula": "Próxima aula",
+    "aula_anterior": "Aula anterior",
+    "voltar_inicio": "Voltar ao início do curso",
+    "marcar_concluida": "Marcar aula como concluída",
+    "dg_dica": "Clique em cada bloco do diagrama para ver o que ele faz.",
+    "copiar": "Copiar",
+    "copiado": "Copiado",
+    "selo_simulacao": "Simulação: exemplo ilustrativo",
+    "selo_real": "Exemplo do repositório",
+    "pronto_quando": "Pronto quando:",
+    "fiz": "Fiz este exercício",
+    "video_pagina": "Página do vídeo com roteiro",
+    "pergunta": "Pergunta",
+    "de": "de",
+    "cert_tag": "competência",
+    "correto": "Correto",
+    "errado": "Não é essa",
+    "quiz_aguarda": "Escolha uma alternativa. A explicação aparece depois da sua tentativa.",
+    "proxima_pergunta": "Próxima pergunta",
+    "quiz_ver": "Ver resultado",
+    "quiz_fim": "Teste concluído",
+    "quiz_total": "Você acertou {a} de {n}. Acertando todas, a aula é marcada como concluída.",
+    "aparencia": "Aparência",
+    "tamanho_texto": "Tamanho do texto",
+    "tema": "Tema",
+    "tema_escuro": "Escuro",
+    "tema_papel": "Papel claro",
+    "role_dica": "Role a página: cada etapa abaixo acende a sua parte do diagrama.",
+    "pre_requisito": "requer",
+    "ver_aula": "Ver a aula",
+    "mapa_dica": "Clique num exercício para ver o que fazer e o \"pronto quando\".",
+    "etapas": "Etapas",
+    "exercicios": "exercícios",
+    "rever": "Rever:",
+    "revisar_erradas": "Revisar as erradas",
+    "refazer": "Refazer o teste",
+    "h_semana": "h por semana",
+    "data_inicio": "Data de início",
+    "ritmo": "Tempo disponível",
+    "gerar_plano": "Gerar meu plano",
+    "baixar_md": "Baixar plano.md",
+    "baixar_ics": "Baixar para o calendário (.ics)",
+    "ind_estudo": "Estudo (aulas)",
+    "ind_pratica": "Prática declarada",
+    "ind_nota": "Prática = exercícios que você marcou como feitos. A comprovação vem na prova da certificação.",
+    "estudo": {
+      "titulo": "Seu estudo",
+      "continuar": "Continuar de onde parei",
+      "comecar": "Começar pela aula 1",
+      "cta_continuar": "Continuar a aula {n}",
+      "hoje": "hoje",
+      "ontem": "ontem",
+      "ha_dias": "há {n} dias",
+      "desempenho": "Desempenho nos testes",
+      "notas": "Minhas anotações",
+      "dados": "Copiar meus dados",
+      "sem_testes": "Nenhum teste feito ainda. O teste fica no fim de cada aula.",
+      "nao_fez": "teste ainda não feito",
+      "ultimo": "Último",
+      "melhor": "Melhor",
+      "tentativas": "tentativas",
+      "tentativa": "tentativa",
+      "tudo_certo": "Acertou tudo no último teste.",
+      "rever": "Para rever",
+      "resposta": "Resposta certa:",
+      "ir_teste": "Refazer o teste",
+      "sem_notas": "Nenhuma anotação ainda. Na aula, selecione um trecho do texto e toque em Marcar ou Anotar.",
+      "so_marcado": "(só marcado)",
+      "marcar": "Marcar",
+      "anotar": "Anotar",
+      "salvar": "Salvar",
+      "apagar": "Apagar marca",
+      "fechar": "Fechar",
+      "nota_ph": "Escreva sua anotação sobre este trecho…",
+      "um_bloco": "Marque dentro de um parágrafo só.",
+      "nao_marca": "Este trecho não pode ser marcado.",
+      "dados_exp": "Seu progresso, suas anotações e as notas dos testes ficam só neste navegador. Baixe uma cópia (.json) para guardar ou para continuar em outro computador ou navegador; lá, carregue a cópia. Carregar soma com o que já existe e não apaga nada.",
+      "exportar": "Baixar cópia",
+      "importar": "Carregar cópia",
+      "import_ok": "Cópia carregada ({n} itens). Atualizando a página…",
+      "import_erro": "Arquivo não reconhecido. Nada foi alterado.",
+      "import_outro": "Esta cópia é de outro curso. Nada foi alterado.",
+      "export_ok": "Cópia baixada."
+    },
+    "conv_dica": "Escolha a sua resposta. O comentário aparece logo depois e a conversa segue conforme a escolha.",
+    "conv_voce": "Você",
+    "conv_escolha": "Sua resposta",
+    "conv_boa": "Boa escolha",
+    "conv_meio": "Dá para melhorar",
+    "conv_ruim": "Escolha fraca",
+    "conv_fim": "Fim da conversa",
+    "conv_placar": "Você fez {p} de {m} pontos possíveis.",
+    "conv_licao": "Lição:",
+    "conv_recomecar": "Recomeçar a conversa",
+    "conv_feita": "Seu melhor placar: {p} de {m} pontos.",
+    "conf_planos": "Achei {n} linhas numeradas; o pedido é de {x} a {y}. Comece cada linha pelo número (1 | ...).",
+    "conf_no_plano": "Linha {i}: falta {g}.",
+    "conf_um_so": "Linha {i}: {n} escolhas de {g}; fique com uma só.",
+    "conf_variedade": "Só {n} tipo(s) diferente(s) de {g} nas linhas; varie para pelo menos {x}."
+  },
+  "icone": "robo"
+}

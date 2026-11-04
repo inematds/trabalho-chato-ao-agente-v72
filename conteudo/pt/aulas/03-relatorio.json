@@ -1,0 +1,362 @@
+{
+  "slug": "relatorio",
+  "num": 3,
+  "menu": "Relatório",
+  "titulo": "O relatório da semana sem abrir o painel",
+  "titulo_curto": "Relatório da semana",
+  "minutos": 18,
+  "lead": "Toda segunda alguém abre o painel do site, olha o gráfico, copia números e escreve um resumo. É o primeiro trabalho chato ideal: só leitura, repete toda semana e o resultado é um texto que você confere em dois minutos. Você exporta, o agente lê e escreve.",
+  "objetivo": "transformar a exportação do Search Console (ou dos números da sua semana) num relatório de até 250 palavras com números conferidos.",
+  "competencias": [
+    "exportar-dados-do-painel",
+    "gerar-relatorio-com-agente",
+    "conferir-numeros-por-amostra"
+  ],
+  "aprende": [
+    {
+      "icone": "baixar",
+      "t": "Exportar os dados do Search Console"
+    },
+    {
+      "icone": "grafico",
+      "t": "Comparar esta semana com a anterior"
+    },
+    {
+      "icone": "arquivo",
+      "t": "Receber um relatório de formato fixo"
+    },
+    {
+      "icone": "lupa",
+      "t": "Conferir dois números antes de confiar"
+    }
+  ],
+  "hero_alt": "Homem lê uma folha impressa curta com um pequeno gráfico ao lado de um notebook que mostra um gráfico de linhas desfocado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do painel ao relatório",
+      "sub": "Clique em cada etapa. Você faz a primeira e a última.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Exportar",
+          "sub": "você",
+          "detalhe": "No Search Console, abra o relatório de Performance, escolha o período (últimos 7 dias, comparando com o período anterior) e clique em Exportar. Você baixa uma planilha com as abas de consultas e de páginas. Login e clique são seus.",
+          "itens": [
+            {
+              "icone": "baixar",
+              "t": "Exportar → planilha"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Colar",
+          "sub": "no Projeto",
+          "detalhe": "Abra o Projeto do agente (a ficha da aula 2 já está nas instruções), anexe a planilha ou cole as linhas e diga a palavra-gatilho, como \"relatório\".",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "\"relatório\""
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Ler",
+          "sub": "o agente",
+          "detalhe": "O agente segue os passos da ficha: soma os cliques, compara as duas semanas, acha o que mais subiu e o que mais caiu. Nenhuma senha, nenhum clique no painel.",
+          "itens": [
+            {
+              "icone": "grafico",
+              "t": "sobe / cai / total"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Relatório",
+          "sub": "até 250 palavras",
+          "forte": true,
+          "detalhe": "Uma linha com o total, as maiores altas e quedas com os números lado a lado e três ações para a semana. Formato fixo: toda segunda você sabe onde olhar.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "3 ações da semana"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Conferir",
+          "sub": "você",
+          "detalhe": "Pegue dois números do relatório e procure na planilha. Bateram, confie no resto. Não bateram, corrija a ficha. Nas três primeiras semanas confira sempre; depois, por amostra.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "2 números na planilha"
+            }
+          ]
+        }
+      ],
+      "volta": "Número que não bate vira regra nova na ficha",
+      "legenda": "O mesmo caminho serve para qualquer painel que exporta planilha: vendas, agenda, atendimento."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "A exportação, passo a passo",
+      "sub": "No Search Console, com o seu login. Clique em cada passo.",
+      "passos": [
+        {
+          "titulo": "Performance",
+          "sub": "o relatório",
+          "texto": [
+            "Entre no Search Console com a sua conta, escolha o site e abra o relatório de Performance (resultados da pesquisa).",
+            "Ele mostra cliques, impressões, CTR (cliques divididos por impressões) e posição média."
+          ]
+        },
+        {
+          "titulo": "Período",
+          "sub": "7 dias × 7 dias",
+          "texto": [
+            "No filtro de data, escolha comparar os últimos 7 dias com o período anterior.",
+            "Assim a tabela já vem com as duas semanas lado a lado e o agente não precisa adivinhar datas."
+          ]
+        },
+        {
+          "titulo": "Exportar",
+          "sub": "planilha",
+          "texto": [
+            "Clique em Exportar e escolha Google Planilhas, Excel ou CSV.",
+            "O arquivo traz uma aba por dimensão (consultas, páginas, países…). Para o relatório bastam consultas e páginas. Os nomes das abas mudam com o idioma da sua conta."
+          ],
+          "exemplo": {
+            "rot": "Atenção",
+            "texto": "Valores que o painel mostra como ~ ou - viram zero na planilha exportada."
+          }
+        },
+        {
+          "titulo": "Entregar",
+          "sub": "ao agente",
+          "texto": [
+            "No chat, anexe o arquivo dentro do Projeto e diga \"relatório\". Se o arquivo for grande, cole só as primeiras 50 linhas de cada aba.",
+            "No terminal, salve o arquivo na pasta do agente e rode o comando do bloco abaixo."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os dados de exemplo e os pedidos",
+      "sub": "Sem Search Console? Use os dados de exemplo: são inventados, mas têm a forma de uma exportação real.",
+      "blocos": [
+        {
+          "rot": "Dados de exemplo (cole no Projeto depois da ficha)",
+          "icone": "grafico",
+          "conteudo": "Consulta | Cliques esta semana | Cliques semana anterior\narmário planejado curitiba | 48 | 30\ncozinha planejada preço | 22 | 41\nmóveis planejados curitiba | 64 | 60\nguarda-roupa sob medida | 17 | 9\npainel de tv planejado | 12 | 15\nhome office planejado | 9 | 4\ncloset pequeno planejado | 6 | 13\nloja de móveis batel | 21 | 21"
+        },
+        {
+          "rot": "No chat · o pedido da segunda-feira",
+          "icone": "chat",
+          "conteudo": "relatório\n\nUse a ficha deste Projeto. Os dados estão acima (ou no arquivo anexo).\nAntes do texto, me mostre o total de cliques desta semana e da anterior, que eu confiro."
+        },
+        {
+          "rot": "Variação · ficha dos números da semana (vendas, contatos, visitas)",
+          "icone": "arquivo",
+          "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; salve como rascunho, eu envio para a equipe; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
+        },
+        {
+          "rot": "Terminal (opcional) · Codex com o modelo leve",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# a ficha está no AGENTS.md; a planilha exportada está nesta pasta\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"relatório: siga o AGENTS.md com a planilha desta pasta\""
+        },
+        {
+          "rot": "Terminal (opcional) · Claude Code com o modelo leve",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/relatorio-site\n# a ficha está no CLAUDE.md; a planilha exportada está nesta pasta\nclaude -p --model sonnet \"relatório: siga o CLAUDE.md com a planilha desta pasta\" > relatorio.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "O que o relatório deve trazer",
+            "html": "<ul><li>Total de cliques: <b>199</b> nesta semana contra <b>193</b> na anterior (alta de 6).</li><li>Maior alta: \"armário planejado curitiba\", de 30 para 48.</li><li>Maior queda: \"cozinha planejada preço\", de 41 para 22.</li><li>Três ações simples, uma por linha.</li></ul><p>São as contas feitas à mão sobre os dados de exemplo. O texto do agente muda; os números não podem mudar.</p>"
+          },
+          {
+            "rot": "Por que só leitura",
+            "html": "<p>O agente não precisa entrar no Search Console: ele recebe a planilha. Assim não há senha na conversa, nada é alterado no painel e o erro possível é um texto errado, que você pega na conferência.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Anexar a planilha inteira de 1.000 linhas</b> no chat: o modelo pode ler só parte. Mande as abas e as linhas que importam.</li><li><b>Pedir \"análise de SEO completa\"</b>: isso é trabalho para o modelo topo e para você (aula 7). O relatório semanal é rotina.</li><li><b>Não conferir</b> nas primeiras semanas: é ali que você descobre que a ficha precisa de uma regra a mais.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira o relatório do agente",
+      "sub": "Rode o agente com os dados de exemplo e cole aqui o relatório que ele escreveu. A página procura os números certos: o total das duas semanas e a maior queda. Se faltar algum, o agente errou a conta ou pulou o que importa.",
+      "arquivo": "relatorio.txt",
+      "rot": "Cole aqui o relatório que o agente escreveu:",
+      "modelo": "Total de cliques: ...",
+      "regras": [
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "o total desta semana (199)",
+              "termos": [
+                "199"
+              ]
+            },
+            {
+              "rot": "o total da semana anterior (193)",
+              "termos": [
+                "193"
+              ]
+            },
+            {
+              "rot": "a maior queda com os dois números (41 e 22)",
+              "termos": [
+                "41"
+              ]
+            },
+            {
+              "rot": "o número de cliques atual da maior queda (22)",
+              "termos": [
+                "22"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: os números certos estão no relatório",
+      "exemplo": "Semana de alta leve: 199 cliques contra 193 na anterior (+6, cerca de 3%).\nMaiores altas: armário planejado curitiba (30 → 48), guarda-roupa sob medida (9 → 17), home office planejado (4 → 9).\nMaiores quedas: cozinha planejada preço (41 → 22), closet pequeno planejado (13 → 6), painel de tv planejado (15 → 12).\nAções: 1) revisar a página de cozinhas; 2) mostrar preços de closet; 3) reforçar a página de armários.",
+      "exemplo_errado": "Semana boa: cerca de 200 cliques, um pouco mais que antes.\nMaiores altas: armário planejado curitiba.\nMaiores quedas: algumas consultas de cozinha caíram.\nAções: continuar postando."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o primeiro relatório",
+      "sub": "Com os dados de exemplo primeiro; depois com os seus.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Ensaio com o exemplo",
+          "min": "10 min",
+          "texto": "No Projeto do agente (ficha da aula 2), cole os dados de exemplo e o pedido da segunda-feira. Cole o relatório no conferidor.",
+          "pronto": "o conferidor responde OK: o relatório traz 199, 193 e a queda de 41 para 22."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Com os seus dados",
+          "min": "15 min",
+          "texto": "Exporte a sua semana do Search Console (ou junte os números da sua semana) e rode o mesmo pedido. Sem site? Use a ficha dos números da semana.",
+          "pronto": "você achou na planilha dois números citados no relatório, e os dois bateram."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Uma regra a mais",
+          "min": "5 min",
+          "texto": "Leia o relatório e anote uma coisa que você queria diferente (ordem, tamanho, um número a mais). Acrescente uma linha na ficha.",
+          "pronto": "a ficha tem uma regra nova e o relatório seguinte já sai com a mudança."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "No caminho pelo chat, quem entra no Search Console?",
+          "opcoes": [
+            "O agente, com a senha que está na ficha.",
+            "Você: entra, exporta a planilha e entrega ao agente.",
+            "Ninguém: o chat já recebe os dados sozinho.",
+            "O agente, com o login e a senha que você digitou uma vez na conversa."
+          ],
+          "certa": 1,
+          "explica": "No chat o agente não abre o seu painel. Você entra com o seu login, exporta e entrega a planilha; ele lê e escreve. Senha nunca vai para a ficha nem para a conversa.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Com os dados de exemplo, qual é o total de cliques desta semana?",
+          "opcoes": [
+            "193",
+            "199",
+            "211",
+            "64 (a maior linha)"
+          ],
+          "certa": 1,
+          "explica": "48 + 22 + 64 + 17 + 12 + 9 + 6 + 21 = 199. A semana anterior soma 193. 64 é só a maior linha, não o total.",
+          "ref": "codigo"
+        },
+        {
+          "p": "O relatório saiu bem escrito, mas você não tem tempo de conferir. Nas primeiras semanas, o mínimo é:",
+          "opcoes": [
+            "Confiar, porque o texto está claro.",
+            "Pedir ao próprio agente que confira o relatório que ele mesmo escreveu.",
+            "Achar dois números do relatório na planilha e ver se batem.",
+            "Esperar um mês e conferir tudo de uma vez."
+          ],
+          "certa": 2,
+          "explica": "Conferir por amostra leva dois minutos e mostra se a ficha funciona. Texto claro não prova conta certa, e o agente conferindo a si mesmo repete o mesmo erro.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Um número da sua semana não aparece na planilha que você colou. O que a ficha manda o agente escrever?",
+          "opcoes": [
+            "Uma estimativa parecida com a da semana anterior.",
+            "Zero.",
+            "A média das últimas semanas.",
+            "\"Não achei\", sem estimar."
+          ],
+          "certa": 3,
+          "explica": "Estimativa com cara de número real é o erro mais caro: você decide em cima dela. \"Não achei\" mostra o buraco e você completa.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Você exporta",
+          "texto": "Login e clique no painel são seus. O agente recebe a planilha e só lê."
+        },
+        {
+          "t": "Formato fixo",
+          "texto": "Total, maiores altas e quedas com os números lado a lado, três ações. Toda segunda igual."
+        },
+        {
+          "t": "Dois números",
+          "texto": "Confira dois números na planilha. Bateu, confie; não bateu, a ficha ganha uma regra."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Relatório de Performance do Search Console (ajuda oficial)",
+          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "icone": "grafico"
+        },
+        {
+          "t": "Codex CLI (documentação oficial, em inglês)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        },
+        {
+          "t": "Claude Code (documentação oficial, em inglês)",
+          "href": "https://docs.claude.com/en/docs/claude-code/overview",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

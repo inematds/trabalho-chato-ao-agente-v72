@@ -1,0 +1,327 @@
+{
+  "slug": "roteamento",
+  "num": 7,
+  "menu": "Modelos",
+  "titulo": "Modelo leve para a rotina, topo para o difícil",
+  "titulo_curto": "Leve ou topo",
+  "minutos": 15,
+  "lead": "Você não chama o sócio mais experiente para copiar planilha. Com modelos é igual: o leve é rápido e gasta menos do limite da sua assinatura, e dá conta da rotina; o topo pensa mais devagar e fica para o plano grande, o problema difícil e o que pode custar caro. A regra de roteamento escreve isso uma vez.",
+  "objetivo": "escrever a regra que decide qual modelo faz cada tarefa e classificar as suas tarefas em leve ou topo.",
+  "competencias": [
+    "escolher-modelo-por-tarefa",
+    "escrever-regra-de-roteamento",
+    "escalar-com-justificativa"
+  ],
+  "aprende": [
+    {
+      "icone": "chip",
+      "t": "Quem é o leve e quem é o topo nas suas ferramentas"
+    },
+    {
+      "icone": "lista",
+      "t": "O que vai para cada um"
+    },
+    {
+      "icone": "seta",
+      "t": "Quando subir para o topo, e avisar por quê"
+    },
+    {
+      "icone": "terminal",
+      "t": "Escolher o modelo no chat e no terminal"
+    }
+  ],
+  "hero_alt": "Duas mesas lado a lado: na esquerda um robô humanoide de corpo branco fosco faz tarefas simples com papéis; na direita uma pessoa analisa um documento importante com uma lupa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A regra em uma figura",
+      "sub": "Clique em cada parte.",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Tarefa",
+          "sub": "chega",
+          "detalhe": "Qualquer tarefa das suas fichas: relatório, contatos, notas, cliente novo. Ou uma pergunta solta.",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "da ficha ou avulsa"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Pergunta",
+          "sub": "é rotina?",
+          "detalhe": "Três perguntas: é um plano grande ou um sistema novo? Já falhou duas vezes no leve? Pode custar caro (jurídico, dinheiro, cliente grande)? Um \"sim\" manda para o topo. Três \"não\", fica no leve.",
+          "itens": [
+            {
+              "icone": "alvo",
+              "t": "3 perguntas"
+            }
+          ]
+        },
+        {
+          "icone": "robo",
+          "titulo": "Leve",
+          "sub": "rotina",
+          "forte": true,
+          "detalhe": "Ler, resumir, copiar entre planilhas, relatório da semana, rascunho de e-mail, correção pequena num texto ou página. É a maior parte do trabalho chato.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "rápido, gasta menos"
+            }
+          ]
+        },
+        {
+          "icone": "cerebro",
+          "titulo": "Topo",
+          "sub": "difícil",
+          "detalhe": "Planejar um sistema novo, um problema que o leve errou duas vezes, decisão com dinheiro ou contrato, proposta para cliente grande. Mesmo aqui, rascunho e portão continuam valendo.",
+          "itens": [
+            {
+              "icone": "escudo",
+              "t": "pensa mais, gasta mais"
+            }
+          ]
+        },
+        {
+          "icone": "megafone",
+          "titulo": "Avisa",
+          "sub": "em uma linha",
+          "detalhe": "Quando sobe, o agente diz: \"Mando este para o topo porque…\". Você vê a decisão e corrige a regra se ela estiver subindo demais ou de menos.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "\"porque…\""
+            }
+          ]
+        }
+      ],
+      "legenda": "Na dúvida, começa no leve e avisa se travar. Subir é fácil; o caro é usar o topo para tudo."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Quem é quem nas suas ferramentas",
+      "sub": "Os nomes mudam com o tempo. Confira na sua lista de modelos.",
+      "passos": [
+        {
+          "titulo": "No chat",
+          "sub": "o seletor",
+          "texto": [
+            "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto. Em geral há um rápido para o dia a dia e um que \"pensa\" ou raciocina mais.",
+            "Num Projeto, escolha o modelo no começo da conversa. Para subir, abra uma conversa nova no mesmo Projeto com o modelo topo."
+          ]
+        },
+        {
+          "titulo": "No Codex",
+          "sub": "/model e -m",
+          "texto": [
+            "No Codex, <code>/model</code> mostra a lista do seu plano. Na lista de 04/11/2026: <code>gpt-6-luna</code> (rápido e econômico, para tarefas mais fáceis), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (o de uso geral) e <code>gpt-6-astra</code> (para o trabalho mais exigente).",
+            "No comando, o modelo vai em <code>-m</code>."
+          ]
+        },
+        {
+          "titulo": "No Claude Code",
+          "sub": "/model e --model",
+          "texto": [
+            "No Claude Code, <code>/model</code> troca o modelo da sessão e <code>--model</code> escolhe ao chamar: <code>sonnet</code> para a rotina, <code>opus</code> para o difícil.",
+            "Os apelidos apontam sempre para a versão mais nova de cada família."
+          ]
+        },
+        {
+          "titulo": "Por que importa",
+          "sub": "o limite",
+          "texto": [
+            "Na assinatura, o modelo topo costuma gastar mais do seu limite de uso e demorar mais por resposta.",
+            "Rotina no leve deixa o limite livre para quando você precisa do topo de verdade."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "A regra para colar",
+      "sub": "No chat, nas instruções do Projeto; no terminal, no fim do AGENTS.md ou do CLAUDE.md.",
+      "blocos": [
+        {
+          "rot": "Regra de roteamento (cole nas instruções)",
+          "icone": "arquivo",
+          "conteudo": "Regra de modelo:\nUse o modelo LEVE para a rotina:\n- ler painéis, planilhas e mensagens; copiar dados de um lugar para outro\n- relatórios, resumos e tabelas da semana\n- rascunhos de e-mail e respostas curtas\n- correções pequenas num texto, planilha ou página\n\nPasse para o modelo TOPO quando:\n- for um plano grande ou um sistema novo\n- o leve já errou a mesma tarefa duas vezes\n- envolver contrato, decisão de dinheiro ou cliente grande\n\nQuando passar, me diga em uma linha: \"Mando este para o topo porque ...\".\nNa dúvida, comece no leve e me avise se travar.\nRascunho e portão valem para os dois."
+        },
+        {
+          "rot": "Pedido · classificar as minhas tarefas",
+          "icone": "chat",
+          "conteudo": "Use a regra de modelo acima. Aqui está a minha lista de tarefas (aula 1).\nDevolva uma linha por tarefa, neste formato:\nN | tarefa | leve ou topo | motivo em poucas palavras"
+        },
+        {
+          "rot": "Terminal (opcional) · o mesmo pedido em dois níveis",
+          "icone": "terminal",
+          "conteudo": "# rotina no leve\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"relatório: siga o AGENTS.md\"\nclaude -p --model sonnet \"relatório: siga o CLAUDE.md\" > relatorio.md\n\n# difícil no topo\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"monte o plano do novo processo de orçamentos\"\nclaude -p --model opus \"monte o plano do novo processo de orçamentos\" > plano.md"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Exemplo de classificação",
+            "html": "<pre>1 | Relatório semanal do site | leve | ler e resumir\n2 | Contatos novos e rascunhos | leve | rotina, com portão\n3 | Notas e contas a pagar | leve | ler e somar; topo se o PDF não ler\n4 | Checklist de cliente novo | leve | passos fixos\n5 | Desenhar o novo processo de orçamentos | topo | sistema novo</pre>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Topo para tudo \"por garantia\"</b>: a rotina fica lenta e o limite acaba na quarta-feira.</li><li><b>Leve para o contrato</b>: economia errada. Decisão cara vai para o topo, e para você.</li><li><b>Subir sem avisar</b>: sem a linha \"porque…\", você não sabe se a regra está funcionando.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a sua classificação",
+      "sub": "Cole a lista que o agente devolveu (ou a sua). A página confere se cada linha tem um nível só, leve ou topo. Se o nível está certo, quem julga é você com as três perguntas.",
+      "arquivo": "modelos.txt",
+      "rot": "Cole aqui a sua lista classificada (uma linha numerada por tarefa):",
+      "modelo": "1 | tarefa | leve | motivo",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "nível (leve ou topo)",
+              "um_so": true,
+              "termos": [
+                "leve / light / ligero / liviano",
+                "topo / top / tope / superior"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tarefas com o nível definido",
+      "exemplo": "1 | Relatório semanal do site | leve | ler e resumir\n2 | Contatos novos e rascunhos | leve | rotina, com portão\n3 | Notas e contas a pagar | leve | ler e somar\n4 | Checklist de cliente novo | leve | passos fixos\n5 | Desenhar o novo processo de orçamentos | topo | sistema novo",
+      "exemplo_errado": "1 | Relatório semanal do site | leve\n2 | Contatos novos | depende\n3 | Notas e contas a pagar | leve ou topo\n4 | Cliente novo | topo | leve também serve"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a regra no seu Projeto",
+      "sub": "Uma regra, cinco tarefas, um teste.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Cole a regra",
+          "min": "5 min",
+          "texto": "Cole a regra de roteamento nas instruções dos Projetos dos seus agentes (ou no fim do AGENTS.md / CLAUDE.md).",
+          "pronto": "perguntando \"qual modelo você usaria para o relatório da semana?\", o agente responde leve e diz o motivo."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Classifique as suas tarefas",
+          "min": "10 min",
+          "texto": "Use o pedido \"classificar as minhas tarefas\" com a lista da aula 1. Confira no conferidor.",
+          "pronto": "o conferidor responde OK e cada tarefa com dinheiro ou contrato está como topo ou como \"não delegar\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Ache o seu leve e o seu topo",
+          "min": "5 min",
+          "texto": "Abra o seletor de modelos da ferramenta que você usa (ou /model no terminal) e anote o nome do leve e do topo do seu plano.",
+          "pronto": "você tem os dois nomes anotados e rodou o relatório da semana no leve."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Qual destas tarefas vai para o modelo topo?",
+          "opcoes": [
+            "Resumir os contatos novos da semana numa tabela simples.",
+            "Copiar as notas para a planilha de contas.",
+            "Escrever o rascunho de boas-vindas do cliente.",
+            "Desenhar do zero o processo de orçamentos da empresa."
+          ],
+          "certa": 3,
+          "explica": "Processo novo é plano grande: topo. As outras três são rotina de ler, copiar e escrever rascunho, o território do leve.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "O leve errou a mesma conta duas vezes no relatório. Pela regra:",
+          "opcoes": [
+            "Tentar mais cinco vezes no leve.",
+            "Passar essa tarefa para o topo e avisar \"porque o leve errou duas vezes\".",
+            "Desistir de usar agente para relatórios.",
+            "Trocar todas as tarefas de todos os agentes para o topo, por garantia."
+          ],
+          "certa": 1,
+          "explica": "Duas falhas na mesma tarefa é um dos gatilhos para subir. Sobe só aquela, com a linha \"porque…\", e as outras continuam no leve.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Por que não usar o topo para tudo, já que ele é melhor?",
+          "opcoes": [
+            "Porque o topo não sabe fazer tarefa simples.",
+            "Porque o topo não aceita a ficha nas instruções.",
+            "Porque ele costuma gastar mais do limite da assinatura e demorar mais, sem ganho na rotina.",
+            "Porque o topo só funciona no terminal."
+          ],
+          "certa": 2,
+          "explica": "O topo faz a tarefa simples, mas mais devagar e gastando mais do seu limite. Na rotina o leve entrega o mesmo resultado; o topo fica livre para o que precisa dele.",
+          "ref": "passos"
+        },
+        {
+          "p": "No Codex, qual opção do comando escolhe o modelo?",
+          "opcoes": [
+            "-o",
+            "-s",
+            "-m",
+            "--skip-git-repo-check"
+          ],
+          "certa": 2,
+          "explica": "<code>-m</code> escolhe o modelo. <code>-o</code> grava a última resposta num arquivo, <code>-s</code> define o que o agente pode mexer (read-only, workspace-write) e <code>--skip-git-repo-check</code> deixa rodar fora de um repositório Git.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Leve na rotina",
+          "texto": "Ler, resumir, copiar e rascunhar: rápido e gastando menos do seu limite."
+        },
+        {
+          "t": "Topo no difícil",
+          "texto": "Plano grande, duas falhas no leve, dinheiro ou contrato."
+        },
+        {
+          "t": "Sobe avisando",
+          "texto": "\"Mando este para o topo porque…\": é como você confere se a regra funciona."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Curso: Claude como gestor de agentes (custo e várias sessões)",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Codex CLI (documentação oficial, em inglês)",
+          "href": "https://developers.openai.com/codex/cli",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

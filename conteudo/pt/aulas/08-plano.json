@@ -1,0 +1,334 @@
+{
+  "slug": "plano",
+  "num": 8,
+  "menu": "Plano",
+  "titulo": "Do primeiro agente à pequena equipe em 30 dias",
+  "titulo_curto": "Plano de 30 dias",
+  "minutos": 14,
+  "lead": "O erro mais comum é montar cinco agentes no primeiro fim de semana e parar de conferir na terça. O caminho que funciona é lento no começo: uma tarefa, conferência de tudo, confiança, e só então a próxima. Em quatro semanas você chega a uma pequena equipe que trabalha enquanto você confere por amostra.",
+  "objetivo": "montar o plano de quatro semanas com conferência completa no começo, amostragem depois e uma tarefa nova por semana.",
+  "competencias": [
+    "planejar-adocao-de-agentes",
+    "conferir-por-amostragem",
+    "registrar-prova-de-funcionamento"
+  ],
+  "aprende": [
+    {
+      "icone": "calendario",
+      "t": "As quatro semanas, uma de cada vez"
+    },
+    {
+      "icone": "lupa",
+      "t": "Quando conferir tudo e quando por amostra"
+    },
+    {
+      "icone": "arquivo",
+      "t": "O diário que prova que funcionou"
+    },
+    {
+      "icone": "baixar",
+      "t": "O seu plano com datas para o calendário"
+    }
+  ],
+  "hero_alt": "Calendário de parede com quatro semanas e algumas casas marcadas, ao lado de uma mesa com um caderno aberto, à luz da manhã.",
+  "secoes": [
+    {
+      "tipo": "mapa",
+      "titulo": "As quatro semanas",
+      "sub": "Clique num exercício para ver o \"pronto quando\". Cada semana usa o que a anterior deixou firme.",
+      "degraus": [
+        {
+          "aula": "ficha",
+          "icone": "arquivo",
+          "quando": "Semana 1",
+          "titulo": "Uma tarefa",
+          "sub": "lista e ficha",
+          "saida": "Primeiro agente com ficha e regras.",
+          "passo": "Ache a tarefa (aula 1), escreva a ficha (aula 2) e rode. Confira todos os resultados desta semana, sem exceção."
+        },
+        {
+          "aula": "relatorio",
+          "icone": "lupa",
+          "quando": "Semana 2",
+          "titulo": "Confiança",
+          "sub": "amostra",
+          "saida": "Tarefa 1 na rotina, conferida por amostra.",
+          "passo": "Se as três primeiras rodadas bateram, passe a conferir por amostra (dois números). Ponha o lembrete no calendário e acrescente a tarefa 2."
+        },
+        {
+          "aula": "roteamento",
+          "icone": "chip",
+          "quando": "Semana 3",
+          "titulo": "Roteamento",
+          "sub": "leve e topo",
+          "saida": "Regra de modelo e tarefas 3 e 4.",
+          "passo": "Cole a regra de roteamento nos Projetos e entregue as tarefas 3 e 4: contatos e notas (aulas 4 e 5), sempre com o portão."
+        },
+        {
+          "aula": "cliente",
+          "icone": "camadas",
+          "quando": "Semana 4",
+          "titulo": "Equipe",
+          "sub": "4 a 5 agentes",
+          "saida": "Pequena equipe e revisão semanal.",
+          "passo": "Checklist de cliente novo (aula 6). Uma vez por semana, leia o diário, ajuste uma ficha e decida qual tarefa entra a seguir."
+        }
+      ],
+      "resultado": {
+        "titulo": "Ao fim dos 30 dias",
+        "texto": "Quatro ou cinco tarefas chatas fora da sua mão, cada uma com ficha, portão e diário.",
+        "total": "4 semanas"
+      },
+      "legenda": "Errou? Aquela tarefa volta a ser conferida inteira até três rodadas seguidas baterem."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Conferir tudo, depois por amostra",
+      "sub": "A prova de que funcionou é o diário, não a impressão. Clique em cada fase.",
+      "passos": [
+        {
+          "titulo": "Tudo",
+          "sub": "3 primeiras rodadas",
+          "texto": [
+            "Nas três primeiras rodadas de cada agente, confira o resultado inteiro: cada número, cada rascunho.",
+            "Cada coisa que você corrigir vira uma regra na ficha."
+          ]
+        },
+        {
+          "titulo": "Amostra",
+          "sub": "depois",
+          "texto": [
+            "Três rodadas seguidas sem correção? Passe para a amostra: dois números do relatório, um rascunho em cada três, duas notas da tabela.",
+            "Portão não sai nunca: o que fala com cliente ou mexe com dinheiro continua sendo lido por você."
+          ]
+        },
+        {
+          "titulo": "Volta",
+          "sub": "se errar",
+          "texto": [
+            "Achou erro na amostra? Aquela tarefa volta para \"conferir tudo\" até três rodadas seguidas baterem de novo.",
+            "O erro vira regra na ficha antes da próxima rodada."
+          ]
+        },
+        {
+          "titulo": "Diário",
+          "sub": "uma linha",
+          "texto": [
+            "Uma linha por rodada: data, agente, o que conferiu, se bateu e o que mudou na ficha.",
+            "Em um mês, o diário mostra quanto tempo você ganhou e onde o agente erra."
+          ],
+          "exemplo": {
+            "rot": "Linha do diário",
+            "texto": "11/11 | relatório | conferi 2 números | bateu | nenhuma mudança"
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "O diário de conferência",
+      "sub": "Uma nota, uma planilha ou um arquivo diario.txt. Uma linha por rodada.",
+      "blocos": [
+        {
+          "rot": "Diário de conferência (modelo)",
+          "icone": "arquivo",
+          "conteudo": "data | agente | modelo | o que conferi | bateu? | mudança na ficha | minutos poupados\n11/11 | relatório do site | leve | tudo (rodada 1) | sim | entrega ganhou o total por página | 50\n12/11 | contatos | leve | os 3 rascunhos | 1 corrigido | regra: não citar prazo | 30\n18/11 | relatório do site | leve | 2 números (amostra) | sim | nenhuma | 55"
+        },
+        {
+          "rot": "Revisão de sexta (cole no chat com o diário)",
+          "icone": "chat",
+          "conteudo": "Aqui está o meu diário de conferência da semana.\nMe diga, em no máximo 8 linhas:\n1. Quantos minutos os agentes pouparam no total (some a última coluna).\n2. Qual agente teve mais correções e qual regra eu deveria pôr na ficha dele.\n3. Qual agente já pode passar para conferência por amostra (três rodadas seguidas sem correção).\nNão invente números: use só o que está no diário."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Agendar",
+            "html": "<p>No chat, a agenda é sua: o plano abaixo gera um arquivo <code>.ics</code> com os lembretes para o seu calendário (\"segunda 9h: relatório\"). Fazer o agente rodar sozinho na hora marcada é um passo de terminal, que o curso <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/\" target=\"_blank\" rel=\"noopener\">Do chat ao agente</a> mostra. Comece pelo lembrete: o agente que você chama na hora certa já tira o trabalho chato.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Cinco agentes na primeira semana</b>: você não consegue conferir tudo e o primeiro erro passa.</li><li><b>Parar de conferir porque \"sempre deu certo\"</b>: amostra é conferir menos, não parar.</li><li><b>Sem diário</b>: depois de um mês você não sabe dizer se o agente poupa tempo ou só muda o trabalho de lugar.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano sai em .md e em .ics para o calendário.",
+      "curso": "Entregue o trabalho chato a um agente",
+      "horas_padrao": 2,
+      "degraus": [
+        {
+          "titulo": "Aula 1 · Achar a tarefa",
+          "aula": "achar"
+        },
+        {
+          "titulo": "Aula 2 · A ficha do agente",
+          "aula": "ficha"
+        },
+        {
+          "titulo": "Aula 3 · Relatório da semana",
+          "aula": "relatorio"
+        },
+        {
+          "titulo": "Aula 4 · Contatos novos",
+          "aula": "leads"
+        },
+        {
+          "titulo": "Aula 5 · Notas e boletos",
+          "aula": "notas"
+        },
+        {
+          "titulo": "Aula 6 · Cliente novo",
+          "aula": "cliente"
+        },
+        {
+          "titulo": "Aula 7 · Leve ou topo",
+          "aula": "roteamento"
+        }
+      ],
+      "txt": {
+        "titulo": "Plano — Entregue o trabalho chato a um agente",
+        "inicio": "Início",
+        "ritmo": "Ritmo",
+        "termino": "Término previsto",
+        "ate": "até",
+        "pronto": "pronto quando",
+        "semanas": "semanas",
+        "travou": "## O que travou e a regra que criei na ficha",
+        "h": "h por semana",
+        "exs": "exercícios",
+        "ex1": "exercício"
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o seu plano e o diário",
+      "sub": "Feche o curso com o plano no calendário.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O plano no calendário",
+          "min": "5 min",
+          "texto": "Gere o plano acima com a sua data de início e importe o .ics no seu calendário.",
+          "pronto": "os lembretes das quatro semanas aparecem no seu calendário."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · O diário começa",
+          "min": "5 min",
+          "texto": "Crie o diário de conferência e escreva a linha da primeira rodada do seu primeiro agente.",
+          "pronto": "o diário tem pelo menos uma linha com data, agente, o que conferiu e se bateu."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · A revisão da primeira sexta",
+          "min": "10 min",
+          "texto": "Na sexta da semana 1, cole o diário no chat com o pedido de revisão.",
+          "pronto": "você tem o total de minutos poupados da semana e uma regra nova numa ficha."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste final",
+      "sub": "Quatro perguntas sobre o curso inteiro.",
+      "perguntas": [
+        {
+          "p": "Quando um agente pode passar de \"conferir tudo\" para \"conferir por amostra\"?",
+          "opcoes": [
+            "Depois de três rodadas seguidas sem correção.",
+            "Logo na primeira semana, se o texto estiver bem escrito.",
+            "Quando você estiver sem tempo.",
+            "Nunca: sempre se confere tudo."
+          ],
+          "certa": 0,
+          "explica": "Três rodadas seguidas sem correção mostram que a ficha está firme. Texto bem escrito não prova número certo, e conferir tudo para sempre tira o ganho do agente.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Na amostra você achou um número errado. E agora?",
+          "opcoes": [
+            "Ignorar: foi só um.",
+            "Trocar todos os agentes para o modelo topo.",
+            "Corrigir o número à mão na hora e continuar conferindo só por amostra, como antes.",
+            "Aquela tarefa volta a ser conferida inteira e o erro vira regra na ficha."
+          ],
+          "certa": 3,
+          "explica": "Erro na amostra é sinal de que a ficha tem um buraco. Volta a conferir tudo até três rodadas seguidas baterem, e a regra nova fecha o buraco.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Quais regras valem para todos os agentes do curso?",
+          "opcoes": [
+            "Só leitura, só rascunho, login é seu e dinheiro passa por você.",
+            "Sempre o modelo topo, sempre com acesso ao banco.",
+            "Enviar sozinho o que for simples e perguntar o resto antes de agir.",
+            "Senha no AGENTS.md e envio automático às segundas."
+          ],
+          "certa": 0,
+          "explica": "As quatro regras da ficha protegem você em qualquer tarefa: o agente lê e prepara, você entra, aprova, envia e paga.",
+          "ref": "mapa",
+          "cert": true
+        },
+        {
+          "p": "Para que serve a coluna \"minutos poupados\" do diário?",
+          "opcoes": [
+            "Para cobrar do agente o tempo gasto.",
+            "Para o modelo saber quando parar.",
+            "Para provar, no fim do mês, quanto tempo os agentes realmente devolveram a você.",
+            "Para escolher o modelo leve."
+          ],
+          "certa": 2,
+          "explica": "Sem número, a sensação engana. A soma dos minutos poupados mostra se vale pôr a próxima tarefa ou ajustar as que já existem.",
+          "ref": "codigo",
+          "cert": true
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "O curso em três frases",
+      "itens": [
+        {
+          "t": "Uma por vez",
+          "texto": "Uma tarefa chata, uma ficha, conferência de tudo. A próxima só quando você confiar."
+        },
+        {
+          "t": "O agente prepara",
+          "texto": "Só lê, só rascunho, login é seu, dinheiro passa por você. Leve na rotina, topo no difícil."
+        },
+        {
+          "t": "O diário prova",
+          "texto": "Conferir tudo, depois por amostra, e anotar. Em 30 dias você sabe quanto ganhou."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Continue por aqui",
+      "links": [
+        {
+          "t": "Curso: Do chat ao agente (terminal, filas e agendamento)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Curso: Claude como gestor de agentes",
+          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/",
+          "icone": "robo"
+        },
+        {
+          "t": "Cursos abertos no INEMA.CLUB",
+          "href": "https://inema.club/",
+          "icone": "seta"
+        }
+      ]
+    }
+  ]
+}

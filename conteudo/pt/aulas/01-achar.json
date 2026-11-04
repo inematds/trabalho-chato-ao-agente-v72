@@ -1,0 +1,349 @@
+{
+  "slug": "achar",
+  "num": 1,
+  "menu": "Achar",
+  "titulo": "Ache a tarefa chata certa",
+  "titulo_curto": "Achar a tarefa",
+  "minutos": 15,
+  "lead": "Você não precisa automatizar a empresa inteira. Precisa de uma tarefa: a que toma tempo toda semana, dá sono de fazer e não causa estrago se sair errada. Nesta aula a IA entrevista você sobre a sua semana e monta a lista; você escolhe a primeira.",
+  "objetivo": "montar a lista das suas tarefas repetitivas e escolher a primeira para o agente: muito tempo, muita chatice, pouco risco.",
+  "competencias": [
+    "mapear-tarefas-repetitivas",
+    "avaliar-risco-de-delegar",
+    "priorizar-automacao"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Listar o que você repete toda semana"
+    },
+    {
+      "icone": "relogio",
+      "t": "Dar nota de tempo, chatice e risco"
+    },
+    {
+      "icone": "escudo",
+      "t": "Separar o que mexe com dinheiro ou cliente"
+    },
+    {
+      "icone": "alvo",
+      "t": "Escolher a primeira tarefa do agente"
+    }
+  ],
+  "hero_alt": "Homem de uns 45 anos, à mesa à noite, marca itens numa lista de tarefas em papel; ao lado, um notebook e uma xícara.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Da semana cheia à primeira tarefa",
+      "sub": "Clique em cada etapa para ver o que acontece nela.",
+      "nos": [
+        {
+          "icone": "calendario",
+          "titulo": "Semana",
+          "sub": "o que repete",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "5 perguntas da IA"
+            }
+          ],
+          "detalhe": "A IA pergunta, uma de cada vez: o que você faz no computador que é chato, em que sites entra toda semana, o que copia de um lugar para outro, que números junta e o que monta quando chega cliente novo."
+        },
+        {
+          "icone": "lista",
+          "titulo": "Lista",
+          "sub": "uma linha cada",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "minutos por semana"
+            },
+            {
+              "icone": "x",
+              "t": "chatice de 1 a 5"
+            }
+          ],
+          "detalhe": "Cada tarefa vira uma linha com os aplicativos que ela usa, quantos minutos por semana toma e quão chata é. Chute com honestidade: o número exato não importa, a ordem sim."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Risco",
+          "sub": "baixo, médio, alto",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "dinheiro ou cliente = médio no mínimo"
+            }
+          ],
+          "detalhe": "Risco é o estrago se o agente errar. Ler e resumir é baixo. Qualquer coisa que mexe em dinheiro ou fala com cliente começa em médio, mesmo que pareça simples.",
+          "forte": true
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Primeira",
+          "sub": "começar já",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "muito tempo + muita chatice + risco baixo"
+            }
+          ],
+          "detalhe": "A primeira tarefa do agente é a do topo da lista: a que soma mais minutos e mais chatice com risco baixo. As outras ficam para depois, uma de cada vez."
+        }
+      ],
+      "legenda": "Uma tarefa por vez. A segunda só entra quando você confiar na primeira (aula 8)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como dar as notas sem travar",
+      "sub": "Clique em cada critério.",
+      "passos": [
+        {
+          "titulo": "Minutos",
+          "sub": "por semana",
+          "texto": [
+            "Some as vezes: 15 minutos por dia, cinco dias, são 75 minutos por semana.",
+            "Tarefa de 5 minutos por mês quase nunca compensa o trabalho de montar o agente."
+          ],
+          "exemplo": {
+            "rot": "Exemplo",
+            "texto": "Copiar pedidos do WhatsApp para a planilha: 20 min por dia, 100 min por semana."
+          }
+        },
+        {
+          "titulo": "Chatice",
+          "sub": "de 1 a 5",
+          "texto": [
+            "5 é a tarefa que você adia. 1 é a que você até gosta de fazer.",
+            "Tarefa chata é tarefa que você faz com pressa, e pressa gera erro: delegar também melhora a qualidade."
+          ]
+        },
+        {
+          "titulo": "Risco",
+          "sub": "o estrago do erro",
+          "texto": [
+            "<b>Baixo:</b> o agente só lê e escreve um rascunho para você. <b>Médio:</b> mexe em cadastro, planilha da empresa ou prepara mensagem para cliente. <b>Alto:</b> paga, envia, apaga ou assina.",
+            "Risco alto não sai da sua mão neste curso. O agente prepara; você executa."
+          ]
+        },
+        {
+          "titulo": "Decisão",
+          "sub": "já, depois, não",
+          "texto": [
+            "<b>Começar já:</b> uma única tarefa, a melhor da lista. <b>Depois:</b> as boas que esperam a vez. <b>Não delegar:</b> o que é risco alto ou depende do seu julgamento.",
+            "Se ficou em dúvida entre duas, fique com a de menor risco."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "O pedido que entrevista você",
+      "sub": "Copie e cole numa conversa nova do ChatGPT ou do Claude. Responda as perguntas com calma.",
+      "blocos": [
+        {
+          "rot": "No chat · achar a tarefa chata",
+          "icone": "chat",
+          "conteudo": "Me ajude a achar o trabalho de computador que eu devo entregar primeiro a um agente de IA.\n\nFaça estas perguntas UMA DE CADA VEZ e espere a minha resposta:\n1. Como é uma semana normal minha? O que eu faço no computador que é chato ou repetitivo?\n2. Em que sites, sistemas ou aplicativos eu entro toda semana?\n3. O que eu copio de um lugar e colo em outro?\n4. Que números ou relatórios eu junto toda semana?\n5. Quando chega um cliente novo, o que eu preciso cadastrar ou preparar, e em quais ferramentas?\n\nDepois monte a lista com UMA LINHA POR TAREFA, neste formato:\nN | tarefa | aplicativos | X min | chatice N | risco baixo/médio/alto | começar já / depois / não delegar\n\nRegras:\n- Qualquer tarefa que mexe em dinheiro ou fala com cliente é risco médio no mínimo.\n- Pagar, enviar, apagar ou assinar é risco alto e fica \"não delegar\".\n- Só UMA linha com \"começar já\": a que soma mais minutos e mais chatice com risco baixo.\n- Ordene da melhor primeira tarefa para a pior.\n\nNo fim escreva: \"A sua primeira tarefa é ___\" e um parágrafo descrevendo o trabalho, que eu vou usar na ficha do agente."
+        },
+        {
+          "rot": "Exemplo de lista pronta (uma loja de móveis planejados)",
+          "icone": "lista",
+          "conteudo": "1 | Relatório semanal do site para o sócio | Search Console, planilha | 60 min | chatice 5 | risco baixo | começar já\n2 | Copiar orçamentos do e-mail para a planilha | Gmail, planilha | 90 min | chatice 4 | risco médio | depois\n3 | Lançar notas de fornecedor nas contas a pagar | e-mail, planilha | 45 min | chatice 5 | risco médio | depois\n4 | Montar pasta e cronograma do cliente novo | Drive, planilha | 40 min | chatice 3 | risco médio | depois\n5 | Pagar fornecedores | aplicativo do banco | 30 min | chatice 3 | risco alto | não delegar"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>A lista tem pelo menos 5 linhas, uma por tarefa.</li><li>Toda linha tem minutos, chatice, risco e decisão.</li><li>Só uma linha diz <b>começar já</b>, e o risco dela é baixo.</li><li>Pagar, enviar ou apagar aparece como <b>não delegar</b>.</li></ol>"
+          },
+          {
+            "rot": "Terminal (opcional)",
+            "html": "<p>No Claude Code ou no Codex o pedido é o mesmo: abra o terminal numa pasta nova (por exemplo <code>meus-agentes</code>), chame <code>claude</code> ou <code>codex</code>, cole o pedido e, no fim, peça para salvar a lista em <code>tarefas.md</code>. A partir da aula 2 essa pasta guarda as fichas dos seus agentes.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Escolher a tarefa mais difícil</b> para \"testar a IA\": a primeira tem de dar certo, não impressionar.</li><li><b>Escolher a mais rara</b>: tarefa mensal demora meses para você confiar.</li><li><b>Dar risco baixo para mensagem a cliente</b>: um texto errado enviado não volta.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a sua lista",
+      "sub": "Teste primeiro com o exemplo que passa e com o que tem erro. Depois cole a sua lista. A página confere a forma (número, minutos, risco e decisão em cada linha); se a ordem faz sentido, quem julga é você.",
+      "arquivo": "tarefas.txt",
+      "rot": "Cole aqui a sua lista (uma linha numerada por tarefa):",
+      "modelo": "1 | tarefa | aplicativos | 60 min | chatice 5 | risco baixo | começar já",
+      "regras": [
+        {
+          "tipo": "planos",
+          "min": 5,
+          "max": 15
+        },
+        {
+          "tipo": "cada_plano",
+          "grupos": [
+            {
+              "rot": "minutos",
+              "termos": [
+                "min / minutos / minuto / minutes / minute / mins"
+              ]
+            },
+            {
+              "rot": "risco",
+              "um_so": true,
+              "termos": [
+                "risco baixo / low risk / riesgo bajo",
+                "risco médio / medium risk / riesgo medio",
+                "risco alto / high risk / riesgo alto"
+              ]
+            },
+            {
+              "rot": "decisão",
+              "um_so": true,
+              "termos": [
+                "começar já / start now / empezar ya",
+                "depois / later / después",
+                "não delegar / do not delegate / no delegar"
+              ]
+            }
+          ]
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "uma tarefa marcada começar já",
+              "termos": [
+                "começar já / start now / empezar ya"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: {n} tarefas com minutos, risco e decisão",
+      "exemplo": "1 | Relatório semanal do site para o sócio | Search Console, planilha | 60 min | chatice 5 | risco baixo | começar já\n2 | Copiar orçamentos do e-mail para a planilha | Gmail, planilha | 90 min | chatice 4 | risco médio | depois\n3 | Lançar notas de fornecedor nas contas a pagar | e-mail, planilha | 45 min | chatice 5 | risco médio | depois\n4 | Montar pasta e cronograma do cliente novo | Drive, planilha | 40 min | chatice 3 | risco médio | depois\n5 | Pagar fornecedores | aplicativo do banco | 30 min | chatice 3 | risco alto | não delegar",
+      "exemplo_errado": "1 | Relatório do site | 60 min | chatice 5 | começar já\n2 | Orçamentos | 90 min | risco médio | depois\n3 | Notas | risco médio | risco alto | depois\n4 | Pagar fornecedores | 30 min | risco alto | não delegar"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a sua lista e a sua primeira tarefa",
+      "sub": "Faça na ordem. Só passe para o próximo quando o \"pronto quando\" for verdade.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · A entrevista",
+          "min": "15 min",
+          "texto": "Cole o pedido \"achar a tarefa chata\" numa conversa nova do ChatGPT ou do Claude e responda as cinco perguntas pensando na sua última semana real.",
+          "pronto": "a IA devolveu uma lista com pelo menos 5 linhas no formato N | tarefa | ... | decisão."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Confira e ajuste",
+          "min": "10 min",
+          "texto": "Cole a lista no conferidor acima. Corrija o que faltar, à mão ou pedindo à IA. Confira se pagar, enviar ou apagar ficou como \"não delegar\".",
+          "pronto": "o conferidor responde OK e só uma linha diz \"começar já\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Guarde a lista",
+          "min": "5 min",
+          "texto": "Salve a lista e o parágrafo final num arquivo tarefas.txt (ou numa nota). Ela volta na aula 2 e na aula 8.",
+          "pronto": "o arquivo existe e o parágrafo da primeira tarefa diz o que entra, o que sai e com que frequência."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Qual destas é a melhor primeira tarefa para um agente?",
+          "opcoes": [
+            "Responder sozinho as reclamações de clientes no WhatsApp, sem passar por você.",
+            "Resumir toda segunda os números do site num relatório para você ler.",
+            "Pagar os boletos dos fornecedores na data certa.",
+            "Planejar a estratégia de vendas do ano que vem."
+          ],
+          "certa": 1,
+          "explica": "Resumir para você ler é risco baixo, repete toda semana e é chato. Responder cliente e pagar boleto têm risco médio ou alto; a estratégia do ano é rara e depende do seu julgamento.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Uma tarefa prepara a mensagem de cobrança para o cliente, mas não envia. Qual o risco dela?",
+          "opcoes": [
+            "Baixo, porque nada é enviado.",
+            "Alto, porque fala de dinheiro.",
+            "Médio no mínimo: mexe com dinheiro e com cliente, mesmo como rascunho.",
+            "Depende só de quantos minutos por semana ela toma do seu tempo de trabalho."
+          ],
+          "certa": 2,
+          "explica": "Dinheiro ou cliente começa em médio, mesmo em rascunho, porque um texto errado aprovado com pressa sai com o seu nome. Alto é quando o agente paga, envia ou apaga.",
+          "ref": "passos"
+        },
+        {
+          "p": "Por que só uma tarefa recebe \"começar já\"?",
+          "opcoes": [
+            "Porque o chat só aceita uma ficha de agente por conta, e a segunda apaga a primeira da memória.",
+            "Porque você precisa conferir tudo o que o agente faz no começo, e isso só cabe com uma tarefa.",
+            "Porque as outras tarefas nunca vão poder ser delegadas.",
+            "Porque o modelo leve só faz uma tarefa por semana."
+          ],
+          "certa": 1,
+          "explica": "No começo você confere cada resultado. Com uma tarefa isso cabe na semana; com cinco, você para de conferir e o erro passa. As outras esperam a vez, como mostra o plano da aula 8.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "A tarefa \"copiar pedidos para a planilha\" toma 20 minutos por dia, cinco dias por semana. Quantos minutos por semana entram na lista?",
+          "opcoes": [
+            "20 min, que é o tempo de um dia",
+            "60 min",
+            "100 min",
+            "140 min"
+          ],
+          "certa": 2,
+          "explica": "20 minutos vezes 5 dias dá 100 minutos por semana. O erro comum é anotar só o tempo de um dia e subestimar a tarefa.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Uma tarefa",
+          "texto": "Não automatize tudo: escolha a tarefa que soma mais tempo e chatice com risco baixo."
+        },
+        {
+          "t": "Risco primeiro",
+          "texto": "Dinheiro ou cliente começa em médio; pagar, enviar, apagar e assinar ficam com você."
+        },
+        {
+          "t": "A lista volta",
+          "texto": "As outras tarefas esperam a vez. Você vai puxar uma por semana quando confiar na anterior."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "Curso: Do prompt ao papel (como escrever o trabalho para a IA)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/",
+          "icone": "caneta"
+        },
+        {
+          "t": "Curso: Do chat ao agente (os degraus até o terminal)",
+          "href": "https://inematds.github.io/do-chat-ao-agente-v72/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

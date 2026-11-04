@@ -1,0 +1,363 @@
+{
+  "slug": "ficha",
+  "num": 2,
+  "menu": "Ficha",
+  "titulo": "A ficha do agente em uma página",
+  "titulo_curto": "A ficha do agente",
+  "minutos": 15,
+  "lead": "Um agente sem instrução faz o que acha que você quer. A ficha é a página que diz quem ele é, o que você tem, quando trabalhar, os passos em ordem, o que nunca fazer e como entregar. Você escreve uma vez e usa toda semana.",
+  "objetivo": "escrever a ficha do seu primeiro agente com papel, contexto, passos, regras e primeira tarefa, e colocá-la num Projeto do chat.",
+  "competencias": [
+    "escrever-ficha-de-agente",
+    "definir-regras-de-seguranca",
+    "configurar-projeto-no-chat"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "As sete partes da ficha"
+    },
+    {
+      "icone": "escudo",
+      "t": "As quatro regras que protegem você"
+    },
+    {
+      "icone": "pasta",
+      "t": "Onde a ficha mora: Projeto, Gem ou pasta"
+    },
+    {
+      "icone": "play",
+      "t": "A primeira tarefa que testa a ficha"
+    }
+  ],
+  "hero_alt": "Mão coloca uma folha impressa com parágrafos curtos e uma lista numerada dentro de uma pasta de papel kraft.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "As partes da ficha",
+      "sub": "Clique em cada parte. Juntas cabem em uma página.",
+      "nos": [
+        {
+          "icone": "robo",
+          "titulo": "Papel",
+          "sub": "quem ele é",
+          "detalhe": "Uma frase: \"Você é o meu agente de relatório semanal do site.\" O papel diz ao modelo o tipo de trabalho e o tom.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "Sobre mim: negócio, ferramentas"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Quando",
+          "sub": "gatilho",
+          "detalhe": "Quando o trabalho acontece: \"toda segunda de manhã\" ou \"quando eu disser 'ver contatos'\". No chat é você quem chama; no terminal dá para agendar mais tarde.",
+          "itens": [
+            {
+              "icone": "chat",
+              "t": "frase que dispara"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "Passos",
+          "sub": "em ordem",
+          "detalhe": "Os passos numerados, como você mesmo faria: o que ler, o que comparar, o que escrever. Passo vago vira trabalho vago.",
+          "itens": [
+            {
+              "icone": "check",
+              "t": "1, 2, 3…"
+            }
+          ]
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Regras",
+          "sub": "o que nunca",
+          "forte": true,
+          "detalhe": "As quatro regras de segurança: só lê, só faz rascunho, login é seu, dinheiro passa por você. E mais uma: número copiado exatamente; se não achar, escreve \"não achei\" e para.",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "rascunho, nunca envio"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Entrega",
+          "sub": "formato",
+          "detalhe": "Como o resultado chega: uma tabela, um texto de até 250 palavras, uma lista com \"rascunho pronto\". Formato fixo é o que deixa você conferir rápido.",
+          "itens": [
+            {
+              "icone": "play",
+              "t": "Primeira tarefa: rodar uma vez agora"
+            }
+          ]
+        }
+      ],
+      "legenda": "Papel e Sobre mim dizem quem; Quando e Passos dizem o quê; Regras dizem o que não; Entrega e Primeira tarefa dizem como você confere."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "As quatro regras que vão em toda ficha",
+      "sub": "Copie as quatro, sempre. Clique em cada uma.",
+      "passos": [
+        {
+          "titulo": "Só lê",
+          "sub": "não muda nada",
+          "texto": [
+            "O agente lê painéis, planilhas e e-mails. Não muda configuração, não apaga e não cadastra nada sem a sua ordem.",
+            "Se precisar mudar algo, ele descreve a mudança e espera."
+          ],
+          "exemplo": {
+            "rot": "Na ficha",
+            "texto": "Só leia. Nunca mude configuração, apague ou envie nada."
+          }
+        },
+        {
+          "titulo": "Só rascunho",
+          "sub": "você envia",
+          "texto": [
+            "E-mail, resposta a cliente, cobrança: tudo sai como rascunho. Quem aperta enviar é você.",
+            "É o seu portão: o momento em que você lê antes de sair."
+          ],
+          "exemplo": {
+            "rot": "Na ficha",
+            "texto": "Salve tudo como rascunho. Eu envio."
+          }
+        },
+        {
+          "titulo": "Login é seu",
+          "sub": "senha nunca",
+          "texto": [
+            "Senha não entra na conversa nem na ficha. No chat, você exporta o arquivo e cola; num agente que usa o navegador, ele para na tela de login e pede que você entre.",
+            "Se aparecer uma tela de login, ele para e avisa."
+          ],
+          "exemplo": {
+            "rot": "Na ficha",
+            "texto": "Nunca peça nem digite senha. Tela de login: pare e me chame."
+          }
+        },
+        {
+          "titulo": "Dinheiro",
+          "sub": "passa por você",
+          "texto": [
+            "Pagar, aprovar, agendar pagamento ou emitir cobrança é sempre seu. O agente monta a lista; você confere e executa.",
+            "Número que não bate ou está ilegível: ele marca e pula, não chuta."
+          ],
+          "exemplo": {
+            "rot": "Na ficha",
+            "texto": "Copie os números exatamente. Se não bater ou não der para ler, marque e pule."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "O modelo da ficha e um exemplo preenchido",
+      "sub": "Troque o que está entre [colchetes] pelo seu. Uma linha por campo.",
+      "blocos": [
+        {
+          "rot": "Modelo da ficha (copie e preencha)",
+          "icone": "arquivo",
+          "conteudo": "Papel: Você é o meu agente de [tipo de trabalho].\nSobre mim: [o que a empresa faz, em uma linha]; ferramentas: [planilha, e-mail, painel]; tom: [direto, educado, sem jargão].\nQuando: [toda segunda de manhã / quando eu disser \"palavra\"].\nPassos: 1) [ler o quê]; 2) [comparar com o quê]; 3) [escrever o quê]; 4) [entregar onde].\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha, tela de login = pare e me chame; copie números exatamente, se não achar escreva \"não achei\"; se travar ou ficar em dúvida, pare e pergunte.\nEntrega: [tabela / texto de até N palavras / lista com \"rascunho pronto\"].\nPrimeira tarefa: [rode uma vez agora com os dados que eu colar e me mostre o resultado]."
+        },
+        {
+          "rot": "Exemplo preenchido (relatório do site de uma loja)",
+          "icone": "check",
+          "conteudo": "Papel: Você é o meu agente de relatório semanal do site.\nSobre mim: loja de móveis planejados em Curitiba; ferramentas: Search Console e Google Planilhas; tom: direto, sem jargão.\nQuando: toda segunda de manhã, quando eu colar as planilhas exportadas e disser \"relatório\".\nPassos: 1) leia as consultas e as páginas desta semana e da anterior; 2) ache as 5 que mais subiram e as 5 que mais caíram em cliques; 3) diga se o total subiu ou caiu e quanto; 4) sugira 3 ações simples para a semana.\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha, tela de login = pare e me chame; copie números exatamente, se não achar escreva \"não achei\"; se travar ou ficar em dúvida, pare e pergunte.\nEntrega: texto de até 250 palavras, com os números desta semana e da anterior lado a lado.\nPrimeira tarefa: rode agora com as planilhas que vou colar e me mostre o relatório."
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Onde colocar no chat",
+            "html": "<ul><li><b>ChatGPT:</b> crie um Projeto, abra as instruções do projeto e cole a ficha. Toda conversa dentro do projeto já começa com ela.</li><li><b>Claude:</b> crie um Projeto e cole a ficha nas instruções do projeto.</li><li><b>Gemini:</b> crie um Gem e cole a ficha nas instruções.</li><li>Sem projeto? Cole a ficha como primeira mensagem de uma conversa nova, toda vez.</li></ul>"
+          },
+          {
+            "rot": "Terminal (opcional)",
+            "html": "<p>Na pasta <code>meus-agentes</code>, crie uma subpasta por agente (por exemplo <code>relatorio-site</code>) e salve a ficha como <code>AGENTS.md</code>, o arquivo de instruções que o Codex lê ao começar. No Claude Code, salve o mesmo texto como <code>CLAUDE.md</code>. Depois é só abrir o terminal na pasta e chamar <code>codex</code> ou <code>claude</code>.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Passos vagos</b> (\"analise o site\"): o agente inventa o que analisar. Diga o que ler e o que comparar.</li><li><b>Sem formato de entrega</b>: cada semana vem num jeito e você não consegue conferir rápido.</li><li><b>Esquecer \"pare e pergunte\"</b>: sem essa regra, o modelo preenche a lacuna com um chute.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a sua ficha",
+      "sub": "A página confere se os sete campos estão preenchidos e se as Regras dizem \"rascunho\", \"pare\" e \"exatamente\". É uma checagem de forma: se os passos fazem sentido, quem decide é você, rodando a primeira tarefa.",
+      "arquivo": "ficha-agente.txt",
+      "rot": "Cole aqui a sua ficha (um campo por linha):",
+      "modelo": "Papel: ...\nSobre mim: ...\nQuando: ...\nPassos: ...\nRegras: ...\nEntrega: ...\nPrimeira tarefa: ...",
+      "regras": [
+        {
+          "tipo": "campos",
+          "campos": [
+            "Papel",
+            "Sobre mim",
+            "Quando",
+            "Passos",
+            "Regras",
+            "Entrega",
+            "Primeira tarefa"
+          ],
+          "min": 12
+        },
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "nas Regras a palavra rascunho",
+              "campo": "Regras",
+              "termos": [
+                "rascunho / rascunhos / draft / drafts / borrador / borradores"
+              ]
+            },
+            {
+              "rot": "nas Regras o que fazer quando travar (pare e pergunte)",
+              "campo": "Regras",
+              "termos": [
+                "pare / pare e pergunte / parar / pergunte / stop / ask me / detente / pregunta / pregúntame"
+              ]
+            },
+            {
+              "rot": "nas Regras números copiados exatamente",
+              "campo": "Regras",
+              "termos": [
+                "exatamente / exato / exatos / exactly / exact / exactamente / exacto / exactos"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: ficha com {n} campos e as regras de segurança",
+      "exemplo": "Papel: Você é o meu agente de relatório semanal do site.\nSobre mim: loja de móveis planejados em Curitiba; ferramentas: Search Console e Google Planilhas; tom: direto.\nQuando: toda segunda de manhã, quando eu colar as planilhas e disser \"relatório\".\nPassos: 1) leia as consultas desta semana e da anterior; 2) ache as 5 que mais subiram e as 5 que mais caíram; 3) diga se o total subiu ou caiu; 4) sugira 3 ações.\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha; copie números exatamente, se não achar escreva \"não achei\"; se travar, pare e pergunte.\nEntrega: texto de até 250 palavras com os números lado a lado.\nPrimeira tarefa: rode agora com as planilhas que vou colar.",
+      "exemplo_errado": "Papel: assistente\nQuando: sempre que precisar\nPassos: analise o site e me diga o que fazer para vender mais.\nRegras: seja rápido e caprichado.\nEntrega: o que achar melhor."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a ficha do seu primeiro agente",
+      "sub": "Use a tarefa \"começar já\" da aula 1.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Preencha a ficha",
+          "min": "20 min",
+          "texto": "Copie o modelo e preencha para a sua primeira tarefa. Escreva os passos como você mesmo faria hoje, na ordem.",
+          "pronto": "o conferidor acima responde OK com 7 campos."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Coloque no Projeto",
+          "min": "10 min",
+          "texto": "Crie um Projeto no ChatGPT ou no Claude (ou um Gem) com o nome do agente e cole a ficha nas instruções. No terminal, salve como AGENTS.md (Codex) ou CLAUDE.md (Claude Code) numa pasta própria.",
+          "pronto": "uma conversa nova dentro do Projeto responde \"qual é o seu papel?\" repetindo o Papel da ficha."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Teste uma regra",
+          "min": "5 min",
+          "texto": "Dentro do Projeto, peça de propósito: \"envie isso direto para o cliente\" ou \"qual é a minha senha?\".",
+          "pronto": "o agente recusa e lembra a regra (rascunho / login é seu). Se não recusar, reforce a regra na ficha e teste de novo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Qual destas linhas de Passos é a melhor?",
+          "opcoes": [
+            "Analise o meu site e diga o que melhorar.",
+            "Faça um relatório completo e bem caprichado.",
+            "Use a sua experiência para achar oportunidades.",
+            "Leia as consultas desta semana e da anterior e liste as 5 que mais caíram em cliques."
+          ],
+          "certa": 3,
+          "explica": "Passo bom diz o que ler, o que comparar e o que entregar. Os outros deixam o agente decidir sozinho o que é \"melhorar\" ou \"caprichado\", e cada semana vem uma coisa diferente.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "O agente precisa entrar num painel que pede login. O que a ficha manda fazer?",
+          "opcoes": [
+            "Parar na tela de login e chamar você; senha nunca entra na conversa.",
+            "Pedir a senha uma vez só e guardar na ficha, para não precisar pedir de novo.",
+            "Tentar entrar com o e-mail da empresa.",
+            "Pular o painel e estimar os números."
+          ],
+          "certa": 0,
+          "explica": "Login é seu. Senha escrita na ficha ou na conversa fica guardada onde não devia. E estimar número é proibido: se não achar, ele escreve \"não achei\".",
+          "ref": "passos"
+        },
+        {
+          "p": "Para que serve a \"Primeira tarefa\" no fim da ficha?",
+          "opcoes": [
+            "Para o agente lembrar do que fez na semana passada.",
+            "Para rodar uma vez na hora e você conferir se a ficha funciona antes de confiar nela.",
+            "Para agendar a tarefa no calendário.",
+            "Para avisar os clientes, logo no primeiro contato, de que existe um agente cuidando do atendimento."
+          ],
+          "certa": 1,
+          "explica": "A primeira tarefa é o teste da ficha: roda agora, você confere e corrige a ficha se precisar. Chat não guarda agenda sozinho; agendar vem depois.",
+          "ref": "codigo"
+        },
+        {
+          "p": "No chat, onde a ficha fica para valer em toda conversa daquele agente?",
+          "opcoes": [
+            "Num arquivo no seu computador, que o chat encontra e lê sozinho quando precisa.",
+            "No histórico de outra conversa qualquer.",
+            "Nas instruções de um Projeto (ChatGPT ou Claude) ou de um Gem.",
+            "No campo de nome da conversa."
+          ],
+          "certa": 2,
+          "explica": "As instruções do Projeto ou do Gem entram em toda conversa criada ali dentro. O chat não lê arquivos do seu computador por conta própria; no terminal, quem faz esse papel é o AGENTS.md ou o CLAUDE.md da pasta.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Uma página",
+          "texto": "Papel, sobre mim, quando, passos, regras, entrega e primeira tarefa. Uma linha cada."
+        },
+        {
+          "t": "Quatro regras",
+          "texto": "Só lê, só rascunho, login é seu, dinheiro passa por você. E número exato ou \"não achei\"."
+        },
+        {
+          "t": "Mora num Projeto",
+          "texto": "No chat, nas instruções do Projeto ou do Gem; no terminal, no AGENTS.md ou CLAUDE.md da pasta."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {
+          "t": "O que são os Projetos no Claude (ajuda oficial, em inglês)",
+          "href": "https://support.claude.com/en/articles/9517075-what-are-projects",
+          "icone": "pasta"
+        },
+        {
+          "t": "Curso: Do prompt ao papel (a ficha de função em detalhe)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/",
+          "icone": "caneta"
+        }
+      ]
+    }
+  ]
+}

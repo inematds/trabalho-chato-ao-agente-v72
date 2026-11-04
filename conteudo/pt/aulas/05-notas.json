@@ -1,0 +1,270 @@
+{
+  "slug": "notas",
+  "num": 5,
+  "menu": "Notas",
+  "titulo": "Nota e boleto: o dinheiro passa por você",
+  "titulo_curto": "Notas e boletos",
+  "minutos": 16,
+  "lead": "Abrir cada nota de fornecedor, copiar número, vencimento e valor para a planilha de contas a pagar é das tarefas mais chatas da semana. O agente pode fazer a leitura e a conta, marcar a nota repetida e o total que não fecha. O que ele nunca faz é pagar: a lista sai como rascunho e o banco é seu.",
+  "objetivo": "fazer o agente ler notas e boletos e montar a lista de contas a pagar, marcando a nota repetida e o total que não bate.",
+  "competencias": [
+    "extrair-dados-de-notas",
+    "conferir-somas-com-agente",
+    "manter-pagamento-com-o-dono"
+  ],
+  "aprende": [
+    {
+      "icone": "arquivo",
+      "t": "Tirar os dados de cada nota ou boleto"
+    },
+    {
+      "icone": "grafico",
+      "t": "Conferir se os itens somam o total"
+    },
+    {
+      "icone": "fila",
+      "t": "Pegar a nota que chegou duas vezes"
+    },
+    {
+      "icone": "cadeado",
+      "t": "Deixar o pagamento sempre com você"
+    }
+  ],
+  "hero_alt": "Mão de uma pessoa de uns 55 anos confere um valor numa nota fiscal em papel, ao lado de boletos, uma calculadora e um notebook.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Da pilha de notas à lista de contas",
+      "sub": "Clique em cada etapa.",
+      "nos": [
+        {
+          "icone": "arquivo",
+          "titulo": "Ler",
+          "sub": "cada nota",
+          "detalhe": "De cada nota ou boleto o agente tira: fornecedor, número do documento, data, vencimento, valor dos itens e total. No chat, você anexa os PDFs ou cola o texto; foto também serve, se estiver nítida.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "fornecedor, número, vencimento, total"
+            }
+          ]
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Somar",
+          "sub": "itens = total?",
+          "detalhe": "Ele soma os itens e compara com o total impresso. Se não bater, ou se um número estiver ilegível, a nota é marcada \"não bate\" e fica fora da lista. Nada de corrigir o valor por conta própria.",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "não bate → fica fora"
+            }
+          ]
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Repetida?",
+          "sub": "mesmo número",
+          "detalhe": "O mesmo número de nota do mesmo fornecedor já apareceu? É repetida: o fornecedor reenviou ou ela já está na planilha. Marca e pula.",
+          "itens": [
+            {
+              "icone": "fila",
+              "t": "mesmo fornecedor + número"
+            }
+          ]
+        },
+        {
+          "icone": "lista",
+          "titulo": "Lista",
+          "sub": "rascunho",
+          "forte": true,
+          "detalhe": "A tabela de contas a pagar, ordenada pelo vencimento, com o total da semana. Como rascunho: você confere antes de copiar para a planilha oficial.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "ordem de vencimento"
+            }
+          ]
+        },
+        {
+          "icone": "cadeado",
+          "titulo": "Pagar",
+          "sub": "só você",
+          "detalhe": "Pagar, aprovar e agendar pagamento ficam com você, no banco. O agente não recebe senha do banco, nem do sistema financeiro, nunca.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "banco é seu"
+            }
+          ]
+        }
+      ],
+      "legenda": "Dinheiro saindo sempre passa por uma conferência sua. O agente só tira o trabalho de digitar e somar."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "A ficha e quatro notas de exemplo",
+      "sub": "As notas são inventadas. Duas têm problema de propósito.",
+      "blocos": [
+        {
+          "rot": "Ficha · agente de notas e boletos",
+          "icone": "arquivo",
+          "conteudo": "Papel: Você é o meu agente de contas a pagar.\nSobre mim: [o que a empresa faz]; fornecedores frequentes e categorias: [Madeireira = matéria-prima; Contabilidade = serviços].\nQuando: quando eu anexar ou colar as notas e boletos da semana e disser \"notas\".\nPassos: 1) de cada documento tire fornecedor, número, data, vencimento, itens e total; 2) some os itens e compare com o total impresso; 3) confira se o mesmo fornecedor com o mesmo número já apareceu; 4) monte a tabela: fornecedor, número, vencimento, total, categoria, situação; 5) some o total da semana só com as notas sem problema.\nRegras: copie os números exatamente; se a soma não bater ou um número estiver ilegível, marque \"não bate\" e deixe fora do total; nota repetida: marque \"repetida\" e deixe fora do total; nunca pague, aprove ou agende pagamento; nunca peça senha de banco; tudo é rascunho para eu conferir; se ficar em dúvida, pare e pergunte.\nEntrega: a tabela em ordem de vencimento e, embaixo, o total da semana e a lista do que ficou fora, com o motivo.\nPrimeira tarefa: rode agora com as notas que vou colar."
+        },
+        {
+          "rot": "Ensaio · quatro documentos",
+          "icone": "lista",
+          "conteudo": "notas\n\nDocumento 1 · Nota 4471 · Madeireira Pinho Forte · emissão 27/10 · vencimento 10/11\n  chapas de MDF: 1.100,00 · frete: 150,00 · TOTAL: 1.250,00\n\nDocumento 2 · Nota 5120 · Ferragens Silva · emissão 28/10 · vencimento 12/11\n  dobradiças: 480,00 · puxadores: 320,00 · TOTAL: 900,00\n\nDocumento 3 · Nota 4471 · Madeireira Pinho Forte · emissão 27/10 · vencimento 10/11\n  chapas de MDF: 1.100,00 · frete: 150,00 · TOTAL: 1.250,00\n\nDocumento 4 · Boleto 311 · Contabilidade Rocha · vencimento 15/11\n  honorários de novembro · TOTAL: 650,00"
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "O que deve sair",
+            "html": "<ul><li>Nota 4471 (Madeireira): 1.250,00, vence 10/11, ok.</li><li>Boleto 311 (Contabilidade): 650,00, vence 15/11, ok.</li><li>Nota 5120 (Ferragens): <b>não bate</b>. Os itens somam 800,00 e o total diz 900,00. Fora do total.</li><li>Documento 3: nota 4471 <b>repetida</b>. Fora do total.</li><li>Total da semana: <b>1.900,00</b>.</li></ul><p>Contas feitas à mão sobre o exemplo. A nota 5120 você resolve com o fornecedor; não é o agente que decide qual valor vale.</p>"
+          },
+          {
+            "rot": "Terminal (opcional)",
+            "html": "<p>Na pasta <code>meus-agentes/notas</code>, com a ficha no <code>AGENTS.md</code> (ou <code>CLAUDE.md</code>), ponha os PDFs da semana numa subpasta <code>semana</code> e rode <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>. Se algum PDF for imagem escaneada e o modelo leve não conseguir ler, ele deve dizer \"não consegui ler\" (é a regra) e você manda esse para o modelo topo ou digita.</p>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Deixar o agente \"corrigir\" o total</b>: ele não sabe se o erro está no item ou no total. Quem resolve é você com o fornecedor.</li><li><b>Mandar só o total, sem os itens</b>: sem os itens, ele não tem o que somar.</li><li><b>Dar acesso ao banco \"só para ler o extrato\"</b>: fora do escopo deste curso. Exporte o extrato, se precisar.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "conferidor",
+      "titulo": "Confira a tabela do agente",
+      "sub": "Rode o agente com as quatro notas de exemplo e cole aqui a tabela que ele devolveu. A página procura a nota repetida, a que não bate e o total certo da semana.",
+      "arquivo": "contas.txt",
+      "rot": "Cole aqui a tabela e o total que o agente devolveu:",
+      "modelo": "Fornecedor | Número | Vencimento | Total | Situação",
+      "regras": [
+        {
+          "tipo": "termos",
+          "grupos": [
+            {
+              "rot": "a nota 5120",
+              "termos": [
+                "5120"
+              ]
+            },
+            {
+              "rot": "a palavra repetida (ou duplicada) para a nota que veio duas vezes",
+              "termos": [
+                "repetida / repetido / duplicada / duplicado / duplicate / duplicated / repeated"
+              ]
+            },
+            {
+              "rot": "a marca de soma que não bate",
+              "termos": [
+                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn't add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
+              ]
+            },
+            {
+              "rot": "o total certo da semana (1.900,00)",
+              "termos": [
+                "1.900 / 1900 / 1,900"
+              ]
+            }
+          ]
+        }
+      ],
+      "ok": "OK: repetida, divergente e total da semana certos",
+      "exemplo": "Madeireira Pinho Forte | 4471 | 10/11 | 1.250,00 | matéria-prima | ok\nContabilidade Rocha | 311 | 15/11 | 650,00 | serviços | ok\nTotal da semana: 1.900,00\nFora do total:\n- Ferragens Silva 5120: não bate (itens somam 800,00, total impresso 900,00)\n- Madeireira Pinho Forte 4471 (documento 3): repetida",
+      "exemplo_errado": "Madeireira Pinho Forte | 4471 | 10/11 | 1.250,00\nFerragens Silva | 5120 | 12/11 | 900,00\nMadeireira Pinho Forte | 4471 | 10/11 | 1.250,00\nContabilidade Rocha | 311 | 15/11 | 650,00\nTotal da semana: 4.050,00"
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: as contas da semana",
+      "sub": "Ensaio com o exemplo, depois com as suas notas.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O ensaio",
+          "min": "10 min",
+          "texto": "Crie o Projeto \"Contas a pagar\" com a ficha, cole as quatro notas de exemplo e diga \"notas\". Cole a resposta no conferidor.",
+          "pronto": "o conferidor responde OK: 5120 como não bate, a 4471 repetida e total de 1.900,00."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · As suas notas",
+          "min": "20 min",
+          "texto": "Anexe as notas e boletos reais de uma semana. Antes de copiar para a sua planilha, confira dois totais no papel.",
+          "pronto": "os dois totais conferidos batem com a tabela, e nenhuma nota foi paga pelo agente."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · A lista de categorias",
+          "min": "5 min",
+          "texto": "Acrescente à ficha os seus cinco fornecedores mais frequentes com a categoria de cada um.",
+          "pronto": "na rodada seguinte, as notas desses fornecedores saem com a categoria certa sem você pedir."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "Na nota 5120, os itens somam 800,00 e o total impresso diz 900,00. O que o agente deve fazer?",
+          "opcoes": [
+            "Usar 800,00, que é a soma certa.",
+            "Usar 900,00, que é o que está impresso.",
+            "Marcar \"não bate\", deixar fora do total e avisar você.",
+            "Pedir ao fornecedor um desconto de 100,00 pela diferença encontrada."
+          ],
+          "certa": 2,
+          "explica": "O agente não sabe onde está o erro: no item ou no total. Quem resolve com o fornecedor é você. O papel dele é achar a diferença e não deixar ela entrar na conta.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Com as quatro notas de exemplo, qual é o total da semana a pagar?",
+          "opcoes": [
+            "4.050,00 (tudo somado)",
+            "2.800,00",
+            "1.900,00",
+            "3.150,00"
+          ],
+          "certa": 2,
+          "explica": "Entram só as notas sem problema: 1.250,00 (4471) + 650,00 (boleto 311) = 1.900,00. A 5120 não bate e o documento 3 é a 4471 repetida. 4.050,00 é a soma de tudo, sem conferir.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Por que o agente de notas nunca recebe a senha do banco, nem \"só para ler\"?",
+          "opcoes": [
+            "Porque o modelo leve não sabe usar banco.",
+            "Porque a regra \"dinheiro passa por você\" exige que pagar e aprovar fiquem só com você; ler o extrato dá para fazer exportando.",
+            "Porque o banco bloqueia qualquer acesso de IA.",
+            "Porque senha só pode ficar no AGENTS.md."
+          ],
+          "certa": 1,
+          "explica": "Acesso de leitura ao banco abre a porta para o resto. O extrato exportado resolve a leitura sem risco. Senha não vai para a ficha, nem para o AGENTS.md, nem para a conversa.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Ler e somar",
+          "texto": "O agente tira os dados de cada nota e confere se os itens dão o total."
+        },
+        {
+          "t": "Marcar, não corrigir",
+          "texto": "Repetida e \"não bate\" ficam fora do total, com o motivo. Quem resolve é você."
+        },
+        {
+          "t": "Banco é seu",
+          "texto": "A lista sai como rascunho. Pagar, aprovar e agendar ficam com você."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+{
+  "slug": "cliente",
+  "num": 6,
+  "menu": "Cliente",
+  "titulo": "Cliente novo: o checklist que para quando falha",
+  "titulo_curto": "Cliente novo",
+  "minutos": 15,
+  "lead": "Fechou um cliente: agora é atualizar o cadastro, criar a pasta, montar o cronograma, preparar a primeira cobrança e escrever as boas-vindas. São os mesmos cinco passos toda vez, e esquecer um custa caro. O agente percorre o checklist em ordem, não cria nada duas vezes e para no passo que falhar.",
+  "objetivo": "escrever o checklist de cliente novo que o agente percorre em ordem, parando no passo que falha sem duplicar nada.",
+  "competencias": [
+    "escrever-checklist-de-processo",
+    "parar-no-erro-e-retomar",
+    "evitar-duplicidade"
+  ],
+  "aprende": [
+    {
+      "icone": "lista",
+      "t": "Transformar o seu ritual em checklist"
+    },
+    {
+      "icone": "fila",
+      "t": "Rodar passo a passo, marcando o feito"
+    },
+    {
+      "icone": "x",
+      "t": "Parar no passo que falha e dizer o porquê"
+    },
+    {
+      "icone": "seta",
+      "t": "Retomar sem refazer o que já foi feito"
+    }
+  ],
+  "hero_alt": "Prancheta com uma lista de verificação de cinco itens, três marcados, sobre uma mesa de reunião; ao fundo, desfocado, um aperto de mãos.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Os cinco passos, em ordem",
+      "sub": "Clique em cada passo. O último é sempre rascunho.",
+      "nos": [
+        {
+          "icone": "check",
+          "titulo": "Cadastro",
+          "sub": "fechado",
+          "detalhe": "Na planilha ou no sistema de clientes: situação \"fechado\" e data de início. Os dados do cliente vêm da proposta assinada ou da conversa que você colar.",
+          "itens": [
+            {
+              "icone": "lista",
+              "t": "situação + data"
+            }
+          ]
+        },
+        {
+          "icone": "pasta",
+          "titulo": "Pasta",
+          "sub": "do modelo",
+          "detalhe": "Uma pasta com o nome do cliente, copiada da sua pasta-modelo. Se já existir uma com esse nome, o agente não cria outra: para e avisa.",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "já existe → para"
+            }
+          ]
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Cronograma",
+          "sub": "do modelo",
+          "detalhe": "O cronograma ou a lista de etapas copiada do seu modelo, com o nome do cliente e as datas a partir do início.",
+          "itens": [
+            {
+              "icone": "relogio",
+              "t": "datas a partir do início"
+            }
+          ]
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Cobrança",
+          "sub": "rascunho",
+          "forte": true,
+          "detalhe": "A primeira cobrança preparada como rascunho, com o valor da proposta. Emitir e enviar é seu.",
+          "itens": [
+            {
+              "icone": "cadeado",
+              "t": "você emite"
+            }
+          ]
+        },
+        {
+          "icone": "enviar",
+          "titulo": "Boas-vindas",
+          "sub": "rascunho",
+          "detalhe": "O e-mail de boas-vindas no seu modelo, com os links da pasta e do cronograma. Rascunho: você lê e envia.",
+          "itens": [
+            {
+              "icone": "usuario",
+              "t": "você envia"
+            }
+          ]
+        }
+      ],
+      "volta": "Falhou um passo? Para, diz qual e por quê; na próxima rodada continua dali",
+      "legenda": "Ordem fixa, um passo de cada vez, nada duplicado. Dinheiro e mensagem ao cliente saem como rascunho."
+    },
+    {
+      "tipo": "simfila",
+      "titulo": "Veja o checklist rodando",
+      "sub": "Rode, interrompa no meio e rode de novo. Repare no passo que para.",
+      "tarefas": [
+        "Cadastro: Padaria Trigo Bom como fechado",
+        "Pasta Padaria Trigo Bom a partir do modelo",
+        "Cronograma de 8 semanas a partir de 10/11",
+        "Primeira cobrança como rascunho",
+        "E-mail de boas-vindas como rascunho"
+      ],
+      "falha": 1,
+      "rot": {
+        "entrada": "a fazer",
+        "rodando": "fazendo",
+        "feito": "feito",
+        "falhou": "parou",
+        "rodar": "Rodar o checklist",
+        "parar": "Interromper",
+        "zerar": "Recomeçar"
+      },
+      "msg": {
+        "inicio": "5 passos em \"a fazer\". Clique em \"Rodar o checklist\".",
+        "rodando": "Um passo por vez, na ordem: de \"a fazer\" para \"fazendo\" e depois \"feito\" ou \"parou\".",
+        "parou": "Interrompido no meio. O passo que estava em andamento voltou para \"a fazer\". Rode de novo para ver a retomada.",
+        "retoma": "Retomada: o que já estava feito não foi refeito. Nada de cadastro nem pasta em dobro.",
+        "fim": "Checklist completo: tudo em \"feito\".",
+        "fimfalha": "Fim da rodada. Um passo parou com o motivo (\"já existe uma pasta com esse nome\"): o agente não criou outra e chamou você."
+      },
+      "legenda": "Simulação ilustrativa no navegador: nada é criado de verdade. A falha é proposital, para mostrar o \"para e avisa\"."
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "A ficha do checklist",
+      "sub": "Troque os passos pelos seus. Mantenha a ordem e as regras.",
+      "blocos": [
+        {
+          "rot": "Ficha · agente de cliente novo",
+          "icone": "arquivo",
+          "conteudo": "Papel: Você é o meu agente de cliente novo.\nSobre mim: [o que a empresa faz]; modelo de pasta: [nome]; modelo de cronograma: [nome]; modelo de e-mail de boas-vindas: [texto ou nome].\nQuando: quando eu disser \"cliente novo: [nome]\" e colar a proposta ou os dados.\nPassos: 1) cadastro: situação \"fechado\" e data de início; 2) pasta com o nome do cliente a partir do modelo; 3) cronograma a partir do modelo, com datas desde o início; 4) primeira cobrança como rascunho, com o valor da proposta; 5) e-mail de boas-vindas como rascunho, com os links da pasta e do cronograma.\nRegras: faça os passos em ordem e marque cada um como feito; se um cliente, pasta ou cobrança com esse nome já existir, não crie outro: pare e me diga qual passo e o que viu; se um passo falhar, pare ali; cobrança e e-mail só como rascunho, eu emito e envio; nunca peça senha; se faltar um dado, pare e pergunte.\nEntrega: a lista dos 5 passos com feito / parou e o motivo, os links ou nomes criados, o valor da cobrança e \"e-mail em rascunho\".\nPrimeira tarefa: repita o checklist com as suas palavras e espere eu dizer \"cliente novo\"."
+        },
+        {
+          "rot": "No chat · o pedido",
+          "icone": "chat",
+          "conteudo": "cliente novo: Padaria Trigo Bom\n\nDados da proposta: contato Marta Reis (marta@exemplo.com), cozinha industrial planejada, início em 10/11, valor total 18.000,00 em 3 parcelas, primeira na assinatura.\nNo chat você não cria a pasta nem o cadastro: me devolva o texto pronto de cada passo (nome da pasta, cronograma em tabela, rascunho da cobrança, rascunho do e-mail) e eu faço os cliques, marcando feito."
+        },
+        {
+          "rot": "Terminal (opcional) · pastas reais no seu computador",
+          "icone": "terminal",
+          "conteudo": "cd meus-agentes/clientes\n# a ficha está no AGENTS.md; o modelo está em clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente novo: Padaria Trigo Bom — siga o AGENTS.md\""
+        }
+      ],
+      "saida": {
+        "selo": "simulacao",
+        "abas": [
+          {
+            "rot": "Chat × terminal",
+            "html": "<p><b>No chat</b>, o agente prepara o texto de cada passo e você faz os cliques: é o checklist com a parte chata (escrever, calcular datas, montar o e-mail) resolvida. <b>No terminal</b>, com <code>-s workspace-write</code>, o Codex pode copiar a pasta-modelo dentro da pasta onde você está; fora dela, não. Cadastro em sistema online e cobrança continuam com você.</p>"
+          },
+          {
+            "rot": "Como conferir",
+            "html": "<ol><li>Os cinco passos aparecem na ordem, cada um com feito ou parou.</li><li>A cobrança é de 6.000,00 (a primeira de 3 parcelas de 18.000,00) e está como rascunho.</li><li>Mandando o mesmo pedido de novo na mesma conversa, a segunda rodada para logo no primeiro passo, porque o cliente já existe.</li></ol>"
+          },
+          {
+            "rot": "Erros comuns",
+            "html": "<ul><li><b>Checklist sem ordem</b>: o e-mail sai antes de a pasta existir e o link vai quebrado.</li><li><b>\"Se falhar, tente de outro jeito\"</b>: o agente improvisa e cria a pasta \"Padaria Trigo Bom (2)\". Falhou, para.</li><li><b>Pôr a cobrança como \"emitir\"</b>: dinheiro e cliente, risco médio no mínimo; rascunho sempre.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o seu checklist",
+      "sub": "Escreva o ritual que você já faz hoje.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · O ritual no papel",
+          "min": "10 min",
+          "texto": "Liste o que você faz hoje quando fecha um cliente, na ordem. Corte para os 5 passos que mais se repetem.",
+          "pronto": "a lista tem de 4 a 6 passos numerados e cada um diz em que ferramenta acontece."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · A ficha",
+          "min": "15 min",
+          "texto": "Adapte a ficha com os seus passos e modelos e coloque num Projeto (ou numa pasta, no terminal).",
+          "pronto": "o agente repete o checklist com as palavras dele, na ordem certa, e espera \"cliente novo\"."
+        },
+        {
+          "id": "e3",
+          "titulo": "E3 · Ensaio com cliente fictício",
+          "min": "10 min",
+          "texto": "Rode com a Padaria Trigo Bom. Depois mande o mesmo pedido de novo.",
+          "pronto": "a primeira rodada entrega os 5 passos e a cobrança de 6.000,00 como rascunho; a segunda para e avisa que o cliente já existe."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {
+          "p": "No passo 2, já existe uma pasta \"Padaria Trigo Bom\". O que o agente faz?",
+          "opcoes": [
+            "Cria \"Padaria Trigo Bom (2)\" para não perder tempo.",
+            "Apaga a antiga e cria uma nova.",
+            "Pula a pasta e segue para o cronograma.",
+            "Para no passo 2 e diz o que viu."
+          ],
+          "certa": 3,
+          "explica": "Pasta existente pode ser cliente repetido ou um erro seu. O agente não decide: para e avisa. Criar outra duplica; apagar é risco alto; pular deixa o e-mail com link para nada.",
+          "ref": "simfila"
+        },
+        {
+          "p": "Você interrompeu o checklist no passo 3 e rodou de novo. O certo é:",
+          "opcoes": [
+            "Recomeçar do passo 1 e refazer tudo, por segurança.",
+            "Continuar do passo 3, sem refazer cadastro e pasta.",
+            "Pular para o e-mail de boas-vindas.",
+            "Criar outro cliente para recomeçar limpo."
+          ],
+          "certa": 1,
+          "explica": "Os passos feitos ficam marcados; a retomada continua de onde parou. Refazer do começo é o caminho do cadastro em dobro.",
+          "ref": "simfila"
+        },
+        {
+          "p": "No caminho pelo chat, quem cria a pasta no seu Drive?",
+          "opcoes": [
+            "Você: o agente prepara o nome, o cronograma e os rascunhos, e você faz os cliques.",
+            "O agente, desde que você diga a senha do Drive.",
+            "O agente, sozinho, porque está num Projeto.",
+            "Ninguém: no chat esse passo some."
+          ],
+          "certa": 0,
+          "explica": "O chat escreve, não clica no seu Drive. Ele tira a parte chata (escrever e calcular) e você executa, marcando feito. Senha nunca.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "A aula em três frases",
+      "itens": [
+        {
+          "t": "Ordem fixa",
+          "texto": "Os mesmos passos, sempre na mesma ordem, cada um marcado como feito."
+        },
+        {
+          "t": "Falhou, para",
+          "texto": "Já existe ou deu erro: o agente para, diz qual passo e o que viu, e não improvisa."
+        },
+        {
+          "t": "Retoma sem refazer",
+          "texto": "Na rodada seguinte continua de onde parou. Nada em dobro."
+        }
+      ]
+    }
+  ]
+}
