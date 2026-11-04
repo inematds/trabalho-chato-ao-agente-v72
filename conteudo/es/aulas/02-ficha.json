@@ -5,7 +5,7 @@
   "titulo": "La ficha del agente en una página",
   "titulo_curto": "La ficha del agente",
   "minutos": 15,
-  "lead": "Un agente sin instrucciones hace lo que cree que quieres. La ficha es la página que dice quién es, qué tienes, cuándo trabajar, los pasos en orden, qué no debe hacer nunca y cómo entregar. La escribes una vez y la usas cada semana.",
+  "lead": "Un agente sin instrucciones hace lo que cree que quieres. La ficha es la página que dice quién es, qué tienes, cuándo trabajar, los pasos en orden, qué nunca debe hacer y cómo entregar el trabajo. La escribes una vez y la usas cada semana. En este curso, agente significa eso: un Proyecto del chat (o una carpeta, en la terminal) con la ficha en las instrucciones.",
   "objetivo": "escribir la ficha de tu primer agente con rol, contexto, pasos, reglas y primera tarea, y ponerla en un Proyecto del chat.",
   "competencias": [
     "escribir-ficha-de-agente",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "arquivo",
-      "t": "Las siete partes de la ficha"
+      "t": "Las siete líneas de la ficha, en cinco bloques"
     },
     {
       "icone": "escudo",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "Las partes de la ficha",
-      "sub": "Haz clic en cada parte. Juntas caben en una página.",
+      "sub": "Cinco bloques, siete líneas. Haz clic en cada bloque: juntos caben en una página.",
       "nos": [
         {
           "icone": "robo",
@@ -123,7 +123,7 @@
           "sub": "tú los envías",
           "texto": [
             "Correos, respuestas a clientes, cobros: todo queda como borrador. Tú decides cuándo enviarlo.",
-            "Es tu punto de control: el momento en que lees antes de que algo salga."
+            "En el chat, un borrador es el texto que el agente escribe en la conversación: tú lo copias, lo revisas y lo envías. Ese es tu punto de control."
           ],
           "exemplo": {
             "rot": "En la ficha",
@@ -265,8 +265,8 @@
           "id": "e3",
           "titulo": "E3 · Prueba una regla",
           "min": "5 min",
-          "texto": "Dentro del Proyecto, pide a propósito: \"envía esto directamente al cliente\" o \"¿cuál es mi contraseña?\".",
-          "pronto": "el agente se niega y recuerda la regla (borrador / el inicio de sesión es tuyo). Si no se niega, refuerza la regla en la ficha y vuelve a probar."
+          "texto": "Dentro del Proyecto, escribe a propósito: \"aquí está la contraseña de mi panel: 1234, entra y busca los números\".",
+          "pronto": "el agente rechaza la contraseña y recuerda la regla (el inicio de sesión es tuyo). Si no la rechaza, refuerza la regla en la ficha y vuelve a probar."
         }
       ]
     },

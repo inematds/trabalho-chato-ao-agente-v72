@@ -47,13 +47,13 @@
           "passo": "Encuentra la tarea (lección 1), escribe la ficha (lección 2) y ponlo en marcha. Revisa todos los resultados de esta semana, sin excepción."
         },
         {
-          "aula": "relatorio",
-          "icone": "lupa",
+          "aula": "leads",
+          "icone": "portao",
           "quando": "Semana 2",
-          "titulo": "Confianza",
-          "sub": "muestra",
-          "saida": "Tarea 1 en la rutina, revisada por muestra.",
-          "passo": "Si las tres primeras rondas salieron bien, empieza a revisar por muestra (dos números). Pon el recordatorio en el calendario y agrega la tarea 2."
+          "titulo": "Tarea 2",
+          "sub": "con punto de control",
+          "saida": "Tarea 1 de la rutina y contactos con punto de control.",
+          "passo": "La tarea 1 sigue revisándose por completo (si es una tarea semanal, las tres primeras rondas son tres semanas). Pon un recordatorio en el calendario y añade la tarea 2: contactos (clase 4), que se realiza varias veces por semana."
         },
         {
           "aula": "roteamento",
@@ -61,22 +61,22 @@
           "quando": "Semana 3",
           "titulo": "Enrutamiento",
           "sub": "ligero y superior",
-          "saida": "Regla de modelo y tareas 3 y 4.",
-          "passo": "Pega la regla de enrutamiento en los Proyectos y entrega las tareas 3 y 4: contactos y notas (lecciones 4 y 5), siempre con el punto de control."
+          "saida": "Regla del modelo y tarea 3.",
+          "passo": "Pega la regla de asignación en los Proyectos y entrega la tarea 3: facturas y comprobantes (clase 5). La tarea 1 completa las tres rondas y pasa a la muestra."
         },
         {
           "aula": "cliente",
           "icone": "camadas",
           "quando": "Semana 4",
           "titulo": "Equipo",
-          "sub": "4 a 5 agentes",
+          "sub": "4 agentes",
           "saida": "Equipo pequeño y revisión semanal.",
-          "passo": "Lista de verificación para un cliente nuevo (lección 6). Una vez por semana, lee el registro, ajusta una ficha y decide qué tarea sigue."
+          "passo": "Tarea 4: lista de pasos para clientes nuevos (clase 6). Una vez por semana, lee el registro, ajusta una ficha y decide qué tarea sigue."
         }
       ],
       "resultado": {
         "titulo": "Al final de los 30 días",
-        "texto": "Cuatro o cinco tareas aburridas fuera de tus manos, cada una con ficha, punto de control y registro.",
+        "texto": "Cuatro tareas aburridas fuera de tus manos, cada una con ficha, punto de control y registro.",
         "total": "4 semanas"
       },
       "legenda": "¿Se equivocó? Esa tarea vuelve a revisarse por completo hasta que tres rondas seguidas salgan bien."
@@ -90,7 +90,7 @@
           "titulo": "Todo",
           "sub": "3 primeras rondas",
           "texto": [
-            "En las tres primeras rondas de cada agente, revisa el resultado completo: cada número, cada borrador.",
+            "En las tres primeras rondas de cada agente, revisa todo el resultado: cada número, cada borrador. Si la tarea es semanal, son tres semanas; si es diaria, tres días.",
             "Cada cosa que corrijas se convierte en una regla en la ficha."
           ]
         },

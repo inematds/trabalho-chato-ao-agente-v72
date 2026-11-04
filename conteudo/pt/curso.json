@@ -69,7 +69,7 @@
       {
         "t": "Onde fazer",
         "itens": [
-          "No chat: um Projeto do ChatGPT ou do Claude (ou um Gem do Gemini) com a ficha nas instruções. Neste curso, é isso que chamamos de agente: ele faz sempre a mesma tarefa, do mesmo jeito.",
+          "No chat: um Projeto do ChatGPT ou do Claude (ou um Gem do Gemini) com a ficha nas instruções. Neste curso, é isso que chamamos de agente: ele faz sempre a mesma tarefa, do mesmo jeito. Projetos e Gems podem depender do seu plano; sem eles, cole a ficha como primeira mensagem de cada conversa nova.",
           "No terminal (opcional): Claude Code ou Codex, numa pasta com os arquivos que você exportou.",
           "Tudo pela assinatura que você já tem. Nenhuma chave de API, nada a pagar à parte."
         ]

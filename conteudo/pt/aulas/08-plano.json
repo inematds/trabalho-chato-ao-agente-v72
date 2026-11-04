@@ -132,7 +132,7 @@
         {
           "rot": "Diário de conferência (modelo)",
           "icone": "arquivo",
-          "conteudo": "data | agente | modelo | o que conferi | bateu? | mudança na ficha | minutos poupados\n11/11 | relatório do site | leve | tudo (rodada 1) | sim | entrega ganhou o total por página | 50\n12/11 | contatos | leve | os 3 rascunhos | 1 corrigido | regra: não citar prazo | 30\n18/11 | relatório do site | leve | 2 números (amostra) | sim | nenhuma | 55"
+          "conteudo": "data | agente | modelo | o que conferi | bateu? | mudança na ficha | minutos poupados\n11/11 | relatório do site | leve | tudo (rodada 1) | sim | entrega ganhou o total por página | 50\n12/11 | contatos | leve | os 3 rascunhos | 1 corrigido | regra: não citar prazo | 30\n18/11 | relatório do site | leve | tudo (rodada 2) | sim | nenhuma | 55\n25/11 | relatório do site | leve | tudo (rodada 3) | sim | nenhuma | 55\n02/12 | relatório do site | leve | 2 números (amostra) | sim | nenhuma | 55"
         },
         {
           "rot": "Revisão de sexta (cole no chat com o diário)",

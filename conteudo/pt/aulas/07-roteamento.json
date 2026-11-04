@@ -90,7 +90,7 @@
           "icone": "megafone",
           "titulo": "Avisa",
           "sub": "em uma linha",
-          "detalhe": "Quando sobe, o agente diz: \"Mando este para o topo porque…\". Você vê a decisão e corrige a regra se ela estiver subindo demais ou de menos.",
+          "detalhe": "Quando a tarefa pede o topo, o agente diz: \"Sugiro o topo porque…\" e espera. No chat, quem troca o modelo é você, no seletor; no terminal, você roda de novo com -m ou --model. Se ele sugerir demais ou de menos, corrija a regra.",
           "itens": [
             {
               "icone": "check",
@@ -148,7 +148,7 @@
         {
           "rot": "Regra de roteamento (cole nas instruções)",
           "icone": "arquivo",
-          "conteudo": "Regra de modelo:\nUse o modelo LEVE para a rotina:\n- ler painéis, planilhas e mensagens; copiar dados de um lugar para outro\n- relatórios, resumos e tabelas da semana\n- rascunhos de e-mail e respostas curtas\n- correções pequenas num texto, planilha ou página\n\nPasse para o modelo TOPO quando:\n- for um plano grande ou um sistema novo\n- o leve já errou a mesma tarefa duas vezes\n- for DECIDIR algo com dinheiro ou contrato (pagar, negociar, aceitar condição) ou proposta para cliente grande\n(ler e somar notas ou boletos é rotina: fica no leve)\n\nQuando passar, me diga em uma linha: \"Mando este para o topo porque ...\".\nNa dúvida, comece no leve e me avise se travar.\nRascunho e portão valem para os dois."
+          "conteudo": "Regra de modelo:\nUse o modelo LEVE para a rotina:\n- ler painéis, planilhas e mensagens; copiar dados de um lugar para outro\n- relatórios, resumos e tabelas da semana\n- rascunhos de e-mail e respostas curtas\n- correções pequenas num texto, planilha ou página\n\nPasse para o modelo TOPO quando:\n- for um plano grande ou um sistema novo\n- o leve já errou a mesma tarefa duas vezes\n- for DECIDIR algo com dinheiro ou contrato (pagar, negociar, aceitar condição) ou proposta para cliente grande\n(ler e somar notas ou boletos é rotina: fica no leve)\n\nQuando a tarefa pedir o topo, me diga em uma linha: \"Sugiro o topo porque ...\" e espere eu trocar o modelo.\nNa dúvida, comece no leve e me avise se travar.\nRascunho e portão valem para os dois."
         },
         {
           "rot": "Pedido · classificar as minhas tarefas",
@@ -255,7 +255,7 @@
           "p": "O leve errou a mesma conta duas vezes no relatório. Pela regra:",
           "opcoes": [
             "Tentar mais cinco vezes no leve.",
-            "Passar essa tarefa para o topo e avisar \"porque o leve errou duas vezes\".",
+            "Levar essa tarefa para o topo, com o aviso \"porque o leve errou duas vezes\".",
             "Desistir de usar agente para relatórios.",
             "Trocar todas as tarefas de todos os agentes para o topo, por garantia."
           ],
@@ -303,7 +303,7 @@
         },
         {
           "t": "Sobe avisando",
-          "texto": "\"Mando este para o topo porque…\": é como você confere se a regra funciona."
+          "texto": "\"Sugiro o topo porque…\": ele sugere, você troca o modelo e confere se a regra funciona."
         }
       ]
     },

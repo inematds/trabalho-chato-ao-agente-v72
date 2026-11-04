@@ -5,7 +5,7 @@
   "titulo": "El informe de la semana sin abrir el panel",
   "titulo_curto": "Informe de la semana",
   "minutos": 18,
-  "lead": "Cada lunes alguien abre el panel del sitio, mira el gráfico, copia números y escribe un resumen. Es el primer trabajo aburrido ideal: solo lectura, se repite cada semana y el resultado es un texto que puedes revisar en dos minutos. Tú exportas, el agente lee y escribe.",
+  "lead": "Cada lunes, alguien revisa el panel, copia números y escribe un resumen. Es el trabajo aburrido ideal: solo lectura, cada semana, se revisa en dos minutos. ¿Tienes sitio web? El panel es Search Console, la herramienta gratuita de Google que muestra cómo las personas encuentran tu sitio. ¿No tienes? Usa la ficha con los números de la semana. Tú los exportas, el agente los lee y redacta el informe.",
   "objetivo": "convertir la exportación de Search Console (o los números de tu semana) en un informe de hasta 250 palabras con cifras verificadas.",
   "competencias": [
     "exportar-datos-del-panel",
@@ -189,7 +189,7 @@
           },
           {
             "rot": "Errores comunes",
-            "html": "<ul><li><b>Adjuntar al chat la hoja de cálculo completa de 1.000 filas</b>: el modelo puede leer solo una parte. Envía las pestañas y las filas que importan.</li><li><b>Pedir un \"análisis SEO completo\"</b>: eso requiere el modelo superior y tu participación (lección 7). El informe semanal es una rutina.</li><li><b>No revisar</b> durante las primeras semanas: así descubres que hace falta agregar otra regla a la ficha.</li></ul>"
+            "html": "<ul><li><b>Adjuntar la hoja de cálculo completa, de 1.000 filas</b> al chat: el modelo podría leer solo una parte. Envía las pestañas y las filas que importan.</li><li><b>Pedir un \"análisis completo del sitio para aparecer mejor en Google\" (lo que se llama SEO)</b>: ese trabajo es para el modelo superior y para ti (clase 7). El informe semanal es una rutina.</li><li><b>No revisar</b> durante las primeras semanas: así descubres que la ficha necesita una regla más.</li></ul>"
           }
         ]
       }

@@ -5,7 +5,7 @@
   "titulo": "The agent sheet on one page",
   "titulo_curto": "The agent sheet",
   "minutos": 15,
-  "lead": "An agent without instructions does what it thinks you want. The sheet is the page that says who it is, what you have, when to work, the steps in order, what never to do, and how to deliver. You write it once and use it every week.",
+  "lead": "An agent without instructions does what it thinks you want. The sheet is the page that says who it is, what you have, when to work, the steps in order, what never to do, and how to deliver the work. You write it once and use it every week. In this course, an agent is just that: a chat Project (or a folder in the terminal) with the sheet in its instructions.",
   "objetivo": "write the sheet for your first agent with its role, context, steps, rules, and first task, and put it in a chat Project.",
   "competencias": [
     "write-agent-sheet",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "arquivo",
-      "t": "The seven parts of the sheet"
+      "t": "The seven lines in the sheet, in five blocks"
     },
     {
       "icone": "escudo",
@@ -35,7 +35,7 @@
     {
       "tipo": "diagrama",
       "titulo": "The parts of the sheet",
-      "sub": "Click each part. Together, they fit on one page.",
+      "sub": "Five blocks, seven lines. Click each block: together, they fit on one page.",
       "nos": [
         {
           "icone": "robo",
@@ -123,7 +123,7 @@
           "sub": "you send",
           "texto": [
             "Email, customer replies, payment reminders: everything is saved as a draft. You press Send.",
-            "This is your gate: the moment you read it before it goes out."
+            "In chat, a draft is text the agent writes in the conversation: you copy it, check it, and send it. That’s your gate."
           ],
           "exemplo": {
             "rot": "In the sheet",
@@ -265,8 +265,8 @@
           "id": "e3",
           "titulo": "E3 · Test a rule",
           "min": "5 min",
-          "texto": "Inside the Project, deliberately ask: \"send this directly to the client\" or \"what is my password?\".",
-          "pronto": "the agent refuses and reminds you of the rule (draft / login is yours). If it doesn't refuse, reinforce the rule in the sheet and test again."
+          "texto": "Inside the Project, deliberately write: \"here is my dashboard password: 1234, log in and get the numbers\".",
+          "pronto": "The agent refuses the password and reminds you of the rule (the login is yours). If it doesn’t refuse, reinforce the rule in the sheet and test again."
         }
       ]
     },

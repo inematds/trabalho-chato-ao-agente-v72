@@ -53,7 +53,7 @@
           "icone": "lupa",
           "titulo": "Pregunta",
           "sub": "¿es rutinaria?",
-          "detalhe": "Tres preguntas: ¿es un plan grande o un sistema nuevo? ¿Ya falló dos veces con el ligero? ¿Puede salir caro (legal, dinero, cliente grande)? Un «sí» la envía al superior. Si las tres son «no», se queda con el ligero.",
+          "detalhe": "Tres preguntas: ¿es un plan grande o un sistema nuevo? ¿El modelo ligero ya falló dos veces? ¿Es una decisión que puede costar caro (pagar, negociar, contrato, cliente grande)? Un \"sí\" la manda al modelo superior. Si las tres respuestas son \"no\", se queda en el ligero. Leer y sumar facturas no es una decisión: es rutina y se queda en el ligero.",
           "itens": [
             {
               "icone": "alvo",
@@ -78,7 +78,7 @@
           "icone": "cerebro",
           "titulo": "Superior",
           "sub": "difícil",
-          "detalhe": "Planear un sistema nuevo, un problema que el ligero haya fallado dos veces, una decisión sobre dinero o un contrato, una propuesta para un cliente grande. Incluso aquí, el borrador y el punto de control siguen vigentes.",
+          "detalhe": "Planificar un sistema nuevo, resolver un problema en el que el modelo ligero ya se equivocó dos veces, decidir algo relacionado con dinero o un contrato (pagar, negociar, aceptar condiciones), hacer una propuesta para un cliente grande. Incluso en estos casos, el borrador y el punto de control siguen aplicándose.",
           "itens": [
             {
               "icone": "escudo",
@@ -110,7 +110,7 @@
           "titulo": "En el chat",
           "sub": "el selector",
           "texto": [
-            "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto. Por lo general, hay uno rápido para el día a día y otro que «piensa» o razona más.",
+            "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto. La descripción de cada opción indica cuál es la rápida, para el día a día, y cuál razona más o es la más capaz: la primera es tu modelo ligero y la segunda, tu modelo superior. En Claude, Sonnet es el modelo para el día a día y Opus es el más capaz.",
             "En un Proyecto, elige el modelo al comienzo de la conversación. Para subir al superior, abre una conversación nueva en el mismo Proyecto con ese modelo."
           ]
         },
@@ -148,7 +148,7 @@
         {
           "rot": "Regla de enrutamiento (pégala en las instrucciones)",
           "icone": "arquivo",
-          "conteudo": "Regla de modelo:\nUsa el modelo LIGERO para lo habitual:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correo y respuestas breves\n- pequeñas correcciones en un texto, hoja de cálculo o página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya haya cometido el mismo error dos veces\n- implique un contrato, una decisión de dinero o un cliente importante\n\nCuando pases, dime en una línea: \"Paso esto al superior porque ...\".\nSi tienes dudas, empieza con el ligero y avísame si se atasca.\nEl borrador y el punto de control sirven para ambos."
+          "conteudo": "Regla del modelo:\nUsa el modelo LIGERO para la rutina:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correos y respuestas breves\n- pequeñas correcciones en un texto, una hoja de cálculo o una página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya se haya equivocado dos veces en la misma tarea\n- tengas que DECIDIR algo relacionado con dinero o un contrato (pagar, negociar, aceptar condiciones) o hacer una propuesta para un cliente grande\n(leer y sumar facturas o comprobantes es una rutina: se queda en el ligero)\n\nCuando pases al modelo superior, dime en una línea: \"Paso este al modelo superior porque ...\".\nSi tienes dudas, empieza con el ligero y avísame si se atasca.\nEl borrador y el punto de control se aplican a los dos."
         },
         {
           "rot": "Pedido · clasifica mis tareas",
@@ -223,13 +223,13 @@
           "titulo": "E2 · Clasifica tus tareas",
           "min": "10 min",
           "texto": "Usa el pedido \"clasifica mis tareas\" con la lista de la clase 1. Revísala en el verificador.",
-          "pronto": "El verificador responde OK y cada tarea relacionada con dinero o contratos está como superior o como \"no delegar\"."
+          "pronto": "el verificador responde OK y cada tarea que DECIDE sobre dinero o contratos está asignada al modelo superior o marcada como \"no delegar\"; leer y sumar facturas puede quedarse en el ligero."
         },
         {
           "id": "e3",
           "titulo": "E3 · Encuentra tu modelo ligero y tu modelo superior",
           "min": "5 min",
-          "texto": "Abre el selector de modelos de la herramienta que usas (o /model en la terminal) y anota el nombre del modelo ligero y del superior de tu plan.",
+          "texto": "Abre el selector de modelos de la herramienta que usas (o /model en la terminal), lee la descripción de cada opción y anota el nombre del modelo ligero (el rápido, para el día a día) y del superior (el que razona más).",
           "pronto": "Tienes anotados los dos nombres y ejecutaste el informe de la semana con el ligero."
         }
       ]
@@ -276,16 +276,16 @@
           "ref": "passos"
         },
         {
-          "p": "En Codex, ¿qué opción del comando elige el modelo?",
+          "p": "En el chat, ¿cómo le asignas una tarea difícil al modelo superior?",
           "opcoes": [
-            "-o",
-            "-s",
-            "-m",
-            "--skip-git-repo-check"
+            "Escribes \"usa el modelo superior\" en medio de la conversación, sin cambiar nada.",
+            "Abres una conversación nueva en el mismo Proyecto y eliges el modelo superior.",
+            "Creas otro Proyecto, sin la ficha, solo para esa tarea.",
+            "Contratas un plan de API aparte para el modelo superior."
           ],
-          "certa": 2,
-          "explica": "<code>-m</code> elige el modelo. <code>-o</code> guarda la última respuesta en un archivo, <code>-s</code> define lo que el agente puede modificar (read-only, workspace-write) y <code>--skip-git-repo-check</code> permite ejecutar fuera de un repositorio Git.",
-          "ref": "codigo"
+          "certa": 1,
+          "explica": "El modelo se elige en el selector. Una conversación nueva en el mismo Proyecto conserva la ficha y las reglas, ahora con el modelo que razona más. Pedir \"usa el modelo superior\" sin cambiarlo no cambia el modelo, y no necesitas pagar una API.",
+          "ref": "passos"
         }
       ]
     },
@@ -299,7 +299,7 @@
         },
         {
           "t": "Modelo superior para lo difícil",
-          "texto": "Un plan grande, dos fallas con el modelo ligero, dinero o un contrato."
+          "texto": "Plan grande, dos fallas con el modelo ligero, decisión sobre dinero o contrato."
         },
         {
           "t": "Sube de nivel y avisa",

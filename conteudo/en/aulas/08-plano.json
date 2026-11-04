@@ -47,13 +47,13 @@
           "passo": "Find the task (lesson 1), write the sheet (lesson 2), and run it. Check every result this week, no exceptions."
         },
         {
-          "aula": "relatorio",
-          "icone": "lupa",
+          "aula": "leads",
+          "icone": "portao",
           "quando": "Week 2",
-          "titulo": "Confidence",
-          "sub": "sample",
-          "saida": "Task 1 is part of your routine, checked by sample.",
-          "passo": "If the first three runs match, switch to sample checks (two numbers). Add a reminder to your calendar and add task 2."
+          "titulo": "Task 2",
+          "sub": "with a gate",
+          "saida": "Task 1 as a routine and contacts with a gate.",
+          "passo": "Keep checking all of Task 1 (for a weekly task, the first three rounds are three weeks). Add a calendar reminder and Task 2: contacts (lesson 4), which runs several times a week."
         },
         {
           "aula": "roteamento",
@@ -61,22 +61,22 @@
           "quando": "Week 3",
           "titulo": "Routing",
           "sub": "light and top",
-          "saida": "Model rule and tasks 3 and 4.",
-          "passo": "Paste the routing rule into Projects and hand off tasks 3 and 4: contacts and notes (lessons 4 and 5), always with the gate."
+          "saida": "Model rule and Task 3.",
+          "passo": "Paste the routing rule into the Projects and hand over Task 3: invoices and bills (lesson 5). Task 1 completes its three rounds and moves to spot checks."
         },
         {
           "aula": "cliente",
           "icone": "camadas",
           "quando": "Week 4",
           "titulo": "Team",
-          "sub": "4 to 5 agents",
+          "sub": "4 agents",
           "saida": "Small team and weekly review.",
-          "passo": "New client checklist (lesson 6). Once a week, read the log, adjust one sheet, and decide which task to add next."
+          "passo": "Task 4: new client checklist (lesson 6). Once a week, read the check log, adjust one sheet, and decide which task to add next."
         }
       ],
       "resultado": {
         "titulo": "At the end of 30 days",
-        "texto": "Four or five boring tasks off your hands, each with a sheet, gate, and log.",
+        "texto": "Four boring tasks off your hands, each with a sheet, gate, and check log.",
         "total": "4 weeks"
       },
       "legenda": "An error? That task goes back to being checked in full until three consecutive runs match."
@@ -90,7 +90,7 @@
           "titulo": "Everything",
           "sub": "First 3 runs",
           "texto": [
-            "For each agent’s first three runs, check the entire result: every number, every draft.",
+            "For each agent’s first three rounds, check the entire result: every number, every draft. For a weekly task, that means three weeks; for a daily task, three days.",
             "Every correction you make becomes a rule on the sheet."
           ]
         },

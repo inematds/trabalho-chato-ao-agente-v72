@@ -26,7 +26,7 @@
       "t": "Ir directo a la ficha del agente",
       "href": "aulas/ficha/"
     },
-    "capa_alt": "Escritorio oscuro de noche con una laptop, papeles ordenados y una taza; al lado, el título del curso en letras blancas.",
+    "capa_alt": "Una mujer de unos 50 años toma café frente a su laptop, tranquila, mientras al fondo un robot humanoide organiza carpetas en una estantería.",
     "numeros": [
       {
         "v": "1",
@@ -69,7 +69,7 @@
       {
         "t": "Dónde hacerlo",
         "itens": [
-          "En el chat: un Proyecto de ChatGPT o Claude (o un Gem de Gemini) con la ficha en las instrucciones.",
+          "En el chat: un Proyecto de ChatGPT o de Claude (o un Gem de Gemini) con la ficha en las instrucciones. En este curso, a eso le llamamos agente: siempre hace la misma tarea, de la misma manera.",
           "En la terminal (opcional): Claude Code o Codex, en una carpeta con los archivos que exportaste.",
           "Todo con la suscripción que ya tienes. Sin claves de API ni pagos adicionales."
         ]

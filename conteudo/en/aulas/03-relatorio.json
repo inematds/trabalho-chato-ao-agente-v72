@@ -5,7 +5,7 @@
   "titulo": "The weekly report without opening the dashboard",
   "titulo_curto": "Weekly report",
   "minutos": 18,
-  "lead": "Every Monday, someone opens the site dashboard, looks at the chart, copies numbers, and writes a summary. It’s the ideal first boring task: read-only, repeated every week, and the result is a text you can check in two minutes. You export the data, the agent reads it and writes.",
+  "lead": "Every Monday, someone checks the dashboard, copies numbers, and writes a summary. It’s ideal boring work: read-only, every week, and checked in two minutes. Have a website? The dashboard is Search Console, Google’s free tool that shows how people find your website. Don’t have one? Use the sheet for this week’s numbers. You export the data, and the agent reads and writes.",
   "objetivo": "turn the Search Console export (or your weekly numbers) into a report of up to 250 words with checked numbers.",
   "competencias": [
     "export-dashboard-data",
@@ -189,7 +189,7 @@
           },
           {
             "rot": "Common mistakes",
-            "html": "<ul><li><b>Attach the entire 1,000-row spreadsheet</b> in chat: the model may read only part of it. Send the tabs and rows that matter.</li><li><b>Ask for a \"complete SEO analysis\"</b>: that’s work for the top model and for you (lesson 7). The weekly report is routine.</li><li><b>Skip the check</b> in the first few weeks: that’s when you’ll discover the sheet needs one more rule.</li></ul>"
+            "html": "<ul><li><b>Attach the entire 1,000-row spreadsheet</b> in chat: the model may read only part of it. Send the tabs and rows that matter.</li><li><b>Ask for a \"complete website analysis to rank better on Google\" (known as SEO)</b>: that’s work for the top model and for you (lesson 7). The weekly report is routine.</li><li><b>Skip checking</b> in the first few weeks: that’s when you find out the sheet needs another rule.</li></ul>"
           }
         ]
       }

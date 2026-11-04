@@ -53,7 +53,7 @@
           "icone": "lupa",
           "titulo": "Question",
           "sub": "is it routine?",
-          "detalhe": "Three questions: Is it a big plan or a new system? Has the light model failed twice already? Could it cost a lot (legal issues, money, a major client)? One “yes” sends it to the top model. Three “no” answers keep it with the light model.",
+          "detalhe": "Three questions: Is it a big plan or a new system? Has the light model failed twice already? Is this a decision that could cost a lot (paying, negotiating, contracts, a major client)? One \"yes\" means use the top model. Three \"no\" answers mean keep it light. Reading and adding up invoices isn’t a decision: it’s routine, so keep it light.",
           "itens": [
             {
               "icone": "alvo",
@@ -78,7 +78,7 @@
           "icone": "cerebro",
           "titulo": "Top",
           "sub": "hard",
-          "detalhe": "Plan a new system, solve a problem the light model got wrong twice, make a decision involving money or a contract, prepare a proposal for a major client. Even here, the draft and gate still apply.",
+          "detalhe": "Planning a new system, a problem the light model got wrong twice, deciding something involving money or a contract (paying, negotiating, accepting terms), or a proposal for a major client. Even here, drafts and the gate still apply.",
           "itens": [
             {
               "icone": "escudo",
@@ -110,7 +110,7 @@
           "titulo": "In chat",
           "sub": "the selector",
           "texto": [
-            "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box. There’s usually a fast model for everyday tasks and one that “thinks” or reasons more.",
+            "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box. Each option’s description tells you which one is fast and for everyday use, and which one reasons more or is more capable: the first is your light model, the second is your top model. In Claude, Sonnet is for everyday use and Opus is the more capable one.",
             "In a Project, choose the model at the start of the conversation. To move up, open a new conversation in the same Project with the top model."
           ]
         },
@@ -148,7 +148,7 @@
         {
           "rot": "Routing rule (paste into the instructions)",
           "icone": "arquivo",
-          "conteudo": "Model rule:\nUse the LIGHT model for routine work:\n- read dashboards, spreadsheets, and messages; copy data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to text, a spreadsheet, or a page\n\nSwitch to the TOP model when:\n- it’s a big plan or a new system\n- the light model has made the same mistake twice\n- it involves a contract, a money decision, or a major client\n\nWhen you switch, tell me in one line: \"I’m sending this to the top model because ...\".\nIf you’re unsure, start with the light model and let me know if you get stuck.\nDraft and gate apply to both."
+          "conteudo": "Model rule:\nUse the LIGHT model for routine work:\n- reading dashboards, spreadsheets, and messages; copying data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to a document, spreadsheet, or page\n\nSwitch to the TOP model when:\n- it’s a big plan or a new system\n- the light model has already made the same mistake twice\n- you need to DECIDE something involving money or a contract (paying, negotiating, accepting terms), or prepare a proposal for a major client\n(reading and adding up invoices or bills is routine: keep it light)\n\nWhen switching, tell me in one line: \"I’m switching this to the top model because ...\".\nIf you’re unsure, start with the light model and let me know if you get stuck.\nDrafts and the gate apply to both."
         },
         {
           "rot": "Request · classify my tasks",
@@ -223,13 +223,13 @@
           "titulo": "E2 · Classify your tasks",
           "min": "10 min",
           "texto": "Use the \"classify my tasks\" request with the list from lesson 1. Check it with the checker.",
-          "pronto": "the checker responds OK, and every task involving money or a contract is marked top or \"do not delegate\"."
+          "pronto": "The checker responds OK, and every task that DECIDES something involving money or a contract is marked for the top model or \"do not delegate\"; reading and adding up invoices can stay with the light model."
         },
         {
           "id": "e3",
           "titulo": "E3 · Find your light and top models",
           "min": "5 min",
-          "texto": "Open the model selector in the tool you use (or /model in the terminal) and note the names of the light and top models on your plan.",
+          "texto": "Open the model selector in the tool you use (or /model in the terminal), read each option’s description, and write down the name of the light model (the fast one for everyday use) and the top model (the one that reasons more).",
           "pronto": "you have both names written down and ran the weekly report on the light model."
         }
       ]
@@ -276,16 +276,16 @@
           "ref": "passos"
         },
         {
-          "p": "In Codex, which command option selects the model?",
+          "p": "In chat, how do you send a difficult task to the top model?",
           "opcoes": [
-            "-o",
-            "-s",
-            "-m",
-            "--skip-git-repo-check"
+            "Write \"use the top model\" in the middle of the conversation without changing anything.",
+            "Open a new conversation in the same Project and choose the top model.",
+            "Create another Project, without the sheet, just for that task.",
+            "Get a separate API plan for the top model."
           ],
-          "certa": 2,
-          "explica": "<code>-m</code> selects the model. <code>-o</code> saves the last response to a file, <code>-s</code> sets what the agent can change (read-only, workspace-write), and <code>--skip-git-repo-check</code> lets it run outside a Git repository.",
-          "ref": "codigo"
+          "certa": 1,
+          "explica": "Choose the model in the selector. A new conversation in the same Project keeps the sheet and rules, now with the model that reasons more. Asking it to \"use the top model\" without switching doesn’t change the model, and you don’t need a paid API.",
+          "ref": "passos"
         }
       ]
     },
@@ -299,7 +299,7 @@
         },
         {
           "t": "Top model for difficult tasks",
-          "texto": "Big plans, two failures with the light model, money, or contracts."
+          "texto": "Big plan, two failures with the light model, decision involving money or a contract."
         },
         {
           "t": "Move it up and say why",

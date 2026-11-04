@@ -26,7 +26,7 @@
       "t": "Go straight to the agent sheet",
       "href": "aulas/ficha/"
     },
-    "capa_alt": "A dark desk at night with a laptop, neatly arranged papers, and a cup; beside it, the course title in white letters.",
+    "capa_alt": "A woman around 50 has coffee in front of her laptop, relaxed, while a humanoid robot organizes folders on a shelf in the background.",
     "numeros": [
       {
         "v": "1",
@@ -69,7 +69,7 @@
       {
         "t": "Where to do it",
         "itens": [
-          "In chat: a ChatGPT or Claude Project (or a Gemini Gem) with the sheet in its instructions.",
+          "In chat: a ChatGPT or Claude Project (or a Gemini Gem) with the sheet in its instructions. In this course, that’s what we call an agent: it always does the same task, the same way.",
           "In the terminal (optional): Claude Code or Codex, in a folder with the files you exported.",
           "All through the subscription you already have. No API key and nothing extra to pay."
         ]

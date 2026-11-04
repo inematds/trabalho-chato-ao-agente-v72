@@ -127,7 +127,7 @@
           "titulo": "Exportar",
           "sub": "planilha",
           "texto": [
-            "Clique em Exportar e escolha Google Planilhas, Excel ou CSV.",
+            "Clique em Exportar e escolha Google Planilhas, Excel ou CSV (uma planilha em texto simples).",
             "O arquivo traz uma aba por dimensão (consultas, páginas, países…). Para o relatório bastam consultas e páginas. Os nomes das abas mudam com o idioma da sua conta."
           ],
           "exemplo": {
@@ -161,7 +161,7 @@
           "conteudo": "relatório\n\nUse a ficha deste Projeto. Os dados estão acima (ou no arquivo anexo).\nAntes do texto, me mostre o total de cliques desta semana e da anterior, que eu confiro."
         },
         {
-          "rot": "Variação · ficha dos números da semana (vendas, contatos, visitas)",
+          "rot": "Variação · ficha dos números da semana (num Projeto novo, \"Números da semana\")",
           "icone": "arquivo",
           "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; salve como rascunho, eu envio para a equipe; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
         },
