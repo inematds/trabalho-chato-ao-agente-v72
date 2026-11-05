@@ -198,7 +198,7 @@
       "tipo": "conferidor",
       "titulo": "Check the agent’s report",
       "sub": "Run the agent with the sample data and paste its report here. The page looks for the right numbers: the total for both weeks and the biggest drop. If any are missing, the agent got the math wrong or skipped what matters.",
-      "arquivo": "relatorio.txt",
+      "arquivo": "report.txt",
       "rot": "Paste the agent’s report here:",
       "modelo": "Total clicks: ...",
       "regras": [

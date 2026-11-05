@@ -313,9 +313,9 @@
       "titulo": "Para ir além",
       "links": [
         {
-          "t": "Curso: Claude como gestor de agentes (custo e várias sessões)",
-          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/",
-          "icone": "camadas"
+          "t": "Curso: Do prompt ao papel (como escrever o trabalho para a IA)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/",
+          "icone": "caneta"
         },
         {
           "t": "Codex CLI (documentação oficial, em inglês)",

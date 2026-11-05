@@ -110,7 +110,8 @@
           "titulo": "En el chat",
           "sub": "el selector",
           "texto": [
-            "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto. La descripción de cada opción indica cuál es la rápida, para el día a día, y cuál razona más o es la más capaz: la primera es tu modelo ligero y la segunda, tu modelo superior. En Claude, Sonnet es el modelo para el día a día y Opus es el más capaz.",
+            "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto.",
+            "La descripción de cada opción indica cuál es el rápido, para el día a día, y cuál razona más o es el más capaz: el primero es tu modelo ligero y el segundo, tu modelo superior. En Claude, Sonnet es el del día a día y Opus es el más capaz.",
             "En un Proyecto, elige el modelo al comienzo de la conversación. Para subir al superior, abre una conversación nueva en el mismo Proyecto con ese modelo."
           ]
         },
@@ -158,7 +159,7 @@
         {
           "rot": "Terminal (opcional) · el mismo pedido en dos niveles",
           "icone": "terminal",
-          "conteudo": "# rutina en el modelo ligero\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"relatório: siga o AGENTS.md\"\nclaude -p --model sonnet \"relatório: siga o CLAUDE.md\" > relatorio.md\n\n# difícil en el modelo superior\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"monte o plano do novo processo de orçamentos\"\nclaude -p --model opus \"monte o plano do novo processo de orçamentos\" > plano.md"
+          "conteudo": "# rutina en el modelo ligero\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"informe: sigue AGENTS.md\"\nclaude -p --model sonnet \"informe: sigue CLAUDE.md\" > relatorio.md\n\n# difícil en el modelo superior\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"arma el plan del nuevo proceso de presupuestos\"\nclaude -p --model opus \"arma el plan del nuevo proceso de presupuestos\" > plano.md"
         }
       ],
       "saida": {
@@ -257,7 +258,7 @@
             "Intentar cinco veces más con el modelo ligero.",
             "Lleva esta tarea al modelo superior, con el aviso \"porque el modelo ligero se equivocó dos veces\".",
             "Dejar de usar agentes para los informes.",
-            "Cambiar todas las tareas de todos los agentes al modelo superior, por si acaso."
+            "Cambiar todas las tareas de todos los agentes al modelo superior, por si acaso, para que nunca vuelva a pasar."
           ],
           "certa": 1,
           "explica": "Dos fallas en la misma tarea son uno de los motivos para subir de nivel. Sube solo esa tarea, con la frase «porque…», y las demás siguen con el modelo ligero.",
@@ -267,7 +268,7 @@
           "p": "¿Por qué no usar el modelo superior para todo, si es mejor?",
           "opcoes": [
             "Porque el modelo superior no sabe hacer tareas simples.",
-            "Porque el modelo superior no acepta la ficha en las instrucciones.",
+            "Porque el modelo superior no acepta la ficha en las instrucciones, y se perderían las reglas de tus agentes.",
             "Porque suele consumir más del límite de tu suscripción y tardar más, sin aportar nada en las tareas rutinarias.",
             "Porque el modelo superior solo funciona en la terminal."
           ],
@@ -312,9 +313,9 @@
       "titulo": "Para ir más allá",
       "links": [
         {
-          "t": "Curso: Claude como gestor de agentes (costo y varias sesiones)",
-          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/es/",
-          "icone": "camadas"
+          "t": "Curso: Del prompt al rol (cómo escribir el trabajo para la IA)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/es/",
+          "icone": "caneta"
         },
         {
           "t": "Codex CLI (documentación oficial, en inglés)",

@@ -110,7 +110,8 @@
           "titulo": "In chat",
           "sub": "the selector",
           "texto": [
-            "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box. Each option’s description tells you which one is fast and for everyday use, and which one reasons more or is more capable: the first is your light model, the second is your top model. In Claude, Sonnet is for everyday use and Opus is the more capable one.",
+            "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box.",
+            "Each option’s description tells you which one is fast for everyday use and which one reasons more deeply or is the most capable: the first is your light model, the second your top model. In Claude, Sonnet is for everyday use, and Opus is the most capable.",
             "In a Project, choose the model at the start of the conversation. To move up, open a new conversation in the same Project with the top model."
           ]
         },
@@ -179,7 +180,7 @@
       "tipo": "conferidor",
       "titulo": "Check your classification",
       "sub": "Paste the list the agent returned (or your own). The page checks that each line has just one level, light or top. You decide whether the level is right by asking the three questions.",
-      "arquivo": "modelos.txt",
+      "arquivo": "models.txt",
       "rot": "Paste your classified list here (one numbered line per task):",
       "modelo": "1 | task | light | reason",
       "regras": [
@@ -257,7 +258,7 @@
             "Try five more times with the light model.",
             "Move this task to the top model, with the note \"because the light model made the same mistake twice\".",
             "Give up on using an agent for reports.",
-            "Switch every task for every agent to the top model, just to be safe."
+            "Switch every task for every agent to the top model, just to be safe, so this never happens again anywhere."
           ],
           "certa": 1,
           "explica": "Two failures on the same task are one of the triggers to move it up. Move only that task, with the line \"because…\", and leave the others with the light model.",
@@ -267,7 +268,7 @@
           "p": "Why not use the top model for everything, since it's better?",
           "opcoes": [
             "Because the top model can't do simple tasks.",
-            "Because the top model doesn't accept the sheet in its instructions.",
+            "Because the top model doesn't accept the sheet in its instructions, so the rules of your agents would be lost.",
             "Because it usually uses more of your subscription limit and takes longer, with no benefit for routine work.",
             "Because the top model only works in the terminal."
           ],
@@ -312,9 +313,9 @@
       "titulo": "To go further",
       "links": [
         {
-          "t": "Course: Claude as an agent manager (cost and multiple sessions)",
-          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/en/",
-          "icone": "camadas"
+          "t": "Course: From prompt to role (how to write the work for AI)",
+          "href": "https://inematds.github.io/do-prompt-ao-papel-v72/en/",
+          "icone": "caneta"
         },
         {
           "t": "Codex CLI (official documentation, in English)",

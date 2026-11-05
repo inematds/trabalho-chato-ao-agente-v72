@@ -126,7 +126,7 @@
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>En la carpeta <code>meus-agentes/notas</code>, con la ficha en <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), pon los PDF de la semana en una subcarpeta <code>semana</code> y ejecuta <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>. Si algún PDF es una imagen escaneada y el modelo ligero no puede leerla, debe decir \"no pude leer\" (esa es la regla) y tú se lo envías al modelo superior o lo escribes.</p>"
+            "html": "<p>En la carpeta <code>meus-agentes/notas</code>, con la ficha en el <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), pon los PDF de la semana en una subcarpeta <code>semana</code> y ejecuta <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o cuentas.md \"notas: sigue el AGENTS.md con los archivos de la carpeta semana\"</code>.</p><p>Si algún PDF es una imagen escaneada y el modelo ligero no puede leerlo, debe decir \"no pude leerlo\" (es la regla), y tú se lo mandas al modelo superior o lo transcribes.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -139,7 +139,7 @@
       "tipo": "conferidor",
       "titulo": "Revisa la tabla del agente",
       "sub": "Ejecuta el agente con las cuatro facturas de ejemplo y pega aquí la tabla que te devolvió. La página busca la factura duplicada, la que no cuadra y el total correcto de la semana.",
-      "arquivo": "contas.txt",
+      "arquivo": "cuentas.txt",
       "rot": "Pega aquí la tabla y el total que te devolvió el agente:",
       "modelo": "Proveedor | Número | Vencimiento | Total | Estado",
       "regras": [
@@ -237,7 +237,7 @@
         {
           "p": "¿Por qué el agente de notas nunca recibe la contraseña del banco, ni \"solo para leer\"?",
           "opcoes": [
-            "Porque el modelo ligero no sabe usar el banco.",
+            "Porque el modelo ligero no sabe usar la página del banco, y el modelo superior necesitaría un plan pagado aparte para hacerlo.",
             "Porque la regla \"el dinero pasa por ti\" exige que pagar y aprobar queden solo en tus manos; puedes leer el estado de cuenta exportándolo.",
             "Porque el banco bloquea cualquier acceso de IA.",
             "Porque la contraseña solo puede estar en AGENTS.md."

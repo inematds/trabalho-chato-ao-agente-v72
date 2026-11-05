@@ -174,7 +174,7 @@
       "tipo": "conferidor",
       "titulo": "Revisa tu lista",
       "sub": "Prueba primero con el ejemplo que pasa y con el que tiene errores. Después pega tu lista. La página revisa el formato (número, minutos, riesgo y decisión en cada línea); tú decides si el orden tiene sentido.",
-      "arquivo": "tarefas.txt",
+      "arquivo": "tareas.txt",
       "rot": "Pega aquí tu lista (una tarea numerada por línea):",
       "modelo": "1 | tarea | aplicaciones | 60 min | aburrimiento 5 | riesgo bajo | empezar ya",
       "regras": [

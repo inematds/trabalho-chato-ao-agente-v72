@@ -280,7 +280,7 @@
           "p": "What is the “minutes saved” column in the log for?",
           "opcoes": [
             "To charge the agent for the time spent.",
-            "So the model knows when to stop.",
+            "So the model knows when to stop working and how many minutes it still has left this week.",
             "To show, at the end of the month, how much time the agents actually gave back to you.",
             "To choose the light model."
           ],
@@ -317,11 +317,6 @@
           "t": "Course: From chat to agent (terminal, queues, and scheduling)",
           "href": "https://inematds.github.io/do-chat-ao-agente-v72/en/",
           "icone": "camadas"
-        },
-        {
-          "t": "Course: Claude as an agent manager",
-          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/en/",
-          "icone": "robo"
         },
         {
           "t": "Free courses on INEMA.CLUB",

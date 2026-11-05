@@ -126,7 +126,7 @@
           },
           {
             "rot": "Terminal (optional)",
-            "html": "<p>In the <code>meus-agentes/notas</code> folder, with the agent sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), put the week’s PDFs in a <code>semana</code> subfolder and run <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>. If a PDF is a scanned image and the light model can’t read it, it should say \"não consegui ler\" (that’s the rule), and you send it to the top model or type it out.</p>"
+            "html": "<p>In the <code>meus-agentes/notas</code> folder, with the sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), put the week’s PDFs in a <code>semana</code> subfolder and run <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notes: follow AGENTS.md with the files in the semana folder\"</code>.</p><p>If a PDF is a scanned image and the light model can’t read it, it should say \"couldn’t read it\" (that’s the rule), and you send that one to the top model or type it out.</p>"
           },
           {
             "rot": "Common mistakes",
@@ -139,7 +139,7 @@
       "tipo": "conferidor",
       "titulo": "Check the agent's table",
       "sub": "Run the agent with the four sample invoices and paste the table it returned here. The page looks for the duplicate invoice, the one that doesn't match, and the correct total for the week.",
-      "arquivo": "contas.txt",
+      "arquivo": "bills.txt",
       "rot": "Paste the table and total returned by the agent here:",
       "modelo": "Vendor | Number | Due date | Total | Status",
       "regras": [
@@ -237,7 +237,7 @@
         {
           "p": "Why should the invoice agent never get your bank password, not even \"just to read\"?",
           "opcoes": [
-            "Because the light model doesn't know how to use a bank.",
+            "Because the light model doesn't know how to use a bank website, and the top model would need a separate paid plan to do it.",
             "Because the rule \"money goes through you\" means only you can pay and approve; you can read the statement by exporting it.",
             "Because the bank blocks all AI access.",
             "Because the password can only go in AGENTS.md."

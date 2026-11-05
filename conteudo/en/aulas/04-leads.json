@@ -105,7 +105,7 @@
       "tipo": "simportao",
       "titulo": "Try the gate",
       "sub": "Run the agent, read the draft that stopped at the gate, and decide.",
-      "arquivo": "Rascunho para Ana Souza",
+      "arquivo": "ana-souza.txt",
       "fases": [
         "Drafts",
         "Gate",
@@ -201,7 +201,7 @@
         {
           "p": "The draft says, \"We'll deliver in 10 days with a 20% discount,\" but you never offered that. What should you do at the gate?",
           "opcoes": [
-            "Approve it: the customer likes discounts.",
+            "Approve it as it is: customers like discounts, and a fast answer matters more than checking every detail.",
             "Reject it with a correction, and add a rule to the sheet against promising a price, timeline, or discount.",
             "Send it and correct it later by phone.",
             "Delete the contact from the spreadsheet."
@@ -226,7 +226,7 @@
           "p": "Which task does the contacts agent NOT do?",
           "opcoes": [
             "Set spam aside with a reason.",
-            "Write a reply draft for each contact.",
+            "Write a reply draft for each new contact.",
             "Send the approved reply from your email.",
             "Prepare new spreadsheet rows."
           ],

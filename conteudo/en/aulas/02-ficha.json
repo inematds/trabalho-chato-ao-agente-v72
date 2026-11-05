@@ -5,7 +5,7 @@
   "titulo": "The agent sheet on one page",
   "titulo_curto": "The agent sheet",
   "minutos": 15,
-  "lead": "An agent without instructions does what it thinks you want. The sheet is the page that says who it is, what you have, when to work, the steps in order, what never to do, and how to deliver the work. You write it once and use it every week. In this course, an agent is just that: a chat Project (or a folder in the terminal) with the sheet in its instructions.",
+  "lead": "An agent without instructions does what it thinks you want. The agent sheet is the page that says who it is, when to work, what steps to follow, what never to do, and how to deliver the work. In this course, that’s what an agent is: a chat Project (or a folder in the terminal) with the sheet in its instructions.",
   "objetivo": "write the sheet for your first agent with its role, context, steps, rules, and first task, and put it in a chat Project.",
   "competencias": [
     "write-agent-sheet",
@@ -194,7 +194,7 @@
       "tipo": "conferidor",
       "titulo": "Review your sheet",
       "sub": "The page checks that all seven fields are filled in and that the Rules include \"draft,\" \"stop,\" and \"exactly.\" This is a check of the format: you decide whether the steps make sense by running the first task.",
-      "arquivo": "ficha-agente.txt",
+      "arquivo": "agent-sheet.txt",
       "rot": "Paste your sheet here (one field per line):",
       "modelo": "Role: ...\nAbout me: ...\nWhen: ...\nSteps: ...\nRules: ...\nDelivery: ...\nFirst task: ...",
       "regras": [
@@ -291,7 +291,7 @@
           "p": "The agent needs to access a dashboard that requires a login. What does the sheet tell it to do?",
           "opcoes": [
             "Stop at the login screen and contact you; the password never goes in the conversation.",
-            "Ask for the password just once and save it in the sheet so it won't need to ask again.",
+            "Ask for the password just once, save it in the sheet and reuse it every week so you never have to type it again.",
             "Try signing in with the company email.",
             "Skip the dashboard and estimate the numbers."
           ],

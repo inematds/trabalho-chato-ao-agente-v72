@@ -280,7 +280,7 @@
           "p": "¿Para qué sirve la columna «minutos ahorrados» del registro?",
           "opcoes": [
             "Para cobrarle al agente el tiempo que tardó.",
-            "Para que el modelo sepa cuándo parar.",
+            "Para que el modelo sepa cuándo dejar de trabajar y cuántos minutos le quedan esta semana.",
             "Para demostrar, al final del mes, cuánto tiempo te devolvieron realmente los agentes.",
             "Para elegir el modelo ligero."
           ],
@@ -317,11 +317,6 @@
           "t": "Curso: Del chat al agente (terminal, colas y programación)",
           "href": "https://inematds.github.io/do-chat-ao-agente-v72/es/",
           "icone": "camadas"
-        },
-        {
-          "t": "Curso: Claude como gestor de agentes",
-          "href": "https://inematds.github.io/claude-gestor-de-agentes-v72/es/",
-          "icone": "robo"
         },
         {
           "t": "Cursos abiertos en INEMA.CLUB",

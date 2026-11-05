@@ -127,7 +127,7 @@
           "titulo": "Exportar",
           "sub": "hoja de cálculo",
           "texto": [
-            "Haz clic en Exportar y elige Google Planilhas, Excel o CSV (una hoja de cálculo en texto simple).",
+            "Haz clic en Exportar y elige Hojas de cálculo de Google, Excel o CSV (una hoja de cálculo en texto simple).",
             "El archivo incluye una pestaña por dimensión (consultas, páginas, países…). Para el informe bastan consultas y páginas. Los nombres de las pestañas cambian según el idioma de tu cuenta."
           ],
           "exemplo": {
@@ -153,7 +153,7 @@
         {
           "rot": "Datos de ejemplo (pégalos en el Proyecto después de la ficha)",
           "icone": "grafico",
-          "conteudo": "Consulta | Clics esta semana | Clics semana anterior\narmário planejado curitiba | 48 | 30\ncozinha planejada preço | 22 | 41\nmóveis planejados curitiba | 64 | 60\nguarda-roupa sob medida | 17 | 9\npainel de tv planejado | 12 | 15\nhome office planejado | 9 | 4\ncloset pequeno planejado | 6 | 13\nloja de móveis batel | 21 | 21"
+          "conteudo": "Consulta | Clics esta semana | Clics semana anterior\narmario a medida curitiba | 48 | 30\ncocina a medida precio | 22 | 41\nmuebles a medida curitiba | 64 | 60\nropero a medida | 17 | 9\npanel de tv a medida | 12 | 15\nhome office a medida | 9 | 4\nclóset pequeño a medida | 6 | 13\ntienda de muebles batel | 21 | 21"
         },
         {
           "rot": "En el chat · la instrucción del lunes",
@@ -181,7 +181,7 @@
         "abas": [
           {
             "rot": "Qué debe incluir el informe",
-            "html": "<ul><li>Total de clics: <b>199</b> esta semana frente a <b>193</b> la anterior (aumento de 6).</li><li>Mayor aumento: \"armário planejado curitiba\", de 30 a 48.</li><li>Mayor caída: \"cozinha planejada preço\", de 41 a 22.</li><li>Tres acciones sencillas, una por línea.</li></ul><p>Son los cálculos hechos a mano con los datos de ejemplo. El texto del agente cambia; las cifras no pueden cambiar.</p>"
+            "html": "<ul><li>Total de clics: <b>199</b> esta semana frente a <b>193</b> la anterior (aumento de 6).</li><li>Mayor aumento: \"armario a medida curitiba\", de 30 a 48.</li><li>Mayor caída: \"cocina a medida precio\", de 41 a 22.</li><li>Tres acciones sencillas, una por línea.</li></ul><p>Son los cálculos hechos a mano con los datos de ejemplo. El texto del agente cambia; las cifras no pueden cambiar.</p>"
           },
           {
             "rot": "Por qué solo lectura",
@@ -198,7 +198,7 @@
       "tipo": "conferidor",
       "titulo": "Revisa el informe del agente",
       "sub": "Ejecuta el agente con los datos de ejemplo y pega aquí el informe que escribió. La página busca las cifras correctas: el total de las dos semanas y la mayor caída. Si falta alguna, el agente hizo mal el cálculo o pasó por alto lo importante.",
-      "arquivo": "relatorio.txt",
+      "arquivo": "informe.txt",
       "rot": "Pega aquí el informe que escribió el agente:",
       "modelo": "Total de clics: ...",
       "regras": [
@@ -233,8 +233,8 @@
         }
       ],
       "ok": "OK: las cifras correctas están en el informe",
-      "exemplo": "Semana con un ligero aumento: 199 clics frente a 193 la semana anterior (+6, cerca del 3%).\nMayores aumentos: armário planejado curitiba (30 → 48), guarda-roupa sob medida (9 → 17), home office planejado (4 → 9).\nMayores caídas: cozinha planejada preço (41 → 22), closet pequeno planejado (13 → 6), painel de tv planejado (15 → 12).\nAcciones: 1) revisar la página de cocinas; 2) mostrar precios de clósets; 3) reforzar la página de armarios.",
-      "exemplo_errado": "Buena semana: cerca de 200 clics, un poco más que antes.\nMayores aumentos: armário planejado curitiba.\nMayores caídas: algunas consultas sobre cocinas bajaron.\nAcciones: seguir publicando."
+      "exemplo": "Semana con un ligero aumento: 199 clics frente a 193 la semana anterior (+6, cerca del 3%).\nMayores aumentos: armario a medida curitiba (30 → 48), ropero a medida (9 → 17), home office a medida (4 → 9).\nMayores caídas: cocina a medida precio (41 → 22), clóset pequeño a medida (13 → 6), panel de tv a medida (15 → 12).\nAcciones: 1) revisar la página de cocinas; 2) mostrar precios de clósets; 3) reforzar la página de armarios.",
+      "exemplo_errado": "Buena semana: cerca de 200 clics, un poco más que antes.\nMayores aumentos: armario a medida curitiba.\nMayores caídas: algunas consultas sobre cocinas bajaron.\nAcciones: seguir publicando."
     },
     {
       "tipo": "pratica",

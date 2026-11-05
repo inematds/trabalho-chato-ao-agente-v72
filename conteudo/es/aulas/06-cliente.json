@@ -151,7 +151,7 @@
         {
           "rot": "Terminal (opcional) · carpetas reales en tu computadora",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/clientes\n# a ficha está no AGENTS.md; o modelo está em clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente nuevo: Padaria Trigo Bom — siga o AGENTS.md\""
+          "conteudo": "cd meus-agentes/clientes\n# la ficha está en AGENTS.md; la plantilla está en clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente nuevo: Padaria Trigo Bom — sigue AGENTS.md\""
         }
       ],
       "saida": {
@@ -220,7 +220,7 @@
         {
           "p": "Interrumpiste el checklist en el paso 3 y volviste a ejecutarlo. Lo correcto es:",
           "opcoes": [
-            "Empezar de nuevo desde el paso 1 y repetir todo, por seguridad.",
+            "Empezar de nuevo desde el paso 1 y repetir todo desde el principio, por seguridad.",
             "Continuar desde el paso 3, sin repetir el registro ni la carpeta.",
             "Pasar al correo de bienvenida.",
             "Crear otro cliente para empezar de cero."
@@ -233,7 +233,7 @@
           "p": "En el recorrido por el chat, ¿quién crea la carpeta en tu Drive?",
           "opcoes": [
             "Tú: el agente prepara el nombre, el cronograma y los borradores, y tú haces los clics.",
-            "El agente, siempre que le digas la contraseña de Drive.",
+            "El agente, siempre que le digas la contraseña de Drive dentro del Proyecto.",
             "El agente, por su cuenta, porque está en un Proyecto.",
             "Nadie: en el chat ese paso desaparece."
           ],

@@ -105,7 +105,7 @@
       "tipo": "simportao",
       "titulo": "Simule o portão",
       "sub": "Rode o agente, leia o rascunho que parou no portão e decida.",
-      "arquivo": "Rascunho para Ana Souza",
+      "arquivo": "ana-souza.txt",
       "fases": [
         "Rascunhos",
         "Portão",

@@ -5,7 +5,7 @@
   "titulo": "La ficha del agente en una página",
   "titulo_curto": "La ficha del agente",
   "minutos": 15,
-  "lead": "Un agente sin instrucciones hace lo que cree que quieres. La ficha es la página que dice quién es, qué tienes, cuándo trabajar, los pasos en orden, qué nunca debe hacer y cómo entregar el trabajo. La escribes una vez y la usas cada semana. En este curso, agente significa eso: un Proyecto del chat (o una carpeta, en la terminal) con la ficha en las instrucciones.",
+  "lead": "Un agente sin instrucciones hace lo que cree que quieres. La ficha es la página que dice quién es, cuándo trabajar, los pasos, qué no debe hacer nunca y cómo entregar. En este curso, un agente es eso: un Proyecto del chat (o una carpeta, en la terminal) con la ficha en las instrucciones.",
   "objetivo": "escribir la ficha de tu primer agente con rol, contexto, pasos, reglas y primera tarea, y ponerla en un Proyecto del chat.",
   "competencias": [
     "escribir-ficha-de-agente",
@@ -169,7 +169,7 @@
         {
           "rot": "Ejemplo completado (informe del sitio web de una tienda)",
           "icone": "check",
-          "conteudo": "Rol: Eres mi agente de informe semanal del sitio web.\nSobre mí: tienda de muebles a medida en Curitiba; herramientas: Search Console y Google Planilhas; tono: directo, sin jerga.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas de cálculo exportadas y diga \"informe\".\nPasos: 1) lee las consultas y las páginas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron en clics; 3) di si el total subió o bajó y cuánto; 4) sugiere 3 acciones sencillas para la semana.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas la contraseña, si aparece una pantalla de inicio de sesión = detente y avísame; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te bloqueas o tienes dudas, detente y pregunta.\nEntrega: texto de hasta 250 palabras, con los números de esta semana y de la anterior uno al lado del otro.\nPrimera tarea: espera a que pegue las hojas de cálculo, ejecútalo una vez y muéstrame el informe."
+          "conteudo": "Rol: Eres mi agente de informe semanal del sitio web.\nSobre mí: tienda de muebles a medida en Curitiba; herramientas: Search Console y Hojas de cálculo de Google; tono: directo, sin jerga.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas de cálculo exportadas y diga \"informe\".\nPasos: 1) lee las consultas y las páginas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron en clics; 3) di si el total subió o bajó y cuánto; 4) sugiere 3 acciones sencillas para la semana.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas la contraseña, si aparece una pantalla de inicio de sesión = detente y avísame; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te bloqueas o tienes dudas, detente y pregunta.\nEntrega: texto de hasta 250 palabras, con los números de esta semana y de la anterior uno al lado del otro.\nPrimera tarea: espera a que pegue las hojas de cálculo, ejecútalo una vez y muéstrame el informe."
         }
       ],
       "saida": {
@@ -291,7 +291,7 @@
           "p": "El agente necesita entrar en un panel que pide iniciar sesión. ¿Qué indica la ficha que debe hacer?",
           "opcoes": [
             "Detenerse en la pantalla de inicio de sesión y avisarte; la contraseña nunca va en la conversación.",
-            "Pedir la contraseña una sola vez y guardarla en la ficha para no tener que pedirla de nuevo.",
+            "Pedir la contraseña una sola vez, guardarla en la ficha y reutilizarla cada semana para no tener que escribirla de nuevo.",
             "Intentar entrar con el correo de la empresa.",
             "Saltar el panel y estimar los números."
           ],

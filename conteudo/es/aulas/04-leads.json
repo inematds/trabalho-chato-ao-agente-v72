@@ -105,7 +105,7 @@
       "tipo": "simportao",
       "titulo": "Simula el punto de control",
       "sub": "Ejecuta el agente, lee el borrador que se detuvo en el punto de control y decide.",
-      "arquivo": "Rascunho para Ana Souza",
+      "arquivo": "ana-souza.txt",
       "fases": [
         "Borradores",
         "Punto de control",
@@ -201,7 +201,7 @@
         {
           "p": "El borrador dice \"entregamos en 10 días con un 20% de descuento\", pero nunca ofreciste eso. ¿Qué haces en el punto de control?",
           "opcoes": [
-            "Aprobar: al cliente le gustan los descuentos.",
+            "Aprobar tal como está: a los clientes les gustan los descuentos, y responder rápido importa más que revisar cada detalle.",
             "Reprobar con la corrección y agregar a la ficha la regla de no prometer precios, plazos ni descuentos.",
             "Enviar y corregir después por teléfono.",
             "Borrar el contacto de la hoja."
@@ -226,7 +226,7 @@
           "p": "¿Cuál de estas tareas NO hace el agente de contactos?",
           "opcoes": [
             "Separar el spam e indicar el motivo.",
-            "Escribir la respuesta a cada contacto como borrador.",
+            "Escribir la respuesta a cada contacto nuevo como borrador.",
             "Enviar la respuesta aprobada desde tu correo electrónico.",
             "Preparar las filas nuevas de la hoja."
           ],

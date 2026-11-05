@@ -220,7 +220,7 @@
         {
           "p": "You stopped the checklist at step 3 and ran it again. The right thing to do is:",
           "opcoes": [
-            "Start again at step 1 and redo everything, just to be safe.",
+            "Start again at step 1 and redo everything from the top, just to be safe.",
             "Continue from step 3 without repeating the client record and folder.",
             "Skip to the welcome email.",
             "Create another client to start fresh."
@@ -233,7 +233,7 @@
           "p": "In the chat workflow, who creates the folder in your Drive?",
           "opcoes": [
             "You: the agent prepares the name, timeline, and drafts, and you do the clicks.",
-            "The agent, as long as you give it your Drive password.",
+            "The agent, as long as you give it your Drive password in the Project.",
             "The agent, on its own, because it's in a Project.",
             "Nobody: that step disappears in chat."
           ],

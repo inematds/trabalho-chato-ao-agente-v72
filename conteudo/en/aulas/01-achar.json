@@ -174,7 +174,7 @@
       "tipo": "conferidor",
       "titulo": "Check your list",
       "sub": "Test first with the example that passes and the one with an error. Then paste your list. The page checks the format (a number, minutes, risk, and decision on each line); you decide whether the order makes sense.",
-      "arquivo": "tarefas.txt",
+      "arquivo": "tasks.txt",
       "rot": "Paste your list here (one numbered task per line):",
       "modelo": "1 | task | apps | 60 min | boredom 5 | low risk | start now",
       "regras": [
