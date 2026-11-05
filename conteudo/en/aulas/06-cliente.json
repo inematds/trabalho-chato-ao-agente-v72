@@ -141,12 +141,12 @@
         {
           "rot": "Sheet · new client agent",
           "icone": "arquivo",
-          "conteudo": "Role: You are my new client agent.\nAbout me: [what the company does]; folder template: [name]; schedule template: [name]; welcome email template: [text or name].\nWhen: when I say \"new client: [name]\" and paste the proposal or details.\nSteps: 1) enter the client: status \"closed\" and start date; 2) create a folder with the client’s name from the template; 3) create a schedule from the template, with dates starting from the start date; 4) prepare the first invoice as a draft, with the amount of the first installment from the proposal; 5) prepare a welcome email as a draft, with links to the folder and schedule.\nRules: do the steps in order and mark each one as done; if a client, folder, or invoice with that name already exists, don’t create another one: stop and tell me which step and what you found; if a step fails, stop there; keep the invoice and email as drafts only; I issue and send them; never ask for a password; if any information is missing, stop and ask.\nDelivery: the list of the 5 steps marked done / stopped and the reason, the links or names created, the invoice amount, and \"email is a draft\".\nFirst task: repeat the checklist in your own words and wait for me to say \"new client\"."
+          "conteudo": "Role: You are my new client agent.\nAbout me: [what the business does]; folder template: [name]; schedule template: [name]; welcome email template: [text or name]; existing clients and folders: [paste the list].\nWhen: when I say \"new client: [name]\" and paste the proposal or details.\nSteps: 1) customer record: status \"closed\" and start date; 2) folder with the client's name, based on the template; 3) schedule based on the template, with dates starting from the start date; 4) first invoice as a draft, with the amount of the proposal's first installment; 5) welcome email as a draft, with links to the folder and schedule.\nRules: do the steps in order and mark each as done; if a client, folder, or invoice with that name already exists, don't create another one: stop and tell me which step and what you found; if a step fails, stop there; invoice and email as drafts only, I’ll issue and send them; never ask for a password; if any information is missing, stop and ask.\nDelivery: the list of the 5 steps marked done / stopped and the reason, the links or names created, the invoice amount, and \"email in draft\".\nFirst task: repeat the checklist in your own words and wait for me to say \"new client\"."
         },
         {
           "rot": "In chat · the request",
           "icone": "chat",
-          "conteudo": "new client: Padaria Trigo Bom\n\nProposal details: contact Marta Reis (marta@exemplo.com), planned commercial kitchen, start date 10/11, total amount 18.000,00 in 3 installments, first due at signing.\nIn chat, you don't create the folder or client record: give me the ready-to-use text for each step (folder name, timeline in a table, invoice draft, email draft) and I'll do the clicks, marking each one done."
+          "conteudo": "new client: Padaria Trigo Bom\n\nExisting clients and folders: Marcenaria Lopes, Clínica Vida.\nProposal details: contact Marta Reis (marta@exemplo.com), custom industrial kitchen, start date 10/11, total amount 18.000,00 in 3 installments, first due at signing.\nIn chat, you don't create the folder or customer record: give me the ready-to-use text for each step (folder name, schedule in a table, invoice draft, email draft), and I’ll click through and mark each one done."
         },
         {
           "rot": "Terminal (optional) · real folders on your computer",
@@ -195,7 +195,7 @@
           "id": "e3",
           "titulo": "E3 · Practice with a fictional client",
           "min": "10 min",
-          "texto": "Run it with Padaria Trigo Bom. Then send the same request again.",
+          "texto": "Run it with Padaria Trigo Bom. Then send the same request again in the same conversation (in chat, \"already exists\" depends on the list you pasted and what's in the conversation).",
           "pronto": "the first round delivers the 5 steps and the 6.000,00 invoice as a draft; the second stops and lets you know the client already exists."
         }
       ]

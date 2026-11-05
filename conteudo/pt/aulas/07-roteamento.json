@@ -110,7 +110,8 @@
           "titulo": "No chat",
           "sub": "o seletor",
           "texto": [
-            "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto. A descrição de cada item diz qual é o rápido, para o dia a dia, e qual raciocina mais ou é o mais capaz: o primeiro é o seu leve, o segundo o seu topo. No Claude, o Sonnet é o do dia a dia e o Opus o mais capaz.",
+            "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto.",
+            "A descrição de cada item diz qual é o rápido, para o dia a dia, e qual raciocina mais ou é o mais capaz: o primeiro é o seu leve, o segundo o seu topo. No Claude, o Sonnet é o do dia a dia e o Opus o mais capaz.",
             "Num Projeto, escolha o modelo no começo da conversa. Para subir, abra uma conversa nova no mesmo Projeto com o modelo topo."
           ]
         },

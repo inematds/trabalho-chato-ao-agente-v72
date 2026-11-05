@@ -132,7 +132,7 @@
         {
           "rot": "Check log (template)",
           "icone": "arquivo",
-          "conteudo": "date | agent | model | what I checked | matched? | change to the sheet | minutes saved\n11/11 | website report | light | everything (run 1) | yes | delivery now includes the total per page | 50\n12/11 | contacts | light | all 3 drafts | 1 corrected | rule: don't mention a deadline | 30\n18/11 | website report | light | 2 numbers (sample) | yes | none | 55"
+          "conteudo": "date | agent | model | what I checked | did it match? | change to the sheet | minutes saved\n11/11 | website report | light | everything (run 1) | yes | added the total by page to the delivery | 50\n12/11 | contacts | light | all 3 drafts | 1 corrected | rule: don't mention a deadline | 30\n18/11 | website report | light | everything (run 2) | yes | none | 55\n25/11 | website report | light | everything (run 3) | yes | none | 55\n02/12 | website report | light | 2 numbers (sample) | yes | none | 55"
         },
         {
           "rot": "Friday review (paste into the chat with the check log)",

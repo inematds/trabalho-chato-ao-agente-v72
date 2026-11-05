@@ -90,7 +90,7 @@
           "icone": "megafone",
           "titulo": "Explain",
           "sub": "in one line",
-          "detalhe": "When moving up, the agent says: “I’m sending this to the top model because…” You can see the decision and adjust the rule if it moves things up too often or not often enough.",
+          "detalhe": "When the task calls for the top model, the agent says: \"I suggest the top model because…\" and waits. In chat, you switch models using the selector; in the terminal, you run it again with -m or --model. If it recommends the top model too often or not often enough, adjust the rule.",
           "itens": [
             {
               "icone": "check",
@@ -148,7 +148,7 @@
         {
           "rot": "Routing rule (paste into the instructions)",
           "icone": "arquivo",
-          "conteudo": "Model rule:\nUse the LIGHT model for routine work:\n- reading dashboards, spreadsheets, and messages; copying data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to a document, spreadsheet, or page\n\nSwitch to the TOP model when:\n- it’s a big plan or a new system\n- the light model has already made the same mistake twice\n- you need to DECIDE something involving money or a contract (paying, negotiating, accepting terms), or prepare a proposal for a major client\n(reading and adding up invoices or bills is routine: keep it light)\n\nWhen switching, tell me in one line: \"I’m switching this to the top model because ...\".\nIf you’re unsure, start with the light model and let me know if you get stuck.\nDrafts and the gate apply to both."
+          "conteudo": "Model rule:\nUse the LIGHT model for routine tasks:\n- reading dashboards, spreadsheets, and messages; copying data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to text, a spreadsheet, or a page\n\nSwitch to the TOP model when:\n- it's a large plan or a new system\n- the light model has made the same mistake twice\n- you need to DECIDE something involving money or a contract (pay, negotiate, accept terms), or prepare a proposal for a major client\n(reading and adding up invoices or bills is routine: keep using the light model)\n\nWhen a task calls for the top model, tell me in one line: \"I suggest the top model because ...\" and wait for me to switch models.\nIf you're unsure, start with the light model and let me know if you get stuck.\nDrafts and the gate apply to both."
         },
         {
           "rot": "Request · classify my tasks",
@@ -255,7 +255,7 @@
           "p": "The light model made the same calculation error twice in the report. According to the rule:",
           "opcoes": [
             "Try five more times with the light model.",
-            "Move this task to the top model and say \"because the light model made two errors.\"",
+            "Move this task to the top model, with the note \"because the light model made the same mistake twice\".",
             "Give up on using an agent for reports.",
             "Switch every task for every agent to the top model, just to be safe."
           ],
@@ -303,7 +303,7 @@
         },
         {
           "t": "Move it up and say why",
-          "texto": "\"I'm sending this to the top model because…\": this is how you check whether the rule works."
+          "texto": "\"I suggest the top model because…\": the agent suggests it, you switch models, then check whether the rule works."
         }
       ]
     },

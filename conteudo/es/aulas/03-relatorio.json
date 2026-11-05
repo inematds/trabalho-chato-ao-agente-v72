@@ -127,7 +127,7 @@
           "titulo": "Exportar",
           "sub": "hoja de cálculo",
           "texto": [
-            "Haz clic en Exportar y elige Google Sheets, Excel o CSV.",
+            "Haz clic en Exportar y elige Google Planilhas, Excel o CSV (una hoja de cálculo en texto simple).",
             "El archivo incluye una pestaña por dimensión (consultas, páginas, países…). Para el informe bastan consultas y páginas. Los nombres de las pestañas cambian según el idioma de tu cuenta."
           ],
           "exemplo": {
@@ -161,7 +161,7 @@
           "conteudo": "informe\n\nUsa la ficha de este Proyecto. Los datos están arriba (o en el archivo adjunto).\nAntes del texto, muéstrame el total de clics de esta semana y de la anterior para que lo revise."
         },
         {
-          "rot": "Variación · ficha de las cifras de la semana (ventas, contactos, visitas)",
+          "rot": "Variación · ficha de los números de la semana (en un Proyecto nuevo, \"Números de la semana\")",
           "icone": "arquivo",
           "conteudo": "Rol: Eres mi agente de las cifras de la semana.\nSobre mí: [a qué se dedica la empresa]; pego las cifras de cada herramienta todos los viernes.\nCuándo: cuando pegue las cifras y diga \"cifras\".\nPasos: 1) arma una tabla: cifra, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee; copia las cifras exactamente; si falta una cifra, escribe \"no lo encontré\", nunca la estimes; guarda como borrador, yo lo envío al equipo; si te trabas, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: hazlo ahora con las cifras que voy a pegar."
         },

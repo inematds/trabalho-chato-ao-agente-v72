@@ -5,7 +5,7 @@
   "titulo": "A ficha do agente em uma página",
   "titulo_curto": "A ficha do agente",
   "minutos": 15,
-  "lead": "Um agente sem instrução faz o que acha que você quer. A ficha é a página que diz quem ele é, o que você tem, quando trabalhar, os passos em ordem, o que nunca fazer e como entregar. Você escreve uma vez e usa toda semana. Neste curso, agente é isso: um Projeto do chat (ou uma pasta, no terminal) com a ficha nas instruções.",
+  "lead": "Um agente sem instrução faz o que acha que você quer. A ficha é a página que diz quem ele é, quando trabalhar, os passos, o que nunca fazer e como entregar. Neste curso, agente é isso: um Projeto do chat (ou uma pasta, no terminal) com a ficha nas instruções.",
   "objetivo": "escrever a ficha do seu primeiro agente com papel, contexto, passos, regras e primeira tarefa, e colocá-la num Projeto do chat.",
   "competencias": [
     "escrever-ficha-de-agente",

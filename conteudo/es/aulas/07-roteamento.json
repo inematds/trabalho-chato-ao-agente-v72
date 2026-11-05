@@ -90,7 +90,7 @@
           "icone": "megafone",
           "titulo": "Avisa",
           "sub": "en una línea",
-          "detalhe": "Cuando escala, el agente dice: «Envío esto al superior porque…». Ves la decisión y corriges la regla si está escalando demasiado o muy poco.",
+          "detalhe": "Cuando la tarea requiera el modelo superior, el agente dice: \"Sugiero el modelo superior porque…\" y espera. En el chat, tú cambias el modelo en el selector; en la terminal, vuelves a ejecutarlo con -m o --model. Si sugiere demasiado o muy poco, corrige la regla.",
           "itens": [
             {
               "icone": "check",
@@ -148,7 +148,7 @@
         {
           "rot": "Regla de enrutamiento (pégala en las instrucciones)",
           "icone": "arquivo",
-          "conteudo": "Regla del modelo:\nUsa el modelo LIGERO para la rutina:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correos y respuestas breves\n- pequeñas correcciones en un texto, una hoja de cálculo o una página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya se haya equivocado dos veces en la misma tarea\n- tengas que DECIDIR algo relacionado con dinero o un contrato (pagar, negociar, aceptar condiciones) o hacer una propuesta para un cliente grande\n(leer y sumar facturas o comprobantes es una rutina: se queda en el ligero)\n\nCuando pases al modelo superior, dime en una línea: \"Paso este al modelo superior porque ...\".\nSi tienes dudas, empieza con el ligero y avísame si se atasca.\nEl borrador y el punto de control se aplican a los dos."
+          "conteudo": "Regla del modelo:\nUsa el modelo LIGERO para la rutina:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correo y respuestas cortas\n- pequeñas correcciones en un texto, una hoja de cálculo o una página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya se haya equivocado dos veces en la misma tarea\n- tengas que DECIDIR algo relacionado con dinero o un contrato (pagar, negociar, aceptar condiciones) o una propuesta para un cliente importante\n(leer y sumar facturas o cuentas es rutina: se queda en el ligero)\n\nCuando la tarea requiera el modelo superior, dime en una línea: \"Sugiero el modelo superior porque ...\" y espera a que cambie el modelo.\nSi tienes dudas, empieza con el ligero y avísame si te bloqueas.\nEl borrador y el punto de control valen para los dos."
         },
         {
           "rot": "Pedido · clasifica mis tareas",
@@ -255,7 +255,7 @@
           "p": "El modelo ligero se equivocó dos veces en el mismo cálculo del informe. Según la regla:",
           "opcoes": [
             "Intentar cinco veces más con el modelo ligero.",
-            "Pasar esta tarea al modelo superior y avisar «porque el modelo ligero se equivocó dos veces».",
+            "Lleva esta tarea al modelo superior, con el aviso \"porque el modelo ligero se equivocó dos veces\".",
             "Dejar de usar agentes para los informes.",
             "Cambiar todas las tareas de todos los agentes al modelo superior, por si acaso."
           ],
@@ -303,7 +303,7 @@
         },
         {
           "t": "Sube de nivel y avisa",
-          "texto": "«Paso este al modelo superior porque…»: así compruebas si la regla funciona."
+          "texto": "\"Sugiero el modelo superior porque…\": lo sugiere, tú cambias el modelo y compruebas si la regla funciona."
         }
       ]
     },

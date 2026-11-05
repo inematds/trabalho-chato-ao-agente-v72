@@ -127,7 +127,7 @@
           "titulo": "Export",
           "sub": "spreadsheet",
           "texto": [
-            "Click Export and choose Google Sheets, Excel, or CSV.",
+            "Click Export and choose Google Sheets, Excel, or CSV (a spreadsheet in plain text).",
             "The file has one tab for each dimension (queries, pages, countries…). For the report, you only need queries and pages. Tab names change with your account language."
           ],
           "exemplo": {
@@ -161,7 +161,7 @@
           "conteudo": "report\n\nUse the sheet in this Project. The data is above (or in the attached file).\nBefore writing the report, show me the total clicks for this week and last week so I can check them."
         },
         {
-          "rot": "Variation · agent sheet for weekly numbers (sales, contacts, visits)",
+          "rot": "Variation · weekly numbers sheet (in a new Project, \"Weekly numbers\")",
           "icone": "arquivo",
           "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table with: metric, this week, previous week, change in %; 2) write 3 short bullets: the best news, the biggest concern, a question for the team.\nRules: read only; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; save as a draft, I’ll send it to the team; if you get stuck, stop and ask.\nDelivery: the table and 3 bullets, nothing else.\nFirst task: run this now with the numbers I’m about to paste."
         },

@@ -141,12 +141,12 @@
         {
           "rot": "Ficha · agente para clientes nuevos",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de clientes nuevos.\nSobre mí: [a qué se dedica la empresa]; plantilla de carpeta: [nombre]; plantilla de cronograma: [nombre]; plantilla de correo de bienvenida: [texto o nombre].\nCuándo: cuando diga \"cliente nuevo: [nombre]\" y pegue la propuesta o los datos.\nPasos: 1) registro: situación \"cerrado\" y fecha de inicio; 2) carpeta con el nombre del cliente a partir de la plantilla; 3) cronograma a partir de la plantilla, con fechas desde el inicio; 4) primer cobro como borrador, con el valor de la primera cuota de la propuesta; 5) correo de bienvenida como borrador, con los enlaces de la carpeta y del cronograma.\nReglas: sigue los pasos en orden y marca cada uno como hecho; si ya existe un cliente, una carpeta o un cobro con ese nombre, no crees otro: detente y dime qué paso intentaste y qué viste; si falla un paso, detente ahí; el cobro y el correo quedan como borrador, yo los emito y envío; nunca pidas una contraseña; si falta un dato, detente y pregunta.\nEntrega: la lista de los 5 pasos con hecho / detenido y el motivo, los enlaces o nombres creados, el valor del cobro y \"correo en borrador\".\nPrimera tarea: repite la lista de pasos con tus propias palabras y espera a que diga \"cliente nuevo\"."
+          "conteudo": "Rol: Eres mi agente de clientes nuevos.\nSobre mí: [a qué se dedica la empresa]; plantilla de carpeta: [nombre]; plantilla de cronograma: [nombre]; plantilla de correo de bienvenida: [texto o nombre]; clientes y carpetas que ya existen: [pega la lista].\nCuándo: cuando diga \"cliente nuevo: [nombre]\" y pegue la propuesta o los datos.\nPasos: 1) registro: situación \"cerrado\" y fecha de inicio; 2) carpeta con el nombre del cliente a partir de la plantilla; 3) cronograma a partir de la plantilla, con fechas desde el inicio; 4) primer cobro como borrador, con el valor de la primera cuota de la propuesta; 5) correo de bienvenida como borrador, con los enlaces a la carpeta y al cronograma.\nReglas: sigue los pasos en orden y marca cada uno como hecho; si ya existe un cliente, una carpeta o un cobro con ese nombre, no crees otro: detente y dime qué paso es y qué viste; si un paso falla, detente ahí; el cobro y el correo solo deben quedar como borrador, yo los emito y envío; nunca pidas la contraseña; si falta algún dato, detente y pregunta.\nEntrega: la lista de los 5 pasos con hecho / detenido y el motivo, los enlaces o nombres creados, el valor del cobro y \"correo en borrador\".\nPrimera tarea: repite la lista de verificación con tus palabras y espera a que diga \"cliente nuevo\"."
         },
         {
           "rot": "En el chat · el pedido",
           "icone": "chat",
-          "conteudo": "cliente nuevo: Padaria Trigo Bom\n\nDatos de la propuesta: contacto Marta Reis (marta@exemplo.com), cocina industrial planificada, inicio el 10/11, valor total 18.000,00 en 3 cuotas, la primera al firmar.\nEn el chat no creas la carpeta ni el registro: devuélveme el texto listo de cada paso (nombre de la carpeta, cronograma en tabla, borrador del cobro, borrador del correo) y yo hago los clics, marcando cada uno como hecho."
+          "conteudo": "cliente nuevo: Padaria Trigo Bom\n\nClientes y carpetas que ya existen: Marcenaria Lopes, Clínica Vida.\nDatos de la propuesta: contacto Marta Reis (marta@exemplo.com), cocina industrial a medida, inicio el 10/11, valor total 18.000,00 en 3 cuotas, la primera al firmar.\nEn el chat no creas la carpeta ni el registro: devuélveme el texto listo para cada paso (nombre de la carpeta, cronograma en tabla, borrador del cobro, borrador del correo) y yo hago los clics y marco cada paso como hecho."
         },
         {
           "rot": "Terminal (opcional) · carpetas reales en tu computadora",
@@ -195,7 +195,7 @@
           "id": "e3",
           "titulo": "E3 · Ensayo con un cliente ficticio",
           "min": "10 min",
-          "texto": "Haz la prueba con Padaria Trigo Bom. Después envía el mismo pedido otra vez.",
+          "texto": "Ejecútalo con Padaria Trigo Bom. Después envía el mismo pedido otra vez, en la misma conversación (en el chat, el \"ya existe\" depende de la lista que pegaste y de lo que está en la conversación).",
           "pronto": "la primera ronda entrega los 5 pasos y el cobro de 6.000,00 como borrador; la segunda se detiene y avisa que el cliente ya existe."
         }
       ]

@@ -126,7 +126,7 @@
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>Na pasta <code>meus-agentes/notas</code>, com a ficha no <code>AGENTS.md</code> (ou <code>CLAUDE.md</code>), ponha os PDFs da semana numa subpasta <code>semana</code> e rode <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>. Se algum PDF for imagem escaneada e o modelo leve não conseguir ler, ele deve dizer \"não consegui ler\" (é a regra) e você manda esse para o modelo topo ou digita.</p>"
+            "html": "<p>Na pasta <code>meus-agentes/notas</code>, com a ficha no <code>AGENTS.md</code> (ou <code>CLAUDE.md</code>), ponha os PDFs da semana numa subpasta <code>semana</code> e rode <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o contas.md \"notas: siga o AGENTS.md com os arquivos da pasta semana\"</code>.</p><p>Se algum PDF for imagem escaneada e o modelo leve não conseguir ler, ele deve dizer \"não consegui ler\" (é a regra) e você manda esse para o modelo topo ou digita.</p>"
           },
           {
             "rot": "Erros comuns",

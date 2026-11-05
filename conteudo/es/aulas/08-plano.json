@@ -132,7 +132,7 @@
         {
           "rot": "Registro de control (modelo)",
           "icone": "arquivo",
-          "conteudo": "fecha | agente | modelo | qué revisé | ¿salió bien? | cambio en la ficha | minutos ahorrados\n11/11 | informe del sitio | ligero | todo (ronda 1) | sí | la entrega agregó el total por página | 50\n12/11 | contactos | ligero | los 3 borradores | 1 corregido | regla: no mencionar plazos | 30\n18/11 | informe del sitio | ligero | 2 números (muestra) | sí | ninguno | 55"
+          "conteudo": "fecha | agente | modelo | qué revisé | ¿coincide? | cambio en la ficha | minutos ahorrados\n11/11 | informe del sitio web | ligero | todo (ronda 1) | sí | la entrega ahora incluye el total por página | 50\n12/11 | contactos | ligero | los 3 borradores | 1 corregido | regla: no mencionar el plazo | 30\n18/11 | informe del sitio web | ligero | todo (ronda 2) | sí | ninguno | 55\n25/11 | informe del sitio web | ligero | todo (ronda 3) | sí | ninguno | 55\n02/12 | informe del sitio web | ligero | 2 números (muestra) | sí | ninguno | 55"
         },
         {
           "rot": "Revisión del viernes (pégala en el chat con el registro)",
