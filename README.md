@@ -27,7 +27,7 @@ Para dono de pequena empresa ou autônomo que usa ChatGPT/Claude no chat e não 
 4. 🤖 Imagens: heros pelo Codex image_gen (`codex exec`, assinatura) e capa composta com título em serifa (Playwright) → `assets/img/`.
 5. ⚙️ Portão PT: `python3 gerar.py && python3 validar.py --links` e `node ~/.claude/skills/formato-curso-v72/scripts/conferir-tela.cjs .`.
 6. 🤖 Revisor independente (Agent novo, persona do público) → nota em `~/projetos/wifi/scripts/revisor-nota.py`; corrigir e revisar de novo até ≥ 8.
-7. 🤖 Tradução: `python3 ~/.claude/skills/formato-curso-v72/scripts/traduzir.py . en es --publico "..."` (tradutor central, assinatura), glossário em `i18n/glossario.json`, cache em `i18n/<lang>.json`; varreduras das Lessons.
+7. 🤖 Tradução: `python3 ~/.claude/skills/formato-curso-v72/scripts/traduzir.py . en es --publico "..."` (tradutor central, assinatura), glossário em `i18n/glossario.json`, cache em `i18n/<lang>.json`; depois `python3 i18n/localiza.py` (nomes, cidades, valores, datas e pastas do exemplo por mercado), o `traduzir.py` de novo (regrava do cache) e `python3 i18n/arquivos.py` (nomes de arquivo do conferidor); varreduras das Lessons.
 8. ⚙️ Portão nos 3 idiomas: `python3 gerar.py --lang en|es`, `python3 validar.py --links --lang en|es`, `conferir-tela.cjs .`.
 9. 🤖 Um revisor por idioma (EN, ES).
 10. ⚙️ Publicar: commit (autor `inematds`) + push; GitHub Pages da raiz da `main`.
