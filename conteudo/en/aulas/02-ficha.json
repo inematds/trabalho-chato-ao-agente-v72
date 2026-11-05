@@ -348,7 +348,7 @@
       "titulo": "To go further",
       "links": [
         {
-          "t": "What Projects are in Claude (official help, in English)",
+          "t": "What Projects are in Claude (official help)",
           "href": "https://support.claude.com/en/articles/9517075-what-are-projects",
           "icone": "pasta"
         },

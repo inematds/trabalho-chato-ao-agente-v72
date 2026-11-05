@@ -105,7 +105,7 @@
       "tipo": "simportao",
       "titulo": "Try the gate",
       "sub": "Run the agent, read the draft that stopped at the gate, and decide.",
-      "arquivo": "ana-souza.txt",
+      "arquivo": "lead-1.txt",
       "fases": [
         "Drafts",
         "Gate",
@@ -144,7 +144,7 @@
         {
           "rot": "Practice run · three messages and the current spreadsheet",
           "icone": "chat",
-          "conteudo": "contacts\n\nCurrent spreadsheet:\nRoberto Lima | roberto@example.com | Lima Law Office | closet | Oct 28 | new\n\nNew messages:\n1) Ana Souza (ana@example.com), Ana Decor: \"What’s the delivery time for a custom kitchen?\"\n2) Roberto Lima (roberto@example.com): \"I asked for a quote for a closet last week and still haven’t received it. Can you send it to me?\"\n3) promo@example.com: \"GET 10 THOUSAND FOLLOWERS TODAY!!! Click here\""
+          "conteudo": "contacts\n\nCurrent spreadsheet:\nRobert Lee | robert@example.com | Lee Law Office | closet | Oct 28 | new\n\nNew messages:\n1) Anna Scott (anna@example.com), Anna Decor: \"What’s the delivery time for a custom kitchen?\"\n2) Robert Lee (robert@example.com): \"I asked for a quote for a closet last week and still haven’t received it. Can you send it to me?\"\n3) promo@example.com: \"GET 10 THOUSAND FOLLOWERS TODAY!!! Click here\""
         }
       ],
       "saida": {
@@ -152,7 +152,7 @@
         "abas": [
           {
             "rot": "What the output should include",
-            "html": "<ul><li><b>Ana Souza</b>: a new row, status \"new\", and a draft that doesn't make up a timeline.</li><li><b>Roberto Lima</b>: marked \"update,\" not a second row.</li><li><b>promo@example.com</b>: on the \"ignored\" list, with the reason.</li><li>Two drafts, neither sent.</li></ul>"
+            "html": "<ul><li><b>Anna Scott</b>: a new row, status \"new\", and a draft that doesn't make up a timeline.</li><li><b>Robert Lee</b>: marked \"update,\" not a second row.</li><li><b>promo@example.com</b>: on the \"ignored\" list, with the reason.</li><li>Two drafts, neither sent.</li></ul>"
           },
           {
             "rot": "Terminal (optional)",

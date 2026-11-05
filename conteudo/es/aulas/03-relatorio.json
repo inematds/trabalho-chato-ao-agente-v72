@@ -163,7 +163,7 @@
         {
           "rot": "Variación · ficha de los números de la semana (en un Proyecto nuevo, \"Números de la semana\")",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de los números de la semana.\nSobre mí: [a qué se dedica la empresa]; pego los números de cada herramienta todos los viernes.\nCuándo: cuando pegue los números y diga \"números\".\nPasos: 1) arma una tabla: número, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; copia los números exactamente; si falta un número, escribe \"no lo encontré\", nunca lo estimes; guarda como borrador, yo lo envío al equipo; si te trabas, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: ejecútala ahora con los números que voy a pegar."
+          "conteudo": "Rol: Eres mi agente de los números de la semana.\nSobre mí: [a qué se dedica la empresa]; pego los números de cada herramienta todos los viernes.\nCuándo: cuando pegue los números y diga \"números\".\nPasos: 1) arma una tabla: número, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, si aparece una pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; copia los números exactamente; si falta un número, escribe \"no lo encontré\", nunca lo estimes; si se bloquea, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: ejecútala ahora con los números que voy a pegar."
         },
         {
           "rot": "Terminal (opcional) · Codex con el modelo ligero",
@@ -245,7 +245,7 @@
           "id": "e1",
           "titulo": "E1 · Prueba con el ejemplo",
           "min": "10 min",
-          "texto": "En el Proyecto del agente (ficha de la clase 2), pega los datos de ejemplo y el pedido del lunes. Pega el informe en el verificador.",
+          "texto": "Crea un Proyecto \"Informe del sitio\" con la ficha de ejemplo de la clase 2 (la del informe del sitio), pega los datos de ejemplo y el pedido del lunes. Pega el informe en el verificador.",
           "pronto": "el verificador responde OK: el informe incluye 199, 193 y la caída de 41 a 22."
         },
         {
@@ -347,12 +347,12 @@
           "icone": "grafico"
         },
         {
-          "t": "Codex CLI (documentación oficial, en inglés)",
+          "t": "Codex CLI (documentación oficial)",
           "href": "https://developers.openai.com/codex/cli",
           "icone": "terminal"
         },
         {
-          "t": "Claude Code (documentación oficial, en inglés)",
+          "t": "Claude Code (documentación oficial)",
           "href": "https://docs.claude.com/en/docs/claude-code/overview",
           "icone": "terminal"
         }

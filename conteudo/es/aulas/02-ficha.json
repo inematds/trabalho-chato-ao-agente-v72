@@ -348,12 +348,12 @@
       "titulo": "Para ir más allá",
       "links": [
         {
-          "t": "Qué son los Proyectos en Claude (ayuda oficial, en inglés)",
+          "t": "Qué son los Proyectos en Claude (ayuda oficial)",
           "href": "https://support.claude.com/en/articles/9517075-what-are-projects",
           "icone": "pasta"
         },
         {
-          "t": "Curso: Del chat al agente (la ficha de función en detalle)",
+          "t": "Curso: Del prompt al rol (la ficha de función en detalle)",
           "href": "https://inematds.github.io/do-prompt-ao-papel-v72/es/",
           "icone": "caneta"
         }

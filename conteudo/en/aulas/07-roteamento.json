@@ -119,7 +119,7 @@
           "titulo": "In Codex",
           "sub": "/model and -m",
           "texto": [
-            "In Codex, <code>/model</code> shows the list available on your plan. In the 11/04/2026 list: <code>gpt-6-luna</code> (fast and economical, for easier tasks), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (the general-purpose one), and <code>gpt-6-astra</code> (for the most demanding work).",
+            "In Codex, <code>/model</code> shows the list for your plan. In the list dated Nov 4, 2026: <code>gpt-6-luna</code> (fast and economical, for easier tasks), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (the general-purpose one), and <code>gpt-6-astra</code> (for more demanding work). In practice: luna is the light model, astra is the top model; terra and sol are in the middle.",
             "In the command, the model goes after <code>-m</code>."
           ]
         },
@@ -318,7 +318,7 @@
           "icone": "caneta"
         },
         {
-          "t": "Codex CLI (official documentation, in English)",
+          "t": "Codex CLI (official documentation)",
           "href": "https://developers.openai.com/codex/cli",
           "icone": "terminal"
         }

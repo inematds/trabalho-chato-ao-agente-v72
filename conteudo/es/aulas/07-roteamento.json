@@ -119,7 +119,7 @@
           "titulo": "En Codex",
           "sub": "/model y -m",
           "texto": [
-            "En Codex, <code>/model</code> muestra la lista de tu plan. En la lista del 04/11/2026: <code>gpt-6-luna</code> (rápido y económico, para tareas más sencillas), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (el de uso general) y <code>gpt-6-astra</code> (para el trabajo más exigente).",
+            "En Codex, <code>/model</code> muestra la lista de tu plan. En la lista del 04/11/2026: <code>gpt-6-luna</code> (rápido y económico, para tareas más sencillas), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (el de uso general) y <code>gpt-6-astra</code> (para el trabajo más exigente). En la práctica: luna es el ligero, astra es el superior; terra y sol quedan en el medio.",
             "En el comando, el modelo va en <code>-m</code>."
           ]
         },
@@ -256,7 +256,7 @@
           "p": "El modelo ligero se equivocó dos veces en el mismo cálculo del informe. Según la regla:",
           "opcoes": [
             "Intentar cinco veces más con el modelo ligero.",
-            "Lleva esta tarea al modelo superior, con el aviso \"porque el modelo ligero se equivocó dos veces\".",
+            "Llevar esta tarea al modelo superior, con el aviso \"porque el modelo ligero se equivocó dos veces\".",
             "Dejar de usar agentes para los informes.",
             "Cambiar todas las tareas de todos los agentes al modelo superior, por si acaso, para que nunca vuelva a pasar."
           ],
@@ -280,7 +280,7 @@
           "p": "En el chat, ¿cómo le asignas una tarea difícil al modelo superior?",
           "opcoes": [
             "Escribes \"usa el modelo superior\" en medio de la conversación, sin cambiar nada.",
-            "Cámbialo al superior en el selector de modelos, dentro del Proyecto.",
+            "Cambias al modelo superior en el selector de modelos, dentro del Proyecto.",
             "Creas otro Proyecto, sin la ficha, solo para esa tarea.",
             "Contratas un plan de API aparte para el modelo superior."
           ],
@@ -318,7 +318,7 @@
           "icone": "caneta"
         },
         {
-          "t": "Codex CLI (documentación oficial, en inglés)",
+          "t": "Codex CLI (documentación oficial)",
           "href": "https://developers.openai.com/codex/cli",
           "icone": "terminal"
         }

@@ -127,7 +127,7 @@
     {
       "tipo": "codigo",
       "titulo": "The check log",
-      "sub": "One invoice, one spreadsheet, or a log.txt file. One line per round.",
+      "sub": "A notes app on your phone, a spreadsheet, or a file called log.txt. One line per run.",
       "blocos": [
         {
           "rot": "Check log (template)",

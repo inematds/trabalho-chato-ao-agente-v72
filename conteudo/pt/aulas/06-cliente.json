@@ -40,8 +40,8 @@
         {
           "icone": "check",
           "titulo": "Cadastro",
-          "sub": "fechado",
-          "detalhe": "Na planilha ou no sistema de clientes: situação \"fechado\" e data de início. Os dados do cliente vêm da proposta assinada ou da conversa que você colar.",
+          "sub": "ganho",
+          "detalhe": "Na planilha ou no sistema de clientes: situação \"ganho\" (negócio fechado) e data de início. Os dados do cliente vêm da proposta assinada ou da conversa que você colar.",
           "itens": [
             {
               "icone": "lista",
@@ -107,7 +107,7 @@
       "titulo": "Veja o checklist rodando",
       "sub": "Rode, interrompa no meio e rode de novo. Repare no passo que para.",
       "tarefas": [
-        "Cadastro: Padaria Trigo Bom como fechado",
+        "Cadastro: Padaria Trigo Bom como ganho",
         "Pasta Padaria Trigo Bom a partir do modelo",
         "Cronograma de 8 semanas a partir de 10/11",
         "Primeira cobrança como rascunho",
@@ -141,7 +141,7 @@
         {
           "rot": "Ficha · agente de cliente novo",
           "icone": "arquivo",
-          "conteudo": "Papel: Você é o meu agente de cliente novo.\nSobre mim: [o que a empresa faz]; modelo de pasta: [nome]; modelo de cronograma: [nome]; modelo de e-mail de boas-vindas: [texto ou nome]; clientes e pastas que já existem: [cole a lista].\nQuando: quando eu disser \"cliente novo: [nome]\" e colar a proposta ou os dados.\nPassos: 1) cadastro: situação \"fechado\" e data de início; 2) pasta com o nome do cliente a partir do modelo; 3) cronograma a partir do modelo, com datas desde o início; 4) primeira cobrança como rascunho, com o valor da primeira parcela da proposta; 5) e-mail de boas-vindas como rascunho, com os links da pasta e do cronograma.\nRegras: nunca pague, aprove nem agende pagamento; nunca peça senha, tela de login = pare e me chame; faça os passos em ordem e marque cada um como feito; se um cliente, pasta ou cobrança com esse nome já existir, não crie outro: pare e me diga qual passo e o que viu; se um passo falhar, pare ali; cobrança e e-mail só como rascunho, eu emito e envio; nunca peça senha; se faltar um dado, pare e pergunte.\nEntrega: a lista dos 5 passos com feito / parou e o motivo, os links ou nomes criados, o valor da cobrança e \"e-mail em rascunho\".\nPrimeira tarefa: repita o checklist com as suas palavras e espere eu dizer \"cliente novo\"."
+          "conteudo": "Papel: Você é o meu agente de cliente novo.\nSobre mim: [o que a empresa faz]; modelo de pasta: [nome]; modelo de cronograma: [nome]; modelo de e-mail de boas-vindas: [texto ou nome]; clientes e pastas que já existem: [cole a lista].\nQuando: quando eu disser \"cliente novo: [nome]\" e colar a proposta ou os dados.\nPassos: 1) cadastro: situação \"ganho\" (negócio fechado) e data de início; 2) pasta com o nome do cliente a partir do modelo; 3) cronograma a partir do modelo, com datas desde o início; 4) primeira cobrança como rascunho, com o valor da primeira parcela da proposta; 5) e-mail de boas-vindas como rascunho, com os links da pasta e do cronograma.\nRegras: nunca pague, aprove nem agende pagamento; nunca peça senha, tela de login = pare e me chame; faça os passos em ordem e marque cada um como feito; se um cliente, pasta ou cobrança com esse nome já existir, não crie outro: pare e me diga qual passo e o que viu; se um passo falhar, pare ali; cobrança e e-mail só como rascunho, eu emito e envio; copie nomes e valores exatamente; se faltar um dado, pare e pergunte.\nEntrega: a lista dos 5 passos com feito / parou e o motivo, os links ou nomes criados, o valor da cobrança e \"e-mail em rascunho\".\nPrimeira tarefa: repita o checklist com as suas palavras e espere eu dizer \"cliente novo\"."
         },
         {
           "rot": "No chat · o pedido",

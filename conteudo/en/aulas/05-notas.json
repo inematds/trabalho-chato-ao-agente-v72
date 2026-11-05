@@ -109,12 +109,12 @@
         {
           "rot": "Sheet · invoices and bills agent",
           "icone": "arquivo",
-          "conteudo": "Role: You are my accounts payable agent.\nAbout me: [what the business does]; frequent suppliers and categories: [Lumberyard = raw materials; Accounting = services].\nWhen: when I attach or paste the week’s invoices and bills and say \"invoices\".\nSteps: 1) for each document, pull out the supplier, number, date, due date, items, and total; 2) add up the items and compare them with the printed total; 3) check whether the same supplier with the same number has already appeared in this batch or in the list of previously entered invoices I paste; 4) make a table: supplier, number, due date, total, category, status; 5) add up the week’s total using only invoices without problems.\nRules: only read, never change or delete anything; login screen = stop and call me; copy numbers exactly; if the sum doesn’t match or a number is unreadable, mark it \"doesn't match\" and leave it out of the total; duplicate invoice: mark it \"duplicate\" and leave it out of the total; never pay, approve, or schedule a payment; never ask for a bank password; everything is a draft for me to check; if you’re unsure, stop and ask.\nDelivery: the table sorted by due date and, below it, the week’s total and the list of items left out, with the reason.\nFirst task: run it now with the invoices I’m going to paste."
+          "conteudo": "Role: You are my accounts payable agent.\nAbout me: [what the business does]; frequent suppliers and categories: [Strong Pine Lumber = raw materials; Baker Accounting = services].\nWhen: when I attach or paste the week's invoices and bills and say \"invoices\".\nSteps: 1) for each document, extract the supplier, number, date, due date, items, and total; 2) add up the items and compare the sum with the printed total; 3) check whether the same supplier with the same number has already appeared in this batch or in the list of invoices already entered that I paste; 4) make a table: supplier, number, due date, total, category, status; 5) add up the week's total using only invoices without issues.\nRules: read only, never change or delete anything; login screen = stop and call me; copy the numbers exactly; if the sum doesn't match or a number is illegible, mark it \"doesn't match\" and leave it out of the total; duplicate invoice: mark it \"duplicate\" and leave it out of the total; never pay, approve, or schedule a payment; never ask for a bank password; everything is a draft for me to check; if you're unsure, stop and ask.\nDelivery: the table sorted by due date and, below it, the week's total and the list of items left out, with the reason.\nFirst task: run it now with the invoices I’m going to paste."
         },
         {
           "rot": "Practice · four documents",
           "icone": "lista",
-          "conteudo": "invoices\n\nDocument 1 · Invoice 4471 · Strong Pine Lumber · issued Oct 27 · due Nov 10\n  MDF panels: 1,100.00 · shipping: 150.00 · TOTAL: 1,250.00\n\nDocument 2 · Invoice 5120 · Silva Hardware · issued Oct 28 · due Nov 12\n  hinges: 480.00 · pulls: 320.00 · TOTAL: 900.00\n\nDocument 3 · Invoice 4471 · Strong Pine Lumber · issued Oct 27 · due Nov 10\n  MDF panels: 1,100.00 · shipping: 150.00 · TOTAL: 1,250.00\n\nDocument 4 · Bill 311 · Rocha Accounting · due Nov 15\n  November accounting fees · TOTAL: 650.00"
+          "conteudo": "invoices\n\nDocument 1 · Invoice 4471 · Strong Pine Lumber · issued Oct 27 · due Nov 10\n  MDF panels: 1,100.00 · shipping: 150.00 · TOTAL: 1,250.00\n\nDocument 2 · Invoice 5120 · Miller Hardware · issued Oct 28 · due Nov 12\n  hinges: 480.00 · pulls: 320.00 · TOTAL: 900.00\n\nDocument 3 · Invoice 4471 · Strong Pine Lumber · issued Oct 27 · due Nov 10\n  MDF panels: 1,100.00 · shipping: 150.00 · TOTAL: 1,250.00\n\nDocument 4 · Bill 311 · Baker Accounting · due Nov 15\n  November accounting fees · TOTAL: 650.00"
         }
       ],
       "saida": {
@@ -122,7 +122,7 @@
         "abas": [
           {
             "rot": "What the output should include",
-            "html": "<ul><li>Invoice 4471 (Lumberyard): 1,250.00, due Nov 10, OK.</li><li>Bill 311 (Accounting): 650.00, due Nov 15, OK.</li><li>Invoice 5120 (Hardware): <b>doesn't match</b>. The items add up to 800.00, but the total says 900.00. Left out of the total.</li><li>Document 3: invoice 4471 <b>duplicate</b>. Left out of the total.</li><li>Week’s total: <b>1,900.00</b>.</li></ul><p>These calculations were done by hand using the example. Take invoice 5120 up with the supplier; the agent doesn’t decide which amount is correct.</p>"
+            "html": "<ul><li>Invoice 4471 (Strong Pine Lumber): 1,250.00, due Nov 10, OK.</li><li>Bill 311 (Baker Accounting): 650.00, due Nov 15, OK.</li><li>Invoice 5120 (Miller Hardware): <b>doesn't match</b>. The items add up to 800.00 and the total says 900.00. Left out of the total.</li><li>Document 3: invoice 4471 <b>duplicate</b>. Left out of the total.</li><li>Week's total: <b>1,900.00</b>.</li></ul><p>Accounts done by hand using the example. You resolve invoice 5120 with the supplier; the agent doesn't decide which amount is correct.</p>"
           },
           {
             "rot": "Terminal (optional)",
@@ -161,7 +161,7 @@
             {
               "rot": "the mark that says it doesn't match",
               "termos": [
-                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn't add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
+                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn’t match / doesn't add up / doesn’t add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
               ]
             },
             {
@@ -173,9 +173,9 @@
           ]
         }
       ],
-      "ok": "OK: duplicate, mismatch, and weekly total are correct",
-      "exemplo": "Strong Pine Lumber | 4471 | Nov 10 | 1,250.00 | raw materials | ok\nRocha Accounting | 311 | Nov 15 | 650.00 | services | ok\nWeekly total: 1,900.00\nExcluded from the total:\n- Silva Hardware 5120: doesn't match (items add up to 800.00, printed total is 900.00)\n- Strong Pine Lumber 4471 (document 3): duplicate",
-      "exemplo_errado": "Strong Pine Lumber | 4471 | Nov 10 | 1,250.00\nSilva Hardware | 5120 | Nov 12 | 900.00\nStrong Pine Lumber | 4471 | Nov 10 | 1,250.00\nRocha Accounting | 311 | Nov 15 | 650.00\nWeekly total: 4,050.00"
+      "ok": "OK: the duplicate, the one that doesn't match, and the week's total are correct",
+      "exemplo": "Strong Pine Lumber | 4471 | Nov 10 | 1,250.00 | raw materials | ok\nBaker Accounting | 311 | Nov 15 | 650.00 | services | ok\nWeekly total: 1,900.00\nExcluded from the total:\n- Miller Hardware 5120: doesn't match (items add up to 800.00, printed total is 900.00)\n- Strong Pine Lumber 4471 (document 3): duplicate",
+      "exemplo_errado": "Strong Pine Lumber | 4471 | Nov 10 | 1,250.00\nMiller Hardware | 5120 | Nov 12 | 900.00\nStrong Pine Lumber | 4471 | Nov 10 | 1,250.00\nBaker Accounting | 311 | Nov 15 | 650.00\nWeekly total: 4,050.00"
     },
     {
       "tipo": "pratica",

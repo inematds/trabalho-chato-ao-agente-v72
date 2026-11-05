@@ -109,7 +109,7 @@
         {
           "rot": "Ficha · agente de facturas y recibos",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de cuentas por pagar.\nSobre mí: [a qué se dedica la empresa]; proveedores frecuentes y categorías: [Maderera = materia prima; Contabilidad = servicios].\nCuándo: cuando adjunte o pegue las facturas y los recibos de la semana y diga \"facturas\".\nPasos: 1) de cada documento, extrae proveedor, número, fecha, vencimiento, conceptos y total; 2) suma los conceptos y compara el resultado con el total impreso; 3) comprueba si el mismo proveedor con el mismo número ya apareció en esta tanda o en la lista de facturas registradas que pegue; 4) arma la tabla: proveedor, número, vencimiento, total, categoría, estado; 5) suma el total de la semana solo con las facturas sin problemas.\nReglas: solo lee, nunca cambies ni borres nada; si aparece una pantalla de inicio de sesión, detente y avísame; copia los números exactamente; si la suma no cuadra o un número es ilegible, marca \"no cuadra\" y déjalo fuera del total; factura duplicada: marca \"duplicada\" y déjala fuera del total; nunca pagues, apruebes ni programes pagos; nunca pidas la contraseña del banco; todo es un borrador para que yo lo revise; si tienes dudas, detente y pregunta.\nEntrega: la tabla ordenada por fecha de vencimiento y, abajo, el total de la semana y la lista de lo que quedó fuera, con el motivo.\nPrimera tarea: hazlo ahora con las facturas que voy a pegar."
+          "conteudo": "Rol: Eres mi agente de cuentas por pagar.\nSobre mí: [a qué se dedica la empresa]; proveedores frecuentes y categorías: [Maderera Pino Fuerte = materia prima; Contabilidad Rocha = servicios].\nCuándo: cuando adjunte o pegue las facturas y recibos de la semana y diga \"facturas\".\nPasos: 1) de cada documento extrae proveedor, número, fecha, vencimiento, conceptos y total; 2) suma los conceptos y compara el resultado con el total impreso; 3) verifica si el mismo proveedor con el mismo número ya apareció en esta tanda o en la lista de facturas ya registradas que pegue; 4) arma la tabla: proveedor, número, vencimiento, total, categoría, situación; 5) suma el total de la semana solo con las facturas sin problema.\nReglas: solo lee, nunca cambies ni borres nada; si aparece una pantalla de inicio de sesión, detente y avísame; copia los números exactamente; si la suma no cuadra o un número es ilegible, marca \"no cuadra\" y déjalo fuera del total; factura duplicada: marca \"duplicada\" y déjala fuera del total; nunca pagues, apruebes ni programes pagos; nunca pidas la contraseña del banco; todo es un borrador para que yo lo revise; si tienes dudas, detente y pregunta.\nEntrega: la tabla en orden de vencimiento y, debajo, el total de la semana y la lista de lo que quedó fuera, con el motivo.\nPrimera tarea: ejecútala ahora con las facturas que voy a pegar."
         },
         {
           "rot": "Ensayo · cuatro documentos",
@@ -122,7 +122,7 @@
         "abas": [
           {
             "rot": "Qué debe salir",
-            "html": "<ul><li>Factura 4471 (Maderera): 1,250.00, vence el 10/11, correcta.</li><li>Recibo 311 (Contabilidad): 650.00, vence el 15/11, correcto.</li><li>Factura 5120 (Ferretería): <b>no cuadra</b>. Los conceptos suman 800.00 y el total dice 900.00. Fuera del total.</li><li>Documento 3: factura 4471 <b>duplicada</b>. Fuera del total.</li><li>Total de la semana: <b>1,900.00</b>.</li></ul><p>Cuentas hechas a mano sobre el ejemplo. Lo de la factura 5120 lo resuelves con el proveedor; el agente no decide qué valor es correcto.</p>"
+            "html": "<ul><li>Factura 4471 (Maderera Pino Fuerte): 1,250.00, vence el 10/11, ok.</li><li>Recibo 311 (Contabilidad Rocha): 650.00, vence el 15/11, ok.</li><li>Factura 5120 (Ferretería Silva): <b>no cuadra</b>. Los conceptos suman 800.00 y el total dice 900.00. Fuera del total.</li><li>Documento 3: factura 4471 <b>duplicada</b>. Fuera del total.</li><li>Total de la semana: <b>1,900.00</b>.</li></ul><p>Cuentas hechas a mano con el ejemplo. La factura 5120 la resuelves con el proveedor; el agente no decide qué monto es el correcto.</p>"
           },
           {
             "rot": "Terminal (opcional)",
@@ -161,7 +161,7 @@
             {
               "rot": "la marca de suma que no cuadra",
               "termos": [
-                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn't add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
+                "não bate / não confere / diverge / divergente / divergência / mismatch / does not match / doesn't match / doesn’t match / doesn't add up / doesn’t add up / does not add up / no cuadra / no coincide / no suma / discrepancy / discrepancia"
               ]
             },
             {
@@ -173,7 +173,7 @@
           ]
         }
       ],
-      "ok": "OK: repetida, divergente y total de la semana correctos",
+      "ok": "OK: duplicada, la que no cuadra y el total de la semana correctos",
       "exemplo": "Maderera Pino Fuerte | 4471 | 10/11 | 1,250.00 | materia prima | ok\nContabilidad Rocha | 311 | 15/11 | 650.00 | servicios | ok\nTotal de la semana: 1,900.00\nFuera del total:\n- Ferretería Silva 5120: no cuadra (los artículos suman 800.00, el total impreso es 900.00)\n- Maderera Pino Fuerte 4471 (documento 3): repetida",
       "exemplo_errado": "Maderera Pino Fuerte | 4471 | 10/11 | 1,250.00\nFerretería Silva | 5120 | 12/11 | 900.00\nMaderera Pino Fuerte | 4471 | 10/11 | 1,250.00\nContabilidad Rocha | 311 | 15/11 | 650.00\nTotal de la semana: 4,050.00"
     },

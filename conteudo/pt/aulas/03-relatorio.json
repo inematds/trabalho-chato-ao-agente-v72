@@ -163,7 +163,7 @@
         {
           "rot": "Variação · ficha dos números da semana (num Projeto novo, \"Números da semana\")",
           "icone": "arquivo",
-          "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha, tela de login = pare e me chame; nunca pague, aprove nem agende pagamento; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; salve como rascunho, eu envio para a equipe; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
+          "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha, tela de login = pare e me chame; nunca pague, aprove nem agende pagamento; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
         },
         {
           "rot": "Terminal (opcional) · Codex com o modelo leve",
@@ -245,7 +245,7 @@
           "id": "e1",
           "titulo": "E1 · Ensaio com o exemplo",
           "min": "10 min",
-          "texto": "No Projeto do agente (ficha da aula 2), cole os dados de exemplo e o pedido da segunda-feira. Cole o relatório no conferidor.",
+          "texto": "Crie um Projeto \"Relatório do site\" com a ficha de exemplo da aula 2 (a do relatório do site), cole os dados de exemplo e o pedido da segunda-feira. Cole o relatório no conferidor.",
           "pronto": "o conferidor responde OK: o relatório traz 199, 193 e a queda de 41 para 22."
         },
         {

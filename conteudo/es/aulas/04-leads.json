@@ -105,7 +105,7 @@
       "tipo": "simportao",
       "titulo": "Simula el punto de control",
       "sub": "Ejecuta el agente, lee el borrador que se detuvo en el punto de control y decide.",
-      "arquivo": "ana-souza.txt",
+      "arquivo": "lead-1.txt",
       "fases": [
         "Borradores",
         "Punto de control",
@@ -144,7 +144,7 @@
         {
           "rot": "Ensayo · tres mensajes y la hoja actual",
           "icone": "chat",
-          "conteudo": "contactos\n\nHoja actual:\nRoberto Lima | roberto@ejemplo.com | Lima Abogados | closet | 28/10 | nuevo\n\nMensajes nuevos:\n1) Ana Souza (ana@ejemplo.com), Ana Decor: \"¿Cuál es el plazo de entrega de una cocina a medida?\"\n2) Roberto Lima (roberto@ejemplo.com): \"Pedí un presupuesto para un clóset la semana pasada y todavía no lo recibí. ¿Me lo pueden enviar?\"\n3) promo@ejemplo.com: \"¡¡¡GANA 10 MIL SEGUIDORES HOY!!! Haz clic aquí\""
+          "conteudo": "contactos\n\nHoja actual:\nRoberto Lima | roberto@ejemplo.com | Lima Abogados | closet | 28/10 | nuevo\n\nMensajes nuevos:\n1) Ana Sánchez (ana@ejemplo.com), Ana Decor: \"¿Cuál es el plazo de entrega de una cocina a medida?\"\n2) Roberto Lima (roberto@ejemplo.com): \"Pedí un presupuesto para un clóset la semana pasada y todavía no lo recibí. ¿Me lo pueden enviar?\"\n3) promo@ejemplo.com: \"¡¡¡GANA 10 MIL SEGUIDORES HOY!!! Haz clic aquí\""
         }
       ],
       "saida": {
@@ -152,7 +152,7 @@
         "abas": [
           {
             "rot": "Qué debe salir",
-            "html": "<ul><li><b>Ana Souza</b>: fila nueva, situación \"nuevo\", borrador sin inventar plazos.</li><li><b>Roberto Lima</b>: marcado como \"actualizar\", no como una segunda fila.</li><li><b>promo@ejemplo.com</b>: en la lista \"ignorados\", con el motivo.</li><li>Dos borradores, ninguno enviado.</li></ul>"
+            "html": "<ul><li><b>Ana Sánchez</b>: fila nueva, situación \"nuevo\", borrador sin inventar plazos.</li><li><b>Roberto Lima</b>: marcado como \"actualizar\", no como una segunda fila.</li><li><b>promo@ejemplo.com</b>: en la lista \"ignorados\", con el motivo.</li><li>Dos borradores, ninguno enviado.</li></ul>"
           },
           {
             "rot": "Terminal (opcional)",
@@ -189,7 +189,7 @@
           "titulo": "E3 · Una semana real",
           "min": "15 min",
           "texto": "Úsalo con contactos reales durante una semana. Lee cada borrador antes de enviarlo y anota cuántos corregiste.",
-          "pronto": "tienes el número de borradores aprobados sin cambios y el de los que corregiste. Cada corrección duplicada se convirtió en una regla de la ficha."
+          "pronto": "tienes el número de borradores aprobados sin cambios y el de los que corregiste. Cada corrección repetida se convirtió en una regla de la ficha."
         }
       ]
     },

@@ -119,7 +119,7 @@
           "titulo": "No Codex",
           "sub": "/model e -m",
           "texto": [
-            "No Codex, <code>/model</code> mostra a lista do seu plano. Na lista de 04/11/2026: <code>gpt-6-luna</code> (rápido e econômico, para tarefas mais fáceis), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (o de uso geral) e <code>gpt-6-astra</code> (para o trabalho mais exigente).",
+            "No Codex, <code>/model</code> mostra a lista do seu plano. Na lista de 04/11/2026: <code>gpt-6-luna</code> (rápido e econômico, para tarefas mais fáceis), <code>gpt-6.1-terra</code>, <code>gpt-6.1-sol</code> (o de uso geral) e <code>gpt-6-astra</code> (para o trabalho mais exigente). Na prática: luna é o leve, astra é o topo; terra e sol ficam no meio.",
             "No comando, o modelo vai em <code>-m</code>."
           ]
         },

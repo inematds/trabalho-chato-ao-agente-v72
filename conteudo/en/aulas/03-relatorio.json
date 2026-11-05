@@ -163,7 +163,7 @@
         {
           "rot": "Variation · weekly numbers sheet (in a new Project, \"Weekly numbers\")",
           "icone": "arquivo",
-          "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table: number, this week, last week, change in %; 2) write 3 short bullet points: the best news, the biggest concern, one question for the team.\nRules: only read, never change or delete anything; save everything as a draft, I’ll send it; never ask for a password, login screen = stop and call me; never pay, approve, or schedule a payment; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; save it as a draft, I’ll send it to the team; if you get stuck, stop and ask.\nDelivery: the table and 3 bullet points, nothing else.\nFirst task: run it now with the numbers I’m going to paste."
+          "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table: metric, this week, previous week, change in %; 2) write 3 short bullets: the best news, the biggest concern, a question for the team.\nRules: read only, never change or delete anything; save everything as a draft, I send it; never ask for a password, login screen = stop and call me; never pay, approve, or schedule a payment; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; if you get stuck, stop and ask.\nDelivery: the table and the 3 bullets, nothing else.\nFirst task: run it now with the numbers I’m going to paste."
         },
         {
           "rot": "Terminal (optional) · Codex with the light model",
@@ -245,7 +245,7 @@
           "id": "e1",
           "titulo": "E1 · Practice with the sample",
           "min": "10 min",
-          "texto": "In the agent’s Project (the sheet from lesson 2), paste the sample data and Monday’s prompt. Paste the report into the checker.",
+          "texto": "Create a Project called \"Website report\" using the example sheet from lesson 2 (the website report one), paste in the example data and Monday’s request. Paste the report into the checker.",
           "pronto": "the checker responds OK: the report includes 199, 193, and the drop from 41 to 22."
         },
         {
@@ -347,12 +347,12 @@
           "icone": "grafico"
         },
         {
-          "t": "Codex CLI (official documentation, in English)",
+          "t": "Codex CLI (official documentation)",
           "href": "https://developers.openai.com/codex/cli",
           "icone": "terminal"
         },
         {
-          "t": "Claude Code (official documentation, in English)",
+          "t": "Claude Code (official documentation)",
           "href": "https://docs.claude.com/en/docs/claude-code/overview",
           "icone": "terminal"
         }

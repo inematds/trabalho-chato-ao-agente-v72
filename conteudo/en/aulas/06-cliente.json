@@ -40,8 +40,8 @@
         {
           "icone": "check",
           "titulo": "Client setup",
-          "sub": "closed",
-          "detalhe": "In the spreadsheet or client system: status set to “closed” and start date. Client details come from the signed proposal or the conversation you paste in.",
+          "sub": "won",
+          "detalhe": "In the spreadsheet or customer system: status \"won\" (deal closed) and start date. Customer details come from the signed proposal or the conversation you paste.",
           "itens": [
             {
               "icone": "lista",
@@ -107,7 +107,7 @@
       "titulo": "See the checklist in action",
       "sub": "Run it, interrupt it halfway, then run it again. Notice which step stops.",
       "tarefas": [
-        "Client setup: Golden Wheat Bakery marked as closed",
+        "Record: Golden Wheat Bakery as won",
         "Golden Wheat Bakery folder copied from the template",
         "8-week schedule starting on Nov 10",
         "First invoice as a draft",
@@ -141,12 +141,12 @@
         {
           "rot": "Sheet · new client agent",
           "icone": "arquivo",
-          "conteudo": "Role: You are my new client agent.\nAbout me: [what the business does]; folder template: [name]; schedule template: [name]; welcome email template: [text or name]; existing clients and folders: [paste the list].\nWhen: when I say \"new client: [name]\" and paste the proposal or details.\nSteps: 1) client record: status \"closed\" and start date; 2) folder named after the client, based on the template; 3) schedule based on the template, with dates starting from the start date; 4) first invoice as a draft, with the amount of the proposal's first installment; 5) welcome email as a draft, with links to the folder and schedule.\nRules: never pay, approve, or schedule a payment; never ask for a password; if a login screen appears, stop and call me; do the steps in order and mark each one as done; if a client, folder, or invoice with that name already exists, don't create another one: stop and tell me which step and what you found; if a step fails, stop there; create the invoice and email as drafts only; I'll issue and send them; never ask for a password; if any detail is missing, stop and ask.\nDelivery: the list of the 5 steps marked done / stopped and the reason, the links or names created, the invoice amount, and \"email drafted\".\nFirst task: repeat the checklist in your own words and wait for me to say \"new client\"."
+          "conteudo": "Role: You are my new customer agent.\nAbout me: [what the business does]; folder template: [name]; schedule template: [name]; welcome email template: [text or name]; existing customers and folders: [paste the list].\nWhen: when I say \"new customer: [name]\" and paste the proposal or details.\nSteps: 1) record: status \"won\" (deal closed) and start date; 2) create a folder with the customer's name using the template; 3) create a schedule from the template, with dates starting from the start date; 4) create the first invoice as a draft, with the first installment amount from the proposal; 5) create a welcome email as a draft, with links to the folder and schedule.\nRules: never pay, approve, or schedule a payment; never ask for a password, login screen = stop and call me; do the steps in order and mark each one as done; if a customer, folder, or invoice with that name already exists, don't create another: stop and tell me which step and what you found; if a step fails, stop there; the invoice and email are drafts only, I issue and send them; copy names and amounts exactly; if any information is missing, stop and ask.\nDelivery: the list of the 5 steps with done / stopped and the reason, the links or names created, the invoice amount, and \"email in draft\".\nFirst task: repeat the checklist in your own words and wait for me to say \"new customer\"."
         },
         {
           "rot": "In chat · the request",
           "icone": "chat",
-          "conteudo": "new client: Golden Wheat Bakery\n\nExisting clients and folders: Lopez Woodworks, Vida Clinic.\nProposal details: contact Marta Reis (marta@example.com), custom industrial kitchen, start date Nov 10, total amount 18,000.00 in 3 installments, first due at signing.\nIn chat, you don't create the folder or customer record: give me the ready-to-use text for each step (folder name, schedule in a table, invoice draft, email draft), and I’ll click through and mark each one done."
+          "conteudo": "new client: Golden Wheat Bakery\n\nExisting clients and folders: Lopez Woodworks, Vida Clinic.\nProposal details: contact Martha Reese (martha@example.com), custom industrial kitchen, start date Nov 10, total amount 18,000.00 in 3 installments, first due at signing.\nIn chat, you don't create the folder or customer record: give me the ready-to-use text for each step (folder name, schedule in a table, invoice draft, email draft), and I’ll click through and mark each one done."
         },
         {
           "rot": "Terminal (optional) · real folders on your computer",

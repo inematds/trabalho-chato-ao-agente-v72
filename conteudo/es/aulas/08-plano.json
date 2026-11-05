@@ -127,7 +127,7 @@
     {
       "tipo": "codigo",
       "titulo": "El registro de control",
-      "sub": "Una factura, una hoja de cálculo o un archivo registro.txt. Una línea por ronda.",
+      "sub": "Una nota en el celular, una hoja de cálculo o un archivo registro.txt. Una línea por ronda.",
       "blocos": [
         {
           "rot": "Registro de control (modelo)",

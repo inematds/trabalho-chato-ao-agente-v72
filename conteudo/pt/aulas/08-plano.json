@@ -127,7 +127,7 @@
     {
       "tipo": "codigo",
       "titulo": "O diário de conferência",
-      "sub": "Uma nota, uma planilha ou um arquivo diario.txt. Uma linha por rodada.",
+      "sub": "Um bloco de notas do celular, uma planilha ou um arquivo diario.txt. Uma linha por rodada.",
       "blocos": [
         {
           "rot": "Diário de conferência (modelo)",

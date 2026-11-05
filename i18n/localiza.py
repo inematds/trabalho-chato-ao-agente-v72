@@ -15,7 +15,11 @@ NOMES = {
            ("relatorio-site", "site-report"), ("relatorio.md", "report.md"), ("tarefas.md", "tasks.md"), ("tarefas.txt", "tasks.txt"),
            ("novos.txt", "new.txt"), ("contatos.csv", "contacts.csv"), ("rascunhos.md", "drafts.md"), ("contas.md", "bills.md"),
            ("clientes/modelo/", "clients/template/"), ("plano.md", "plan.md"), ("diario.txt", "log.txt"),
-           ("<code>semana</code>", "<code>week</code>"), ("semana folder", "week folder"), ("An task", "A task")],
+           ("<code>semana</code>", "<code>week</code>"), ("semana folder", "week folder"), ("An task", "A task"),
+           ("Ana Souza", "Anna Scott"), ("ana@example.com", "anna@example.com"), ("Roberto Lima", "Robert Lee"), ("roberto@example.com", "robert@example.com"),
+           ("Lima Law Office", "Lee Law Office"), ("Marta Reis", "Martha Reese"), ("marta@example.com", "martha@example.com"),
+           ("Silva Hardware", "Miller Hardware"), ("Rocha Accounting", "Baker Accounting"), ("Ana Decor", "Anna Decor"),
+           ("11/04/2026", "Nov 4, 2026"), (", in English)", ")"), (" (in English)", "")],
     "es": [("Madeireira Pinho Forte", "Maderera Pino Fuerte"), ("Maderera Pinho Forte", "Maderera Pino Fuerte"),
            ("Madeireira", "Maderera"), ("Ferragens Silva", "Ferretería Silva"), ("Contabilidade Rocha", "Contabilidad Rocha"),
            ("Padaria Trigo Bom", "Panadería Trigo Bueno"), ("Marcenaria Lopes", "Carpintería López"),
@@ -27,7 +31,8 @@ NOMES = {
            ("novos.txt", "nuevos.txt"), ("contatos.csv", "contactos.csv"), ("rascunhos.md", "borradores.md"), ("contas.md", "cuentas.md"),
            ("clientes/modelo/", "clientes/plantilla/"), ("plano.md", "plan.md"), ("diario.txt", "registro.txt"),
            ("notas: siga o AGENTS.md com os arquivos da pasta semana", "facturas: sigue AGENTS.md con los archivos de la carpeta semana"),
-           ("Lección ", "Clase "), ("lecciones", "clases"), ("Lecciones", "Clases"), ("la lección", "la clase"), ("La lección", "La clase"),
+           ("Lección ", "Clase "), ("Ana Souza", "Ana Sánchez"), ("Marta Reis", "Marta Reyes"), ("lista lista", "lista terminada"),
+           ("Checklist", "Lista de verificación"), ("corrección duplicada", "corrección repetida"), ("correcciones duplicadas", "correcciones repetidas"), (", en inglés)", ")"), ("lecciones", "clases"), ("Lecciones", "Clases"), ("la lección", "la clase"), ("La lección", "La clase"),
            ("esta lección", "esta clase"), ("cada lección", "cada clase"), ("una lección", "una clase")],
 }
 MES = {"10": "Oct", "11": "Nov", "12": "Dec"}
