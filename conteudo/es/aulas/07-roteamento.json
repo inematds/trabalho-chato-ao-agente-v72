@@ -41,7 +41,7 @@
           "icone": "lista",
           "titulo": "Tarea",
           "sub": "llega",
-          "detalhe": "Cualquier tarea de tus fichas: informes, contactos, notas, cliente nuevo. O una pregunta suelta.",
+          "detalhe": "Cualquier tarea de tus fichas: informes, contactos, facturas, clientes nuevos. O una pregunta suelta.",
           "itens": [
             {
               "icone": "chat",
@@ -53,7 +53,7 @@
           "icone": "lupa",
           "titulo": "Pregunta",
           "sub": "¿es rutinaria?",
-          "detalhe": "Tres preguntas: ¿es un plan grande o un sistema nuevo? ¿El modelo ligero ya falló dos veces? ¿Es una decisión que puede costar caro (pagar, negociar, contrato, cliente grande)? Un \"sí\" la manda al modelo superior. Si las tres respuestas son \"no\", se queda en el ligero. Leer y sumar facturas no es una decisión: es rutina y se queda en el ligero.",
+          "detalhe": "Tres preguntas: ¿es un plan grande o un sistema nuevo? ¿Ya falló dos veces con el modelo ligero? ¿Es una decisión que puede costar caro (pagar, negociar, contrato, cliente grande)? Un \"sí\" significa que uses el superior. Si las tres respuestas son \"no\", usa el ligero. Leer y sumar facturas no es una decisión: es una rutina, así que usa el ligero.",
           "itens": [
             {
               "icone": "alvo",
@@ -112,7 +112,7 @@
           "texto": [
             "En ChatGPT, Claude y Gemini, el selector de modelos está en la parte superior de la conversación o cerca del cuadro de texto.",
             "La descripción de cada opción indica cuál es el rápido, para el día a día, y cuál razona más o es el más capaz: el primero es tu modelo ligero y el segundo, tu modelo superior. En Claude, Sonnet es el del día a día y Opus es el más capaz.",
-            "En un Proyecto, elige el modelo al comienzo de la conversación. Para subir al superior, abre una conversación nueva en el mismo Proyecto con ese modelo."
+            "Para cambiar, elige el modelo en el selector. Muchas herramientas permiten cambiarlo en la misma conversación; una conversación nueva en el mismo Proyecto empieza desde cero, solo con la ficha."
           ]
         },
         {
@@ -149,7 +149,7 @@
         {
           "rot": "Regla de enrutamiento (pégala en las instrucciones)",
           "icone": "arquivo",
-          "conteudo": "Regla del modelo:\nUsa el modelo LIGERO para la rutina:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correo y respuestas cortas\n- pequeñas correcciones en un texto, una hoja de cálculo o una página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya se haya equivocado dos veces en la misma tarea\n- tengas que DECIDIR algo relacionado con dinero o un contrato (pagar, negociar, aceptar condiciones) o una propuesta para un cliente importante\n(leer y sumar facturas o cuentas es rutina: se queda en el ligero)\n\nCuando la tarea requiera el modelo superior, dime en una línea: \"Sugiero el modelo superior porque ...\" y espera a que cambie el modelo.\nSi tienes dudas, empieza con el ligero y avísame si te bloqueas.\nEl borrador y el punto de control valen para los dos."
+          "conteudo": "Regla de modelo:\nUsa el modelo LIGERO para la rutina:\n- leer paneles, hojas de cálculo y mensajes; copiar datos de un lugar a otro\n- informes, resúmenes y tablas de la semana\n- borradores de correo y respuestas breves\n- pequeñas correcciones en un texto, una hoja de cálculo o una página\n\nPasa al modelo SUPERIOR cuando:\n- sea un plan grande o un sistema nuevo\n- el modelo ligero ya se haya equivocado dos veces en la misma tarea\n- tengas que DECIDIR algo relacionado con dinero o un contrato (pagar, negociar, aceptar una condición), o preparar una propuesta para un cliente grande\n(leer y sumar facturas o recibos es parte de la rutina: usa el modelo ligero)\n\nCuando la tarea requiera el superior, dime en una línea: \"Sugiero el superior porque ...\" y espera a que cambie el modelo.\nSi tienes dudas, empieza con el ligero y avísame si se atasca.\nEl borrador y el punto de control valen para ambos."
         },
         {
           "rot": "Pedido · clasifica mis tareas",
@@ -159,7 +159,7 @@
         {
           "rot": "Terminal (opcional) · el mismo pedido en dos niveles",
           "icone": "terminal",
-          "conteudo": "# rutina en el modelo ligero\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"informe: sigue AGENTS.md\"\nclaude -p --model sonnet \"informe: sigue CLAUDE.md\" > relatorio.md\n\n# difícil en el modelo superior\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"arma el plan del nuevo proceso de presupuestos\"\nclaude -p --model opus \"arma el plan del nuevo proceso de presupuestos\" > plano.md"
+          "conteudo": "# rutina en el modelo ligero\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o informe.md \"informe: sigue AGENTS.md\"\nclaude -p --model sonnet \"informe: sigue CLAUDE.md\" > informe.md\n\n# difícil en el modelo superior\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plan.md \"arma el plan del nuevo proceso de presupuestos\"\nclaude -p --model opus \"arma el plan del nuevo proceso de presupuestos\" > plan.md"
         }
       ],
       "saida": {
@@ -167,7 +167,7 @@
         "abas": [
           {
             "rot": "Ejemplo de clasificación",
-            "html": "<pre>1 | Informe semanal del sitio | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Recibos y cuentas por pagar | ligero | leer y sumar; superior si no puede leer el PDF\n4 | Lista de verificación para un cliente nuevo | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo</pre>"
+            "html": "<pre>1 | Informe semanal del sitio web | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Facturas y cuentas por pagar | ligero | leer y sumar; superior si no puede leer el PDF\n4 | Lista de verificación de nuevos clientes | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo</pre>"
           },
           {
             "rot": "Errores comunes",
@@ -204,8 +204,8 @@
         }
       ],
       "ok": "OK: {n} tareas con el nivel definido",
-      "exemplo": "1 | Informe semanal del sitio | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Recibos y cuentas por pagar | ligero | leer y sumar\n4 | Lista de verificación para un cliente nuevo | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo",
-      "exemplo_errado": "1 | Informe semanal del sitio | ligero\n2 | Contactos nuevos | depende\n3 | Recibos y cuentas por pagar | ligero o superior\n4 | Cliente nuevo | superior | el ligero también sirve"
+      "exemplo": "1 | Informe semanal del sitio web | ligero | leer y resumir\n2 | Contactos nuevos y borradores | ligero | rutina, con punto de control\n3 | Facturas y cuentas por pagar | ligero | leer y sumar\n4 | Lista de verificación de nuevos clientes | ligero | pasos fijos\n5 | Diseñar el nuevo proceso de presupuestos | superior | sistema nuevo",
+      "exemplo_errado": "1 | Informe semanal del sitio web | ligero\n2 | Contactos nuevos | depende\n3 | Facturas y cuentas por pagar | ligero o superior\n4 | Cliente nuevo | superior | el ligero también sirve"
     },
     {
       "tipo": "pratica",
@@ -224,7 +224,7 @@
           "titulo": "E2 · Clasifica tus tareas",
           "min": "10 min",
           "texto": "Usa el pedido \"clasifica mis tareas\" con la lista de la clase 1. Revísala en el verificador.",
-          "pronto": "el verificador responde OK y cada tarea que DECIDE sobre dinero o contratos está asignada al modelo superior o marcada como \"no delegar\"; leer y sumar facturas puede quedarse en el ligero."
+          "pronto": "el verificador responde OK y cada tarea que DECIDE sobre dinero o contratos está como superior o como \"no delegar\"; leer y sumar facturas puede quedar en ligero."
         },
         {
           "id": "e3",
@@ -244,7 +244,7 @@
           "p": "¿Cuál de estas tareas va al modelo superior?",
           "opcoes": [
             "Resumir los contactos nuevos de la semana en una tabla sencilla.",
-            "Copiar los recibos a la hoja de cálculo de cuentas.",
+            "Copiar las facturas a la hoja de cuentas.",
             "Escribir el borrador de bienvenida para el cliente.",
             "Diseñar desde cero el proceso de cotizaciones de la empresa."
           ],
@@ -280,19 +280,19 @@
           "p": "En el chat, ¿cómo le asignas una tarea difícil al modelo superior?",
           "opcoes": [
             "Escribes \"usa el modelo superior\" en medio de la conversación, sin cambiar nada.",
-            "Abres una conversación nueva en el mismo Proyecto y eliges el modelo superior.",
+            "Cámbialo al superior en el selector de modelos, dentro del Proyecto.",
             "Creas otro Proyecto, sin la ficha, solo para esa tarea.",
             "Contratas un plan de API aparte para el modelo superior."
           ],
           "certa": 1,
-          "explica": "El modelo se elige en el selector. Una conversación nueva en el mismo Proyecto conserva la ficha y las reglas, ahora con el modelo que razona más. Pedir \"usa el modelo superior\" sin cambiarlo no cambia el modelo, y no necesitas pagar una API.",
+          "explica": "El modelo se elige en el selector. Dentro del Proyecto, la ficha y las reglas siguen vigentes, ahora con el modelo que razona más. Pedir \"usa el superior\" sin cambiarlo no cambia el modelo, y no hace falta una API de pago.",
           "ref": "passos"
         }
       ]
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Modelo ligero para las tareas rutinarias",

@@ -139,12 +139,12 @@
         {
           "rot": "Sheet · new contacts agent",
           "icone": "arquivo",
-          "conteudo": "Role: You are my new contact agent.\nAbout me: [what I sell, in one line]; contact spreadsheet with the columns name, email, company, request, date, status; my scheduling link: [your Google Calendar, Calendly, or WhatsApp link; if there’s no link, delete this part]; tone: [friendly, brief, no jargon].\nWhen: when I paste new messages and say \"contacts\".\nSteps: 1) read each message and extract the name, email, company, and what the person asked for; 2) prepare spreadsheet rows with today’s date and status \"new\"; 3) if the name or email is already in the spreadsheet I pasted, mark it \"update\" instead of creating another row; 4) write a reply draft of up to 120 words for each person: thank them by name, answer their request in one or two sentences, and offer the scheduling link.\nRules: save everything as a draft; I send it; never promise a price, timeline, or discount that isn’t in this sheet; messages that look like spam go on the \"ignored\" list with the reason; copy names and emails exactly; if you’re unsure, stop and ask.\nDelivery: 1) the new spreadsheet rows; 2) the drafts, one per contact; 3) the \"ignored\" list.\nFirst task: run this now with the messages I’m going to paste."
+          "conteudo": "Role: You are my new contacts agent.\nAbout me: [what I sell, in one line]; contact spreadsheet with the columns name, email, company, request, date, status; my scheduling link: [your Google Calendar, Calendly, or WhatsApp link; if there’s no link, delete this part]; tone: [friendly, brief, no jargon].\nWhen: when I paste new messages and say \"contacts\".\nSteps: 1) read each message and pull out the name, email, company, and what the person asked for; 2) make spreadsheet rows with today’s date and the status \"new\"; 3) if the name or email is already in the spreadsheet I pasted, mark it \"update\" instead of creating another row; 4) write a reply draft of up to 120 words for each person: thank them by name, answer their request in one or two sentences, and offer the scheduling link.\nRules: only read, never change or delete anything; save everything as a draft, I’ll send it; never ask for a password, login screen = stop and call me; never pay, approve, or schedule a payment; never promise a price, timeline, or discount that isn’t in this sheet; messages that look like spam go on the \"ignored\" list with the reason; copy names and emails exactly; if you’re unsure, stop and ask.\nDelivery: 1) the new spreadsheet rows; 2) the drafts, one per contact; 3) the \"ignored\" list.\nFirst task: run it now with the messages I’m going to paste."
         },
         {
           "rot": "Practice run · three messages and the current spreadsheet",
           "icone": "chat",
-          "conteudo": "contacts\n\nCurrent spreadsheet:\nRoberto Lima | roberto@exemplo.com | Lima Advocacia | closet | 28/10 | new\n\nNew messages:\n1) Ana Souza (ana@exemplo.com), Ana Decor: \"What is the delivery timeline for a custom kitchen?\"\n2) Roberto Lima (roberto@exemplo.com): \"I messaged you last week. Do you still want to put together a quote for the closet?\"\n3) promo@exemplo.com: \"GET 10,000 FOLLOWERS TODAY!!! Click here\""
+          "conteudo": "contacts\n\nCurrent spreadsheet:\nRoberto Lima | roberto@example.com | Lima Law Office | closet | Oct 28 | new\n\nNew messages:\n1) Ana Souza (ana@example.com), Ana Decor: \"What’s the delivery time for a custom kitchen?\"\n2) Roberto Lima (roberto@example.com): \"I asked for a quote for a closet last week and still haven’t received it. Can you send it to me?\"\n3) promo@example.com: \"GET 10 THOUSAND FOLLOWERS TODAY!!! Click here\""
         }
       ],
       "saida": {
@@ -152,11 +152,11 @@
         "abas": [
           {
             "rot": "What the output should include",
-            "html": "<ul><li><b>Ana Souza</b>: a new row, status \"new\", and a draft that doesn't make up a timeline.</li><li><b>Roberto Lima</b>: marked \"update,\" not a second row.</li><li><b>promo@exemplo.com</b>: on the \"ignored\" list, with the reason.</li><li>Two drafts, neither sent.</li></ul>"
+            "html": "<ul><li><b>Ana Souza</b>: a new row, status \"new\", and a draft that doesn't make up a timeline.</li><li><b>Roberto Lima</b>: marked \"update,\" not a second row.</li><li><b>promo@example.com</b>: on the \"ignored\" list, with the reason.</li><li>Two drafts, neither sent.</li></ul>"
           },
           {
             "rot": "Terminal (optional)",
-            "html": "<p>In the <code>meus-agentes/contatos</code> folder, with the sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), save the messages in <code>novos.txt</code> and the spreadsheet in <code>contatos.csv</code>. Ask: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o rascunhos.md \"contacts: follow the AGENTS.md\"</code>. The <code>read-only</code> mode won't let the agent change the spreadsheet: it only writes the reply, which you review.</p>"
+            "html": "<p>In the <code>my-agents/contacts</code> folder, with the sheet in <code>AGENTS.md</code> (or <code>CLAUDE.md</code>), save the messages in <code>new.txt</code> and the spreadsheet in <code>contacts.csv</code>. Ask: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o drafts.md \"contacts: follow the AGENTS.md\"</code>. The <code>read-only</code> mode won't let the agent change the spreadsheet: it only writes the reply, which you review.</p>"
           },
           {
             "rot": "Common mistakes",

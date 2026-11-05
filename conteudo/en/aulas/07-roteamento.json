@@ -41,7 +41,7 @@
           "icone": "lista",
           "titulo": "Task",
           "sub": "arrives",
-          "detalhe": "Any task from your sheets: a report, contacts, notes, a new client. Or a one-off question.",
+          "detalhe": "Any task from your sheets: report, contacts, invoices, new client. Or a one-off question.",
           "itens": [
             {
               "icone": "chat",
@@ -53,7 +53,7 @@
           "icone": "lupa",
           "titulo": "Question",
           "sub": "is it routine?",
-          "detalhe": "Three questions: Is it a big plan or a new system? Has the light model failed twice already? Is this a decision that could cost a lot (paying, negotiating, contracts, a major client)? One \"yes\" means use the top model. Three \"no\" answers mean keep it light. Reading and adding up invoices isn’t a decision: it’s routine, so keep it light.",
+          "detalhe": "Three questions: Is it a big plan or a new system? Has the light model failed twice already? Is this a decision that could cost a lot (payment, negotiation, contract, major client)? One \"yes\" means use the top model. Three \"no\" answers mean stay with the light model. Reading and adding up invoices isn't a decision: it's routine, so use the light model.",
           "itens": [
             {
               "icone": "alvo",
@@ -112,7 +112,7 @@
           "texto": [
             "In ChatGPT, Claude, and Gemini, the model selector is at the top of the conversation or near the text box.",
             "Each option’s description tells you which one is fast for everyday use and which one reasons more deeply or is the most capable: the first is your light model, the second your top model. In Claude, Sonnet is for everyday use, and Opus is the most capable.",
-            "In a Project, choose the model at the start of the conversation. To move up, open a new conversation in the same Project with the top model."
+            "To move up, switch models in the selector. Many tools let you switch in the same conversation; a new conversation in the same Project starts fresh, with only the sheet."
           ]
         },
         {
@@ -149,7 +149,7 @@
         {
           "rot": "Routing rule (paste into the instructions)",
           "icone": "arquivo",
-          "conteudo": "Model rule:\nUse the LIGHT model for routine tasks:\n- reading dashboards, spreadsheets, and messages; copying data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to text, a spreadsheet, or a page\n\nSwitch to the TOP model when:\n- it's a large plan or a new system\n- the light model has made the same mistake twice\n- you need to DECIDE something involving money or a contract (pay, negotiate, accept terms), or prepare a proposal for a major client\n(reading and adding up invoices or bills is routine: keep using the light model)\n\nWhen a task calls for the top model, tell me in one line: \"I suggest the top model because ...\" and wait for me to switch models.\nIf you're unsure, start with the light model and let me know if you get stuck.\nDrafts and the gate apply to both."
+          "conteudo": "Model rule:\nUse the LIGHT model for routine tasks:\n- reading dashboards, spreadsheets, and messages; copying data from one place to another\n- weekly reports, summaries, and tables\n- email drafts and short replies\n- small edits to a text, spreadsheet, or page\n\nSwitch to the TOP model when:\n- it's a big plan or a new system\n- the light model has made the same mistake twice already\n- you need to DECIDE something involving money or a contract (payment, negotiation, accepting terms), or make a proposal for a major client\n(reading and adding up invoices or bills is routine: use the light model)\n\nWhen a task calls for the top model, tell me in one line: \"I suggest the top model because ...\" and wait for me to switch models.\nIf you're unsure, start with the light model and let me know if you get stuck.\nDrafts and gates apply to both."
         },
         {
           "rot": "Request · classify my tasks",
@@ -159,7 +159,7 @@
         {
           "rot": "Terminal (optional) · the same request at two levels",
           "icone": "terminal",
-          "conteudo": "# routine work on the light model\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"report: follow AGENTS.md\"\nclaude -p --model sonnet \"report: follow CLAUDE.md\" > relatorio.md\n\n# difficult work on the top model\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plano.md \"build a plan for the new estimating process\"\nclaude -p --model opus \"build a plan for the new estimating process\" > plano.md"
+          "conteudo": "# routine work on the light model\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o report.md \"report: follow AGENTS.md\"\nclaude -p --model sonnet \"report: follow CLAUDE.md\" > report.md\n\n# difficult work on the top model\ncodex exec --skip-git-repo-check -m gpt-6-astra -s read-only -o plan.md \"build a plan for the new estimating process\"\nclaude -p --model opus \"build a plan for the new estimating process\" > plan.md"
         }
       ],
       "saida": {
@@ -167,7 +167,7 @@
         "abas": [
           {
             "rot": "Classification example",
-            "html": "<pre>1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills to pay | light | read and add; top if the PDF can’t be read\n4 | New client checklist | light | fixed steps\n5 | Design the new estimating process | top | new system</pre>"
+            "html": "<pre>1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills | light | read and add up; top if the PDF can't be read\n4 | New client checklist | light | fixed steps\n5 | Design the new quoting process | top | new system</pre>"
           },
           {
             "rot": "Common mistakes",
@@ -204,8 +204,8 @@
         }
       ],
       "ok": "OK: {n} tasks with a level assigned",
-      "exemplo": "1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills to pay | light | read and add\n4 | New client checklist | light | fixed steps\n5 | Design the new estimating process | top | new system",
-      "exemplo_errado": "1 | Weekly website report | light\n2 | New contacts | depends\n3 | Invoices and bills to pay | light or top\n4 | New client | top | light works too"
+      "exemplo": "1 | Weekly website report | light | read and summarize\n2 | New contacts and drafts | light | routine, with a gate\n3 | Invoices and bills | light | read and add up\n4 | New client checklist | light | fixed steps\n5 | Design the new quoting process | top | new system",
+      "exemplo_errado": "1 | Weekly website report | light\n2 | New contacts | depends\n3 | Invoices and bills | light or top\n4 | New client | top | light also works"
     },
     {
       "tipo": "pratica",
@@ -224,7 +224,7 @@
           "titulo": "E2 · Classify your tasks",
           "min": "10 min",
           "texto": "Use the \"classify my tasks\" request with the list from lesson 1. Check it with the checker.",
-          "pronto": "The checker responds OK, and every task that DECIDES something involving money or a contract is marked for the top model or \"do not delegate\"; reading and adding up invoices can stay with the light model."
+          "pronto": "the checker responds OK, and every task that DECIDES money or a contract is marked top or \"do not delegate\"; reading and adding up invoices can stay with the light model."
         },
         {
           "id": "e3",
@@ -244,7 +244,7 @@
           "p": "Which of these tasks should go to the top model?",
           "opcoes": [
             "Summarize this week’s new contacts in a simple table.",
-            "Copy the invoices into the bills spreadsheet.",
+            "Copy the invoices into the accounts spreadsheet.",
             "Write the client's welcome draft.",
             "Design the company's quoting process from scratch."
           ],
@@ -280,12 +280,12 @@
           "p": "In chat, how do you send a difficult task to the top model?",
           "opcoes": [
             "Write \"use the top model\" in the middle of the conversation without changing anything.",
-            "Open a new conversation in the same Project and choose the top model.",
+            "Switch to the top model in the model selector inside the Project.",
             "Create another Project, without the sheet, just for that task.",
             "Get a separate API plan for the top model."
           ],
           "certa": 1,
-          "explica": "Choose the model in the selector. A new conversation in the same Project keeps the sheet and rules, now with the model that reasons more. Asking it to \"use the top model\" without switching doesn’t change the model, and you don’t need a paid API.",
+          "explica": "Choose the model in the selector. Inside the Project, the sheet and rules still apply, now with the model that reasons more deeply. Saying \"use the top model\" without switching doesn't change the model, and there's no need for a paid API.",
           "ref": "passos"
         }
       ]

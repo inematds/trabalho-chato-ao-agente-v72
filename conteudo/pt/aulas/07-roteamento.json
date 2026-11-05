@@ -112,7 +112,7 @@
           "texto": [
             "No ChatGPT, no Claude e no Gemini, o seletor de modelos fica no alto da conversa ou perto da caixa de texto.",
             "A descrição de cada item diz qual é o rápido, para o dia a dia, e qual raciocina mais ou é o mais capaz: o primeiro é o seu leve, o segundo o seu topo. No Claude, o Sonnet é o do dia a dia e o Opus o mais capaz.",
-            "Num Projeto, escolha o modelo no começo da conversa. Para subir, abra uma conversa nova no mesmo Projeto com o modelo topo."
+            "Para subir, troque o modelo no seletor. Muitas ferramentas deixam trocar na mesma conversa; uma conversa nova no mesmo Projeto começa limpa, só com a ficha."
           ]
         },
         {
@@ -280,12 +280,12 @@
           "p": "No chat, como você manda uma tarefa difícil para o topo?",
           "opcoes": [
             "Escreve \"use o topo\" no meio da conversa, sem trocar nada.",
-            "Abre uma conversa nova no mesmo Projeto e escolhe o modelo topo.",
+            "Troca para o topo no seletor de modelos, dentro do Projeto.",
             "Cria outro Projeto, sem a ficha, só para essa tarefa.",
             "Contrata um plano de API à parte para o modelo topo."
           ],
           "certa": 1,
-          "explica": "O modelo se escolhe no seletor. Uma conversa nova no mesmo Projeto mantém a ficha e as regras, agora com o modelo que raciocina mais. Pedir \"use o topo\" sem trocar não muda o modelo, e API paga não é necessária.",
+          "explica": "O modelo se escolhe no seletor. Dentro do Projeto, a ficha e as regras continuam valendo, agora com o modelo que raciocina mais. Pedir \"use o topo\" sem trocar não muda o modelo, e API paga não é necessária.",
           "ref": "passos"
         }
       ]

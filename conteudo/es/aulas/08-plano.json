@@ -44,7 +44,7 @@
           "titulo": "Una tarea",
           "sub": "lista y ficha",
           "saida": "Primer agente con ficha y reglas.",
-          "passo": "Encuentra la tarea (lección 1), escribe la ficha (lección 2) y ponlo en marcha. Revisa todos los resultados de esta semana, sin excepción."
+          "passo": "Encuentra la tarea (clase 1), escribe la ficha (clase 2) y ejecútala. Comprueba todos los resultados de esta semana, sin excepción."
         },
         {
           "aula": "leads",
@@ -62,7 +62,7 @@
           "titulo": "Enrutamiento",
           "sub": "ligero y superior",
           "saida": "Regla del modelo y tarea 3.",
-          "passo": "Pega la regla de asignación en los Proyectos y entrega la tarea 3: facturas y comprobantes (clase 5). La tarea 1 completa las tres rondas y pasa a la muestra."
+          "passo": "Pega la regla de enrutamiento en los Proyectos y entrega la tarea 3: facturas y recibos (clase 5). La tarea 1 completa las tres rondas y pasa a la muestra."
         },
         {
           "aula": "cliente",
@@ -98,7 +98,7 @@
           "titulo": "Muestra",
           "sub": "después",
           "texto": [
-            "¿Tres rondas seguidas sin correcciones? Pasa a la muestra: dos números del informe, un borrador de cada tres, dos notas de la tabla.",
+            "¿Tres rondas seguidas sin correcciones? Pasa a la muestra: dos números del informe, un borrador de cada tres y dos facturas de la tabla.",
             "El punto de control nunca desaparece: tú sigues leyendo lo que habla con clientes o mueve dinero."
           ]
         },
@@ -127,7 +127,7 @@
     {
       "tipo": "codigo",
       "titulo": "El registro de control",
-      "sub": "Una nota, una hoja de cálculo o un archivo diario.txt. Una línea por ronda.",
+      "sub": "Una factura, una hoja de cálculo o un archivo registro.txt. Una línea por ronda.",
       "blocos": [
         {
           "rot": "Registro de control (modelo)",
@@ -145,7 +145,7 @@
         "abas": [
           {
             "rot": "Programar",
-            "html": "<p>En el chat, tú decides el horario: el plan de abajo genera un archivo <code>.ics</code> con los recordatorios para tu calendario (\"lunes 9h: informe\"). Hacer que el agente se ejecute solo a la hora programada requiere un paso en la terminal, que muestra el curso <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/es/\" target=\"_blank\" rel=\"noopener\">Del chat al agente</a>. Empieza con el recordatorio: el agente que llamas en el momento justo ya te quita el trabajo aburrido.</p>"
+            "html": "<p>En el chat, tú manejas la agenda: el plan de abajo genera un archivo <code>.ics</code> con los recordatorios para tu calendario (\"lunes 9 h: informe\"). Para hacer que el agente se ejecute solo a la hora programada, hace falta un paso en la terminal, que muestra el curso <a href=\"https://inematds.github.io/do-chat-ao-agente-v72/es/\" target=\"_blank\" rel=\"noopener\">Del chat al agente</a>. Empieza con el recordatorio: el agente al que llamas a tiempo ya te quita el trabajo aburrido.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -162,31 +162,31 @@
       "horas_padrao": 2,
       "degraus": [
         {
-          "titulo": "Lección 1 · Encontrar la tarea",
+          "titulo": "Clase 1 · Encontrar la tarea",
           "aula": "achar"
         },
         {
-          "titulo": "Lección 2 · La ficha del agente",
+          "titulo": "Clase 2 · La ficha del agente",
           "aula": "ficha"
         },
         {
-          "titulo": "Lección 3 · Informe de la semana",
+          "titulo": "Clase 3 · Informe de la semana",
           "aula": "relatorio"
         },
         {
-          "titulo": "Lección 4 · Contactos nuevos",
+          "titulo": "Clase 4 · Contactos nuevos",
           "aula": "leads"
         },
         {
-          "titulo": "Lección 5 · Notas y facturas",
+          "titulo": "Clase 5 · Facturas y recibos",
           "aula": "notas"
         },
         {
-          "titulo": "Lección 6 · Cliente nuevo",
+          "titulo": "Clase 6 · Cliente nuevo",
           "aula": "cliente"
         },
         {
-          "titulo": "Lección 7 · Ligero o superior",
+          "titulo": "Clase 7 · Ligero o superior",
           "aula": "roteamento"
         }
       ],

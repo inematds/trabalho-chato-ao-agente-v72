@@ -109,7 +109,7 @@
         {
           "rot": "Ficha · agente de notas e boletos",
           "icone": "arquivo",
-          "conteudo": "Papel: Você é o meu agente de contas a pagar.\nSobre mim: [o que a empresa faz]; fornecedores frequentes e categorias: [Madeireira = matéria-prima; Contabilidade = serviços].\nQuando: quando eu anexar ou colar as notas e boletos da semana e disser \"notas\".\nPassos: 1) de cada documento tire fornecedor, número, data, vencimento, itens e total; 2) some os itens e compare com o total impresso; 3) confira se o mesmo fornecedor com o mesmo número já apareceu nesta leva ou na lista de notas já lançadas que eu colar; 4) monte a tabela: fornecedor, número, vencimento, total, categoria, situação; 5) some o total da semana só com as notas sem problema.\nRegras: copie os números exatamente; se a soma não bater ou um número estiver ilegível, marque \"não bate\" e deixe fora do total; nota repetida: marque \"repetida\" e deixe fora do total; nunca pague, aprove ou agende pagamento; nunca peça senha de banco; tudo é rascunho para eu conferir; se ficar em dúvida, pare e pergunte.\nEntrega: a tabela em ordem de vencimento e, embaixo, o total da semana e a lista do que ficou fora, com o motivo.\nPrimeira tarefa: rode agora com as notas que vou colar."
+          "conteudo": "Papel: Você é o meu agente de contas a pagar.\nSobre mim: [o que a empresa faz]; fornecedores frequentes e categorias: [Madeireira = matéria-prima; Contabilidade = serviços].\nQuando: quando eu anexar ou colar as notas e boletos da semana e disser \"notas\".\nPassos: 1) de cada documento tire fornecedor, número, data, vencimento, itens e total; 2) some os itens e compare com o total impresso; 3) confira se o mesmo fornecedor com o mesmo número já apareceu nesta leva ou na lista de notas já lançadas que eu colar; 4) monte a tabela: fornecedor, número, vencimento, total, categoria, situação; 5) some o total da semana só com as notas sem problema.\nRegras: só leia, nunca mude nem apague nada; tela de login = pare e me chame; copie os números exatamente; se a soma não bater ou um número estiver ilegível, marque \"não bate\" e deixe fora do total; nota repetida: marque \"repetida\" e deixe fora do total; nunca pague, aprove ou agende pagamento; nunca peça senha de banco; tudo é rascunho para eu conferir; se ficar em dúvida, pare e pergunte.\nEntrega: a tabela em ordem de vencimento e, embaixo, o total da semana e a lista do que ficou fora, com o motivo.\nPrimeira tarefa: rode agora com as notas que vou colar."
         },
         {
           "rot": "Ensaio · quatro documentos",
@@ -225,10 +225,10 @@
         {
           "p": "Com as quatro notas de exemplo, qual é o total da semana a pagar?",
           "opcoes": [
-            "4.050,00 (tudo somado)",
-            "2.800,00",
-            "1.900,00",
-            "3.150,00"
+            "Total de 4.050,00 (tudo somado)",
+            "Total de 2.800,00",
+            "Total de 1.900,00",
+            "Total de 3.150,00"
           ],
           "certa": 2,
           "explica": "Entram só as notas sem problema: 1.250,00 (4471) + 650,00 (boleto 311) = 1.900,00. A 5120 não bate e o documento 3 é a 4471 repetida. 4.050,00 é a soma de tudo, sem conferir.",

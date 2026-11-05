@@ -151,7 +151,7 @@
           ],
           "exemplo": {
             "rot": "En la ficha",
-            "texto": "Copia los números exactamente. Si no cuadran o no se pueden leer, márcalos y sáltalos."
+            "texto": "Nunca pagues, apruebes ni programes pagos. Copia los números exactamente; si no cuadran, márcalos y omítelos."
           }
         }
       ]
@@ -164,12 +164,12 @@
         {
           "rot": "Plantilla de la ficha (copia y completa)",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de [tipo de trabajo].\nSobre mí: [a qué se dedica la empresa, en una línea]; herramientas: [hoja de cálculo, correo electrónico, panel]; tono: [directo, amable, sin jerga].\nCuándo: [todos los lunes por la mañana / cuando diga \"palabra\"].\nPasos: 1) [leer qué]; 2) [comparar con qué]; 3) [escribir qué]; 4) [entregar dónde].\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas la contraseña, si aparece una pantalla de inicio de sesión = detente y avísame; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te bloqueas o tienes dudas, detente y pregunta.\nEntrega: [tabla / texto de hasta N palabras / lista con \"borrador listo\"].\nPrimera tarea: [espera a que pegue los datos, ejecútalo una vez y muéstrame el resultado]."
+          "conteudo": "Rol: Eres mi agente de [tipo de trabajo].\nSobre mí: [a qué se dedica la empresa, en una línea]; herramientas: [hoja de cálculo, correo, panel]; tono: [directo, amable, sin jerga].\nCuándo: [todos los lunes por la mañana / cuando diga \"palabra\"].\nPasos: 1) [leer qué]; 2) [comparar con qué]; 3) [escribir qué]; 4) [entregar dónde].\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te trabas o tienes dudas, detente y pregunta.\nEntrega: [tabla / texto de hasta N palabras / lista con \"borrador listo\"].\nPrimera tarea: [espera a que pegue los datos, ejecútala una vez y muéstrame el resultado]."
         },
         {
           "rot": "Ejemplo completado (informe del sitio web de una tienda)",
           "icone": "check",
-          "conteudo": "Rol: Eres mi agente de informe semanal del sitio web.\nSobre mí: tienda de muebles a medida en Curitiba; herramientas: Search Console y Hojas de cálculo de Google; tono: directo, sin jerga.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas de cálculo exportadas y diga \"informe\".\nPasos: 1) lee las consultas y las páginas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron en clics; 3) di si el total subió o bajó y cuánto; 4) sugiere 3 acciones sencillas para la semana.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas la contraseña, si aparece una pantalla de inicio de sesión = detente y avísame; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te bloqueas o tienes dudas, detente y pregunta.\nEntrega: texto de hasta 250 palabras, con los números de esta semana y de la anterior uno al lado del otro.\nPrimera tarea: espera a que pegue las hojas de cálculo, ejecútalo una vez y muéstrame el informe."
+          "conteudo": "Rol: Eres mi agente del informe semanal del sitio.\nSobre mí: tienda de muebles a medida en Guadalajara; herramientas: Search Console y Google Sheets; tono: directo, sin jerga.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas exportadas y diga \"informe\".\nPasos: 1) lee las consultas y las páginas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron en clics; 3) di si el total subió o bajó y cuánto; 4) sugiere 3 acciones sencillas para la semana.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te trabas o tienes dudas, detente y pregunta.\nEntrega: texto de hasta 250 palabras, con los números de esta semana y de la anterior lado a lado.\nPrimera tarea: espera a que pegue las hojas, ejecútala una vez y muéstrame el informe."
         }
       ],
       "saida": {
@@ -181,7 +181,7 @@
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>En la carpeta <code>meus-agentes</code>, crea una subcarpeta por agente (por ejemplo, <code>relatorio-site</code>) y guarda la ficha como <code>AGENTS.md</code>, el archivo de instrucciones que Codex lee al comenzar. En Claude Code, guarda el mismo texto como <code>CLAUDE.md</code>. Después, solo tienes que abrir la terminal en la carpeta y ejecutar <code>codex</code> o <code>claude</code>.</p>"
+            "html": "<p>En la carpeta <code>mis-agentes</code>, crea una subcarpeta por agente (por ejemplo, <code>informe-sitio</code>) y guarda la ficha como <code>AGENTS.md</code>, el archivo de instrucciones que Codex lee al comenzar. En Claude Code, guarda el mismo texto como <code>CLAUDE.md</code>. Después, solo tienes que abrir la terminal en la carpeta y ejecutar <code>codex</code> o <code>claude</code>.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -239,7 +239,7 @@
         }
       ],
       "ok": "OK: ficha con {n} campos y las reglas de seguridad",
-      "exemplo": "Rol: Eres mi agente para el informe semanal del sitio.\nSobre mí: tienda de muebles a medida en Curitiba; herramientas: Search Console y Google Sheets; tono: directo.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas de cálculo y diga \"informe\".\nPasos: 1) lee las consultas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron; 3) di si el total subió o bajó; 4) sugiere 3 acciones.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas la contraseña; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te trabas, detente y pregunta.\nEntrega: texto de hasta 250 palabras con los números lado a lado.\nPrimera tarea: ejecútala ahora con las hojas de cálculo que voy a pegar.",
+      "exemplo": "Rol: Eres mi agente del informe semanal del sitio.\nSobre mí: tienda de muebles a medida en Guadalajara; herramientas: Search Console y Google Sheets; tono: directo.\nCuándo: todos los lunes por la mañana, cuando pegue las hojas y diga \"informe\".\nPasos: 1) lee las consultas de esta semana y de la anterior; 2) encuentra las 5 que más subieron y las 5 que más bajaron; 3) di si el total subió o bajó; 4) sugiere 3 acciones.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña; nunca pagues ni apruebes pagos; copia los números exactamente, si no lo encuentras escribe \"no lo encontré\"; si te trabas, detente y pregunta.\nEntrega: texto de hasta 250 palabras con los números lado a lado.\nPrimera tarea: ejecútala ahora con las hojas que voy a pegar.",
       "exemplo_errado": "Rol: asistente\nCuándo: siempre que haga falta\nPasos: analiza el sitio y dime qué hacer para vender más.\nReglas: sé rápido y cuidadoso.\nEntrega: lo que te parezca mejor."
     },
     {
@@ -327,7 +327,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Una página",

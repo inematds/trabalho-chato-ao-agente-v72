@@ -19,7 +19,7 @@
     },
     {
       "icone": "relogio",
-      "t": "Poner una nota al tiempo, el aburrimiento y el riesgo"
+      "t": "Calificar tiempo, aburrimiento y riesgo"
     },
     {
       "icone": "escudo",
@@ -91,7 +91,7 @@
           "detalhe": "La primera tarea del agente es la que está en la parte superior de la lista: la que combina más minutos y más aburrimiento con riesgo bajo. Las demás quedan para después, una a la vez."
         }
       ],
-      "legenda": "Una tarea a la vez. La segunda empieza cuando confíes en la primera (clase 8)."
+      "legenda": "Una tarea nueva por semana, nunca varias a la vez (clase 8)."
     },
     {
       "tipo": "passos",
@@ -123,7 +123,7 @@
           "sub": "el daño del error",
           "texto": [
             "<b>Bajo:</b> el agente solo lee y escribe un borrador para ti. <b>Medio:</b> modifica registros, la hoja de cálculo de la empresa o prepara un mensaje para un cliente. <b>Alto:</b> paga, envía, borra o firma.",
-            "El riesgo alto no queda en tus manos durante este curso. El agente prepara; tú ejecutas."
+            "En este curso, el riesgo alto siempre queda a tu cargo: el agente prepara, tú ejecutas."
           ]
         },
         {
@@ -149,7 +149,7 @@
         {
           "rot": "Ejemplo de lista lista (una tienda de muebles a medida)",
           "icone": "lista",
-          "conteudo": "1 | Informe semanal del sitio web para el socio | Search Console (panel gratuito de Google), hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar cotizaciones del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a los proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar"
+          "conteudo": "1 | Informe semanal del sitio para el socio | Search Console (panel gratis de Google), hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar presupuestos del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a los proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar"
         }
       ],
       "saida": {
@@ -161,7 +161,7 @@
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>En Claude Code o Codex, el pedido es el mismo: abre la terminal en una carpeta nueva (por ejemplo <code>meus-agentes</code>), ejecuta <code>claude</code> o <code>codex</code>, pega el pedido y, al final, pídele que guarde la lista en <code>tarefas.md</code>. A partir de la clase 2, esa carpeta guarda las fichas de tus agentes.</p>"
+            "html": "<p>En Claude Code o Codex, el pedido es el mismo: abre la terminal en una carpeta nueva (por ejemplo <code>mis-agentes</code>), ejecuta <code>claude</code> o <code>codex</code>, pega el pedido y, al final, pídele que guarde la lista en <code>tareas.md</code>. A partir de la clase 2, esa carpeta guarda las fichas de tus agentes.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -225,8 +225,8 @@
         }
       ],
       "ok": "OK: {n} tareas con minutos, riesgo y decisión",
-      "exemplo": "1 | Informe semanal del sitio web para el socio | Search Console (panel gratuito de Google), hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar cotizaciones del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a los proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar",
-      "exemplo_errado": "1 | Informe del sitio web | 60 min | aburrimiento 5 | empezar ya\n2 | Presupuestos | 90 min | riesgo medio | después\n3 | Notas | riesgo medio | riesgo alto | después\n4 | Pagar a proveedores | 30 min | riesgo alto | no delegar"
+      "exemplo": "1 | Informe semanal del sitio para el socio | Search Console (panel gratis de Google), hoja de cálculo | 60 min | aburrimiento 5 | riesgo bajo | empezar ya\n2 | Copiar presupuestos del correo a la hoja de cálculo | Gmail, hoja de cálculo | 90 min | aburrimiento 4 | riesgo medio | después\n3 | Registrar facturas de proveedores en las cuentas por pagar | correo, hoja de cálculo | 45 min | aburrimiento 5 | riesgo medio | después\n4 | Crear la carpeta y el cronograma del cliente nuevo | Drive, hoja de cálculo | 40 min | aburrimiento 3 | riesgo medio | después\n5 | Pagar a los proveedores | aplicación del banco | 30 min | aburrimiento 3 | riesgo alto | no delegar",
+      "exemplo_errado": "1 | Informe del sitio | 60 min | aburrimiento 5 | empezar ya\n2 | Presupuestos | 90 min | riesgo medio | después\n3 | Facturas | riesgo medio | riesgo alto | después\n4 | Pagar a los proveedores | 30 min | riesgo alto | no delegar"
     },
     {
       "tipo": "pratica",
@@ -251,8 +251,8 @@
           "id": "e3",
           "titulo": "E3 · Guarda la lista",
           "min": "5 min",
-          "texto": "Guarda la lista y el párrafo final en un archivo tareas.txt (o en una nota). La volverás a usar en las clases 2 y 8.",
-          "pronto": "El archivo existe y el párrafo de la primera tarea dice qué incluye, qué excluye y con qué frecuencia."
+          "texto": "Guarda la lista y el párrafo final en un archivo tareas.txt (o en una nota). La retomarás en las clases 2 y 8.",
+          "pronto": "el archivo existe y el párrafo de la primera tarea dice de dónde vienen los datos, qué recibes y con qué frecuencia."
         }
       ]
     },
@@ -266,11 +266,11 @@
           "opcoes": [
             "Responder por su cuenta las quejas de clientes en WhatsApp, sin que tú revises.",
             "Resumir cada lunes las cifras del sitio web en un informe para que lo leas.",
-            "Pagar las facturas de los proveedores en la fecha correcta.",
+            "Pagar los recibos de los proveedores en la fecha correcta.",
             "Planificar la estrategia de ventas del próximo año."
           ],
           "certa": 1,
-          "explica": "Resumirte la información para que la leas es de riesgo bajo, se repite cada semana y es aburrido. Responder a un cliente y pagar una factura tienen riesgo medio o alto; la estrategia del año es poco frecuente y depende de tu criterio.",
+          "explica": "Resumir para que lo leas es de riesgo bajo, se repite cada semana y es aburrido. Responder a un cliente y pagar un recibo tienen riesgo medio o alto; la estrategia del año es poco frecuente y depende de tu criterio.",
           "ref": "diagrama"
         },
         {
@@ -294,7 +294,7 @@
             "Porque el modelo ligero solo hace una tarea por semana."
           ],
           "certa": 1,
-          "explica": "Al principio revisas cada resultado. Con una tarea, eso cabe en la semana; con cinco, dejas de revisar y el error pasa. Las demás esperan su turno, como muestra el plan de la clase 8.",
+          "explica": "Al principio revisas cada resultado. Con una tarea, cabe en la semana; con cinco, dejas de revisar y el error pasa. Las demás esperan su turno: incorporas una nueva por semana, como muestra el plan de la clase 8.",
           "ref": "diagrama"
         },
         {
@@ -313,7 +313,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Una tarea",
@@ -325,7 +325,7 @@
         },
         {
           "t": "La lista vuelve",
-          "texto": "Las demás tareas esperan su turno. Vas a elegir una por semana cuando confíes en la anterior."
+          "texto": "Las demás tareas esperan su turno. Incorporas una nueva por semana, nunca varias a la vez."
         }
       ]
     },

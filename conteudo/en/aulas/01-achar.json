@@ -91,7 +91,7 @@
           "detalhe": "The agent's first task is the one at the top of the list: the one that combines the most minutes and the most boredom with low risk. The others can wait until later, one at a time."
         }
       ],
-      "legenda": "One task at a time. Add the second only when you trust the first (lesson 8)."
+      "legenda": "One new task per week, never several at once (lesson 8)."
     },
     {
       "tipo": "passos",
@@ -123,7 +123,7 @@
           "sub": "the damage a mistake could cause",
           "texto": [
             "<b>Low:</b> the agent only reads and writes a draft for you. <b>Medium:</b> it changes a record or company spreadsheet, or prepares a message for a customer. <b>High:</b> it pays, sends, deletes, or signs.",
-            "High-risk tasks stay in your hands throughout this course. The agent prepares; you carry it out."
+            "In this course, high risk always stays with you: the agent prepares it, you carry it out."
           ]
         },
         {
@@ -149,7 +149,7 @@
         {
           "rot": "Example of a finished list (a custom furniture store)",
           "icone": "lista",
-          "conteudo": "1 | Weekly website report for my business partner | Search Console (Google’s free dashboard), spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy estimates from email into the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices into accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for a new client | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate"
+          "conteudo": "1 | Weekly website report for your business partner | Search Console (Google’s free dashboard), spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy quotes from email to the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices in accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for the new client | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate"
         }
       ],
       "saida": {
@@ -161,7 +161,7 @@
           },
           {
             "rot": "Terminal (optional)",
-            "html": "<p>In Claude Code or Codex, use the same prompt: open a terminal in a new folder (for example, <code>meus-agentes</code>), run <code>claude</code> or <code>codex</code>, paste the prompt, and at the end ask it to save the list in <code>tarefas.md</code>. Starting with lesson 2, that folder will hold your agent sheets.</p>"
+            "html": "<p>In Claude Code or Codex, use the same prompt: open a terminal in a new folder (for example, <code>my-agents</code>), run <code>claude</code> or <code>codex</code>, paste the prompt, and at the end ask it to save the list in <code>tasks.md</code>. Starting with lesson 2, that folder will hold your agent sheets.</p>"
           },
           {
             "rot": "Common mistakes",
@@ -225,8 +225,8 @@
         }
       ],
       "ok": "OK: {n} tasks with minutes, risk, and decision",
-      "exemplo": "1 | Weekly website report for my business partner | Search Console (Google’s free dashboard), spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy estimates from email into the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices into accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for a new client | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate",
-      "exemplo_errado": "1 | Website report | 60 min | boredom 5 | start now\n2 | Estimates | 90 min | medium risk | later\n3 | Notes | medium risk | high risk | later\n4 | Pay suppliers | 30 min | high risk | do not delegate"
+      "exemplo": "1 | Weekly website report for your business partner | Search Console (Google’s free dashboard), spreadsheet | 60 min | boredom 5 | low risk | start now\n2 | Copy quotes from email to the spreadsheet | Gmail, spreadsheet | 90 min | boredom 4 | medium risk | later\n3 | Enter supplier invoices in accounts payable | email, spreadsheet | 45 min | boredom 5 | medium risk | later\n4 | Set up a folder and schedule for the new client | Drive, spreadsheet | 40 min | boredom 3 | medium risk | later\n5 | Pay suppliers | banking app | 30 min | boredom 3 | high risk | do not delegate",
+      "exemplo_errado": "1 | Website report | 60 min | boredom 5 | start now\n2 | Quotes | 90 min | medium risk | later\n3 | Invoices | medium risk | high risk | later\n4 | Pay suppliers | 30 min | high risk | do not delegate"
     },
     {
       "tipo": "pratica",
@@ -251,8 +251,8 @@
           "id": "e3",
           "titulo": "E3 · Save the list",
           "min": "5 min",
-          "texto": "Save the list and the final paragraph in a tarefas.txt file (or a note). You’ll use it again in lessons 2 and 8.",
-          "pronto": "the file exists, and the first task paragraph says what goes in, what comes out, and how often."
+          "texto": "Save the list and final paragraph in a file called tasks.txt (or in a note). You’ll come back to it in lessons 2 and 8.",
+          "pronto": "the file exists, and the paragraph for the first task says where the data comes from, what you receive, and how often."
         }
       ]
     },
@@ -270,11 +270,11 @@
             "Plan next year’s sales strategy."
           ],
           "certa": 1,
-          "explica": "Summarizing the numbers for you to read is low risk, happens every week, and is boring. Replying to customers and paying bills are medium or high risk; the year’s strategy is rare and depends on your judgment.",
+          "explica": "Summarizing something for you to read is low risk, happens every week, and is boring. Replying to a client and paying a bill are medium or high risk; the year’s strategy is rare and depends on your judgment.",
           "ref": "diagrama"
         },
         {
-          "p": "An task prepares a payment reminder for a customer but doesn’t send it. What’s the risk?",
+          "p": "A task prepares a payment reminder for a customer but doesn’t send it. What’s the risk?",
           "opcoes": [
             "Low, because nothing is sent.",
             "High, because it involves money.",
@@ -294,7 +294,7 @@
             "Because the light model can only do one task per week."
           ],
           "certa": 1,
-          "explica": "At first, you check every result. That fits into your week with one task; with five, you stop checking and mistakes get through. The others wait their turn, as the plan in lesson 8 shows.",
+          "explica": "At first, you check every result. With one task, that fits into your week; with five, you stop checking and mistakes slip through. The others can wait their turn: add one new task per week, as the plan in lesson 8 shows.",
           "ref": "diagrama"
         },
         {
@@ -325,7 +325,7 @@
         },
         {
           "t": "The list comes back",
-          "texto": "The other tasks wait their turn. You'll pick one each week once you trust the previous one."
+          "texto": "The other tasks can wait their turn. Add one new task per week, never several at once."
         }
       ]
     },

@@ -53,7 +53,7 @@
           "icone": "pasta",
           "titulo": "Pegar",
           "sub": "en el Proyecto",
-          "detalhe": "Abre el Proyecto del agente (la ficha de la lección 2 ya está en las instrucciones), adjunta la hoja de cálculo o pega las filas y di la palabra clave, como \"informe\".",
+          "detalhe": "Abre el Proyecto del agente (la ficha de la clase 2 ya está en las instrucciones), adjunta la hoja de cálculo o pega las filas y di la palabra clave, como \"informe\".",
           "itens": [
             {
               "icone": "chat",
@@ -132,7 +132,7 @@
           ],
           "exemplo": {
             "rot": "Atención",
-            "texto": "Los valores que el panel muestra como ~ o - se convierten en cero en la hoja de cálculo exportada."
+            "texto": "Cuando el panel no tiene un valor, muestra ~ o -; en la hoja exportada, esos casos se convierten en cero."
           }
         },
         {
@@ -153,7 +153,7 @@
         {
           "rot": "Datos de ejemplo (pégalos en el Proyecto después de la ficha)",
           "icone": "grafico",
-          "conteudo": "Consulta | Clics esta semana | Clics semana anterior\narmario a medida curitiba | 48 | 30\ncocina a medida precio | 22 | 41\nmuebles a medida curitiba | 64 | 60\nropero a medida | 17 | 9\npanel de tv a medida | 12 | 15\nhome office a medida | 9 | 4\nclóset pequeño a medida | 6 | 13\ntienda de muebles batel | 21 | 21"
+          "conteudo": "Consulta | Clics esta semana | Clics semana anterior\narmario a medida guadalajara | 48 | 30\ncocina a medida precio | 22 | 41\nmuebles a medida guadalajara | 64 | 60\nropero a medida | 17 | 9\npanel de tv a medida | 12 | 15\nhome office a medida | 9 | 4\nclóset pequeño a medida | 6 | 13\nmueblería del centro | 21 | 21"
         },
         {
           "rot": "En el chat · la instrucción del lunes",
@@ -163,17 +163,17 @@
         {
           "rot": "Variación · ficha de los números de la semana (en un Proyecto nuevo, \"Números de la semana\")",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de las cifras de la semana.\nSobre mí: [a qué se dedica la empresa]; pego las cifras de cada herramienta todos los viernes.\nCuándo: cuando pegue las cifras y diga \"cifras\".\nPasos: 1) arma una tabla: cifra, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee; copia las cifras exactamente; si falta una cifra, escribe \"no lo encontré\", nunca la estimes; guarda como borrador, yo lo envío al equipo; si te trabas, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: hazlo ahora con las cifras que voy a pegar."
+          "conteudo": "Rol: Eres mi agente de los números de la semana.\nSobre mí: [a qué se dedica la empresa]; pego los números de cada herramienta todos los viernes.\nCuándo: cuando pegue los números y diga \"números\".\nPasos: 1) arma una tabla: número, esta semana, semana anterior, variación en %; 2) escribe 3 puntos breves: la mejor noticia, la mayor preocupación, una pregunta para el equipo.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; copia los números exactamente; si falta un número, escribe \"no lo encontré\", nunca lo estimes; guarda como borrador, yo lo envío al equipo; si te trabas, detente y pregunta.\nEntrega: la tabla y los 3 puntos, nada más.\nPrimera tarea: ejecútala ahora con los números que voy a pegar."
         },
         {
           "rot": "Terminal (opcional) · Codex con el modelo ligero",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/relatorio-site\n# la ficha está en AGENTS.md; la hoja de cálculo exportada está en esta carpeta\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"informe: sigue AGENTS.md con la hoja de cálculo de esta carpeta\""
+          "conteudo": "cd mis-agentes/informe-sitio\n# la ficha está en AGENTS.md; la hoja de cálculo exportada está en esta carpeta\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o informe.md \"informe: sigue AGENTS.md con la hoja de cálculo de esta carpeta\""
         },
         {
           "rot": "Terminal (opcional) · Claude Code con el modelo ligero",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/relatorio-site\n# la ficha está en CLAUDE.md; la hoja de cálculo exportada está en esta carpeta\nclaude -p --model sonnet \"informe: sigue CLAUDE.md con la hoja de cálculo de esta carpeta\" > relatorio.md"
+          "conteudo": "cd mis-agentes/informe-sitio\n# la ficha está en CLAUDE.md; la hoja de cálculo exportada está en esta carpeta\nclaude -p --model sonnet \"informe: sigue CLAUDE.md con la hoja de cálculo de esta carpeta\" > informe.md"
         }
       ],
       "saida": {
@@ -181,7 +181,7 @@
         "abas": [
           {
             "rot": "Qué debe incluir el informe",
-            "html": "<ul><li>Total de clics: <b>199</b> esta semana frente a <b>193</b> la anterior (aumento de 6).</li><li>Mayor aumento: \"armario a medida curitiba\", de 30 a 48.</li><li>Mayor caída: \"cocina a medida precio\", de 41 a 22.</li><li>Tres acciones sencillas, una por línea.</li></ul><p>Son los cálculos hechos a mano con los datos de ejemplo. El texto del agente cambia; las cifras no pueden cambiar.</p>"
+            "html": "<ul><li>Total de clics: <b>199</b> esta semana frente a <b>193</b> la anterior (aumento de 6).</li><li>Mayor aumento: \"armario a medida guadalajara\", de 30 a 48.</li><li>Mayor caída: \"cocina a medida precio\", de 41 a 22.</li><li>Tres acciones sencillas, una por línea.</li></ul><p>Son los cálculos hechos a mano con los datos de ejemplo. El texto del agente cambia; las cifras no pueden cambiar.</p>"
           },
           {
             "rot": "Por qué solo lectura",
@@ -233,8 +233,8 @@
         }
       ],
       "ok": "OK: las cifras correctas están en el informe",
-      "exemplo": "Semana con un ligero aumento: 199 clics frente a 193 la semana anterior (+6, cerca del 3%).\nMayores aumentos: armario a medida curitiba (30 → 48), ropero a medida (9 → 17), home office a medida (4 → 9).\nMayores caídas: cocina a medida precio (41 → 22), clóset pequeño a medida (13 → 6), panel de tv a medida (15 → 12).\nAcciones: 1) revisar la página de cocinas; 2) mostrar precios de clósets; 3) reforzar la página de armarios.",
-      "exemplo_errado": "Buena semana: cerca de 200 clics, un poco más que antes.\nMayores aumentos: armario a medida curitiba.\nMayores caídas: algunas consultas sobre cocinas bajaron.\nAcciones: seguir publicando."
+      "exemplo": "Semana con un ligero aumento: 199 clics frente a 193 la semana anterior (+6, cerca del 3%).\nMayores aumentos: armario a medida guadalajara (30 → 48), ropero a medida (9 → 17), home office a medida (4 → 9).\nMayores caídas: cocina a medida precio (41 → 22), clóset pequeño a medida (13 → 6), panel de tv a medida (15 → 12).\nAcciones: 1) revisar la página de cocinas; 2) mostrar precios de clósets; 3) reforzar la página de armarios.",
+      "exemplo_errado": "Buena semana: cerca de 200 clics, un poco más que antes.\nMayores aumentos: armario a medida guadalajara.\nMayores caídas: algunas consultas sobre cocinas bajaron.\nAcciones: seguir publicando."
     },
     {
       "tipo": "pratica",
@@ -245,7 +245,7 @@
           "id": "e1",
           "titulo": "E1 · Prueba con el ejemplo",
           "min": "10 min",
-          "texto": "En el Proyecto del agente (ficha de la lección 2), pega los datos de ejemplo y la instrucción del lunes. Pega el informe en el verificador.",
+          "texto": "En el Proyecto del agente (ficha de la clase 2), pega los datos de ejemplo y el pedido del lunes. Pega el informe en el verificador.",
           "pronto": "el verificador responde OK: el informe incluye 199, 193 y la caída de 41 a 22."
         },
         {
@@ -321,7 +321,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Tú exportas",
@@ -343,7 +343,7 @@
       "links": [
         {
           "t": "Informe de rendimiento de Search Console (ayuda oficial)",
-          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "href": "https://support.google.com/webmasters/answer/7576553",
           "icone": "grafico"
         },
         {

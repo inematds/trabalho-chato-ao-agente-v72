@@ -91,7 +91,7 @@
           "detalhe": "A primeira tarefa do agente é a do topo da lista: a que soma mais minutos e mais chatice com risco baixo. As outras ficam para depois, uma de cada vez."
         }
       ],
-      "legenda": "Uma tarefa por vez. A segunda só entra quando você confiar na primeira (aula 8)."
+      "legenda": "Uma tarefa nova por semana, nunca várias de uma vez (aula 8)."
     },
     {
       "tipo": "passos",
@@ -123,7 +123,7 @@
           "sub": "o estrago do erro",
           "texto": [
             "<b>Baixo:</b> o agente só lê e escreve um rascunho para você. <b>Médio:</b> mexe em cadastro, planilha da empresa ou prepara mensagem para cliente. <b>Alto:</b> paga, envia, apaga ou assina.",
-            "Risco alto não sai da sua mão neste curso. O agente prepara; você executa."
+            "Neste curso, risco alto fica sempre com você: o agente prepara, você executa."
           ]
         },
         {
@@ -252,7 +252,7 @@
           "titulo": "E3 · Guarde a lista",
           "min": "5 min",
           "texto": "Salve a lista e o parágrafo final num arquivo tarefas.txt (ou numa nota). Ela volta na aula 2 e na aula 8.",
-          "pronto": "o arquivo existe e o parágrafo da primeira tarefa diz o que entra, o que sai e com que frequência."
+          "pronto": "o arquivo existe e o parágrafo da primeira tarefa diz de onde vêm os dados, o que você recebe e com que frequência."
         }
       ]
     },
@@ -294,7 +294,7 @@
             "Porque o modelo leve só faz uma tarefa por semana."
           ],
           "certa": 1,
-          "explica": "No começo você confere cada resultado. Com uma tarefa isso cabe na semana; com cinco, você para de conferir e o erro passa. As outras esperam a vez, como mostra o plano da aula 8.",
+          "explica": "No começo você confere cada resultado. Com uma tarefa isso cabe na semana; com cinco, você para de conferir e o erro passa. As outras esperam a vez: entra uma nova por semana, como mostra o plano da aula 8.",
           "ref": "diagrama"
         },
         {
@@ -325,7 +325,7 @@
         },
         {
           "t": "A lista volta",
-          "texto": "As outras tarefas esperam a vez. Você vai puxar uma por semana quando confiar na anterior."
+          "texto": "As outras tarefas esperam a vez. Você puxa uma nova por semana, nunca várias de uma vez."
         }
       ]
     },

@@ -1,12 +1,12 @@
 {
   "slug": "notas",
   "num": 5,
-  "menu": "Notas",
+  "menu": "Facturas",
   "titulo": "Factura y recibo: el dinero pasa por ti",
-  "titulo_curto": "Notas y recibos",
+  "titulo_curto": "Facturas y recibos",
   "minutos": 16,
-  "lead": "Abrir cada factura de proveedor y copiar el número, el vencimiento y el importe a la hoja de cuentas por pagar es una de las tareas más aburridas de la semana. El agente puede leerlas y hacer las sumas, marcar la factura duplicada y el total que no cuadra. Lo que nunca hace es pagar: la lista queda como borrador y el banco es tuyo.",
-  "objetivo": "hacer que el agente lea facturas y recibos y arme la lista de cuentas por pagar, marcando las facturas duplicadas y los totales que no cuadran.",
+  "lead": "Abrir cada factura de proveedor, copiar el número, la fecha de vencimiento y el valor en la hoja de cuentas por pagar es una de las tareas más aburridas de la semana. El agente puede leer y hacer las cuentas, marcar la factura duplicada y el total que no cuadra. Lo que nunca hace es pagar: la lista queda como borrador y el banco es tu responsabilidad.",
+  "objetivo": "hacer que el agente lea facturas y recibos y arme la lista de cuentas por pagar, marcando la factura duplicada y el total que no cuadra.",
   "competencias": [
     "extraer-datos-de-facturas",
     "verificar-sumas-con-agente",
@@ -15,7 +15,7 @@
   "aprende": [
     {
       "icone": "arquivo",
-      "t": "Sacar los datos de cada factura o recibo"
+      "t": "Extraer los datos de cada factura o recibo"
     },
     {
       "icone": "grafico",
@@ -30,7 +30,7 @@
       "t": "Dejar el pago siempre en tus manos"
     }
   ],
-  "hero_alt": "Una mano de una persona de unos 55 años verifica un importe en una factura de papel, junto a recibos, una calculadora y una laptop.",
+  "hero_alt": "Manos de una persona de unos 55 años revisan un valor en una factura de papel, junto a recibos, una calculadora y una laptop.",
   "secoes": [
     {
       "tipo": "diagrama",
@@ -41,7 +41,7 @@
           "icone": "arquivo",
           "titulo": "Leer",
           "sub": "cada factura",
-          "detalhe": "De cada factura o recibo, el agente extrae: proveedor, número del documento, fecha, vencimiento, importe de los conceptos y total. En el chat, adjunta los PDF o pega el texto; también sirve una foto, si está nítida.",
+          "detalhe": "De cada factura o recibo, el agente extrae: proveedor, número del documento, fecha, vencimiento, valor de los artículos y total. En el chat, adjuntas los PDF o pegas el texto; también sirve una foto, si se ve nítida.",
           "itens": [
             {
               "icone": "lista",
@@ -53,7 +53,7 @@
           "icone": "grafico",
           "titulo": "Sumar",
           "sub": "¿conceptos = total?",
-          "detalhe": "Suma los conceptos y los compara con el total impreso. Si no cuadra o si algún número no se puede leer, la factura queda marcada como \"no cuadra\" y fuera de la lista. No corrige el importe por su cuenta.",
+          "detalhe": "Suma los artículos y compara el resultado con el total impreso. Si no cuadra o algún número es ilegible, la factura queda marcada como \"no cuadra\" y fuera de la lista. No debe corregir el valor por su cuenta.",
           "itens": [
             {
               "icone": "x",
@@ -65,7 +65,7 @@
           "icone": "lupa",
           "titulo": "¿Duplicada?",
           "sub": "mismo número",
-          "detalhe": "¿Ya apareció el mismo número de factura del mismo proveedor? Está duplicada: el proveedor la volvió a enviar o ya está en la hoja de cálculo. La marca y la omite.",
+          "detalhe": "¿Ya apareció el mismo número de factura del mismo proveedor? Está duplicada: el proveedor la volvió a enviar o ya está en la hoja. Márcala y omítela.",
           "itens": [
             {
               "icone": "fila",
@@ -109,12 +109,12 @@
         {
           "rot": "Ficha · agente de facturas y recibos",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de cuentas por pagar.\nSobre mí: [a qué se dedica la empresa]; proveedores frecuentes y categorías: [Maderera = materia prima; Contabilidad = servicios].\nCuándo: cuando adjunte o pegue las facturas y cuentas de la semana y diga \"facturas\".\nPasos: 1) de cada documento extrae proveedor, número, fecha, vencimiento, conceptos y total; 2) suma los conceptos y compáralos con el total impreso; 3) verifica si el mismo proveedor con el mismo número ya apareció en este lote o en la lista de facturas ya registradas que pegue; 4) arma la tabla: proveedor, número, vencimiento, total, categoría, situación; 5) suma el total de la semana solo con las facturas sin problemas.\nReglas: copia los números exactamente; si la suma no cuadra o un número es ilegible, marca \"no cuadra\" y déjalo fuera del total; factura duplicada: marca \"duplicada\" y déjala fuera del total; nunca pagues, apruebes ni programes pagos; nunca pidas la contraseña del banco; todo es un borrador para que yo lo revise; si tienes dudas, detente y pregunta.\nEntrega: la tabla en orden de vencimiento y, debajo, el total de la semana y la lista de lo que quedó fuera, con el motivo.\nPrimera tarea: ejecútalo ahora con las facturas que voy a pegar."
+          "conteudo": "Rol: Eres mi agente de cuentas por pagar.\nSobre mí: [a qué se dedica la empresa]; proveedores frecuentes y categorías: [Maderera = materia prima; Contabilidad = servicios].\nCuándo: cuando adjunte o pegue las facturas y los recibos de la semana y diga \"facturas\".\nPasos: 1) de cada documento, extrae proveedor, número, fecha, vencimiento, conceptos y total; 2) suma los conceptos y compara el resultado con el total impreso; 3) comprueba si el mismo proveedor con el mismo número ya apareció en esta tanda o en la lista de facturas registradas que pegue; 4) arma la tabla: proveedor, número, vencimiento, total, categoría, estado; 5) suma el total de la semana solo con las facturas sin problemas.\nReglas: solo lee, nunca cambies ni borres nada; si aparece una pantalla de inicio de sesión, detente y avísame; copia los números exactamente; si la suma no cuadra o un número es ilegible, marca \"no cuadra\" y déjalo fuera del total; factura duplicada: marca \"duplicada\" y déjala fuera del total; nunca pagues, apruebes ni programes pagos; nunca pidas la contraseña del banco; todo es un borrador para que yo lo revise; si tienes dudas, detente y pregunta.\nEntrega: la tabla ordenada por fecha de vencimiento y, abajo, el total de la semana y la lista de lo que quedó fuera, con el motivo.\nPrimera tarea: hazlo ahora con las facturas que voy a pegar."
         },
         {
           "rot": "Ensayo · cuatro documentos",
           "icone": "lista",
-          "conteudo": "facturas\n\nDocumento 1 · Factura 4471 · Maderera Pinho Forte · emisión 27/10 · vencimiento 10/11\n  paneles de MDF: 1.100,00 · flete: 150,00 · TOTAL: 1.250,00\n\nDocumento 2 · Factura 5120 · Ferretería Silva · emisión 28/10 · vencimiento 12/11\n  bisagras: 480,00 · tiradores: 320,00 · TOTAL: 900,00\n\nDocumento 3 · Factura 4471 · Maderera Pinho Forte · emisión 27/10 · vencimiento 10/11\n  paneles de MDF: 1.100,00 · flete: 150,00 · TOTAL: 1.250,00\n\nDocumento 4 · Recibo 311 · Contabilidad Rocha · vencimiento 15/11\n  honorarios de noviembre · TOTAL: 650,00"
+          "conteudo": "facturas\n\nDocumento 1 · Factura 4471 · Maderera Pino Fuerte · emisión 27/10 · vencimiento 10/11\n  tableros de MDF: 1,100.00 · flete: 150.00 · TOTAL: 1,250.00\n\nDocumento 2 · Factura 5120 · Ferretería Silva · emisión 28/10 · vencimiento 12/11\n  bisagras: 480.00 · tiradores: 320.00 · TOTAL: 900.00\n\nDocumento 3 · Factura 4471 · Maderera Pino Fuerte · emisión 27/10 · vencimiento 10/11\n  tableros de MDF: 1,100.00 · flete: 150.00 · TOTAL: 1,250.00\n\nDocumento 4 · Recibo 311 · Contabilidad Rocha · vencimiento 15/11\n  honorarios de noviembre · TOTAL: 650.00"
         }
       ],
       "saida": {
@@ -122,11 +122,11 @@
         "abas": [
           {
             "rot": "Qué debe salir",
-            "html": "<ul><li>Factura 4471 (Maderera): 1.250,00, vence el 10/11, correcto.</li><li>Recibo 311 (Contabilidad): 650,00, vence el 15/11, correcto.</li><li>Factura 5120 (Ferretería): <b>no cuadra</b>. Los conceptos suman 800,00 y el total dice 900,00. Fuera del total.</li><li>Documento 3: factura 4471 <b>duplicada</b>. Fuera del total.</li><li>Total de la semana: <b>1.900,00</b>.</li></ul><p>Las cuentas se hicieron a mano con el ejemplo. Tú resuelves la factura 5120 con el proveedor; el agente no decide qué importe es válido.</p>"
+            "html": "<ul><li>Factura 4471 (Maderera): 1,250.00, vence el 10/11, correcta.</li><li>Recibo 311 (Contabilidad): 650.00, vence el 15/11, correcto.</li><li>Factura 5120 (Ferretería): <b>no cuadra</b>. Los conceptos suman 800.00 y el total dice 900.00. Fuera del total.</li><li>Documento 3: factura 4471 <b>duplicada</b>. Fuera del total.</li><li>Total de la semana: <b>1,900.00</b>.</li></ul><p>Cuentas hechas a mano sobre el ejemplo. Lo de la factura 5120 lo resuelves con el proveedor; el agente no decide qué valor es correcto.</p>"
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>En la carpeta <code>meus-agentes/notas</code>, con la ficha en el <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), pon los PDF de la semana en una subcarpeta <code>semana</code> y ejecuta <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o cuentas.md \"notas: sigue el AGENTS.md con los archivos de la carpeta semana\"</code>.</p><p>Si algún PDF es una imagen escaneada y el modelo ligero no puede leerlo, debe decir \"no pude leerlo\" (es la regla), y tú se lo mandas al modelo superior o lo transcribes.</p>"
+            "html": "<p>En la carpeta <code>mis-agentes/facturas</code>, con la ficha en <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), pon los PDF de la semana en una subcarpeta <code>semana</code> y ejecuta <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o cuentas.md \"facturas: sigue AGENTS.md con los archivos de la carpeta semana\"</code>.</p><p>Si algún PDF es una imagen escaneada y el modelo ligero no puede leerla, debe decir \"no pude leerlo\" (esa es la regla) y tú se lo envías al modelo superior o lo transcribes.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -138,7 +138,7 @@
     {
       "tipo": "conferidor",
       "titulo": "Revisa la tabla del agente",
-      "sub": "Ejecuta el agente con las cuatro facturas de ejemplo y pega aquí la tabla que te devolvió. La página busca la factura duplicada, la que no cuadra y el total correcto de la semana.",
+      "sub": "Ejecuta el agente con las cuatro facturas de ejemplo y pega aquí la tabla que devolvió. La página busca la factura duplicada, la que no cuadra y el total correcto de la semana.",
       "arquivo": "cuentas.txt",
       "rot": "Pega aquí la tabla y el total que te devolvió el agente:",
       "modelo": "Proveedor | Número | Vencimiento | Total | Estado",
@@ -147,13 +147,13 @@
           "tipo": "termos",
           "grupos": [
             {
-              "rot": "la nota 5120",
+              "rot": "la factura 5120",
               "termos": [
                 "5120"
               ]
             },
             {
-              "rot": "la palabra repetida (o duplicada) para la nota que llegó dos veces",
+              "rot": "la palabra duplicada para la factura que apareció dos veces",
               "termos": [
                 "repetida / repetido / duplicada / duplicado / duplicate / duplicated / repeated"
               ]
@@ -165,7 +165,7 @@
               ]
             },
             {
-              "rot": "el total correcto de la semana (1.900,00)",
+              "rot": "el total correcto de la semana (1,900.00)",
               "termos": [
                 "1.900 / 1900 / 1,900"
               ]
@@ -174,34 +174,34 @@
         }
       ],
       "ok": "OK: repetida, divergente y total de la semana correctos",
-      "exemplo": "Maderera Pinho Forte | 4471 | 10/11 | 1.250,00 | materia prima | ok\nContabilidad Rocha | 311 | 15/11 | 650,00 | servicios | ok\nTotal de la semana: 1.900,00\nFuera del total:\n- Ferretería Silva 5120: no cuadra (los artículos suman 800,00, el total impreso es 900,00)\n- Maderera Pinho Forte 4471 (documento 3): repetida",
-      "exemplo_errado": "Maderera Pinho Forte | 4471 | 10/11 | 1.250,00\nFerretería Silva | 5120 | 12/11 | 900,00\nMaderera Pinho Forte | 4471 | 10/11 | 1.250,00\nContabilidad Rocha | 311 | 15/11 | 650,00\nTotal de la semana: 4.050,00"
+      "exemplo": "Maderera Pino Fuerte | 4471 | 10/11 | 1,250.00 | materia prima | ok\nContabilidad Rocha | 311 | 15/11 | 650.00 | servicios | ok\nTotal de la semana: 1,900.00\nFuera del total:\n- Ferretería Silva 5120: no cuadra (los artículos suman 800.00, el total impreso es 900.00)\n- Maderera Pino Fuerte 4471 (documento 3): repetida",
+      "exemplo_errado": "Maderera Pino Fuerte | 4471 | 10/11 | 1,250.00\nFerretería Silva | 5120 | 12/11 | 900.00\nMaderera Pino Fuerte | 4471 | 10/11 | 1,250.00\nContabilidad Rocha | 311 | 15/11 | 650.00\nTotal de la semana: 4,050.00"
     },
     {
       "tipo": "pratica",
       "titulo": "Práctica: las cuentas de la semana",
-      "sub": "Practica con el ejemplo y después con tus notas.",
+      "sub": "Prueba con el ejemplo y después con tus facturas.",
       "exercicios": [
         {
           "id": "e1",
           "titulo": "E1 · El ensayo",
           "min": "10 min",
-          "texto": "Crea el Proyecto \"Cuentas por pagar\" con la ficha, pega las cuatro notas de ejemplo y di \"notas\". Pega la respuesta en el verificador.",
-          "pronto": "el verificador responde OK: 5120 como no cuadra, la 4471 repetida y total de 1.900,00."
+          "texto": "Crea el Proyecto \"Cuentas por pagar\" con la ficha, pega las cuatro facturas de ejemplo y di \"facturas\". Pega la respuesta en el verificador.",
+          "pronto": "el verificador responde OK: 5120 como no cuadra, la 4471 repetida y total de 1,900.00."
         },
         {
           "id": "e2",
-          "titulo": "E2 · Tus notas",
+          "titulo": "E2 · Tus facturas",
           "min": "20 min",
-          "texto": "Adjunta las notas y facturas reales de una semana. Antes de copiar a tu hoja de cálculo, verifica dos totales en papel.",
-          "pronto": "los dos totales verificados coinciden con la tabla y el agente no pagó ninguna nota."
+          "texto": "Adjunta las facturas y los recibos reales de una semana. Antes de copiarlos a tu hoja de cálculo, comprueba dos totales en papel.",
+          "pronto": "los dos totales comprobados coinciden con la tabla y el agente no pagó ninguna factura."
         },
         {
           "id": "e3",
           "titulo": "E3 · La lista de categorías",
           "min": "5 min",
           "texto": "Agrega a la ficha tus cinco proveedores más frecuentes con la categoría de cada uno.",
-          "pronto": "en la siguiente ronda, las notas de esos proveedores salen con la categoría correcta sin que tengas que pedirla."
+          "pronto": "en la siguiente ronda, las facturas de esos proveedores salen con la categoría correcta sin que lo pidas."
         }
       ]
     },
@@ -211,31 +211,31 @@
       "sub": "La explicación aparece después de tu respuesta.",
       "perguntas": [
         {
-          "p": "En la nota 5120, los artículos suman 800,00 y el total impreso dice 900,00. ¿Qué debe hacer el agente?",
+          "p": "En la factura 5120, los conceptos suman 800.00 y el total impreso dice 900.00. ¿Qué debe hacer el agente?",
           "opcoes": [
-            "Usar 800,00, que es la suma correcta.",
-            "Usar 900,00, que es lo que está impreso.",
+            "Usar 800.00, que es la suma correcta.",
+            "Usar 900.00, que es lo que está impreso.",
             "Marcar \"no cuadra\", dejarla fuera del total y avisarte.",
-            "Pedirle al proveedor un descuento de 100,00 por la diferencia encontrada."
+            "Pedirle al proveedor un descuento de 100.00 por la diferencia encontrada."
           ],
           "certa": 2,
           "explica": "El agente no sabe dónde está el error: en el artículo o en el total. Quien lo resuelve con el proveedor eres tú. Su función es encontrar la diferencia y evitar que entre en la cuenta.",
           "ref": "diagrama"
         },
         {
-          "p": "Con las cuatro notas de ejemplo, ¿cuál es el total de la semana a pagar?",
+          "p": "Con las cuatro facturas de ejemplo, ¿cuál es el total de la semana por pagar?",
           "opcoes": [
-            "4.050,00 (todo sumado)",
-            "2.800,00",
-            "1.900,00",
-            "3.150,00"
+            "Total de 4,050.00 (todo sumado)",
+            "Total de 2,800.00",
+            "Total de 1,900.00",
+            "Total de 3,150.00"
           ],
           "certa": 2,
-          "explica": "Solo se incluyen las notas sin problemas: 1.250,00 (4471) + 650,00 (factura 311) = 1.900,00. La 5120 no cuadra y el documento 3 es la 4471 repetida. 4.050,00 es la suma de todo, sin verificar.",
+          "explica": "Solo se incluyen las facturas sin problemas: 1,250.00 (4471) + 650.00 (recibo 311) = 1,900.00. La 5120 no cuadra y el documento 3 es la factura 4471 duplicada. 4,050.00 es la suma de todo, sin comprobar nada.",
           "ref": "codigo"
         },
         {
-          "p": "¿Por qué el agente de notas nunca recibe la contraseña del banco, ni \"solo para leer\"?",
+          "p": "¿Por qué el agente de facturas nunca recibe la contraseña del banco, ni \"solo para leer\"?",
           "opcoes": [
             "Porque el modelo ligero no sabe usar la página del banco, y el modelo superior necesitaría un plan pagado aparte para hacerlo.",
             "Porque la regla \"el dinero pasa por ti\" exige que pagar y aprobar queden solo en tus manos; puedes leer el estado de cuenta exportándolo.",
@@ -250,11 +250,11 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Leer y sumar",
-          "texto": "El agente extrae los datos de cada nota y verifica si los artículos suman el total."
+          "texto": "El agente extrae los datos de cada factura y comprueba que los conceptos sumen el total."
         },
         {
           "t": "Marcar, no corregir",

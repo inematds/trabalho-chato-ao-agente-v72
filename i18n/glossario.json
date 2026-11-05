@@ -29,7 +29,15 @@
     "repetida": "duplicate",
     "não achei": "couldn't find",
     "Projeto": "Project",
-    "diário de conferência": "check log"
+    "diário de conferência": "check log",
+    "nota": "invoice",
+    "notas": "invoices",
+    "nota fiscal": "invoice",
+    "boleto": "bill",
+    "boletos": "bills",
+    "Notas e boletos": "Invoices and bills",
+    "checklist": "checklist",
+    "regra de roteamento": "routing rule"
   },
   "es": {
     "Entregue o trabalho chato a um agente": "Entrega el trabajo aburrido a un agente",
@@ -61,6 +69,17 @@
     "repetida": "duplicada",
     "não achei": "no lo encontré",
     "Projeto": "Proyecto",
-    "diário de conferência": "registro de control"
+    "diário de conferência": "registro de control",
+    "aula": "clase",
+    "aulas": "clases",
+    "nota": "factura",
+    "notas": "facturas",
+    "nota fiscal": "factura",
+    "boleto": "recibo",
+    "boletos": "recibos",
+    "Notas e boletos": "Facturas y recibos",
+    "checklist": "lista de verificación",
+    "regra de roteamento": "regla de enrutamiento",
+    "Reprovar": "Rechazar"
   }
 }

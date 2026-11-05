@@ -135,23 +135,23 @@
     },
     {
       "tipo": "codigo",
-      "titulo": "La ficha del checklist",
+      "titulo": "La ficha de la lista de verificación",
       "sub": "Cambia los pasos por los tuyos. Mantén el orden y las reglas.",
       "blocos": [
         {
           "rot": "Ficha · agente para clientes nuevos",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de clientes nuevos.\nSobre mí: [a qué se dedica la empresa]; plantilla de carpeta: [nombre]; plantilla de cronograma: [nombre]; plantilla de correo de bienvenida: [texto o nombre]; clientes y carpetas que ya existen: [pega la lista].\nCuándo: cuando diga \"cliente nuevo: [nombre]\" y pegue la propuesta o los datos.\nPasos: 1) registro: situación \"cerrado\" y fecha de inicio; 2) carpeta con el nombre del cliente a partir de la plantilla; 3) cronograma a partir de la plantilla, con fechas desde el inicio; 4) primer cobro como borrador, con el valor de la primera cuota de la propuesta; 5) correo de bienvenida como borrador, con los enlaces a la carpeta y al cronograma.\nReglas: sigue los pasos en orden y marca cada uno como hecho; si ya existe un cliente, una carpeta o un cobro con ese nombre, no crees otro: detente y dime qué paso es y qué viste; si un paso falla, detente ahí; el cobro y el correo solo deben quedar como borrador, yo los emito y envío; nunca pidas la contraseña; si falta algún dato, detente y pregunta.\nEntrega: la lista de los 5 pasos con hecho / detenido y el motivo, los enlaces o nombres creados, el valor del cobro y \"correo en borrador\".\nPrimera tarea: repite la lista de verificación con tus palabras y espera a que diga \"cliente nuevo\"."
+          "conteudo": "Rol: Eres mi agente de nuevos clientes.\nSobre mí: [a qué se dedica la empresa]; modelo de carpeta: [nombre]; modelo de cronograma: [nombre]; modelo de correo de bienvenida: [texto o nombre]; clientes y carpetas que ya existen: [pega la lista].\nCuándo: cuando diga \"cliente nuevo: [nombre]\" y pegue la propuesta o los datos.\nPasos: 1) registro: estado \"cerrado\" y fecha de inicio; 2) carpeta con el nombre del cliente a partir del modelo; 3) cronograma a partir del modelo, con fechas desde el inicio; 4) primer cobro como borrador, con el valor de la primera cuota de la propuesta; 5) correo de bienvenida como borrador, con los enlaces a la carpeta y al cronograma.\nReglas: nunca pagues, apruebes ni programes pagos; nunca pidas contraseñas; si aparece una pantalla de inicio de sesión, detente y avísame; haz los pasos en orden y marca cada uno como hecho; si ya existe un cliente, una carpeta o un cobro con ese nombre, no crees otro: detente y dime en qué paso estás y qué viste; si falla un paso, detente ahí; el cobro y el correo quedan como borradores, yo los emito y envío; nunca pidas contraseñas; si falta un dato, detente y pregunta.\nEntrega: la lista de los 5 pasos con hecho / detenido y el motivo, los enlaces o nombres creados, el valor del cobro y \"correo en borrador\".\nPrimera tarea: repite la lista de verificación con tus propias palabras y espera a que diga \"cliente nuevo\"."
         },
         {
           "rot": "En el chat · el pedido",
           "icone": "chat",
-          "conteudo": "cliente nuevo: Padaria Trigo Bom\n\nClientes y carpetas que ya existen: Marcenaria Lopes, Clínica Vida.\nDatos de la propuesta: contacto Marta Reis (marta@exemplo.com), cocina industrial a medida, inicio el 10/11, valor total 18.000,00 en 3 cuotas, la primera al firmar.\nEn el chat no creas la carpeta ni el registro: devuélveme el texto listo para cada paso (nombre de la carpeta, cronograma en tabla, borrador del cobro, borrador del correo) y yo hago los clics y marco cada paso como hecho."
+          "conteudo": "cliente nuevo: Panadería Trigo Bueno\n\nClientes y carpetas que ya existen: Carpintería López, Clínica Vida.\nDatos de la propuesta: contacto Marta Reis (marta@ejemplo.com), cocina industrial a medida, inicio el 10/11, valor total 18,000.00 en 3 cuotas, la primera al firmar.\nEn el chat no creas la carpeta ni el registro: devuélveme el texto listo para cada paso (nombre de la carpeta, cronograma en tabla, borrador del cobro, borrador del correo) y yo hago los clics y marco cada paso como hecho."
         },
         {
           "rot": "Terminal (opcional) · carpetas reales en tu computadora",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/clientes\n# la ficha está en AGENTS.md; la plantilla está en clientes/modelo/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente nuevo: Padaria Trigo Bom — sigue AGENTS.md\""
+          "conteudo": "cd mis-agentes/clientes\n# la ficha está en AGENTS.md; la plantilla está en clientes/plantilla/\ncodex exec --skip-git-repo-check -m gpt-6-luna -s workspace-write \"cliente nuevo: Panadería Trigo Bueno — sigue AGENTS.md\""
         }
       ],
       "saida": {
@@ -159,22 +159,22 @@
         "abas": [
           {
             "rot": "Chat × terminal",
-            "html": "<p><b>En el chat</b>, el agente prepara el texto de cada paso y tú haces los clics: es el checklist con la parte aburrida (escribir, calcular fechas, preparar el correo) resuelta. <b>En la terminal</b>, con <code>-s workspace-write</code>, Codex puede copiar la carpeta modelo dentro de la carpeta donde estás; fuera de ella, no. El registro en un sistema en línea y el cobro siguen a tu cargo.</p>"
+            "html": "<p><b>En el chat</b>, el agente prepara el texto de cada paso y tú haces los clics: es la lista de verificación con la parte aburrida (escribir, calcular fechas, armar el correo) resuelta. <b>En la terminal</b>, con <code>-s workspace-write</code>, Codex puede copiar la carpeta modelo dentro de la carpeta donde estás; fuera de ella, no. El registro en un sistema en línea y el cobro siguen a tu cargo.</p>"
           },
           {
             "rot": "Cómo revisar",
-            "html": "<ol><li>Los cinco pasos aparecen en orden, cada uno con hecho o se detuvo.</li><li>El cobro es de 6.000,00 (la primera de 3 cuotas de 18.000,00) y está como borrador.</li><li>Si envías el mismo pedido de nuevo en la misma conversación, la segunda ronda se detiene enseguida en el primer paso porque el cliente ya existe.</li></ol>"
+            "html": "<ol><li>Los cinco pasos aparecen en orden, cada uno con hecho o se detuvo.</li><li>El cobro es de 6,000.00 (la primera de 3 cuotas de 18,000.00) y está como borrador.</li><li>Si envías el mismo pedido de nuevo en la misma conversación, la segunda ronda se detiene enseguida en el primer paso porque el cliente ya existe.</li></ol>"
           },
           {
             "rot": "Errores comunes",
-            "html": "<ul><li><b>Checklist sin orden</b>: el correo se envía antes de que exista la carpeta y el enlace no funciona.</li><li><b>«Si falla, inténtalo de otra manera»</b>: el agente improvisa y crea la carpeta «Padaria Trigo Bom (2)». Si falla, se detiene.</li><li><b>Poner el cobro como «emitir»</b>: dinero y clientes implican como mínimo un riesgo medio; siempre en borrador.</li></ul>"
+            "html": "<ul><li><b>Checklist sin orden</b>: el correo se envía antes de que exista la carpeta y el enlace no funciona.</li><li><b>«Si falla, inténtalo de otra manera»</b>: el agente improvisa y crea la carpeta «Panadería Trigo Bueno (2)». Si falla, se detiene.</li><li><b>Poner el cobro como «emitir»</b>: dinero y clientes implican como mínimo un riesgo medio; siempre en borrador.</li></ul>"
           }
         ]
       }
     },
     {
       "tipo": "pratica",
-      "titulo": "Práctica: tu checklist",
+      "titulo": "Práctica: tu lista de verificación",
       "sub": "Escribe el ritual que ya haces hoy.",
       "exercicios": [
         {
@@ -189,14 +189,14 @@
           "titulo": "E2 · La ficha",
           "min": "15 min",
           "texto": "Adapta la ficha con tus pasos y modelos y colócala en un Proyecto (o en una carpeta, en la terminal).",
-          "pronto": "el agente repite el checklist con sus propias palabras, en el orden correcto, y espera «cliente nuevo»."
+          "pronto": "el agente repite la lista de verificación con sus propias palabras, en el orden correcto, y espera \"cliente nuevo\"."
         },
         {
           "id": "e3",
           "titulo": "E3 · Ensayo con un cliente ficticio",
           "min": "10 min",
-          "texto": "Ejecútalo con Padaria Trigo Bom. Después envía el mismo pedido otra vez, en la misma conversación (en el chat, el \"ya existe\" depende de la lista que pegaste y de lo que está en la conversación).",
-          "pronto": "la primera ronda entrega los 5 pasos y el cobro de 6.000,00 como borrador; la segunda se detiene y avisa que el cliente ya existe."
+          "texto": "Ejecútalo con Panadería Trigo Bueno. Después envía el mismo pedido otra vez, en la misma conversación (en el chat, el \"ya existe\" depende de la lista que pegaste y de lo que está en la conversación).",
+          "pronto": "la primera ronda entrega los 5 pasos y el cobro de 6,000.00 como borrador; la segunda se detiene y avisa que el cliente ya existe."
         }
       ]
     },
@@ -206,9 +206,9 @@
       "sub": "La explicación aparece después de tu respuesta.",
       "perguntas": [
         {
-          "p": "En el paso 2, ya existe una carpeta «Padaria Trigo Bom». ¿Qué hace el agente?",
+          "p": "En el paso 2, ya existe una carpeta «Panadería Trigo Bueno». ¿Qué hace el agente?",
           "opcoes": [
-            "Crea «Padaria Trigo Bom (2)» para no perder tiempo.",
+            "Crea «Panadería Trigo Bueno (2)» para no perder tiempo.",
             "Borra la anterior y crea una nueva.",
             "Omite la carpeta y sigue con el cronograma.",
             "Se detiene en el paso 2 y dice qué vio."
@@ -218,7 +218,7 @@
           "ref": "simfila"
         },
         {
-          "p": "Interrumpiste el checklist en el paso 3 y volviste a ejecutarlo. Lo correcto es:",
+          "p": "Interrumpiste la lista de verificación en el paso 3 y volviste a ejecutarla. Lo correcto es:",
           "opcoes": [
             "Empezar de nuevo desde el paso 1 y repetir todo desde el principio, por seguridad.",
             "Continuar desde el paso 3, sin repetir el registro ni la carpeta.",
@@ -245,7 +245,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "Orden fijo",

@@ -62,7 +62,7 @@
           "titulo": "Routing",
           "sub": "light and top",
           "saida": "Model rule and Task 3.",
-          "passo": "Paste the routing rule into the Projects and hand over Task 3: invoices and bills (lesson 5). Task 1 completes its three rounds and moves to spot checks."
+          "passo": "Paste the routing rule into the Projects and do task 3: invoices and bills (lesson 5). Task 1 completes the three rounds and moves on to the sample."
         },
         {
           "aula": "cliente",
@@ -98,7 +98,7 @@
           "titulo": "Sample",
           "sub": "later",
           "texto": [
-            "Three consecutive runs with no corrections? Switch to sample checks: two numbers from the report, one out of every three drafts, two notes from the table.",
+            "Three rounds in a row without corrections? Move on to the sample: two numbers from the report, one draft out of every three, two invoices from the table.",
             "The gate never goes away: you keep reading anything that talks to a client or handles money."
           ]
         },
@@ -119,7 +119,7 @@
           ],
           "exemplo": {
             "rot": "Log entry",
-            "texto": "11/11 | report | checked 2 numbers | matched | no changes"
+            "texto": "Nov 11 | report | checked 2 numbers | matched | no changes"
           }
         }
       ]
@@ -127,12 +127,12 @@
     {
       "tipo": "codigo",
       "titulo": "The check log",
-      "sub": "A note, a spreadsheet, or a diario.txt file. One line per run.",
+      "sub": "One invoice, one spreadsheet, or a log.txt file. One line per round.",
       "blocos": [
         {
           "rot": "Check log (template)",
           "icone": "arquivo",
-          "conteudo": "date | agent | model | what I checked | did it match? | change to the sheet | minutes saved\n11/11 | website report | light | everything (run 1) | yes | added the total by page to the delivery | 50\n12/11 | contacts | light | all 3 drafts | 1 corrected | rule: don't mention a deadline | 30\n18/11 | website report | light | everything (run 2) | yes | none | 55\n25/11 | website report | light | everything (run 3) | yes | none | 55\n02/12 | website report | light | 2 numbers (sample) | yes | none | 55"
+          "conteudo": "date | agent | model | what I checked | did it match? | change to the sheet | minutes saved\nNov 11 | website report | light | everything (run 1) | yes | added the total by page to the delivery | 50\nNov 12 | contacts | light | all 3 drafts | 1 corrected | rule: don't mention a deadline | 30\nNov 18 | website report | light | everything (run 2) | yes | none | 55\nNov 25 | website report | light | everything (run 3) | yes | none | 55\nDec 2 | website report | light | 2 numbers (sample) | yes | none | 55"
         },
         {
           "rot": "Friday review (paste into the chat with the check log)",
@@ -178,7 +178,7 @@
           "aula": "leads"
         },
         {
-          "titulo": "Lesson 5 · Notes and bills",
+          "titulo": "Lesson 5 · Invoices and bills",
           "aula": "notas"
         },
         {

@@ -132,7 +132,7 @@
           ],
           "exemplo": {
             "rot": "Atenção",
-            "texto": "Valores que o painel mostra como ~ ou - viram zero na planilha exportada."
+            "texto": "Quando o painel não tem o valor, ele mostra ~ ou -; na planilha exportada esses casos viram zero."
           }
         },
         {
@@ -163,7 +163,7 @@
         {
           "rot": "Variação · ficha dos números da semana (num Projeto novo, \"Números da semana\")",
           "icone": "arquivo",
-          "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; salve como rascunho, eu envio para a equipe; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
+          "conteudo": "Papel: Você é o meu agente dos números da semana.\nSobre mim: [o que a empresa faz]; eu colo os números de cada ferramenta toda sexta.\nQuando: quando eu colar os números e disser \"números\".\nPassos: 1) monte uma tabela: número, esta semana, semana anterior, variação em %; 2) escreva 3 tópicos curtos: a melhor notícia, a maior preocupação, uma pergunta para a equipe.\nRegras: só leia, nunca mude nem apague nada; salve tudo como rascunho, eu envio; nunca peça senha, tela de login = pare e me chame; nunca pague, aprove nem agende pagamento; copie os números exatamente; se um número faltar, escreva \"não achei\", nunca estime; salve como rascunho, eu envio para a equipe; se travar, pare e pergunte.\nEntrega: a tabela e os 3 tópicos, nada mais.\nPrimeira tarefa: rode agora com os números que vou colar."
         },
         {
           "rot": "Terminal (opcional) · Codex com o modelo leve",
@@ -343,7 +343,7 @@
       "links": [
         {
           "t": "Relatório de Performance do Search Console (ajuda oficial)",
-          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "href": "https://support.google.com/webmasters/answer/7576553",
           "icone": "grafico"
         },
         {

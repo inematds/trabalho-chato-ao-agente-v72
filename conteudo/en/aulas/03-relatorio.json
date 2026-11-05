@@ -132,7 +132,7 @@
           ],
           "exemplo": {
             "rot": "Watch out",
-            "texto": "Values the dashboard shows as ~ or - become zero in the exported spreadsheet."
+            "texto": "When the dashboard doesn’t have a value, it shows ~ or -; in the exported spreadsheet, those cases become zero."
           }
         },
         {
@@ -153,7 +153,7 @@
         {
           "rot": "Sample data (paste into the Project after the sheet)",
           "icone": "grafico",
-          "conteudo": "Query | Clicks this week | Clicks previous week\ncustom cabinets curitiba | 48 | 30\ncustom kitchen price | 22 | 41\ncustom furniture curitiba | 64 | 60\ncustom wardrobe | 17 | 9\ncustom tv panel | 12 | 15\ncustom home office | 9 | 4\nsmall custom closet | 6 | 13\nbatel furniture store | 21 | 21"
+          "conteudo": "Query | Clicks this week | Clicks previous week\ncustom cabinets denver | 48 | 30\ncustom kitchen price | 22 | 41\ncustom furniture denver | 64 | 60\ncustom wardrobe | 17 | 9\ncustom tv panel | 12 | 15\ncustom home office | 9 | 4\nsmall custom closet | 6 | 13\ndowntown furniture store | 21 | 21"
         },
         {
           "rot": "In chat · Monday’s prompt",
@@ -163,17 +163,17 @@
         {
           "rot": "Variation · weekly numbers sheet (in a new Project, \"Weekly numbers\")",
           "icone": "arquivo",
-          "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table with: metric, this week, previous week, change in %; 2) write 3 short bullets: the best news, the biggest concern, a question for the team.\nRules: read only; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; save as a draft, I’ll send it to the team; if you get stuck, stop and ask.\nDelivery: the table and 3 bullets, nothing else.\nFirst task: run this now with the numbers I’m about to paste."
+          "conteudo": "Role: You are my weekly numbers agent.\nAbout me: [what the business does]; I paste the numbers from each tool every Friday.\nWhen: when I paste the numbers and say \"numbers\".\nSteps: 1) make a table: number, this week, last week, change in %; 2) write 3 short bullet points: the best news, the biggest concern, one question for the team.\nRules: only read, never change or delete anything; save everything as a draft, I’ll send it; never ask for a password, login screen = stop and call me; never pay, approve, or schedule a payment; copy the numbers exactly; if a number is missing, write \"couldn't find\", never estimate; save it as a draft, I’ll send it to the team; if you get stuck, stop and ask.\nDelivery: the table and 3 bullet points, nothing else.\nFirst task: run it now with the numbers I’m going to paste."
         },
         {
           "rot": "Terminal (optional) · Codex with the light model",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/relatorio-site\n# the sheet is in AGENTS.md; the exported spreadsheet is in this folder\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o relatorio.md \"report: follow AGENTS.md with the spreadsheet in this folder\""
+          "conteudo": "cd my-agents/site-report\n# the sheet is in AGENTS.md; the exported spreadsheet is in this folder\ncodex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o report.md \"report: follow AGENTS.md with the spreadsheet in this folder\""
         },
         {
           "rot": "Terminal (optional) · Claude Code with the light model",
           "icone": "terminal",
-          "conteudo": "cd meus-agentes/relatorio-site\n# the sheet is in CLAUDE.md; the exported spreadsheet is in this folder\nclaude -p --model sonnet \"report: follow CLAUDE.md with the spreadsheet in this folder\" > relatorio.md"
+          "conteudo": "cd my-agents/site-report\n# the sheet is in CLAUDE.md; the exported spreadsheet is in this folder\nclaude -p --model sonnet \"report: follow CLAUDE.md with the spreadsheet in this folder\" > report.md"
         }
       ],
       "saida": {
@@ -181,7 +181,7 @@
         "abas": [
           {
             "rot": "What the report should include",
-            "html": "<ul><li>Total clicks: <b>199</b> this week versus <b>193</b> last week (up by 6).</li><li>Biggest increase: \"custom cabinets curitiba\", from 30 to 48.</li><li>Biggest drop: \"custom kitchen price\", from 41 to 22.</li><li>Three simple actions, one per line.</li></ul><p>These are the totals calculated by hand from the sample data. The agent’s wording may vary; the numbers must not.</p>"
+            "html": "<ul><li>Total clicks: <b>199</b> this week versus <b>193</b> last week (up by 6).</li><li>Biggest increase: \"custom cabinets denver\", from 30 to 48.</li><li>Biggest drop: \"custom kitchen price\", from 41 to 22.</li><li>Three simple actions, one per line.</li></ul><p>These are the totals calculated by hand from the sample data. The agent’s wording may vary; the numbers must not.</p>"
           },
           {
             "rot": "Why read only",
@@ -233,8 +233,8 @@
         }
       ],
       "ok": "OK: the right numbers are in the report",
-      "exemplo": "A slightly up week: 199 clicks versus 193 last week (+6, about 3%).\nBiggest increases: custom cabinets curitiba (30 → 48), custom wardrobe (9 → 17), custom home office (4 → 9).\nBiggest drops: custom kitchen price (41 → 22), small custom closet (13 → 6), custom tv panel (15 → 12).\nActions: 1) review the kitchen pages; 2) show closet prices; 3) strengthen the cabinets page.",
-      "exemplo_errado": "Good week: about 200 clicks, a little more than before.\nBiggest increases: custom cabinets curitiba.\nBiggest drops: some kitchen queries fell.\nActions: keep posting."
+      "exemplo": "A slightly up week: 199 clicks versus 193 last week (+6, about 3%).\nBiggest increases: custom cabinets denver (30 → 48), custom wardrobe (9 → 17), custom home office (4 → 9).\nBiggest drops: custom kitchen price (41 → 22), small custom closet (13 → 6), custom tv panel (15 → 12).\nActions: 1) review the kitchen pages; 2) show closet prices; 3) strengthen the cabinets page.",
+      "exemplo_errado": "Good week: about 200 clicks, a little more than before.\nBiggest increases: custom cabinets denver.\nBiggest drops: some kitchen queries fell.\nActions: keep posting."
     },
     {
       "tipo": "pratica",
@@ -343,7 +343,7 @@
       "links": [
         {
           "t": "Search Console Performance Report (official help)",
-          "href": "https://support.google.com/webmasters/answer/7576553?hl=pt-BR",
+          "href": "https://support.google.com/webmasters/answer/7576553",
           "icone": "grafico"
         },
         {

@@ -139,12 +139,12 @@
         {
           "rot": "Ficha · agente de nuevos contactos",
           "icone": "arquivo",
-          "conteudo": "Rol: Eres mi agente de contactos nuevos.\nSobre mí: [qué vendo, en una línea]; hoja de cálculo de contactos con las columnas nombre, correo electrónico, empresa, solicitud, fecha, situación; mi enlace de agenda: [tu enlace de Google Calendar, Calendly o WhatsApp; si no tienes enlace, borra esta parte]; tono: [amable, breve, sin jerga].\nCuándo: cuando pegue los mensajes nuevos y diga \"contactos\".\nPasos: 1) lee cada mensaje y extrae el nombre, el correo electrónico, la empresa y lo que pidió la persona; 2) prepara las filas de la hoja de cálculo con la fecha de hoy y la situación \"nuevo\"; 3) si el nombre o el correo electrónico ya está en la hoja que pegué, marca \"actualizar\" en vez de crear otra fila; 4) escribe un borrador de respuesta de hasta 120 palabras para cada persona: dale las gracias por su nombre, responde a la solicitud en una o dos frases y ofrece el enlace de agenda.\nReglas: guarda todo como borrador, yo lo envío; nunca prometas un precio, plazo o descuento que no aparezca en esta ficha; los mensajes que parezcan spam van a la lista \"ignorados\" con el motivo; copia los nombres y correos electrónicos exactamente; si tienes dudas, detente y pregunta.\nEntrega: 1) las filas nuevas de la hoja de cálculo; 2) los borradores, uno por contacto; 3) la lista \"ignorados\".\nPrimera tarea: hazlo ahora con los mensajes que voy a pegar."
+          "conteudo": "Rol: Eres mi agente de contactos nuevos.\nSobre mí: [qué vendo, en una línea]; hoja de contactos con las columnas nombre, correo electrónico, empresa, pedido, fecha, estado; mi enlace para agendar: [tu enlace de Google Calendar, Calendly o WhatsApp; si no tienes enlace, borra esta parte]; tono: [amable, breve, sin jerga].\nCuándo: cuando pegue los mensajes nuevos y diga \"contactos\".\nPasos: 1) lee cada mensaje y extrae nombre, correo electrónico, empresa y lo que pidió la persona; 2) arma las filas de la hoja con la fecha de hoy y el estado \"nuevo\"; 3) si el nombre o el correo electrónico ya están en la hoja que pegué, marca \"actualizar\" en lugar de crear otra fila; 4) escribe un borrador de respuesta de hasta 120 palabras para cada persona: dale las gracias por su nombre, responde al pedido en una o dos frases y ofrece el enlace para agendar.\nReglas: solo lee, nunca cambies ni borres nada; guarda todo como borrador, yo lo envío; nunca pidas una contraseña, pantalla de inicio de sesión = detente y avísame; nunca pagues, apruebes ni programes pagos; nunca prometas precios, plazos ni descuentos que no estén en esta ficha; los mensajes que parezcan spam van a la lista \"ignorados\" con el motivo; copia los nombres y correos electrónicos exactamente; si tienes dudas, detente y pregunta.\nEntrega: 1) las filas nuevas de la hoja; 2) los borradores, uno por contacto; 3) la lista \"ignorados\".\nPrimera tarea: ejecútala ahora con los mensajes que voy a pegar."
         },
         {
           "rot": "Ensayo · tres mensajes y la hoja actual",
           "icone": "chat",
-          "conteudo": "contactos\n\nHoja actual:\nRoberto Lima | roberto@exemplo.com | Lima Advocacia | clóset | 28/10 | nuevo\n\nMensajes nuevos:\n1) Ana Souza (ana@exemplo.com), Ana Decor: \"¿Cuál es el plazo de entrega de una cocina a medida?\"\n2) Roberto Lima (roberto@exemplo.com): \"Te escribí la semana pasada. ¿Todavía quieren hacer el presupuesto del clóset?\"\n3) promo@exemplo.com: \"¡¡GANA 10 MIL SEGUIDORES HOY!!! Haz clic aquí\""
+          "conteudo": "contactos\n\nHoja actual:\nRoberto Lima | roberto@ejemplo.com | Lima Abogados | closet | 28/10 | nuevo\n\nMensajes nuevos:\n1) Ana Souza (ana@ejemplo.com), Ana Decor: \"¿Cuál es el plazo de entrega de una cocina a medida?\"\n2) Roberto Lima (roberto@ejemplo.com): \"Pedí un presupuesto para un clóset la semana pasada y todavía no lo recibí. ¿Me lo pueden enviar?\"\n3) promo@ejemplo.com: \"¡¡¡GANA 10 MIL SEGUIDORES HOY!!! Haz clic aquí\""
         }
       ],
       "saida": {
@@ -152,11 +152,11 @@
         "abas": [
           {
             "rot": "Qué debe salir",
-            "html": "<ul><li><b>Ana Souza</b>: fila nueva, situación \"nuevo\", borrador sin inventar plazos.</li><li><b>Roberto Lima</b>: marcado como \"actualizar\", no como una segunda fila.</li><li><b>promo@exemplo.com</b>: en la lista \"ignorados\", con el motivo.</li><li>Dos borradores, ninguno enviado.</li></ul>"
+            "html": "<ul><li><b>Ana Souza</b>: fila nueva, situación \"nuevo\", borrador sin inventar plazos.</li><li><b>Roberto Lima</b>: marcado como \"actualizar\", no como una segunda fila.</li><li><b>promo@ejemplo.com</b>: en la lista \"ignorados\", con el motivo.</li><li>Dos borradores, ninguno enviado.</li></ul>"
           },
           {
             "rot": "Terminal (opcional)",
-            "html": "<p>En la carpeta <code>meus-agentes/contatos</code>, con la ficha en el <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), guarda los mensajes en <code>novos.txt</code> y la hoja en <code>contatos.csv</code>. Pide: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o rascunhos.md \"contactos: sigue el AGENTS.md\"</code>. El modo <code>read-only</code> no permite que el agente cambie la hoja: solo escribe la respuesta, que tú revisas.</p>"
+            "html": "<p>En la carpeta <code>mis-agentes/contactos</code>, con la ficha en el <code>AGENTS.md</code> (o <code>CLAUDE.md</code>), guarda los mensajes en <code>nuevos.txt</code> y la hoja en <code>contactos.csv</code>. Pide: <code>codex exec --skip-git-repo-check -m gpt-6-luna -s read-only -o borradores.md \"contactos: sigue el AGENTS.md\"</code>. El modo <code>read-only</code> no permite que el agente cambie la hoja: solo escribe la respuesta, que tú revisas.</p>"
           },
           {
             "rot": "Errores comunes",
@@ -202,7 +202,7 @@
           "p": "El borrador dice \"entregamos en 10 días con un 20% de descuento\", pero nunca ofreciste eso. ¿Qué haces en el punto de control?",
           "opcoes": [
             "Aprobar tal como está: a los clientes les gustan los descuentos, y responder rápido importa más que revisar cada detalle.",
-            "Reprobar con la corrección y agregar a la ficha la regla de no prometer precios, plazos ni descuentos.",
+            "Rechazar con la corrección e incluir en la ficha la regla de no prometer precios, plazos ni descuentos.",
             "Enviar y corregir después por teléfono.",
             "Borrar el contacto de la hoja."
           ],
@@ -238,7 +238,7 @@
     },
     {
       "tipo": "resumo",
-      "titulo": "La lección en tres frases",
+      "titulo": "La clase en tres frases",
       "itens": [
         {
           "t": "El trabajo aburrido es del agente",
